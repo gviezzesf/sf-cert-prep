@@ -9,42 +9,42 @@ Object.assign(EXAM_DATA, {
     ],
     overview:"The Platform Integration Architect credential is aimed at experienced architects who design and build integrations between Salesforce and external systems. The exam tests your ability to select the right integration pattern for a given scenario, choose appropriate APIs (REST, SOAP, Bulk, Streaming), design secure and resilient solutions using OAuth, Named Credentials, and Shield, and govern integration landscapes at scale. Candidates are expected to have at least five years of Salesforce experience and hands-on knowledge of integration platforms such as MuleSoft.",
     domains:[
-      {name:"Select Integration Architecture",pct:24,color:"#00A1E0",desc:"Identify the appropriate integration pattern given business and technical requirements — timing, data volume, direction, and latency constraints.",keyTopics:[
-        {title:"Request & Reply",desc:"Salesforce calls an external system and waits for a synchronous response — used for real-time lookups during user interactions."},
-        {title:"Fire & Forget",desc:"Salesforce sends a message to an external system and does not wait for a response — suitable when eventual consistency is acceptable."},
-        {title:"Batch Data Synchronization",desc:"Large volumes of records are exchanged on a schedule — used when near-real-time is not required and data volumes are high."},
-        {title:"Remote Call-In",desc:"An external system initiates a call into Salesforce via REST, SOAP, or Bulk API to create or update records."},
-        {title:"UI Update Based on Data Changes",desc:"External systems push updates to the Salesforce UI in real time using Streaming API or Platform Events without a user-triggered request."},
-        {title:"Pattern Selection Criteria",desc:"Choose based on initiator (SF or external), timing (sync/async), data volume, error tolerance, and whether a response is needed."}
+      {name:"Evaluate the Current System Landscape",pct:8,color:"#00A1E0",desc:"Identify standards, limitations, boundaries, and protocols in the current system landscape; analyze constraints and authentication/authorization needs.",keyTopics:[
+        {title:"System Inventory & Constraints",desc:"Given existing landscape, identify what standards, protocols, and limitations govern each system before proposing integration changes."},
+        {title:"Pain-Point Analysis",desc:"Analyze the current landscape for bottlenecks, gaps, and constraints that a proposed integration must address."},
+        {title:"Auth & Authorization Needs",desc:"Evaluate what authentication and authorization mechanisms are required based on the systems involved — OAuth, SAML, API keys, etc."}
       ]},
-      {name:"Design Integration Solutions",pct:32,color:"#2ECC71",desc:"Architect the technical implementation: choose APIs, middleware, event bus, and error handling to meet functional and non-functional requirements.",keyTopics:[
-        {title:"REST API & Composite API",desc:"REST is the default choice for CRUD operations; Composite API reduces round trips by bundling multiple requests into one call."},
-        {title:"SOAP API & Bulk API 2.0",desc:"SOAP suits enterprise systems requiring WSDL contracts; Bulk API 2.0 handles millions of records asynchronously with automatic batching."},
-        {title:"Platform Events & Change Data Capture",desc:"Platform Events enable pub/sub messaging; CDC streams record changes to subscribers without polling."},
-        {title:"MuleSoft & API-led Connectivity",desc:"API-led architecture uses System, Process, and Experience APIs to decouple layers — MuleSoft is the Salesforce-native integration platform."},
-        {title:"Named Credentials & Connected Apps",desc:"Named Credentials store endpoint and auth details declaratively; Connected Apps define OAuth policies for external system access."},
-        {title:"Error Handling & Retry Strategies",desc:"Design for failure: use Platform Event error events, Queueable Apex for retries, and dead-letter patterns for unrecoverable failures."}
+      {name:"Evaluate Business Needs",pct:11,color:"#2ECC71",desc:"Identify functional and non-functional requirements, classify data sensitivity, and assess growth and regulatory factors for integration.",keyTopics:[
+        {title:"Functional vs Non-Functional Requirements",desc:"Functional: what the integration must do. Non-functional: performance, availability, scalability, and security constraints."},
+        {title:"Data Classification",desc:"Classify data as Confidential, Secure, or Public — determines encryption, access control, and compliance obligations."},
+        {title:"CRM Success Factors",desc:"Identify what CRM outcomes (data quality, adoption, automation) must be reflected in integration requirements."},
+        {title:"Growth & Regulatory Factors",desc:"Account for business scale projections and regulatory constraints (GDPR, HIPAA, etc.) that can narrow the solution space."}
       ]},
-      {name:"Translate Business Requirements",pct:16,color:"#F39C12",desc:"Convert stakeholder goals and constraints into integration specifications, including SLAs, security requirements, and data governance.",keyTopics:[
-        {title:"SLA Definition",desc:"Define acceptable latency, uptime, and throughput — these drive pattern selection (sync vs async) and infrastructure choices."},
-        {title:"Security & Compliance Requirements",desc:"Identify data classification, encryption needs, audit requirements, and regulatory constraints before designing the integration."},
-        {title:"Non-Functional Requirements",desc:"Scalability, maintainability, and observability requirements that constrain architectural decisions beyond pure functional needs."},
-        {title:"Integration Scoping & Prioritization",desc:"Break down integration scope into discrete touchpoints, prioritize by business value, and phase delivery accordingly."},
-        {title:"Stakeholder Communication",desc:"Translate technical constraints into business language and document decisions with rationale for sign-off."}
+      {name:"Translate Needs to Integration Requirements",pct:22,color:"#F39C12",desc:"Convert business needs into integration specifications: system inventory, security requirements, and performance needs.",keyTopics:[
+        {title:"System & Pattern Inventory",desc:"From a landscape diagram, enumerate all systems and the integration patterns that connect them."},
+        {title:"Process & System Constraints",desc:"Identify constraints from business processes and system capabilities that bound the integration design."},
+        {title:"Security & Auth Requirements",desc:"Specify authentication, authorization, and data protection requirements derived from the use case."},
+        {title:"Performance Requirements",desc:"Define volumes, response times, and latency targets — then map these to appropriate integration solutions (sync, async, batch)."}
       ]},
-      {name:"Evaluate Current System Landscape",pct:16,color:"#E74C3C",desc:"Assess existing systems, data flows, and constraints to determine integration approach and identify risks.",keyTopics:[
-        {title:"System Inventory & Capability Mapping",desc:"Document all systems involved, their APIs, data ownership, and integration capabilities before proposing a solution."},
-        {title:"Legacy System Constraints",desc:"Older systems may lack REST APIs, have strict rate limits, or require adapter patterns — identify these early."},
-        {title:"Data Volume & Velocity Analysis",desc:"Estimate record counts, update frequency, and peak load to choose between real-time, near-real-time, or batch approaches."},
-        {title:"Middleware Evaluation",desc:"Assess whether existing middleware (ESB, iPaaS) can be reused or if MuleSoft / a new platform is required."},
-        {title:"Gap Analysis",desc:"Identify delta between current capabilities and target state to scope the integration build accurately."}
+      {name:"Design Integration Solutions",pct:28,color:"#E74C3C",desc:"Select integration patterns, define components, identify trade-offs, and specify the right Salesforce APIs and security mechanisms.",keyTopics:[
+        {title:"Integration Pattern Selection",desc:"Choose from request-reply, fire-and-forget, batch sync, remote call-in, or UI update patterns based on use case requirements."},
+        {title:"Solution Components",desc:"Define the full set of components — APIs, middleware, event bus, error handlers — that together meet the business requirements."},
+        {title:"Trade-offs & Constraints",desc:"Identify the limitations and trade-offs of the proposed solution: governor limits, latency, consistency, and complexity."},
+        {title:"API Selection",desc:"Given technical requirements, choose the right Salesforce API: REST, SOAP, Bulk, Streaming, Composite, or Platform Events."},
+        {title:"Security Mechanisms",desc:"Specify the standards, components, and security techniques — Named Credentials, Connected Apps, OAuth flows — for the solution."}
       ]},
-      {name:"Govern and Oversee",pct:12,color:"#1ABC9C",desc:"Establish standards, monitor health, and manage the lifecycle of integration solutions post-deployment.",keyTopics:[
-        {title:"API Versioning & Lifecycle",desc:"Version APIs from day one; define deprecation policies so consumers have time to migrate before old versions are retired."},
-        {title:"Monitoring & Alerting",desc:"Instrument integrations with logs and metrics; set thresholds for error rates and latency to catch failures proactively."},
-        {title:"Center of Excellence",desc:"A Salesforce Integration CoE owns patterns, reusable assets, standards, and review gates for new integration projects."},
-        {title:"Documentation Standards",desc:"Maintain interface contracts, sequence diagrams, and runbooks so integrations can be supported and extended by anyone."},
-        {title:"Integration Health Metrics",desc:"Track error rates, throughput, latency percentiles, and governor limit consumption to surface degradation early."}
+      {name:"Build Solution",pct:23,color:"#9B59B6",desc:"Design API implementations, outbound call options, scalability, error handling, security, and resilience for integration solutions.",keyTopics:[
+        {title:"API Design Considerations",desc:"When Salesforce is both provider and consumer — versioning, contract design, rate limits, and consumer impact must all be addressed."},
+        {title:"Outbound Call Options",desc:"Choose between callouts, Platform Events, or middleware for outbound calls — consider async vs sync, retry, and governor limits."},
+        {title:"Scalability",desc:"Design for peak load: use async processing, Bulk API, and platform events to handle large volumes without hitting limits."},
+        {title:"Error Handling",desc:"Define error handling per integration type — synchronous errors, async failure queues, dead-letter patterns, and alerting."},
+        {title:"Inbound/Outbound Security",desc:"Build security solutions for both directions: authentication, payload encryption, IP filtering, and audit logging."},
+        {title:"Resilience",desc:"Design integrations to survive system updates — versioned APIs, loose coupling, and fallback patterns reduce fragility."}
+      ]},
+      {name:"Maintain Integration",pct:8,color:"#1ABC9C",desc:"Identify performance monitoring, error handling, escalation, recovery, and reporting needs for live integrations.",keyTopics:[
+        {title:"Performance Monitoring",desc:"Define what metrics to track — error rates, latency, throughput, governor limit usage — and how to surface degradation early."},
+        {title:"Error Handling & Recovery",desc:"Identify appropriate escalation and recovery procedures when an integration fails — retries, fallbacks, and manual intervention steps."},
+        {title:"Integration Reporting",desc:"Define reporting needs: dashboards, alerts, and audit logs that give visibility into integration health and SLA compliance."}
       ]}
     ],
     studyDays:[
