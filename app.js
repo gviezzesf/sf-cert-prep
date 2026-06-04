@@ -301,7 +301,10 @@ backBtn.addEventListener('click',()=>{
   appScreen.classList.add('hidden');
   homeScreen.classList.remove('hidden');
   activeTab='overview';
-  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active',b.dataset.tab==='overview'));
+  document.querySelectorAll('.tab-btn').forEach(b=>{
+    b.classList.remove('hidden');
+    b.classList.toggle('active',b.dataset.tab==='overview');
+  });
   document.querySelectorAll('.tab-panel').forEach(p=>p.classList.toggle('active',p.id==='tab-overview'));
   hideNotesPanel();
 });
@@ -312,12 +315,14 @@ function launchApp(){
   appScreen.classList.remove('hidden');
   clearInterval(mockTimerInterval);
   mockState=null;mockQuestions=[];mockAnswers={};
+  const d=getExamData(currentExam);
+  const isDesignation=d&&d.designation;
+  const hiddenTabs=['plan','resources','quiz','mock','tips'];
+  document.querySelectorAll('.tab-btn').forEach(b=>{
+    b.classList.toggle('hidden',isDesignation&&hiddenTabs.includes(b.dataset.tab));
+  });
   renderOverview();
-  renderPlan();
-  renderResources();
-  renderQuiz();
-  renderMock();
-  renderTips();
+  if(!isDesignation){renderPlan();renderResources();renderQuiz();renderMock();renderTips();}
   switchTab('overview');
   loadNotes(currentExam);
   showNotesPanel();
