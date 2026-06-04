@@ -418,7 +418,7 @@ ${d.overview?`<div class="exam-overview-block">
     ${d.trailheadUrl?`<a class="trailhead-btn" href="${d.trailheadUrl}" target="_blank">View on Trailhead ↗</a>`:''}
   </div>
 </div>`:''}
-<div class="domains-section">
+${d.designation ? '' : `<div class="domains-section">
   <h3 style="margin-bottom:16px;font-size:1.1rem">Exam Domains <span style="font-size:0.8rem;font-weight:400;color:var(--muted);margin-left:6px">click to expand</span></h3>
   ${(d.domains||[]).map((dom,i)=>`
   <div class="domain-row" id="dom-row-${i}">
@@ -438,7 +438,7 @@ ${d.overview?`<div class="exam-overview-block">
       </div>
     </div>
   </div>`).join('')}
-</div>
+</div>`}
 `;
 }
 
