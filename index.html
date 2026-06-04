@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐐</text></svg>">
+<title>SF Cert Prep</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="home-screen">
+  <header class="site-header">
+    <div class="logo"><span class="logo-cloud"></span> SF Cert Prep</div>
+    <div class="header-right">
+      <button class="theme-btn" id="theme-toggle-home">☀️ Light</button>
+    </div>
+  </header>
+  <div class="home-content">
+    <h1 class="home-title">Prepare for your<br><span>Salesforce Certification</span></h1>
+    <p class="home-desc">SF Cert Prep gives you a personalized study plan, curated resources, practice quizzes, and exam tips for every official Salesforce certification. Select your target exam, choose how many weeks you have to study, and launch your customized prep session. Your progress is saved automatically in your browser so you can pick up right where you left off.</p>
+
+    <div class="field-group">
+      <div class="field-label">Target Exam</div>
+      <div class="picklist-wrapper" id="picklist-wrapper">
+        <div class="picklist-field">
+          <input class="picklist-input" id="picklist-input" type="text" placeholder="Search or browse certifications..." autocomplete="off">
+          <div class="picklist-btns">
+            <button class="picklist-clear" id="picklist-clear" tabindex="-1" aria-label="Clear">✕</button>
+            <button class="picklist-toggle" id="picklist-toggle" tabindex="-1" aria-label="Open list">▼</button>
+          </div>
+        </div>
+        <div class="picklist-dropdown hidden" id="picklist-dropdown"></div>
+      </div>
+      <div id="selected-exam-badge" class="hidden"></div>
+    </div>
+
+    <div class="field-group">
+      <div class="field-label">Study Pace</div>
+      <div class="pace-row" id="weeks-row">
+        <button class="pace-btn" data-w="1"><span class="pace-num">1</span><span class="pace-unit">day / week</span><span class="pace-wks" id="pw-1"></span></button>
+        <button class="pace-btn" data-w="2"><span class="pace-num">2</span><span class="pace-unit">days / week</span><span class="pace-wks" id="pw-2"></span></button>
+        <button class="pace-btn" data-w="3"><span class="pace-num">3</span><span class="pace-unit">days / week</span><span class="pace-wks" id="pw-3"></span></button>
+        <button class="pace-btn" data-w="5"><span class="pace-num">5</span><span class="pace-unit">days / week</span><span class="pace-wks" id="pw-5"></span></button>
+      </div>
+      <div class="plan-preview" id="plan-preview"></div>
+    </div>
+
+    <button class="launch-btn" id="launch-btn" disabled>Launch Study Session</button>
+  </div>
+  <footer class="site-footer">Designed by <a href="mailto:gviezze@salesforce.com">Germano V</a> with the help of <a href="https://claude.ai/code" target="_blank">Claude Code</a></footer>
+</div>
+
+<div id="app-screen" class="hidden">
+  <header class="site-header">
+    <div class="logo"><span class="logo-cloud"></span> SF Cert Prep</div>
+    <div class="header-right">
+      <span id="app-exam-name" style="font-size:0.85rem;color:var(--muted)"></span>
+      <button class="theme-btn" id="theme-toggle-app">☀️ Light</button>
+    </div>
+  </header>
+  <nav class="app-nav">
+    <div class="nav-inner">
+      <button class="back-btn" id="back-btn">← Home</button>
+      <div class="nav-divider"></div>
+      <button class="tab-btn active" data-tab="overview">Overview</button>
+      <button class="tab-btn" data-tab="plan">Study Plan</button>
+      <button class="tab-btn" data-tab="resources">Resources</button>
+      <button class="tab-btn" data-tab="quiz">Quiz</button>
+      <button class="tab-btn" data-tab="mock">Mock Exam</button>
+      <button class="tab-btn" data-tab="tips">Tips</button>
+    </div>
+  </nav>
+  <div class="tab-content">
+    <div class="tab-panel active" id="tab-overview"></div>
+    <div class="tab-panel" id="tab-plan"></div>
+    <div class="tab-panel" id="tab-resources"></div>
+    <div class="tab-panel" id="tab-quiz"></div>
+    <div class="tab-panel" id="tab-mock"></div>
+    <div class="tab-panel" id="tab-tips"></div>
+  </div>
+  <footer class="site-footer">Designed by <a href="mailto:gviezze@salesforce.com">Germano V</a> with the help of <a href="https://claude.ai/code" target="_blank">Claude Code</a></footer>
+  <div id="notes-panel" class="notes-panel notes-collapsed">
+    <div class="notes-resize-handle" id="notes-resize-handle"></div>
+    <div class="notes-header">
+      <div class="notes-header-left">
+        <span class="notes-title">My Notes</span>
+        <span class="notes-exam-label" id="notes-exam-label"></span>
+      </div>
+      <div class="notes-header-right">
+        <button class="notes-btn notes-btn--clear" id="notes-clear-btn" title="Clear notes">Clear</button>
+        <button class="notes-btn notes-btn--toggle" id="notes-toggle-btn" title="Toggle notes">▲ Show</button>
+      </div>
+    </div>
+    <div class="notes-body">
+      <textarea id="notes-textarea" class="notes-textarea" placeholder="Type your notes for this exam here..."></textarea>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

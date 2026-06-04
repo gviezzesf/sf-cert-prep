@@ -1,0 +1,21 @@
+# Backups
+*.bak
+*.html.bak
+*-backup-*.html
+*copy*.html
+salesforce-study-app.html
+salesforce-pia-study-plan.html
+solidBU.html
+beforemockexam.html
+
+# Patch / utility scripts
+*.py
+
+# Unused split data files
+exam_data_*.js
+
+# Claude Code session data
+.claude/
+
+# macOS
+.DS_Store
