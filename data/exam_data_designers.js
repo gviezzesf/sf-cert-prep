@@ -9,44 +9,13 @@ Object.assign(EXAM_DATA, {
       {name:"Platform Administrator",url:"https://trailhead.salesforce.com/content/learn/trails/force_com_admin_intermediate",note:"Admin knowledge of page layouts, components, and app configuration is assumed throughout the exam."}
     ],
     overview: "The Platform User Experience Designer certification validates your ability to design intuitive, accessible, and user-centred experiences on the Salesforce platform. The exam covers UX research methods, Lightning Design System, information architecture, prototyping, and accessibility standards — all applied specifically to Salesforce Lightning applications.",
-    domains: [
-      {name:"Discovery",pct:18,color:"#00A1E0",desc:"Plan and execute UX research to understand user needs before designing solutions.",keyTopics:[
-        {title:"User Research Methods",desc:"Interviews, surveys, contextual inquiry, and usability testing each serve different purposes — choose the right method based on what you need to learn and when in the project."},
-        {title:"Journey Mapping",desc:"Customer and user journey maps visualize the end-to-end experience across touchpoints, revealing pain points and opportunities that are invisible in system-level requirements."},
-        {title:"Persona Development",desc:"Personas synthesize research into representative user archetypes — use them to build empathy and keep design decisions grounded in real user goals and behaviours."},
-        {title:"Stakeholder Alignment",desc:"UX designers must align business goals with user needs — discovery outputs (research findings, personas, journey maps) should be shared artifacts, not private documents."}
-      ]},
-      {name:"UX Fundamentals",pct:17,color:"#2ECC71",desc:"Apply core UX principles — information architecture, interaction design, and visual hierarchy — to Salesforce solutions.",keyTopics:[
-        {title:"Information Architecture",desc:"Organize content and navigation so users can find what they need quickly — apply IA principles to Lightning app navigation, record layouts, and list views."},
-        {title:"Visual Hierarchy",desc:"Use size, colour, contrast, and spacing to guide user attention to the most important elements on a page — on Salesforce, this maps to component placement and page layout choices."},
-        {title:"Interaction Design Principles",desc:"Affordances, feedback, consistency, and error prevention are the pillars of good interaction design — apply them when configuring flows, buttons, and custom components."},
-        {title:"Progressive Disclosure",desc:"Show only the information users need at each step — hide complexity behind detail panels, tabs, and related lists rather than overwhelming users with everything at once."}
-      ]},
-      {name:"Salesforce Lightning Design System",pct:25,color:"#F39C12",desc:"Use SLDS guidelines, components, and tokens to build consistent, on-brand Salesforce experiences.",keyTopics:[
-        {title:"SLDS Components",desc:"SLDS provides a library of pre-built, accessible components (buttons, cards, forms, badges) — use them in LWC and Aura components to maintain visual consistency with the platform."},
-        {title:"Design Tokens",desc:"SLDS design tokens are named variables for visual properties (colours, spacing, font sizes) — using tokens instead of hardcoded values ensures designs stay consistent when themes change."},
-        {title:"Utility Classes",desc:"SLDS utility classes apply spacing, alignment, and typography without custom CSS — they enforce consistent styling across components built by different developers."},
-        {title:"Component Blueprints",desc:"SLDS blueprints are HTML/CSS reference implementations for components — use them as the source of truth when building custom components to ensure accessibility and visual consistency."},
-        {title:"SLDS Icons",desc:"Use the SLDS icon library (standard, utility, action, custom) with correct category and sizing — icons must include assistive text for screen reader accessibility."}
-      ]},
-      {name:"Prototyping",pct:12,color:"#E74C3C",desc:"Create low- and high-fidelity prototypes to communicate design intent and validate solutions with users.",keyTopics:[
-        {title:"Fidelity Levels",desc:"Low-fidelity wireframes test structure and flow cheaply; high-fidelity prototypes test visual design and micro-interactions — match fidelity to the design question you are answering."},
-        {title:"Prototyping Tools",desc:"Figma, Sketch, Adobe XD, and InVision are common tools — for Salesforce-specific prototyping, the SLDS component library is available in Figma."},
-        {title:"Clickable Prototypes",desc:"Interactive prototypes let users navigate between screens, revealing usability issues before any code is written — a click-through prototype is more valuable than a static mockup for testing."},
-        {title:"Prototype Testing",desc:"Run usability sessions with clickable prototypes by asking users to complete representative tasks — observe hesitation, errors, and confusion rather than asking if they like the design."}
-      ]},
-      {name:"Testing",pct:13,color:"#1ABC9C",desc:"Plan and run usability tests and interpret findings to improve Salesforce designs.",keyTopics:[
-        {title:"Usability Testing",desc:"Moderated and unmoderated usability tests identify where users struggle with a design — 5 users typically reveal 85% of usability problems."},
-        {title:"A/B Testing",desc:"A/B tests compare two design variants with real users under controlled conditions — best used for optimizing specific interactions with measurable outcomes."},
-        {title:"Heuristic Evaluation",desc:"Heuristic evaluation uses Nielsen's 10 usability heuristics to identify design problems without users — faster than usability testing but less representative."},
-        {title:"Interpreting Results",desc:"Synthesize test findings into prioritized recommendations — separate symptoms (what users did) from root causes (why) to propose the right design solutions."}
-      ]},
-      {name:"Accessibility",pct:15,color:"#BDC3E7",desc:"Design Salesforce experiences that meet WCAG accessibility standards and work for users with diverse abilities.",keyTopics:[
-        {title:"WCAG 2.1 Principles",desc:"Perceivable, Operable, Understandable, Robust (POUR) — WCAG 2.1 AA is the required accessibility standard for Salesforce Lightning components and custom apps."},
-        {title:"Colour Contrast",desc:"Text must meet a 4.5:1 contrast ratio with its background (3:1 for large text) — use SLDS design tokens which are pre-validated for contrast compliance."},
-        {title:"Keyboard Navigation",desc:"All interactive elements must be reachable and operable via keyboard alone — test with Tab, Shift+Tab, Enter, Space, and arrow keys to verify focus order and trap avoidance."},
-        {title:"Screen Reader Support",desc:"Use semantic HTML, ARIA roles, labels, and alt text so screen readers can convey meaning — SLDS components include built-in ARIA attributes but custom components need manual review."}
-      ]}
+        domains:[
+      {name:"Discovery",pct:13,color:"#00A1E0"},
+      {name:"UX Fundamentals",pct:16,color:"#2ECC71"},
+      {name:"Human-Centered Design",pct:12,color:"#F39C12"},
+      {name:"Declarative Design",pct:27,color:"#E74C3C"},
+      {name:"Testing",pct:11,color:"#9B59B6"},
+      {name:"Salesforce Lightning Design System (SLDS)",pct:21,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"ux-fundamentals",focus:"UX fundamentals: user-centered design, personas, and accessibility standards",topics:[
@@ -125,39 +94,11 @@ Object.assign(EXAM_DATA, {
       {name:"Platform Administrator",url:"https://developer.salesforce.com/docs/platform/lwc/guide/data-ui-api.html",note:"Understanding the Salesforce platform's capabilities is essential for advising clients on org strategy."}
     ],
     overview: "The Platform Strategy Designer certification validates your ability to advise customers on how to get maximum value from Salesforce through sound org strategy, business process alignment, and change management. The exam tests your skills in discovery, requirements analysis, solution scoping, governance, and measuring platform ROI — making it ideal for solution architects and business-focused consultants.",
-    domains: [
-      {name:"Customer Discovery",pct:22,color:"#00A1E0",desc:"Conduct discovery sessions to understand business goals, constraints, and stakeholder needs before recommending solutions.",keyTopics:[
-        {title:"Discovery Frameworks",desc:"Use structured discovery frameworks (5W1H, value stream mapping, business capability modeling) to surface the real business problem behind a feature request."},
-        {title:"Stakeholder Mapping",desc:"Identify all stakeholders — executive sponsors, end users, IT, compliance — and understand their goals, concerns, and influence before designing a solution."},
-        {title:"Current State Assessment",desc:"Document the as-is process, systems, data flows, and pain points before designing the future state — jumping to solutions without this leads to misaligned implementations."},
-        {title:"Business Goal Alignment",desc:"Map every solution recommendation back to a measurable business outcome — features without a business case are scope creep, not value creation."},
-        {title:"Constraint Identification",desc:"Surface technical, budgetary, organizational, and regulatory constraints early — these constraints should shape the solution, not be discovered after design is complete."}
-      ]},
-      {name:"Business Analysis",pct:18,color:"#2ECC71",desc:"Translate business requirements into actionable Salesforce solution specifications using recognized analysis techniques.",keyTopics:[
-        {title:"User Stories and Acceptance Criteria",desc:"Write user stories in 'As a [user], I want [goal], so that [benefit]' format with clear, testable acceptance criteria — vague stories lead to misbuilt features."},
-        {title:"Process Mapping",desc:"Use swimlane diagrams, flowcharts, and BPMN notation to document business processes — process maps reveal handoffs, bottlenecks, and automation opportunities."},
-        {title:"Gap Analysis",desc:"Compare current capabilities against desired future state to scope the implementation — a gap analysis makes the work visible and enables realistic project planning."},
-        {title:"Prioritization Frameworks",desc:"Use MoSCoW (Must, Should, Could, Won't), effort/impact matrices, or weighted scoring to help stakeholders make trade-off decisions on scope."}
-      ]},
-      {name:"Salesforce Solution Strategy",pct:25,color:"#F39C12",desc:"Recommend the right Salesforce products, features, and configuration approaches to meet business requirements.",keyTopics:[
-        {title:"Declarative vs Programmatic",desc:"Always default to declarative solutions (Flow, validation rules, formula fields) over Apex code — they are cheaper to build, easier to maintain, and don't require a developer to change."},
-        {title:"Org Strategy Decisions",desc:"Multi-org vs single org, sandbox strategy, data model decisions, and integration architecture are all org-strategy decisions with long-term consequences — get them right in design."},
-        {title:"Product Selection",desc:"Recommend the right Salesforce cloud and edition for the business need — Sales Cloud, Service Cloud, Experience Cloud, and Marketing Cloud each solve different problems."},
-        {title:"Phasing and MVP",desc:"Phase implementations to deliver value early — an MVP with the highest-impact features in phase 1 is more valuable than a 12-month big-bang delivery."},
-        {title:"Build vs Buy",desc:"AppExchange managed packages often solve common problems faster than custom builds — evaluate total cost of ownership, upgrade risk, and fit before recommending custom development."}
-      ]},
-      {name:"Governance and Change Management",pct:20,color:"#E74C3C",desc:"Establish governance structures and change management plans that ensure adoption and long-term platform success.",keyTopics:[
-        {title:"Centre of Excellence",desc:"A Salesforce CoE owns standards, architecture decisions, developer governance, and platform roadmap — establishing one early prevents technical debt and inconsistent implementations."},
-        {title:"Change Management Principles",desc:"Adoption doesn't happen automatically — change management requires communication, training, executive sponsorship, and feedback loops to move users from awareness to proficiency."},
-        {title:"Release Management",desc:"Define a release cadence, change approval process, and sandbox strategy — unmanaged change leads to broken integrations, data quality issues, and user frustration."},
-        {title:"Training Strategy",desc:"Design role-based training plans that meet users where they are — generic 'how to use Salesforce' training fails; task-based training tied to real workflows succeeds."}
-      ]},
-      {name:"Measuring Business Value",pct:15,color:"#1ABC9C",desc:"Define KPIs, success metrics, and measurement strategies to demonstrate and maximize Salesforce ROI.",keyTopics:[
-        {title:"KPI Definition",desc:"KPIs must be specific, measurable, and tied to the business outcome the Salesforce implementation is designed to achieve — vanity metrics (logins, records created) don't prove ROI."},
-        {title:"Baseline Measurement",desc:"Establish baseline metrics before go-live so post-implementation improvements can be quantified — without a baseline, you cannot prove the system delivered value."},
-        {title:"Leading vs Lagging Indicators",desc:"Leading indicators (pipeline coverage, daily active users) predict future outcomes; lagging indicators (revenue, case resolution rate) confirm past performance — track both."},
-        {title:"ROI Calculation",desc:"Calculate ROI by comparing cost of implementation and operation against quantified business benefits (time saved, revenue increased, cost reduced) over a defined period."}
-      ]}
+        domains:[
+      {name:"Value Design",pct:32,color:"#00A1E0"},
+      {name:"Tools and Artifacts",pct:23,color:"#2ECC71"},
+      {name:"Intangible Deliverables",pct:26,color:"#F39C12"},
+      {name:"Leveraging Adjacent Roles/Skills",pct:19,color:"#E74C3C"},
     ],
     studyDays:[
       {tag:"strategy-design",focus:"Salesforce strategy design: discovery, business analysis, and solution blueprinting",topics:[

@@ -383,13 +383,19 @@ function renderOverview(){
     el.innerHTML=`<h2 class="section-title">${currentExam}</h2><div class="coming-soon"><h3>Content Coming Soon</h3><p>Detailed exam data for this certification will be available soon.</p></div>`;
     return;
   }
-  el.innerHTML=`
-<h2 class="section-title">${currentExam}</h2>
+  const statsHtml = d.designation ? `
+<div class="designation-notice">
+  <div class="designation-badge">Designation</div>
+  <p>This credential is not earned through a standalone exam. It is automatically awarded when all required prerequisite certifications below are passed.</p>
+</div>` : `
 <div class="overview-grid">
   <div class="stat-card"><div class="stat-value">${d.questions}</div><div class="stat-label">Questions</div></div>
   <div class="stat-card"><div class="stat-value">${d.time} min</div><div class="stat-label">Time Allowed</div></div>
   <div class="stat-card"><div class="stat-value">${typeof d.pass==='number'?d.pass+'%':d.pass}</div><div class="stat-label">Passing Score</div></div>
-</div>
+</div>`;
+  el.innerHTML=`
+<h2 class="section-title">${currentExam}</h2>
+${statsHtml}
 ${(()=>{
   if(!d.prerequisites||d.prerequisites.length===0) return '';
   const req=d.prerequisites.map((p,pi)=>({p,pi})).filter(({p})=>typeof p==='object'&&p.required);

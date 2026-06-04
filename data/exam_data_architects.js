@@ -8,44 +8,13 @@ Object.assign(EXAM_DATA, {
       {name:"Platform Developer",url:"https://trailheadacademy.salesforce.com/certificate/exam-platform-dev1---Plat-Dev-201",note:"Apex callouts, triggers, and async patterns are core exam topics — developer experience is strongly advised."}
     ],
     overview:"The Platform Integration Architect credential is aimed at experienced architects who design and build integrations between Salesforce and external systems. The exam tests your ability to select the right integration pattern for a given scenario, choose appropriate APIs (REST, SOAP, Bulk, Streaming), design secure and resilient solutions using OAuth, Named Credentials, and Shield, and govern integration landscapes at scale. Candidates are expected to have at least five years of Salesforce experience and hands-on knowledge of integration platforms such as MuleSoft.",
-    domains:[
-      {name:"Evaluate the Current System Landscape",pct:8,color:"#00A1E0",desc:"Identify standards, limitations, boundaries, and protocols in the current system landscape; analyze constraints and authentication/authorization needs.",keyTopics:[
-        {title:"System Inventory & Constraints",desc:"Given existing landscape, identify what standards, protocols, and limitations govern each system before proposing integration changes."},
-        {title:"Pain-Point Analysis",desc:"Analyze the current landscape for bottlenecks, gaps, and constraints that a proposed integration must address."},
-        {title:"Auth & Authorization Needs",desc:"Evaluate what authentication and authorization mechanisms are required based on the systems involved — OAuth, SAML, API keys, etc."}
-      ]},
-      {name:"Evaluate Business Needs",pct:11,color:"#2ECC71",desc:"Identify functional and non-functional requirements, classify data sensitivity, and assess growth and regulatory factors for integration.",keyTopics:[
-        {title:"Functional vs Non-Functional Requirements",desc:"Functional: what the integration must do. Non-functional: performance, availability, scalability, and security constraints."},
-        {title:"Data Classification",desc:"Classify data as Confidential, Secure, or Public — determines encryption, access control, and compliance obligations."},
-        {title:"CRM Success Factors",desc:"Identify what CRM outcomes (data quality, adoption, automation) must be reflected in integration requirements."},
-        {title:"Growth & Regulatory Factors",desc:"Account for business scale projections and regulatory constraints (GDPR, HIPAA, etc.) that can narrow the solution space."}
-      ]},
-      {name:"Translate Needs to Integration Requirements",pct:22,color:"#F39C12",desc:"Convert business needs into integration specifications: system inventory, security requirements, and performance needs.",keyTopics:[
-        {title:"System & Pattern Inventory",desc:"From a landscape diagram, enumerate all systems and the integration patterns that connect them."},
-        {title:"Process & System Constraints",desc:"Identify constraints from business processes and system capabilities that bound the integration design."},
-        {title:"Security & Auth Requirements",desc:"Specify authentication, authorization, and data protection requirements derived from the use case."},
-        {title:"Performance Requirements",desc:"Define volumes, response times, and latency targets — then map these to appropriate integration solutions (sync, async, batch)."}
-      ]},
-      {name:"Design Integration Solutions",pct:28,color:"#E74C3C",desc:"Select integration patterns, define components, identify trade-offs, and specify the right Salesforce APIs and security mechanisms.",keyTopics:[
-        {title:"Integration Pattern Selection",desc:"Choose from request-reply, fire-and-forget, batch sync, remote call-in, or UI update patterns based on use case requirements."},
-        {title:"Solution Components",desc:"Define the full set of components — APIs, middleware, event bus, error handlers — that together meet the business requirements."},
-        {title:"Trade-offs & Constraints",desc:"Identify the limitations and trade-offs of the proposed solution: governor limits, latency, consistency, and complexity."},
-        {title:"API Selection",desc:"Given technical requirements, choose the right Salesforce API: REST, SOAP, Bulk, Streaming, Composite, or Platform Events."},
-        {title:"Security Mechanisms",desc:"Specify the standards, components, and security techniques — Named Credentials, Connected Apps, OAuth flows — for the solution."}
-      ]},
-      {name:"Build Solution",pct:23,color:"#9B59B6",desc:"Design API implementations, outbound call options, scalability, error handling, security, and resilience for integration solutions.",keyTopics:[
-        {title:"API Design Considerations",desc:"When Salesforce is both provider and consumer — versioning, contract design, rate limits, and consumer impact must all be addressed."},
-        {title:"Outbound Call Options",desc:"Choose between callouts, Platform Events, or middleware for outbound calls — consider async vs sync, retry, and governor limits."},
-        {title:"Scalability",desc:"Design for peak load: use async processing, Bulk API, and platform events to handle large volumes without hitting limits."},
-        {title:"Error Handling",desc:"Define error handling per integration type — synchronous errors, async failure queues, dead-letter patterns, and alerting."},
-        {title:"Inbound/Outbound Security",desc:"Build security solutions for both directions: authentication, payload encryption, IP filtering, and audit logging."},
-        {title:"Resilience",desc:"Design integrations to survive system updates — versioned APIs, loose coupling, and fallback patterns reduce fragility."}
-      ]},
-      {name:"Maintain Integration",pct:8,color:"#1ABC9C",desc:"Identify performance monitoring, error handling, escalation, recovery, and reporting needs for live integrations.",keyTopics:[
-        {title:"Performance Monitoring",desc:"Define what metrics to track — error rates, latency, throughput, governor limit usage — and how to surface degradation early."},
-        {title:"Error Handling & Recovery",desc:"Identify appropriate escalation and recovery procedures when an integration fails — retries, fallbacks, and manual intervention steps."},
-        {title:"Integration Reporting",desc:"Define reporting needs: dashboards, alerts, and audit logs that give visibility into integration health and SLA compliance."}
-      ]}
+        domains:[
+      {name:"Evaluate the Current System Landscape",pct:8,color:"#00A1E0"},
+      {name:"Evaluate Business Needs",pct:11,color:"#2ECC71"},
+      {name:"Translate Needs to Integration Requirements",pct:22,color:"#F39C12"},
+      {name:"Design Integration Solutions",pct:28,color:"#E74C3C"},
+      {name:"Build Solution",pct:23,color:"#9B59B6"},
+      {name:"Maintain Integration",pct:8,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"integration-patterns",focus:"Master Salesforce integration patterns: request-reply, fire-and-forget, batch, and remote call-in",topics:[
@@ -210,42 +179,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-data-architect---Plat-Arch-201",
     prerequisites: ["Platform Administrator", "Platform Developer"],
     overview: "The Salesforce Platform Data Architect certification validates expertise in designing scalable, high-performance data models for complex Salesforce implementations. Candidates demonstrate mastery of data modeling, large data volumes, data governance, and data migration strategies.",
-    domains: [
-      { name: "Data Modeling", pct: 30, color: "#00A1E0", desc: "Design optimal Salesforce data models that balance flexibility, performance, and maintainability.", keyTopics: [
-      {title:"Relationship Design",desc:"Choose between Master-Detail (ownership, roll-ups), Lookup (flexible), and junction objects (many-to-many) based on business requirements."},
-      {title:"Field Type Selection",desc:"Select the right field type for each attribute — formula fields for calculations, roll-up summaries for aggregations, external IDs for integration keys."},
-      {title:"Object Granularity",desc:"Decide when to create new objects vs extend existing ones — over-objectification creates complexity; under-objectification limits scalability."},
-      {title:"Schema Best Practices",desc:"Avoid excessive custom fields on standard objects; use namespacing conventions; design for reporting requirements from the start."},
-      {title:"Data Model Documentation",desc:"Create ERDs to communicate the data model — document relationship cardinality, key fields, and the business purpose of each object."}
-    ] },
-      { name: "Master Data Management", pct: 20, color: "#2ECC71", desc: "Design MDM strategies to ensure a single, authoritative source of truth for key business entities.", keyTopics: [
-      {title:"MDM Patterns",desc:"Choose between consolidation (merge from multiple sources), registry (pointer to authoritative source), and coexistence (sync) MDM patterns."},
-      {title:"Golden Record Design",desc:"Define which system owns each field — the golden record reconciles conflicts between source systems using defined survivorship rules."},
-      {title:"Duplicate Management",desc:"Configure matching rules and duplicate rules to detect and prevent duplicates at entry — define merge strategies for existing duplicates."},
-      {title:"External IDs",desc:"Use External ID fields to maintain references to source system identifiers — enables reliable upsert operations and cross-system tracing."},
-      {title:"Data Stewardship",desc:"Define data owners responsible for data quality — implement processes for regular data audits, cleansing, and quality monitoring."}
-    ] },
-      { name: "Large Data Volumes", pct: 25, color: "#F39C12", desc: "Design Salesforce solutions that perform well at scale with millions of records.", keyTopics: [
-      {title:"Selective Queries",desc:"SOQL queries must use indexed fields in WHERE clauses to avoid full table scans — leading wildcard LIKE queries and unindexed filters cause timeouts."},
-      {title:"Skinny Tables",desc:"Salesforce can create skinny tables for high-volume objects — they store a subset of frequently queried fields for faster query performance."},
-      {title:"Record Locking",desc:"High-concurrency DML on parent records causes lock contention — design parent-child relationships and batch processing to minimize lock duration."},
-      {title:"Batch Processing",desc:"Process large datasets in Batch Apex (200-record chunks) — schedule during off-peak hours and monitor for governor limit issues."},
-      {title:"Archiving Strategy",desc:"Archive old records to Big Objects or external storage — keeps active data volumes manageable and report performance fast."}
-    ] },
-      { name: "Data Migration", pct: 15, color: "#E74C3C", desc: "Plan and execute data migrations from legacy systems into Salesforce with accuracy and minimal disruption.", keyTopics: [
-      {title:"Migration Planning",desc:"Define scope, mapping, transformation rules, and data quality acceptance criteria before writing a single migration script."},
-      {title:"Data Profiling",desc:"Analyze source data for completeness, consistency, uniqueness, and referential integrity — surprises in source data derail migrations."},
-      {title:"ETL Tooling",desc:"Choose between Data Loader (simple), MuleSoft (complex transformation), or third-party ETL tools based on volume and complexity."},
-      {title:"Incremental Migration",desc:"Migrate in phases — start with reference data, then transactional data, then historical data — validate each phase before proceeding."},
-      {title:"Cutover Planning",desc:"Plan the final cutover: freeze source system, extract delta records, load to Salesforce, verify, and switch users — minimize downtime."}
-    ] },
-      { name: "Data Governance", pct: 10, color: "#1ABC9C", desc: "Establish data governance policies and structures to ensure ongoing data quality and compliance.", keyTopics: [
-      {title:"Data Classification",desc:"Classify data by sensitivity (public, internal, confidential, restricted) — drives encryption, access control, and retention decisions."},
-      {title:"Retention Policies",desc:"Define how long each data type is retained — balance legal hold requirements, storage costs, and privacy regulations (GDPR right to erasure)."},
-      {title:"Data Quality KPIs",desc:"Define measurable data quality metrics (completeness %, duplicate rate, stale records %) and monitor them with automated reports."},
-      {title:"Data Dictionary",desc:"Maintain a data dictionary documenting every object, field, purpose, owner, and quality standard — the foundation of data governance."},
-      {title:"Privacy Compliance",desc:"Implement data subject request (DSR) processes for GDPR/CCPA — support right to access, right to erasure, and data portability requirements."}
-    ] }
+        domains:[
+      {name:"Data Modeling/Database Design",pct:25,color:"#00A1E0"},
+      {name:"Master Data Management",pct:5,color:"#2ECC71"},
+      {name:"Salesforce Data Management",pct:25,color:"#F39C12"},
+      {name:"Data Governance",pct:10,color:"#E74C3C"},
+      {name:"Large Data Volume Considerations",pct:20,color:"#9B59B6"},
+      {name:"Data Migration",pct:15,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"data-modeling",focus:"Design complex Salesforce data models: objects, relationships, and schema trade-offs",topics:[
@@ -379,49 +319,11 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-sharing-visibility---Plat-Arch-205",
     prerequisites: ["Platform Administrator"],
     overview: "The Platform Sharing and Visibility Architect certification validates expertise in designing comprehensive Salesforce security and data sharing architectures. Candidates demonstrate mastery of org-wide defaults, sharing rules, role hierarchies, permission sets, and team-based access models.",
-    domains: [
-      { name: "Sharing Basics and OWD", pct: 20, color: "#00A1E0", desc: "Configure Organization-Wide Defaults as the foundation of the Salesforce sharing model.", keyTopics: [
-      {title:"OWD Settings",desc:"OWD sets the most restrictive baseline: Private, Public Read Only, Public Read/Write, or Controlled by Parent — start restrictive and open up."},
-      {title:"Object-Level OWD",desc:"Configure OWD per object — standard objects like Account often need different settings than custom objects for different business contexts."},
-      {title:"External vs Internal OWD",desc:"Set separate OWD for internal users and external community users — external users typically need more restrictive defaults."},
-      {title:"Implications of OWD Changes",desc:"Changing OWD to a more restrictive setting triggers a sharing recalculation — plan for performance impact in large orgs."},
-      {title:"OWD and Hierarchy",desc:"OWD works with role hierarchy — Private OWD with a role hierarchy still gives managers visibility into subordinates' records."}
-    ] },
-      { name: "Role Hierarchies and Teams", pct: 15, color: "#2ECC71", desc: "Design role hierarchies and team structures that grant appropriate upward record visibility.", keyTopics: [
-      {title:"Role Hierarchy Design",desc:"Design the hierarchy to reflect the org chart — roles higher in the hierarchy see records owned by roles beneath them."},
-      {title:"Account and Opportunity Teams",desc:"Teams grant specific users access to individual records with a defined role — useful when collaborators are outside the normal hierarchy path."},
-      {title:"Territory Management",desc:"Enterprise Territory Management assigns accounts to territories by rules — territory hierarchy grants visibility similar to role hierarchy."},
-      {title:"Hierarchy Depth",desc:"Avoid excessively deep hierarchies — they slow sharing calculations and make access management complex; aim for 5-7 levels maximum."},
-      {title:"Portal and Community Roles",desc:"External users in Experience Cloud have their own role hierarchy — manage separately from internal roles with appropriate access restrictions."}
-    ] },
-      { name: "Sharing Rules and Manual Sharing", pct: 20, color: "#F39C12", desc: "Extend record access beyond OWD using sharing rules and manual sharing.", keyTopics: [
-      {title:"Ownership-Based Sharing Rules",desc:"Share records owned by a specific group of users with another group — simple and predictable but limited to ownership criteria."},
-      {title:"Criteria-Based Sharing Rules",desc:"Share records based on field values — more flexible than ownership-based but can be harder to predict and manage at scale."},
-      {title:"Sharing Rule Limits",desc:"Orgs can have up to 300 sharing rules per object — plan carefully to stay within limits and avoid overly complex rule sets."},
-      {title:"Manual Sharing",desc:"Record owners and admins can manually share individual records — not scalable but useful for one-off access needs."},
-      {title:"Sharing Rule Recalculation",desc:"Adding or modifying sharing rules triggers recalculation — monitor for performance impact in large orgs with many records."}
-    ] },
-      { name: "Profiles, Permission Sets, and Field-Level Security", pct: 20, color: "#E74C3C", desc: "Design the permission model to control what users can see and do across objects and fields.", keyTopics: [
-      {title:"Profile as Baseline",desc:"Every user has exactly one profile — use profiles for the most common permission set for a user population; avoid over-customizing profiles."},
-      {title:"Permission Sets",desc:"Layer additional permissions on top of profiles — use permission sets for exceptions, temporary access, and role-based feature access."},
-      {title:"Permission Set Groups",desc:"Bundle multiple permission sets into a group assignable as a unit — maps cleanly to job functions and simplifies mass assignment."},
-      {title:"Muting Permission Sets",desc:"Remove permissions granted by a Permission Set Group without modifying individual sets — useful for edge case access removal."},
-      {title:"Field-Level Security",desc:"FLS controls read and edit access to individual fields — set at the profile or permission set level and enforced in UI, API, and Apex (with enforced CRUD/FLS)."}
-    ] },
-      { name: "Programmatic Sharing", pct: 15, color: "#1ABC9C", desc: "Implement Apex managed sharing for scenarios requiring dynamic, complex sharing logic.", keyTopics: [
-      {title:"Apex Sharing Records",desc:"Apex creates Share records (AccountShare, CustomObject__Share) directly — use when sharing logic cannot be expressed declaratively."},
-      {title:"With Sharing vs Without Sharing",desc:"with sharing enforces the running user's sharing rules in Apex; without sharing bypasses them — always use with sharing unless escalation is intentional."},
-      {title:"Sharing Reasons",desc:"Custom sharing reasons identify the source of programmatic sharing — use them to distinguish Apex-managed shares from manual shares for maintenance."},
-      {title:"Recalculating Programmatic Shares",desc:"Apex sharing does not auto-recalculate on data changes — implement triggers or scheduled jobs to maintain share accuracy when data changes."},
-      {title:"Performance of Apex Sharing",desc:"Bulk sharing inserts in Apex must be properly bulkified — avoid per-record DML in triggers and batch-insert share records efficiently."}
-    ] },
-      { name: "Community and External Sharing", pct: 10, color: "#BDC3E7", desc: "Configure record sharing for Experience Cloud users with appropriate access controls.", keyTopics: [
-      {title:"External OWD",desc:"Set separate OWD for external users — typically more restrictive than internal OWD to protect internal data from portal users."},
-      {title:"Sharing Sets",desc:"Sharing Sets grant portal users access to records related to their Account or Contact — simpler than sharing rules for common community patterns."},
-      {title:"Super User Access",desc:"Super User permission in communities grants a portal user access to all records from their account — use carefully in B2B portals."},
-      {title:"Guest User Sharing",desc:"Guest users (unauthenticated) can only see records explicitly shared with the Guest User profile — configure carefully to prevent data leakage."},
-      {title:"High-Volume Portal Users",desc:"HVPU (Customer Community license) use a special sharing mechanism — not supported by role hierarchy; use sharing sets and groups instead."}
-    ] }
+        domains:[
+      {name:"Permissions to Standard Objects, Custom Objects, and Fields",pct:27,color:"#00A1E0"},
+      {name:"Access to Records",pct:39,color:"#2ECC71"},
+      {name:"Access to Other Data",pct:16,color:"#F39C12"},
+      {name:"Implications of Security Model Choice",pct:18,color:"#E74C3C"},
     ],
     studyDays:[
       {tag:"owds",focus:"Configure Org-Wide Defaults and understand their impact on data visibility",topics:[
@@ -555,56 +457,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-identity-access---Plat-Arch-203",
     prerequisites: ["Platform Administrator"],
     overview: "The Platform Identity and Access Management Architect certification validates expertise in designing enterprise identity solutions on the Salesforce platform. Candidates demonstrate mastery of SSO, OAuth 2.0, identity providers, connected apps, and MFA.",
-    domains: [
-      { name: "Identity Management Concepts", pct: 17, color: "#00A1E0", desc: "Understand core identity and access management concepts including authentication, authorization, and federation.", keyTopics: [
-      {title:"Authentication vs Authorization",desc:"Authentication verifies who you are (identity); authorization determines what you can do (permissions) — both are required for secure access."},
-      {title:"Identity Federation",desc:"Federation allows users to authenticate with one IdP and access multiple service providers — eliminates separate credentials per system."},
-      {title:"Single Sign-On",desc:"SSO lets users log in once with their corporate identity and access all federated applications — improves security and reduces password fatigue."},
-      {title:"Multi-Factor Authentication",desc:"MFA requires a second verification factor (authenticator app, security key) in addition to password — significantly reduces account takeover risk."},
-      {title:"Principle of Least Privilege",desc:"Grant users only the permissions they need for their job — reduces the blast radius of compromised accounts."}
-    ] },
-      { name: "Salesforce as Identity Provider", pct: 14, color: "#2ECC71", desc: "Configure Salesforce to issue SAML assertions and OAuth tokens for external applications.", keyTopics: [
-      {title:"SAML IdP Configuration",desc:"Configure Salesforce as a SAML IdP — set up the Identity Provider settings and create a connected app for each SP that Salesforce will authenticate."},
-      {title:"SAML Assertion Attributes",desc:"Customize SAML assertions to include user attributes (email, role, department) that service providers use for authorization."},
-      {title:"My Domain Requirement",desc:"My Domain is required for SAML SSO as IdP — it provides the stable subdomain used in SAML metadata and login URLs."},
-      {title:"OAuth as IdP",desc:"Salesforce can also act as an OAuth IdP — issue access tokens to external apps that authenticate via the OAuth 2.0 authorization code flow."},
-      {title:"Identity Provider Discovery",desc:"Configure IdP discovery to automatically route users to the correct IdP based on their email domain — simplifies multi-IdP architectures."}
-    ] },
-      { name: "Salesforce as Service Provider", pct: 17, color: "#F39C12", desc: "Configure Salesforce to accept SAML assertions from external identity providers for SSO.", keyTopics: [
-      {title:"SAML SSO Setup",desc:"Configure SSO settings in Salesforce Setup with IdP metadata (entity ID, SSO URL, certificate) — test with Just-in-Time (JIT) provisioning."},
-      {title:"JIT Provisioning",desc:"JIT creates or updates Salesforce user records on first SSO login using attributes in the SAML assertion — eliminates manual user provisioning."},
-      {title:"My Domain and SSO",desc:"My Domain enables SSO by providing a branded login URL and allowing configuration of SSO as the required login method."},
-      {title:"Delegated Authentication",desc:"Delegated Authentication routes password validation to an external web service — an older alternative to SAML SSO."},
-      {title:"SSO Error Troubleshooting",desc:"Common SSO errors include clock skew, certificate mismatch, entity ID mismatch, and incorrect ACS URL — check each systematically."}
-    ] },
-      { name: "Connected Apps", pct: 17, color: "#E74C3C", desc: "Design and configure Connected Apps to control third-party access to Salesforce via OAuth.", keyTopics: [
-      {title:"Connected App Purpose",desc:"Connected Apps define how external applications authenticate to Salesforce — they enable OAuth flows and control API access scope."},
-      {title:"OAuth Flows",desc:"Salesforce supports Authorization Code, Client Credentials, Device Flow, JWT Bearer, and PKCE flows — match the flow to the application type."},
-      {title:"Scopes",desc:"Scopes define what an OAuth token can access (api, web, refresh_token, full) — request minimal scopes for security."},
-      {title:"IP Relaxation and Policies",desc:"Control whether connected app users are subject to IP restrictions and session policies — configure per app based on trust level."},
-      {title:"Token Lifetime",desc:"Configure access token and refresh token lifetimes per connected app — short-lived tokens reduce the window for token abuse."}
-    ] },
-      { name: "Salesforce Identity Features", pct: 14, color: "#1ABC9C", desc: "Configure Salesforce-native identity features including My Domain, Login Flows, and Identity Verification.", keyTopics: [
-      {title:"My Domain",desc:"My Domain provides a branded subdomain (company.my.salesforce.com) — required for SSO, Lightning components, and enhanced security."},
-      {title:"Login Flows",desc:"Login Flows run after authentication to enforce additional steps (consent capture, MFA challenge, profile completion) before granting access."},
-      {title:"Identity Verification",desc:"Configure verification methods (email, SMS, TOTP, security key) for step-up authentication and MFA enforcement."},
-      {title:"Social Sign-On",desc:"Allow users to log in with Google, Facebook, or other OAuth-based providers — configure Auth Providers and Registration Handlers."},
-      {title:"Headless Identity",desc:"Use Salesforce Headless APIs for custom login UIs that call Salesforce identity services without the standard login page."}
-    ] },
-      { name: "Community (Experience Cloud) Identity", pct: 11, color: "#BDC3E7", desc: "Configure identity for Experience Cloud community users including self-registration and external SSO.", keyTopics: [
-      {title:"Self-Registration",desc:"Enable self-registration on communities to let external users create accounts — configure the registration handler to create Contact and User records."},
-      {title:"External SSO for Communities",desc:"Configure SAML or social SSO specifically for community users — separate from internal user SSO configuration."},
-      {title:"Customer Identity",desc:"Salesforce Customer Identity (Salesforce Identity for Customers) provides CIAM capabilities including consent management and progressive profiling."},
-      {title:"Guest User Security",desc:"Guest users access the community without authenticating — restrict their access to only public content and avoid exposing sensitive data."},
-      {title:"User License Types",desc:"Community users have different license types (Customer Community, Customer Community Plus, Partner Community) — each has different sharing and feature access."}
-    ] },
-      { name: "OAuth 2.0 and Access Tokens", pct: 10, color: "#FF6B35", desc: "Understand OAuth 2.0 flows, token types, and how to secure API access with tokens.", keyTopics: [
-      {title:"Authorization Code Flow",desc:"The most secure OAuth flow for web apps — user authenticates in browser, server exchanges code for tokens, tokens stay server-side."},
-      {title:"Client Credentials Flow",desc:"Machine-to-machine OAuth flow — the app authenticates with client ID and secret, no user involved — used for server integrations."},
-      {title:"PKCE Extension",desc:"PKCE (Proof Key for Code Exchange) protects the authorization code flow for public clients (mobile apps, SPAs) that cannot store a client secret."},
-      {title:"Token Introspection",desc:"Validate access tokens by calling the token introspection endpoint — verify token is active, not expired, and has the required scopes."},
-      {title:"Refresh Tokens",desc:"Refresh tokens obtain new access tokens without re-authenticating — configure refresh token policies, rotation, and expiry for security."}
-    ] }
+        domains:[
+      {name:"Identity Management Concepts",pct:17,color:"#00A1E0"},
+      {name:"Accepting Third-Party Identity in Salesforce",pct:21,color:"#2ECC71"},
+      {name:"Salesforce as an Identity Provider",pct:17,color:"#F39C12"},
+      {name:"Access Management Best Practices",pct:15,color:"#E74C3C"},
+      {name:"Salesforce Identity",pct:12,color:"#9B59B6"},
+      {name:"Community (Partner and Customer)",pct:18,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"identity-fundamentals",focus:"Understand Salesforce identity concepts: federation, provisioning, and the identity layer",topics:[
@@ -738,42 +597,15 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-dev-lifecycle---Plat-Arch-202",
     prerequisites: ["Platform Developer"],
     overview: "The Platform Development Lifecycle and Deployment Architect certification validates expertise in designing and managing Salesforce development lifecycles. Candidates demonstrate mastery of environment strategy, source control, CI/CD pipelines, testing strategies, and metadata deployment.",
-    domains: [
-      { name: "Environment Strategy", pct: 23, color: "#00A1E0", desc: "Design a multi-environment strategy that supports development, testing, and production safely.", keyTopics: [
-      {title:"Sandbox Types",desc:"Developer (1GB, no data), Developer Pro (1GB), Partial (5GB, data subset), Full (full data copy) — match sandbox type to use case and cost."},
-      {title:"Scratch Orgs",desc:"Ephemeral, version-controlled environments created from a project definition file — ideal for CI/CD pipelines and feature branch development."},
-      {title:"Environment Promotion Path",desc:"Define the standard path: Dev → Integration → QA → UAT → Production — each gate requires passing tests before promotion."},
-      {title:"Production Parity",desc:"Keep UAT as close to production as possible — use Full Sandbox for final testing to catch issues that only appear with production data volumes."},
-      {title:"Org Shape",desc:"Capture production org configuration in a shape file to create scratch orgs that mirror the production environment's installed packages and settings."}
-    ] },
-      { name: "Source Control", pct: 17, color: "#2ECC71", desc: "Implement Git-based source control for Salesforce metadata to enable collaboration and audit history.", keyTopics: [
-      {title:"Gitflow Branching",desc:"Main branch for production, develop for integration, feature branches for individual work, release branches for stabilization, hotfix for urgent fixes."},
-      {title:"Trunk-Based Development",desc:"Short-lived feature branches merged to main frequently — reduces merge conflicts and keeps the main branch always deployable."},
-      {title:"Metadata Format",desc:"SFDX source format stores metadata in individual files per component — more granular than the legacy metadata format for better diff and merge."},
-      {title:"Pull Requests and Code Review",desc:"Every change goes through a PR with peer review — enforce standards, catch bugs early, and build team knowledge."},
-      {title:"Merge Conflict Resolution",desc:"Metadata merge conflicts are resolved manually — use sfdx force:source:convert to understand the XML structure before resolving."}
-    ] },
-      { name: "Deployment Strategy and Tools", pct: 23, color: "#F39C12", desc: "Select and apply the right deployment tools and strategies for Salesforce metadata deployments.", keyTopics: [
-      {title:"Change Sets",desc:"UI-based metadata deployment between related orgs — simple but manual, not automatable, and lacks version history."},
-      {title:"SFDX CLI",desc:"Command-line deployment with sf project deploy start — supports manifests, pre/post scripts, and integration into CI/CD pipelines."},
-      {title:"Unlocked Packages",desc:"Versioned, dependency-aware packages deployed via CLI — the modern approach to source-tracked, automatable deployment."},
-      {title:"DevOps Center",desc:"Native Salesforce UI for managing work items, pipeline stages, and environment promotions — bridges admin-friendly UI with source control."},
-      {title:"Third-Party Tools",desc:"Copado, Gearset, Flosum, and AutoRABIT provide enhanced DevOps capabilities with visual pipelines, comparisons, and rollback support."}
-    ] },
-      { name: "Testing", pct: 20, color: "#E74C3C", desc: "Design a comprehensive testing strategy that validates Salesforce solutions at multiple levels.", keyTopics: [
-      {title:"Unit Tests",desc:"Test individual Apex methods in isolation with mocked dependencies — assert specific outcomes and avoid relying on org data."},
-      {title:"Integration Tests",desc:"Test how components interact — verify that triggers, flows, and Apex work correctly together with real Salesforce DML."},
-      {title:"Test Coverage",desc:"75% aggregate Apex coverage required for production deployment — coverage is necessary but assertions are what make tests valuable."},
-      {title:"Static Analysis",desc:"PMD analyzes Apex code for common issues (SOQL in loops, null pointers, security vulnerabilities) — integrate into CI for early feedback."},
-      {title:"User Acceptance Testing",desc:"UAT validates that the solution meets business requirements — use a UAT sandbox and involve real business users with test scripts."}
-    ] },
-      { name: "Release Management", pct: 17, color: "#1ABC9C", desc: "Design and execute release management processes that deliver changes safely and predictably.", keyTopics: [
-      {title:"Release Train",desc:"A fixed cadence for delivering changes (e.g., biweekly) — teams align work to release windows, reducing ad-hoc deployments."},
-      {title:"Hotfix Process",desc:"Emergency fixes bypass the release train — merge to main, test in a dedicated hotfix sandbox, deploy directly to production."},
-      {title:"Change Advisory Board",desc:"CAB reviews and approves production changes — ensures risk is assessed and rollback plans exist before deployment."},
-      {title:"Rollback Planning",desc:"Define rollback procedures for every deployment — test rollback in sandbox before go-live and keep rollback time within the deployment window."},
-      {title:"Post-Deployment Validation",desc:"Run smoke tests immediately after deployment — verify key user workflows function correctly before declaring the deployment successful."}
-    ] }
+        domains:[
+      {name:"Application Lifecycle Management",pct:8,color:"#00A1E0"},
+      {name:"Planning",pct:13,color:"#2ECC71"},
+      {name:"System Design",pct:15,color:"#F39C12"},
+      {name:"Building",pct:14,color:"#E74C3C"},
+      {name:"Deploying",pct:14,color:"#9B59B6"},
+      {name:"Testing",pct:13,color:"#1ABC9C"},
+      {name:"Releasing",pct:13,color:"#E67E22"},
+      {name:"Operating",pct:10,color:"#3498DB"},
     ],
     studyDays:[
       {tag:"env-strategy",focus:"Design environment strategy: sandboxes, scratch orgs, and org types for SDLC",topics:[
@@ -884,9 +716,10 @@ Object.assign(EXAM_DATA, {
   },
 
   "System Architect": {
-    questions: 60,
-    time: 120,
-    pass: 67,
+    questions: null,
+    time: null,
+    pass: null,
+    designation: true,
     experience: "3+ years as a Salesforce Architect across multiple domains and complex implementations",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-sys-architect---Sys-Arch-301",
     prerequisites: [{name:"Platform Data Architect",required:true},{name:"Platform Sharing and Visibility Architect",required:true},{name:"Platform Identity and Access Management Architect",required:true},{name:"Platform Development Lifecycle and Deployment Architect",required:true}],
@@ -1008,9 +841,10 @@ Object.assign(EXAM_DATA, {
   },
 
   "Application Architect": {
-    questions: 60,
-    time: 120,
-    pass: 67,
+    questions: null,
+    time: null,
+    pass: null,
+    designation: true,
     experience: "2+ years architecting Salesforce applications with expertise in data modeling and security",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-app-architect---App-Arch-301",
     prerequisites: [{name:"Platform Data Architect",required:true},{name:"Platform Sharing and Visibility Architect",required:true}],
@@ -1129,37 +963,12 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-b2b-solution-architect---Arch-301",
     prerequisites: ["Platform Developer", "Platform Administrator"],
     overview: "The Salesforce B2B Solution Architect certification validates expertise in architecting end-to-end Salesforce solutions for B2B companies. Candidates demonstrate the ability to design multi-cloud solutions spanning Sales Cloud, Service Cloud, Experience Cloud, CPQ, and Revenue Cloud.",
-    domains: [
-      { name: "Functional and Technical Requirements", pct: 17, color: "#00A1E0", desc: "Gather and analyze business requirements across multiple Salesforce clouds and translate them into cohesive technical specifications.", keyTopics: [
-      {title:"Requirements Elicitation",desc:"Facilitate discovery workshops and stakeholder interviews to surface functional needs."},
-      {title:"Cross-Cloud Mapping",desc:"Map business requirements to Salesforce product capabilities spanning Sales, Service, and Experience Cloud."},
-      {title:"Technical Feasibility",desc:"Assess out-of-the-box vs. custom build trade-offs for each requirement."}
-    ] },
-      { name: "B2B Data Model and Governance", pct: 17, color: "#2ECC71", desc: "Design scalable B2B data models including Account hierarchies, Contacts, Opportunities, and Partner relationships.", keyTopics: [
-      {title:"Account and Contact Model",desc:"Design account hierarchies and contact roles for complex B2B buying groups."},
-      {title:"Data Governance",desc:"Establish data ownership, stewardship, and lifecycle policies across systems."},
-      {title:"Master Data Management",desc:"Synchronize Salesforce records with ERP and back-office systems of record."}
-    ] },
-      { name: "B2B Digital Commerce", pct: 17, color: "#F39C12", desc: "Architect B2B commerce experiences including catalogs, pricing, quoting, and self-service portals.", keyTopics: [
-      {title:"CPQ Integration",desc:"Integrate Salesforce CPQ with Commerce for accurate pricing and quoting workflows."},
-      {title:"Self-Service Portals",desc:"Design Experience Cloud sites for partner ordering and account management."},
-      {title:"Catalog and Pricing",desc:"Model product catalogs with tiered pricing for B2B buyer segments."}
-    ] },
-      { name: "Integration and APIs", pct: 17, color: "#E74C3C", desc: "Design integration patterns connecting Salesforce to ERP, marketing, and external B2B systems.", keyTopics: [
-      {title:"API-Led Design",desc:"Apply MuleSoft API-led connectivity tiers to B2B integration landscapes."},
-      {title:"ERP Integration",desc:"Connect Salesforce order and account data bidirectionally with SAP or Oracle ERP."},
-      {title:"Event-Driven Architecture",desc:"Use Platform Events and Change Data Capture for real-time data propagation."}
-    ] },
-      { name: "B2B Customer Journey Design", pct: 16, color: "#1ABC9C", desc: "Map and optimize multi-cloud customer journeys across marketing, sales, service, and commerce touchpoints.", keyTopics: [
-      {title:"Journey Mapping",desc:"Document current-state B2B journeys and identify friction points across Salesforce clouds."},
-      {title:"Marketing Automation",desc:"Integrate Pardot/MCAE for lead nurture and account-based marketing sequences."},
-      {title:"Cross-Cloud Handoffs",desc:"Design lead-to-cash processes that span Marketing Cloud, Sales Cloud, and CPQ."}
-    ] },
-      { name: "Solution Delivery", pct: 16, color: "#BDC3E7", desc: "Govern multi-cloud Salesforce implementations through architecture reviews, delivery governance, and change management.", keyTopics: [
-      {title:"Architecture Review Board",desc:"Facilitate ARB sessions to validate designs against enterprise standards."},
-      {title:"Delivery Governance",desc:"Establish sprint ceremonies, definition of done, and release management processes."},
-      {title:"Change Management",desc:"Plan adoption programs including training, communications, and champion networks."}
-    ] }
+        domains:[
+      {name:"Discovery and Customer Success",pct:25,color:"#00A1E0"},
+      {name:"Data Governance and Integration",pct:26,color:"#2ECC71"},
+      {name:"Design",pct:29,color:"#F39C12"},
+      {name:"Delivery",pct:12,color:"#E74C3C"},
+      {name:"Operationalize the Solution",pct:8,color:"#9B59B6"},
     ],
     studyDays:[
       {tag:"b2b-landscape",focus:"Understand the B2B Salesforce product landscape: Sales Cloud, Service Cloud, Revenue Cloud, CPQ",topics:[
@@ -1277,37 +1086,12 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-b2c-solution-architect---Arch-302",
     prerequisites: ["Platform Developer", "Platform Administrator"],
     overview: "The Salesforce B2C Solution Architect certification validates expertise in designing end-to-end solutions for B2C companies. Candidates demonstrate the ability to architect multi-cloud solutions spanning B2C Commerce, Marketing Cloud, Service Cloud, and Loyalty Management.",
-    domains: [
-      { name: "Functional and Technical Requirements", pct: 17, color: "#00A1E0", desc: "Translate consumer-facing business requirements into Salesforce multi-cloud technical designs.", keyTopics: [
-      {title:"Consumer Journey Analysis",desc:"Analyze digital consumer journeys to identify touchpoints that Salesforce can serve."},
-      {title:"Requirements Prioritization",desc:"Use MoSCoW or similar techniques to prioritize features across B2C project phases."},
-      {title:"Technical Specifications",desc:"Produce architecture decision records (ADRs) and solution design documents."}
-    ] },
-      { name: "B2C Customer Data and Identity", pct: 17, color: "#2ECC71", desc: "Architect consumer identity, consent management, and unified customer profiles across B2C channels.", keyTopics: [
-      {title:"Customer Identity",desc:"Design OAuth 2.0 and SAML login flows including social login and CIAM solutions."},
-      {title:"Consent Management",desc:"Implement GDPR/CCPA consent capture and propagation across Salesforce clouds."},
-      {title:"Unified Profiles",desc:"Use Salesforce CDP / Data Cloud to unify identity across digital touchpoints."}
-    ] },
-      { name: "B2C Commerce", pct: 17, color: "#F39C12", desc: "Design scalable B2C commerce storefronts, headless architectures, and order management solutions.", keyTopics: [
-      {title:"Storefront Architecture",desc:"Compare SFRA and headless/composable commerce patterns for B2C use cases."},
-      {title:"Order Management",desc:"Design OMS workflows covering capture, fulfillment, returns, and inventory."},
-      {title:"Performance at Scale",desc:"Apply caching, CDN, and scalability patterns for high-traffic B2C events."}
-    ] },
-      { name: "Marketing Automation", pct: 17, color: "#E74C3C", desc: "Integrate Marketing Cloud journeys with commerce and service to deliver personalized B2C experiences.", keyTopics: [
-      {title:"Journey Builder Design",desc:"Build multi-step journeys triggered by browse, abandon, purchase, and service events."},
-      {title:"Personalization",desc:"Use Einstein Personalization to deliver 1:1 product and content recommendations."},
-      {title:"Data Synchronization",desc:"Sync Marketing Cloud subscriber data with Sales/Service Cloud contact records."}
-    ] },
-      { name: "B2C Service", pct: 16, color: "#1ABC9C", desc: "Design omnichannel consumer service capabilities including messaging, self-service, and field support.", keyTopics: [
-      {title:"Omnichannel Routing",desc:"Configure omnichannel routing for chat, email, SMS, and voice service channels."},
-      {title:"Self-Service",desc:"Build Experience Cloud communities and Einstein Bots for deflection and self-help."},
-      {title:"Service Analytics",desc:"Surface case trends and CSAT scores via CRM Analytics dashboards."}
-    ] },
-      { name: "Solution Delivery", pct: 16, color: "#BDC3E7", desc: "Lead B2C multi-cloud delivery programs through architecture governance, testing, and go-live planning.", keyTopics: [
-      {title:"Go-Live Planning",desc:"Define cutover checklists, rollback plans, and hypercare support for B2C launches."},
-      {title:"Testing Strategy",desc:"Coordinate unit, integration, UAT, and load testing across B2C solution components."},
-      {title:"Post-Launch Optimization",desc:"Establish KPI baselines and continuous improvement cycles post go-live."}
-    ] }
+        domains:[
+      {name:"Discovery and Customer Success",pct:27,color:"#00A1E0"},
+      {name:"Functional Capabilities and Business Value",pct:7,color:"#2ECC71"},
+      {name:"Architecture Design",pct:18,color:"#F39C12"},
+      {name:"Data Models and Management",pct:25,color:"#E74C3C"},
+      {name:"Integration",pct:23,color:"#9B59B6"},
     ],
     studyDays:[
       {tag:"b2c-landscape",focus:"Understand the B2C Salesforce product landscape: Commerce, Marketing Cloud, Service Cloud, Loyalty",topics:[
@@ -1418,9 +1202,10 @@ Object.assign(EXAM_DATA, {
   },
 
   "Technical Architect": {
-    questions: 0,
-    time: 0,
-    pass: 0,
+    questions: null,
+    time: null,
+    pass: null,
+    designation: true,
     experience: "5+ years as a Salesforce architect with mastery across all technical domains",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-review-board---Plat-Arch-401-Eval",
     prerequisites: [{name:"System Architect",required:true},{name:"Application Architect",required:true}],
@@ -1528,32 +1313,11 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-b2c-comm-architect---Arch-303",
     prerequisites: [{name:"B2C Commerce Cloud Developer",required:true}],
     overview: "The Salesforce B2C Commerce Architect certification validates expertise in architecting end-to-end B2C Commerce Cloud solutions. Candidates demonstrate the ability to design scalable, performant storefronts, integration strategies, content management, and omni-channel commerce architectures.",
-    domains: [
-      { name: "Architecture Overview and Fundamentals", pct: 10, color: "#00A1E0", desc: "Understand B2C Commerce platform fundamentals including deployment topology, cartridge model, and cloud infrastructure.", keyTopics: [
-      {title:"Platform Topology",desc:"Map B2C Commerce primary instance groups, PODs, and CDN layers."},
-      {title:"Cartridge Architecture",desc:"Design cartridge stacks, override chains, and site cartridge assignments."},
-      {title:"Cloud Infrastructure",desc:"Understand Salesforce-managed hosting, scaling, and disaster recovery for B2C Commerce."}
-    ] },
-      { name: "Technical Solution Design", pct: 25, color: "#2ECC71", desc: "Design B2C Commerce solutions including storefront architecture, headless patterns, and extensibility.", keyTopics: [
-      {title:"SFRA Design",desc:"Structure SFRA controller, model, template, and client-side JavaScript layers."},
-      {title:"Headless Commerce",desc:"Architect PWA Kit or custom headless frontends against the B2C Commerce OCAPI/SCAPI."},
-      {title:"Composable Storefront",desc:"Apply composable commerce patterns using SCAPI endpoints and React PWA Kit."}
-    ] },
-      { name: "Solution Delivery", pct: 25, color: "#F39C12", desc: "Lead B2C Commerce project delivery through architecture governance, environment strategy, and go-live readiness.", keyTopics: [
-      {title:"Environment Strategy",desc:"Configure development, staging, and production instance groups and code versions."},
-      {title:"Business Manager Administration",desc:"Use Business Manager to configure sites, catalogs, and business objects."},
-      {title:"Go-Live Checklist",desc:"Execute pre-launch performance, security, and functional validation gates."}
-    ] },
-      { name: "Integrations", pct: 25, color: "#E74C3C", desc: "Integrate B2C Commerce with payment gateways, OMS, marketing, and external services.", keyTopics: [
-      {title:"Payment Integration",desc:"Integrate Salesforce Payments or third-party gateways using SFRA payment hooks."},
-      {title:"OMS and Fulfillment",desc:"Connect B2C Commerce order capture to Salesforce OMS or external fulfillment systems."},
-      {title:"Marketing Cloud Connect",desc:"Trigger post-purchase and abandoned cart journeys via MC Connector."}
-    ] },
-      { name: "Performance and Scalability", pct: 15, color: "#1ABC9C", desc: "Optimize B2C Commerce storefronts for peak traffic through caching, profiling, and scalability patterns.", keyTopics: [
-      {title:"Caching Strategy",desc:"Configure page, product, and category cache TTLs to reduce origin load."},
-      {title:"Performance Profiling",desc:"Use B2C Commerce log center and profiling tools to identify bottlenecks."},
-      {title:"Peak Traffic Planning",desc:"Conduct load testing and capacity planning ahead of high-volume sale events."}
-    ] }
+        domains:[
+      {name:"Design/Discovery",pct:29,color:"#00A1E0"},
+      {name:"Monitoring/Troubleshooting",pct:14,color:"#2ECC71"},
+      {name:"Integrations and Customizations",pct:22,color:"#F39C12"},
+      {name:"Launch",pct:16,color:"#E74C3C"},
     ],
     studyDays:[
       {tag:"b2c-architecture",focus:"Understand B2C Commerce Cloud architecture: SFRA, pipelines, and storefront topology",topics:[
@@ -1663,33 +1427,12 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-heroku-arch---Plat-Arch-206",
     prerequisites: ["Platform Developer"],
     overview: "The Heroku Architect certification validates expertise in designing and architecting cloud applications on the Heroku platform, including Salesforce integration patterns. Candidates demonstrate mastery of Heroku architecture, deployment, scaling, security, and integration with Salesforce.",
-    domains: [
-      { name: "Heroku Architecture Overview", pct: 15, color: "#00A1E0", desc: "Understand Heroku platform fundamentals including dyno model, routing, and managed services.", keyTopics: [
-      {title:"Dyno Types and Sizing",desc:"Select web, worker, and one-off dyno types with appropriate formation sizing."},
-      {title:"Heroku Postgres",desc:"Provision, tier, and manage Heroku Postgres databases with follow/fork strategies."},
-      {title:"Platform Services",desc:"Evaluate Heroku Data, Redis, Kafka, and add-on marketplace for application needs."}
-    ] },
-      { name: "Application Architecture", pct: 25, color: "#2ECC71", desc: "Design cloud-native Heroku applications following 12-factor principles and microservices patterns.", keyTopics: [
-      {title:"12-Factor App",desc:"Apply 12-factor methodology: config in env vars, stateless processes, disposability."},
-      {title:"Microservices Design",desc:"Decompose monoliths into independent Heroku apps communicating via HTTP or messaging."},
-      {title:"Buildpack and Container",desc:"Choose between buildpack and container (heroku.yml) deployment strategies."}
-    ] },
-      { name: "Data Architecture", pct: 20, color: "#F39C12", desc: "Design data persistence strategies for Heroku apps including relational, NoSQL, and streaming data.", keyTopics: [
-      {title:"Database Tiering",desc:"Select Standard, Premium, or Private tier Postgres based on availability needs."},
-      {title:"Data Connect",desc:"Use Heroku Connect for bidirectional sync between Heroku Postgres and Salesforce."},
-      {title:"Kafka Streams",desc:"Design event streaming architectures with Heroku Apache Kafka for real-time pipelines."}
-    ] },
-      { name: "Security", pct: 15, color: "#E74C3C" },
-      { name: "Salesforce Integration", pct: 15, color: "#1ABC9C", desc: "Connect Heroku applications to Salesforce using Heroku Connect, APIs, and event-driven patterns.", keyTopics: [
-      {title:"Heroku Connect Sync",desc:"Configure object and field mappings in Heroku Connect for near-real-time sync."},
-      {title:"API Integration",desc:"Call Salesforce REST and Bulk APIs from Heroku worker dynos for data exchange."},
-      {title:"Canvas and Connected Apps",desc:"Embed Heroku apps in Salesforce using Canvas and OAuth connected apps."}
-    ] },
-      { name: "DevOps and Monitoring", pct: 10, color: "#BDC3E7", desc: "Implement Heroku CI/CD pipelines, review apps, and observability practices for production readiness.", keyTopics: [
-      {title:"Heroku Pipelines",desc:"Configure review app, staging, and production pipeline stages with promotion workflows."},
-      {title:"Heroku CI",desc:"Run automated test suites in Heroku CI triggered by GitHub pull requests."},
-      {title:"Logging and Monitoring",desc:"Stream Heroku logs to Splunk or Datadog and configure alert thresholds."}
-    ] }
+        domains:[
+      {name:"Heroku Platform",pct:10,color:"#00A1E0"},
+      {name:"Security",pct:15,color:"#2ECC71"},
+      {name:"Heroku Enterprise",pct:28,color:"#F39C12"},
+      {name:"Architect Applications",pct:15,color:"#E74C3C"},
+      {name:"Integrations",pct:15,color:"#9B59B6"},
     ],
     studyDays:[
       {tag:"heroku-platform",focus:"Understand Heroku platform architecture: dynos, buildpacks, add-ons, and routing mesh",topics:[
@@ -1799,32 +1542,10 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailhead.salesforce.com/credentials/tableauarchitect",
     prerequisites: [{name:"Tableau Desktop Specialist",required:true}],
     overview: "The Tableau Architect certification validates expertise in designing and architecting enterprise Tableau deployments. Candidates demonstrate the ability to design scalable analytics environments, data governance frameworks, performance-optimized workbooks, and integration with Salesforce Einstein Analytics.",
-    domains: [
-      { name: "Data Architecture", pct: 25, color: "#00A1E0", desc: "Design Tableau data source strategies including live connections, extracts, and semantic layer modeling.", keyTopics: [
-      {title:"Published Data Sources",desc:"Build certified, reusable published data sources governed centrally in Tableau Server."},
-      {title:"Extract Optimization",desc:"Configure incremental extracts and extract filters to balance freshness with performance."},
-      {title:"Semantic Layer Design",desc:"Model calculated fields, sets, and parameters to create a governed analytics layer."}
-    ] },
-      { name: "Tableau Server Architecture", pct: 25, color: "#2ECC71", desc: "Architect Tableau Server deployments covering topology, high availability, and scaling strategies.", keyTopics: [
-      {title:"Server Topology",desc:"Size Tableau Server node roles (primary, worker, gateway) for workload requirements."},
-      {title:"High Availability",desc:"Configure active-passive failover and load balancing for production Tableau deployments."},
-      {title:"Tableau Cloud vs. Server",desc:"Compare managed Tableau Cloud with self-hosted Server for governance and TCO."}
-    ] },
-      { name: "Analytics Design", pct: 20, color: "#F39C12", desc: "Design intuitive, high-performance Tableau dashboards and workbooks aligned to business KPIs.", keyTopics: [
-      {title:"Dashboard Best Practices",desc:"Apply visual analytics principles: clear hierarchy, minimal chart junk, and audience focus."},
-      {title:"Performance Optimization",desc:"Reduce dashboard load times via context filters, data source optimization, and custom SQL."},
-      {title:"Self-Service Enablement",desc:"Design guided analytics experiences that empower end users with safe exploration."}
-    ] },
-      { name: "Security and Governance", pct: 20, color: "#E74C3C", desc: "Implement Tableau content governance through permissions, site architecture, and data security rules.", keyTopics: [
-      {title:"Row-Level Security",desc:"Apply user filters and data source filters to restrict row access by viewer identity."},
-      {title:"Permission Model",desc:"Structure Tableau sites, projects, and groups to implement least-privilege access."},
-      {title:"Content Certification",desc:"Establish data stewardship workflows for certifying data sources and workbooks."}
-    ] },
-      { name: "Performance Optimization", pct: 10, color: "#1ABC9C", desc: "Diagnose and resolve Tableau performance bottlenecks from data layer to end-user rendering.", keyTopics: [
-      {title:"Performance Recording",desc:"Use Tableau Desktop performance recording to identify slow query and render phases."},
-      {title:"Database Query Optimization",desc:"Push computation to the database using custom SQL and aggregate awareness."},
-      {title:"VizQL Profiling",desc:"Analyze VizQL Server logs to identify session-level rendering and cache issues."}
-    ] }
+        domains:[
+      {name:"Design a Tableau Infrastructure",pct:22,color:"#00A1E0"},
+      {name:"Deploy Tableau Server",pct:37,color:"#2ECC71"},
+      {name:"Monitor and Maintain a Tableau Deployment",pct:41,color:"#F39C12"},
     ],
     studyDays:[
       {tag:"tableau-architecture",focus:"Understand enterprise Tableau deployment architecture: Server, Cloud, and distributed topology",topics:[
@@ -1934,32 +1655,16 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mule-plat-arch---Mule-Arch-201",
     prerequisites: [{name:"MuleSoft Developer",required:true}],
     overview: "The MuleSoft Certified Platform Architect - Level 1 certification validates the ability to design enterprise integration architectures using MuleSoft Anypoint Platform. Candidates demonstrate mastery of API-led connectivity, system design, governance, and enterprise deployment strategies.",
-    domains: [
-      { name: "Anypoint Platform Architecture", pct: 20, color: "#00A1E0", desc: "Design and govern the Anypoint Platform environment strategy including CloudHub, Runtime Fabric, and on-premises deployments.", keyTopics: [
-      {title:"Deployment Models",desc:"Compare CloudHub, Runtime Fabric, and hybrid deployment models for enterprise requirements."},
-      {title:"Environment Strategy",desc:"Structure Anypoint Platform environments (dev, QA, prod) with appropriate access controls."},
-      {title:"Business Group Design",desc:"Organize Anypoint Platform business groups for multi-team API asset governance."}
-    ] },
-      { name: "API-Led Connectivity Design", pct: 25, color: "#2ECC71", desc: "Apply API-led connectivity principles to design experience, process, and system API tiers.", keyTopics: [
-      {title:"API-Led Tiers",desc:"Define System APIs (data sources), Process APIs (orchestration), and Experience APIs (consumers)."},
-      {title:"Reusability Patterns",desc:"Design process APIs to be reusable across multiple experience API consumers."},
-      {title:"API Catalog",desc:"Publish well-documented APIs to Anypoint Exchange for internal and external discovery."}
-    ] },
-      { name: "System Architecture", pct: 25, color: "#F39C12", desc: "Design MuleSoft integration flows for resilience, scalability, and enterprise messaging patterns.", keyTopics: [
-      {title:"Integration Patterns",desc:"Apply EIP patterns: message routing, transformation, aggregation, and scatter-gather."},
-      {title:"Error Handling Strategy",desc:"Implement global error handlers, dead letter queues, and retry policies in Mule apps."},
-      {title:"Flow Design",desc:"Structure Mule flows for testability with separation of routing, transformation, and calling logic."}
-    ] },
-      { name: "Governance and Operations", pct: 15, color: "#E74C3C", desc: "Establish MuleSoft API governance frameworks including policies, SLAs, and operational monitoring.", keyTopics: [
-      {title:"API Manager Policies",desc:"Apply rate limiting, client ID enforcement, and JWT validation policies via API Manager."},
-      {title:"SLA Tiers",desc:"Define API SLA tiers and associate them with API contracts for consumer management."},
-      {title:"Operational Monitoring",desc:"Use Anypoint Monitoring and Visualizer to observe API health and dependency maps."}
-    ] },
-      { name: "Security Architecture", pct: 15, color: "#1ABC9C", desc: "Secure MuleSoft APIs and integrations through authentication, authorization, and data protection controls.", keyTopics: [
-      {title:"OAuth 2.0 Flows",desc:"Implement client credentials, authorization code, and token introspection for API security."},
-      {title:"Secrets Management",desc:"Use Anypoint Secrets Manager or external vaults to protect credentials in Mule apps."},
-      {title:"TLS and Encryption",desc:"Configure mutual TLS and payload encryption for sensitive data in transit."}
-    ] }
+        domains:[
+      {name:"Explaining application network basics",pct:7,color:"#00A1E0"},
+      {name:"Establishing organizational and platform foundations",pct:10,color:"#2ECC71"},
+      {name:"Designing and sharing APIs",pct:10,color:"#F39C12"},
+      {name:"Designing APIs using System, Process, and Experience Layers",pct:12,color:"#E74C3C"},
+      {name:"Governing web APIs on Anypoint Platform",pct:17,color:"#9B59B6"},
+      {name:"Architecting and deploying API implementations",pct:11,color:"#1ABC9C"},
+      {name:"Deploying API implementations to CloudHub",pct:11,color:"#E67E22"},
+      {name:"Meeting API quality goals",pct:10,color:"#3498DB"},
+      {name:"Monitoring and analyzing application networks",pct:12,color:"#E91E63"},
     ],
     studyDays:[
       {tag:"api-led",focus:"Master API-led connectivity: System, Process, and Experience API layers",topics:[
@@ -2077,32 +1782,17 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mule-int-arch---Mule-Arch-202",
     prerequisites: [{name:"MuleSoft Platform Architect",required:true}],
     overview: "The MuleSoft Certified Platform Architect - Level 2 (Integration Architect) certification validates advanced MuleSoft architecture skills. Candidates demonstrate mastery of complex enterprise integration design, multi-cloud architecture, advanced governance, and technical leadership in large-scale integration programs.",
-    domains: [
-      { name: "Advanced Architecture Design", pct: 25, color: "#00A1E0", desc: "Lead enterprise-wide integration architecture decisions including platform topology and canonical data models.", keyTopics: [
-      {title:"Enterprise Integration Patterns",desc:"Apply advanced EIP patterns for complex routing, correlation, and saga orchestration."},
-      {title:"Canonical Data Model",desc:"Design enterprise-wide canonical schemas to decouple integration participants."},
-      {title:"Platform Topology",desc:"Architect multi-region, multi-BU Anypoint Platform deployments with appropriate isolation."}
-    ] },
-      { name: "Enterprise Governance", pct: 20, color: "#2ECC71", desc: "Establish integration CoE structures, API lifecycle governance, and cross-team delivery standards.", keyTopics: [
-      {title:"Center for Enablement",desc:"Build a C4E team and model to curate reusable integration assets across the organization."},
-      {title:"API Lifecycle Governance",desc:"Define API design standards, review gates, and deprecation policies enterprise-wide."},
-      {title:"Compliance and Audit",desc:"Implement audit logging and access controls to meet regulatory integration requirements."}
-    ] },
-      { name: "Performance and Scalability", pct: 20, color: "#F39C12", desc: "Design MuleSoft solutions for high throughput, low latency, and elastic scalability under load.", keyTopics: [
-      {title:"CloudHub Scaling",desc:"Configure worker autoscaling and persistent queues for high-volume Mule applications."},
-      {title:"Performance Testing",desc:"Conduct load and stress tests against Mule APIs using JMeter or Gatling."},
-      {title:"Async Processing",desc:"Apply async messaging patterns with Anypoint MQ to decouple producers from consumers."}
-    ] },
-      { name: "Security Architecture", pct: 20, color: "#E74C3C", desc: "Architect enterprise-grade security for MuleSoft integrations spanning identity federation, encryption, and zero-trust.", keyTopics: [
-      {title:"Zero-Trust Integration",desc:"Apply zero-trust principles to inter-service communication within integration landscapes."},
-      {title:"Identity Federation",desc:"Integrate Anypoint Platform with enterprise IdPs via SAML and OAuth federation."},
-      {title:"Data Masking",desc:"Implement field-level data masking and tokenization in integration flows for sensitive data."}
-    ] },
-      { name: "Digital Transformation Leadership", pct: 15, color: "#1ABC9C", desc: "Guide organizations through API and integration transformation programs aligned to digital strategy.", keyTopics: [
-      {title:"Transformation Roadmap",desc:"Build phased integration modernization roadmaps aligned to business capability priorities."},
-      {title:"Stakeholder Alignment",desc:"Facilitate executive workshops to align integration strategy with digital business goals."},
-      {title:"ROI and Metrics",desc:"Define integration health KPIs and quantify ROI from API-led connectivity programs."}
-    ] }
+        domains:[
+      {name:"Initiating integration solutions on the Anypoint Platform",pct:8,color:"#00A1E0"},
+      {name:"Designing for the runtime plane technology architecture",pct:15,color:"#2ECC71"},
+      {name:"Designing architecture using integration paradigms",pct:10,color:"#F39C12"},
+      {name:"Designing and developing Mule applications",pct:15,color:"#E74C3C"},
+      {name:"Designing automated tests for Mule applications",pct:5,color:"#9B59B6"},
+      {name:"Designing integration solutions to meet persistence requirements",pct:10,color:"#1ABC9C"},
+      {name:"Designing integration solutions to meet reliability requirements",pct:8,color:"#E67E22"},
+      {name:"Designing integration solutions to meet performance requirements",pct:7,color:"#3498DB"},
+      {name:"Designing integration solutions to meet security requirements",pct:8,color:"#E91E63"},
+      {name:"Applying DevOps practices and operating integration solutions",pct:14,color:"#607D8B"},
     ],
     studyDays:[
       {tag:"enterprise-integration-arch",focus:"Design enterprise integration architectures: hub-and-spoke, ESB, and mesh patterns",topics:[

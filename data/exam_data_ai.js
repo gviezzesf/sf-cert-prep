@@ -7,42 +7,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-agentforce-specialist---AI-201",
     prerequisites: [],
     overview: "The Agentforce Specialist certification validates your ability to build, configure, and deploy autonomous AI agents on the Salesforce platform using Agentforce. The exam covers Agent Builder, Prompt Builder, Einstein Trust Layer, Data Cloud grounding, agent topics and actions, and the practical deployment of AI agents across Sales, Service, and HR use cases.",
-    domains: [
-      {name:"Agentforce Foundations",pct:32,color:"#00A1E0",desc:"Understand the Agentforce platform, its components, and how autonomous agents differ from traditional automation.",keyTopics:[
-        {title:"What Is Agentforce",desc:"Agentforce enables autonomous AI agents that can reason, plan, and act on behalf of users — unlike flows or bots, agents handle multi-step tasks without explicit scripting."},
-        {title:"Agent Types",desc:"Salesforce ships standard agents (Sales Agent, Service Agent, SDR Agent) and supports custom agents built from scratch in Agent Builder."},
-        {title:"Agent Lifecycle",desc:"Agents follow a plan-act-observe loop — they interpret a user goal, select actions, execute them, and adjust based on results until the goal is met."},
-        {title:"Einstein Platform Overview",desc:"Agentforce is built on the Einstein 1 Platform — it leverages Data Cloud for context, Prompt Builder for instructions, and the Einstein Trust Layer for safety."},
-        {title:"Agent vs Copilot vs Bot",desc:"Understand the distinction: Copilot assists users reactively, bots follow scripted flows, agents operate autonomously toward goals using reasoning."}
-      ]},
-      {name:"Agent Builder & Configuration",pct:25,color:"#2ECC71",desc:"Configure agents using Agent Builder — define topics, actions, and instructions that govern agent behavior.",keyTopics:[
-        {title:"Topics and Actions",desc:"Topics define what an agent can help with; actions are the specific tasks (Apex, Flow, prompt template) the agent can invoke to fulfill a topic."},
-        {title:"Agent Instructions",desc:"Natural-language instructions guide agent behavior within a topic — they set guardrails, tone, and decision-making rules without code."},
-        {title:"Standard vs Custom Actions",desc:"Salesforce provides out-of-the-box actions (query records, send email, create case); custom actions invoke Apex classes or autolaunched Flows."},
-        {title:"Testing Agents in Builder",desc:"Agent Builder includes a conversation panel to test agent responses in real time — use it to validate topic routing and action execution before deployment."},
-        {title:"Deploying and Activating Agents",desc:"Agents must be activated and assigned to channels (Experience Cloud, Slack, telephony) before users can interact with them."}
-      ]},
-      {name:"Prompt Builder & Grounding",pct:20,color:"#F39C12",desc:"Create and manage prompt templates that ground agents with relevant business data and context.",keyTopics:[
-        {title:"Prompt Templates",desc:"Prompt templates are reusable instruction sets that merge Salesforce data (records, fields) into LLM prompts using merge fields and Apex."},
-        {title:"Template Types",desc:"Field Generation, Record Summary, and Sales Email templates each serve specific use cases for enriching records or generating structured content."},
-        {title:"Data Grounding",desc:"Ground prompts with relevant records by referencing related objects — this gives the LLM accurate, org-specific context instead of relying on generic training data."},
-        {title:"Data Cloud Grounding",desc:"Use Data Cloud unified profiles and segments to ground agents with real-time customer data — enables personalized, context-aware responses at scale."},
-        {title:"Prompt Testing and Feedback",desc:"Test prompt outputs directly in Prompt Builder and iterate on instructions — use the feedback mechanism to improve template quality over time."}
-      ]},
-      {name:"Einstein Trust Layer",pct:13,color:"#E74C3C",desc:"Understand Salesforce's responsible AI framework that governs data privacy, toxicity filtering, and audit logging for AI interactions.",keyTopics:[
-        {title:"Zero Data Retention",desc:"Salesforce does not use customer data to train LLM models — prompts sent to external models are masked and data is not retained by the LLM provider."},
-        {title:"Data Masking",desc:"The Trust Layer automatically masks sensitive fields (SSN, credit card numbers) before sending data to the LLM, replacing them with tokens."},
-        {title:"Toxicity Filtering",desc:"Responses from the LLM are screened for harmful, toxic, or off-topic content before being surfaced to users — the filter can be configured by admins."},
-        {title:"Audit Trail",desc:"Every AI interaction is logged in the Einstein Trust Layer Audit Trail — admins can review prompts sent and responses received for compliance purposes."},
-        {title:"Model Selection and Governance",desc:"Admins control which LLM models are available to agents and can restrict model usage to approved providers in Setup."}
-      ]},
-      {name:"Use Cases & Deployment",pct:10,color:"#1ABC9C",desc:"Apply Agentforce to real-world business scenarios and understand deployment considerations across channels.",keyTopics:[
-        {title:"Service Agent Use Cases",desc:"Automate case deflection, answer FAQ, update case fields, and escalate to human agents when needed — the most common Agentforce deployment pattern."},
-        {title:"Sales Agent Use Cases",desc:"Auto-research accounts, draft follow-up emails, update opportunity fields, and surface next best actions for sales reps."},
-        {title:"Channel Deployment",desc:"Agents can be deployed to Experience Cloud sites, Salesforce mobile, Slack, and third-party telephony/chat platforms via the Messaging Channel."},
-        {title:"Human Handoff",desc:"Configure escalation conditions so agents seamlessly transfer conversations to live human agents when they reach their capability boundary."},
-        {title:"Measuring Agent Performance",desc:"Track agent containment rate, deflection rate, customer satisfaction (CSAT), and topic accuracy to evaluate and improve deployed agents."}
-      ]}
+        domains:[
+      {name:"Prompt Engineering",pct:20,color:"#00A1E0"},
+      {name:"Data 360 Fundamentals",pct:20,color:"#2ECC71"},
+      {name:"AI Agents",pct:35,color:"#F39C12"},
+      {name:"Testing, Deployment, & Maintenance",pct:10,color:"#E74C3C"},
+      {name:"Governance & Observability",pct:10,color:"#9B59B6"},
+      {name:"Multi-Agent Orchestration",pct:5,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"agentforce-overview",focus:"Agentforce fundamentals: agents, topics, actions, and the Einstein Trust Layer",topics:[

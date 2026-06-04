@@ -7,37 +7,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-business-analyst---BA-201",
     prerequisites: [],
     overview: "The Salesforce Business Analyst certification validates expertise in facilitating discovery, gathering requirements, and collaborating with stakeholders to deliver Salesforce solutions. Candidates demonstrate proficiency in user stories, process mapping, and bridging business needs with technical solutions.",
-    domains: [
-      { name: "Customer Discovery", pct: 17, color: "#00A1E0", desc: "Apply discovery techniques to understand business goals, pain points, and success criteria before designing solutions.", keyTopics: [
-      {title:"Discovery Facilitation",desc:"Run structured discovery sessions using techniques like SPIN, 5-Whys, and affinity mapping."},
-      {title:"Stakeholder Identification",desc:"Map stakeholder groups by role, influence, and interest to guide engagement strategy."},
-      {title:"Problem Framing",desc:"Translate raw business pain points into clearly scoped problem statements for solution design."}
-    ] },
-      { name: "Collaboration with Stakeholders", pct: 24, color: "#2ECC71", desc: "Facilitate productive collaboration between business stakeholders and technical teams throughout the project lifecycle.", keyTopics: [
-      {title:"Requirements Workshops",desc:"Design and facilitate workshops to elicit, validate, and prioritize requirements."},
-      {title:"Consensus Building",desc:"Navigate conflicting stakeholder opinions and build agreement on solution scope."},
-      {title:"Communication Plans",desc:"Create RACI matrices and communication cadences for projects with multiple stakeholders."}
-    ] },
-      { name: "Business Process Mapping", pct: 16, color: "#F39C12", desc: "Document current and future-state business processes to identify automation opportunities and solution requirements.", keyTopics: [
-      {title:"Process Mapping Techniques",desc:"Apply swimlane diagrams, BPMN notation, and value stream maps to document workflows."},
-      {title:"Gap Analysis",desc:"Compare current-state processes to desired future-state to identify solution requirements."},
-      {title:"Process Optimization",desc:"Recommend process improvements that reduce handoffs, delays, and manual effort."}
-    ] },
-      { name: "User Stories", pct: 21, color: "#E74C3C", desc: "Write clear, testable user stories and acceptance criteria that bridge business needs and technical delivery.", keyTopics: [
-      {title:"Story Writing",desc:"Structure user stories in the 'As a / I want / So that' format with clear business value."},
-      {title:"Acceptance Criteria",desc:"Define Given/When/Then acceptance criteria that enable unambiguous testing."},
-      {title:"Backlog Grooming",desc:"Facilitate backlog refinement sessions to size, prioritize, and elaborate stories."}
-    ] },
-      { name: "User Acceptance Testing (UAT)", pct: 12, color: "#1ABC9C", desc: "Plan and support UAT activities to confirm that delivered solutions meet business requirements.", keyTopics: [
-      {title:"UAT Planning",desc:"Create UAT test plans covering scope, entry/exit criteria, and stakeholder sign-off process."},
-      {title:"Test Case Development",desc:"Translate acceptance criteria into executable UAT test cases with expected outcomes."},
-      {title:"Defect Triage",desc:"Facilitate defect prioritization sessions to distinguish blockers from post-launch fixes."}
-    ] },
-      { name: "Declarative Salesforce", pct: 10, color: "#BDC3E7", desc: "Understand Salesforce's declarative toolset to advise on feasible no-code and low-code solutions.", keyTopics: [
-      {title:"Flows and Automation",desc:"Identify when Salesforce Flow covers a requirement vs. when Apex is needed."},
-      {title:"Object and Field Design",desc:"Recommend custom objects, fields, and relationships to model business data."},
-      {title:"Reports and Dashboards",desc:"Configure Salesforce reports and dashboards to surface business insights."}
-    ] }
+        domains:[
+      {name:"Customer Discovery",pct:17,color:"#00A1E0"},
+      {name:"Collaboration with Stakeholders",pct:23,color:"#2ECC71"},
+      {name:"Business Process Mapping",pct:12,color:"#F39C12"},
+      {name:"Requirements",pct:18,color:"#E74C3C"},
+      {name:"User Stories",pct:18,color:"#9B59B6"},
+      {name:"Development Support and User Acceptance",pct:12,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"discovery-requirements",focus:"Discovery and requirements: stakeholder interviews, as-is/to-be process maps, and user stories",topics:[
@@ -107,47 +83,12 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-sales-consultant---Sales-Con-201",
     prerequisites: ["Platform Administrator"],
     overview: "The Salesforce Sales Cloud Consultant certification validates expertise in designing and implementing Sales Cloud solutions. Candidates demonstrate the ability to analyze customer requirements, design lead-to-cash processes, and implement Sales Cloud features including opportunities, forecasting, and territory management.",
-    domains: [
-      { name: "Industry Knowledge", pct: 7, color: "#00A1E0", desc: "Understand sales industry concepts, KPIs, and processes that Salesforce Sales Cloud is designed to support.", keyTopics: [
-      {title:"Sales Terminology",desc:"Know common sales terms: pipeline, forecast categories, quota, ramp, and sales velocity."},
-      {title:"Sales Process Stages",desc:"Map sales methodologies (MEDDIC, Challenger, SPIN) to Salesforce opportunity stages."},
-      {title:"Sales KPIs",desc:"Identify leading and lagging sales indicators and how Salesforce metrics track against them."}
-    ] },
-      { name: "Implementation Strategies", pct: 13, color: "#2ECC71", desc: "Apply Sales Cloud implementation best practices including data migration, change management, and rollout planning.", keyTopics: [
-      {title:"Implementation Methodology",desc:"Apply Salesforce implementation phases: discover, design, build, test, deploy, and optimize."},
-      {title:"Data Migration",desc:"Plan account, contact, and opportunity data migration including deduplication and mapping."},
-      {title:"Change Management",desc:"Design adoption programs for sales teams including training, champions, and incentives."}
-    ] },
-      { name: "Sales Metrics, Reports, and Dashboards", pct: 13, color: "#F39C12", desc: "Design Salesforce reports and dashboards that give sales leaders and reps actionable visibility.", keyTopics: [
-      {title:"Report Types",desc:"Select joined, summary, matrix, and tabular report types for different sales analytics needs."},
-      {title:"Dashboard Design",desc:"Build role-based dashboards for VPs, managers, and reps with relevant KPI visibility."},
-      {title:"Forecasting Reports",desc:"Configure collaborative forecasting reports to track quota attainment and pipeline health."}
-    ] },
-      { name: "Sales Cloud Solution Design", pct: 25, color: "#E74C3C", desc: "Design Sales Cloud configurations for lead management, opportunity tracking, and account-based selling.", keyTopics: [
-      {title:"Lead Management",desc:"Design lead capture, assignment rules, and conversion processes for sales funnel entry."},
-      {title:"Opportunity Management",desc:"Configure opportunity stages, sales processes, and path guidance for deal tracking."},
-      {title:"Account-Based Selling",desc:"Model account hierarchies, contact roles, and territory management for enterprise sales."}
-    ] },
-      { name: "Marketing and Leads", pct: 13, color: "#1ABC9C", desc: "Configure Salesforce lead management and marketing integration to support top-of-funnel sales activities.", keyTopics: [
-      {title:"Lead Capture and Routing",desc:"Set up web-to-lead, lead assignment rules, and round-robin queues for inbound leads."},
-      {title:"Campaign Management",desc:"Configure Salesforce Campaigns and ROI tracking for marketing-driven pipeline."},
-      {title:"Marketing Cloud Integration",desc:"Connect Marketing Cloud Account Engagement (Pardot) for lead nurture handoffs."}
-    ] },
-      { name: "Account and Contact Management", pct: 11, color: "#BDC3E7", desc: "Configure Salesforce account and contact records for effective relationship and activity management.", keyTopics: [
-      {title:"Account Hierarchies",desc:"Model parent-child account relationships for enterprise and multi-division customers."},
-      {title:"Contact Roles",desc:"Configure opportunity contact roles to track buying committee members and influence."},
-      {title:"Activity Tracking",desc:"Enable activity timeline, Einstein Activity Capture, and task/event automation."}
-    ] },
-      { name: "Opportunity Management", pct: 12, color: "#FF6B35", desc: "Configure Salesforce opportunity management including stages, forecasting, and collaboration features.", keyTopics: [
-      {title:"Stage Management",desc:"Define opportunity stages aligned to the sales process with probability and guidance."},
-      {title:"Collaborative Forecasting",desc:"Set up forecasting categories, adjustments, and manager override capabilities."},
-      {title:"Big Deal Alerts",desc:"Configure opportunity update reminders and big deal alerts for manager visibility."}
-    ] },
-      { name: "Sales Productivity", pct: 6, color: "#9B59B6", desc: "Implement Salesforce productivity features that reduce administrative burden for sales reps.", keyTopics: [
-      {title:"Einstein Features",desc:"Enable Einstein Lead Scoring, Opportunity Scoring, and Email Insights for reps."},
-      {title:"Salesforce Inbox",desc:"Configure Salesforce Inbox for email integration and activity logging from email clients."},
-      {title:"Mobile Optimization",desc:"Customize Salesforce mobile app navigation and layouts for field sales use cases."}
-    ] }
+        domains:[
+      {name:"Sales Lifecycle",pct:20,color:"#00A1E0"},
+      {name:"Consulting and Implementation Strategies",pct:25,color:"#2ECC71"},
+      {name:"Practical Application of Sales Cloud Expertise",pct:24,color:"#F39C12"},
+      {name:"Data Management",pct:18,color:"#E74C3C"},
+      {name:"Predictive and Generative AI",pct:13,color:"#9B59B6"},
     ],
     studyDays:[
       {tag:"sales-solution-design",focus:"Solution design for Sales Cloud: lead process, opportunity management, and forecasting",topics:[
@@ -217,42 +158,15 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-service-consultant---Service-Con-201",
     prerequisites: ["Platform Administrator"],
     overview: "The Salesforce Service Cloud Consultant certification validates expertise in designing and implementing Service Cloud solutions. Candidates demonstrate mastery of case management, omni-channel routing, entitlements, knowledge bases, and field service integration.",
-    domains: [
-      { name: "Industry Knowledge", pct: 10, color: "#00A1E0", desc: "Understand customer service industry concepts, metrics, and best practices relevant to Service Cloud implementations.", keyTopics: [
-      {title:"Service Terminology",desc:"Know key service metrics: CSAT, NPS, FCR, AHT, and SLA compliance rates."},
-      {title:"Contact Center Models",desc:"Differentiate inbound vs. outbound, tiered support, and digital-first contact center models."},
-      {title:"Service Trends",desc:"Understand digital deflection, self-service, and AI-augmented service industry trends."}
-    ] },
-      { name: "Implementation Strategies", pct: 15, color: "#2ECC71", desc: "Apply Service Cloud implementation methodologies including discovery, design, and phased deployment.", keyTopics: [
-      {title:"Service Discovery",desc:"Conduct current-state service process assessment and future-state design workshops."},
-      {title:"Phased Rollout",desc:"Plan phased Service Cloud rollouts by channel, team, or geography to reduce risk."},
-      {title:"Agent Adoption",desc:"Design training and change management programs for contact center agent adoption."}
-    ] },
-      { name: "Service Cloud Solution Design", pct: 25, color: "#F39C12", desc: "Design core Service Cloud configurations including case management, omnichannel, and agent workspace.", keyTopics: [
-      {title:"Case Management Design",desc:"Configure case creation, routing, escalation, and closure processes for service teams."},
-      {title:"Omnichannel Setup",desc:"Configure omnichannel routing with skill-based assignment for email, chat, and voice."},
-      {title:"Agent Workspace",desc:"Customize Lightning Service Console with components, quick actions, and macros for agents."}
-    ] },
-      { name: "Case Management", pct: 17, color: "#E74C3C", desc: "Configure Salesforce case management features to handle customer issues efficiently at scale.", keyTopics: [
-      {title:"Case Assignment Rules",desc:"Build case assignment rules based on criteria like product, priority, and language."},
-      {title:"Escalation Rules",desc:"Configure time-based escalation rules with automatic reassignment and notification."},
-      {title:"Case Teams",desc:"Set up case teams for collaborative resolution of complex or high-priority cases."}
-    ] },
-      { name: "Knowledge Management", pct: 12, color: "#1ABC9C", desc: "Implement Salesforce Knowledge to deflect cases, speed up resolution, and capture organizational expertise.", keyTopics: [
-      {title:"Knowledge Article Types",desc:"Design knowledge article record types and fields for different content categories."},
-      {title:"Publishing Workflow",desc:"Configure draft/review/publish workflow with approval steps for quality control."},
-      {title:"Einstein Search for Knowledge",desc:"Enable Einstein Article Recommendations to surface relevant articles during case resolution."}
-    ] },
-      { name: "Interaction Channels", pct: 11, color: "#BDC3E7", desc: "Configure Service Cloud digital channels including chat, messaging, email-to-case, and voice.", keyTopics: [
-      {title:"Chat and Messaging",desc:"Set up Einstein Bots and live agent chat with pre-chat forms and routing logic."},
-      {title:"Email-to-Case",desc:"Configure email-to-case with on-demand or email service addresses and auto-response rules."},
-      {title:"Voice Integration",desc:"Integrate Amazon Connect or other CTI adapters via Service Cloud Voice."}
-    ] },
-      { name: "Contact Center Analytics", pct: 10, color: "#FF6B35", desc: "Build Service Cloud reports and dashboards to monitor contact center performance and agent productivity.", keyTopics: [
-      {title:"Service Reports",desc:"Build case volume, resolution time, and backlog reports for operations management."},
-      {title:"Agent Performance Dashboards",desc:"Create agent-level dashboards showing case handling metrics and CSAT scores."},
-      {title:"SLA Compliance Monitoring",desc:"Track entitlement milestone compliance and SLA breach risk across the case queue."}
-    ] }
+        domains:[
+      {name:"Industry Knowledge",pct:12,color:"#00A1E0"},
+      {name:"Implementation Strategies",pct:12,color:"#2ECC71"},
+      {name:"Service Cloud Solution Design",pct:15,color:"#F39C12"},
+      {name:"Knowledge Management",pct:12,color:"#E74C3C"},
+      {name:"Intake and Interaction Channels",pct:13,color:"#9B59B6"},
+      {name:"Case Management",pct:13,color:"#1ABC9C"},
+      {name:"Contact Center Analytics",pct:13,color:"#E67E22"},
+      {name:"Integrations",pct:10,color:"#3498DB"},
     ],
     studyDays:[
       {tag:"service-solution-design",focus:"Service Cloud solution design: case management, entitlements, and service processes",topics:[
@@ -322,37 +236,15 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-exp-cld-consultant---EX-Con-101",
     prerequisites: ["Platform Administrator"],
     overview: "The Salesforce Experience Cloud Consultant certification validates expertise in designing and implementing Experience Cloud communities. Candidates demonstrate mastery of community setup, templates, security, branding, and integration with Salesforce data.",
-    domains: [
-      { name: "Sharing, Visibility, and Licensing", pct: 23, color: "#00A1E0", desc: "Configure Experience Cloud sharing models, user licenses, and visibility settings to control data access for external users.", keyTopics: [
-      {title:"External User Licenses",desc:"Select the correct Experience Cloud license type (Customer Community, Partner Community, etc.) per use case."},
-      {title:"Sharing Sets and Rules",desc:"Configure sharing sets to grant portal users access to records related to their account or contact."},
-      {title:"OWD for External Users",desc:"Set appropriate OWD defaults and understand their impact on portal user data visibility."}
-    ] },
-      { name: "Community Setup, Configuration, and Management", pct: 22, color: "#2ECC71", desc: "Configure Experience Cloud communities including creation, theme setup, and day-to-day administration.", keyTopics: [
-      {title:"Community Creation",desc:"Create and configure Experience Cloud sites using Setup, including domain, activation, and indexing."},
-      {title:"Navigation and Pages",desc:"Build site navigation menus, page layouts, and component placement using Experience Builder."},
-      {title:"Community Management",desc:"Administer community members, moderate content, and manage user registration and login."}
-    ] },
-      { name: "Community Templates and Themes", pct: 18, color: "#F39C12", desc: "Apply and customize Experience Cloud templates and themes to create branded, responsive community experiences.", keyTopics: [
-      {title:"Template Selection",desc:"Choose the right Experience Cloud template (LWR, Aura, Help Center, Partner Central) for the use case."},
-      {title:"Theme Customization",desc:"Customize branding, colors, fonts, and CSS in Experience Builder for corporate identity."},
-      {title:"LWC Components",desc:"Add custom Lightning Web Components to Experience Cloud pages for custom functionality."}
-    ] },
-      { name: "Salesforce CMS and Content", pct: 8, color: "#E74C3C", desc: "Use Salesforce CMS to manage and publish content across Experience Cloud sites.", keyTopics: [
-      {title:"CMS Workspaces",desc:"Create CMS workspaces and connect them to Experience Cloud channels for content distribution."},
-      {title:"Content Types",desc:"Configure CMS content types for articles, news, banners, and product content."},
-      {title:"Translation and Localization",desc:"Manage multi-language content with CMS translation workflows for global communities."}
-    ] },
-      { name: "Security", pct: 15, color: "#1ABC9C", desc: "Secure Experience Cloud sites through authentication, guest user policies, and data protection settings.", keyTopics: [
-      {title:"Guest User Security",desc:"Configure guest user profiles with minimal permissions and review guest access risks."},
-      {title:"Login and Authentication",desc:"Set up social login, self-registration, and custom login pages for community users."},
-      {title:"ClickJack and CSP",desc:"Enable ClickJack protection and configure Content Security Policy for Experience Cloud pages."}
-    ] },
-      { name: "Adoption and Analytics", pct: 14, color: "#BDC3E7", desc: "Drive community adoption and measure engagement using Experience Cloud dashboards and analytics.", keyTopics: [
-      {title:"Community Analytics",desc:"Use the Community Management dashboards to track member growth, page views, and engagement."},
-      {title:"Gamification Features",desc:"Enable reputation points and levels to incentivize quality contributions in communities."},
-      {title:"Adoption Campaigns",desc:"Design launch and ongoing adoption campaigns with email and in-app notifications."}
-    ] }
+        domains:[
+      {name:"Experience Cloud Basics",pct:8,color:"#00A1E0"},
+      {name:"Sharing, Visibility, and Licensing",pct:17,color:"#2ECC71"},
+      {name:"Branding, Personalization, and Content",pct:15,color:"#F39C12"},
+      {name:"Templates and Themes",pct:10,color:"#E74C3C"},
+      {name:"User Creation and Authentication",pct:13,color:"#9B59B6"},
+      {name:"Adoption and Analytics",pct:5,color:"#1ABC9C"},
+      {name:"Administration, Setup, and Configuration",pct:25,color:"#E67E22"},
+      {name:"Customization Considerations and Limitations",pct:7,color:"#3498DB"},
     ],
     studyDays:[
       {tag:"experience-cloud-design",focus:"Design Experience Cloud sites: templates, themes, branding, and Lightning pages",topics:[
@@ -422,32 +314,15 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-fs-consultant---FS-Con-101",
     prerequisites: ["Platform Administrator"],
     overview: "The Salesforce Field Service Consultant certification validates expertise in implementing Field Service Lightning (FSL). Candidates demonstrate mastery of work order management, scheduling optimization, resource management, and mobile app configuration for field service operations.",
-    domains: [
-      { name: "Managing Resources", pct: 16, color: "#00A1E0", desc: "Configure Field Service resource management including service resources, skills, service territories, and operating hours.", keyTopics: [
-      {title:"Service Resources",desc:"Create and configure service resources, set skills and certifications, and assign service territories."},
-      {title:"Service Territories",desc:"Design territory hierarchies and operating hours to reflect geographic field service coverage."},
-      {title:"Resource Capacity",desc:"Configure capacity-based scheduling and resource availability for balanced workload distribution."}
-    ] },
-      { name: "Managing Work Orders", pct: 24, color: "#2ECC71", desc: "Configure Field Service work orders to capture service requests, track completion, and manage parts usage.", keyTopics: [
-      {title:"Work Order Creation",desc:"Set up work order creation from cases, assets, or maintenance plans with required fields."},
-      {title:"Work Order Line Items",desc:"Configure work order line items for discrete tasks and parts consumption tracking."},
-      {title:"Service Appointments",desc:"Create and manage service appointments linked to work orders with status lifecycle."}
-    ] },
-      { name: "Scheduling and Optimization", pct: 28, color: "#F39C12", desc: "Configure and optimize Field Service scheduling to maximize resource utilization and minimize travel time.", keyTopics: [
-      {title:"Scheduling Policies",desc:"Define scheduling policies with work rules and objectives to guide the optimization engine."},
-      {title:"Optimization Engine",desc:"Run global, single-resource, and in-day optimization to improve schedule efficiency."},
-      {title:"Gantt and Dispatch Console",desc:"Use the dispatcher console Gantt to visualize, drag-drop, and manage field schedules."}
-    ] },
-      { name: "FSL Configuration", pct: 20, color: "#E74C3C", desc: "Configure core Field Service Lightning settings including the managed package, permission sets, and custom settings.", keyTopics: [
-      {title:"FSL Managed Package",desc:"Install and configure the FSL managed package including service objectives and scheduling permissions."},
-      {title:"Permission Sets",desc:"Assign FSL permission sets (Dispatcher, Technician, Agent) to appropriate user groups."},
-      {title:"Custom Settings and Flows",desc:"Configure FSL custom settings and build flows for automated work order and appointment creation."}
-    ] },
-      { name: "Mobile and Offline", pct: 12, color: "#1ABC9C", desc: "Configure the Field Service Mobile app for offline-capable technician workflows and data capture.", keyTopics: [
-      {title:"Mobile App Setup",desc:"Configure the Field Service mobile app with offline profiles and sync settings."},
-      {title:"Briefings and Knowledge",desc:"Surface work order details, manuals, and knowledge articles in technician mobile briefings."},
-      {title:"Signature and Parts",desc:"Enable mobile signature capture, parts consumption, and service report generation on-site."}
-    ] }
+        domains:[
+      {name:"Managing Resources",pct:16,color:"#00A1E0"},
+      {name:"Managing Work Orders",pct:23,color:"#2ECC71"},
+      {name:"Managing Scheduling and Optimization",pct:28,color:"#F39C12"},
+      {name:"Configuring Mobility",pct:10,color:"#E74C3C"},
+      {name:"Managing Inventory",pct:8,color:"#9B59B6"},
+      {name:"Managing Assets",pct:5,color:"#1ABC9C"},
+      {name:"Configuring Maintenance Plans",pct:5,color:"#E67E22"},
+      {name:"Permissions and Sharing",pct:5,color:"#3498DB"},
     ],
     studyDays:[
       {tag:"fsl-setup",focus:"Field Service Lightning setup: work orders, service appointments, scheduling policies",topics:[
@@ -517,32 +392,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-data-cloud---Data-Con-101",
     prerequisites: ["Platform Administrator"],
     overview: "The Salesforce Data Cloud Consultant certification validates expertise in implementing Salesforce Data Cloud solutions. Candidates demonstrate mastery of data ingestion, identity resolution, segmentation, activation, and AI/analytics use cases for unified customer data.",
-    domains: [
-      { name: "Data Cloud Architecture", pct: 15, color: "#00A1E0", desc: "Understand Data Cloud platform architecture including data ingestion, storage layers, and integration with Salesforce.", keyTopics: [
-      {title:"Platform Overview",desc:"Describe Data Cloud components: data streams, data lake objects, data model objects, and calculated insights."},
-      {title:"Salesforce Integration",desc:"Explain how Data Cloud connects to Sales, Service, and Marketing Cloud via native connectors."},
-      {title:"Data Cloud Licensing",desc:"Understand Data Cloud credit consumption model and capacity planning for customer data volumes."}
-    ] },
-      { name: "Data Ingestion and Modeling", pct: 25, color: "#2ECC71", desc: "Configure Data Cloud data streams and data model objects to ingest and structure customer data from multiple sources.", keyTopics: [
-      {title:"Data Stream Configuration",desc:"Set up batch, streaming, and Salesforce CRM data streams with appropriate ingestion schedules."},
-      {title:"Data Model Mapping",desc:"Map source fields to Data Cloud standard or custom data model objects for unified storage."},
-      {title:"Data Transforms",desc:"Apply formula fields, filters, and enrichments to raw ingested data in Data Cloud."}
-    ] },
-      { name: "Identity Resolution", pct: 20, color: "#F39C12", desc: "Configure Data Cloud identity resolution rules to create unified individual profiles from disparate data sources.", keyTopics: [
-      {title:"Matching Rules",desc:"Define fuzzy and exact matching rules on email, phone, and name fields to link records."},
-      {title:"Reconciliation Rules",desc:"Set reconciliation rules to determine which source wins for each field in the unified profile."},
-      {title:"Profile Review",desc:"Use the profile explorer to inspect unified individual profiles and verify resolution quality."}
-    ] },
-      { name: "Segmentation and Activation", pct: 25, color: "#E74C3C", desc: "Build Data Cloud segments and activate them to marketing, advertising, and Salesforce CRM destinations.", keyTopics: [
-      {title:"Segment Builder",desc:"Create segments using attribute, related attribute, and calculated insight filters."},
-      {title:"Activation Targets",desc:"Configure activation targets for Marketing Cloud, advertising platforms, and CRM."},
-      {title:"Segment Refresh",desc:"Set segment refresh schedules and understand full vs. rapid publish options."}
-    ] },
-      { name: "Insights and Analytics", pct: 15, color: "#1ABC9C", desc: "Create Data Cloud calculated insights and integrate them with Salesforce for AI-powered decisioning.", keyTopics: [
-      {title:"Calculated Insights",desc:"Build metric-based calculated insights using SOQL-style queries across data model objects."},
-      {title:"Einstein and AI",desc:"Use Data Cloud as the data foundation for Einstein features like Next Best Action and scoring."},
-      {title:"CRM Analytics Integration",desc:"Connect Data Cloud datasets to CRM Analytics for advanced reporting and exploration."}
-    ] }
+        domains:[
+      {name:"Solution Positioning",pct:14,color:"#00A1E0"},
+      {name:"Data 360 Setup and Administration",pct:13,color:"#2ECC71"},
+      {name:"Data Source Connection and Ingestion",pct:18,color:"#F39C12"},
+      {name:"Harmonization and Unification",pct:17,color:"#E74C3C"},
+      {name:"Data Enhancements, Sharing, and Analysis",pct:18,color:"#9B59B6"},
+      {name:"Data Activations and Utilization",pct:20,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"data-cloud-setup",focus:"Data Cloud setup: data streams, ingestion, identity resolution, and data model",topics:[
@@ -612,32 +468,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-education-cld---ED-Con-101",
     prerequisites: ["Platform Administrator"],
     overview: "Validates expertise in implementing Salesforce Education Cloud solutions for higher education and K-12 institutions, including student lifecycle management, advancement, and constituent relationship management.",
-    domains: [
-      { name: "Education Cloud Fundamentals", pct: 20, color: "#00A1E0", desc: "Understand the Education Cloud platform, its data model, and how it supports higher education and K-12 institutions.", keyTopics: [
-      {title:"Education Data Architecture (EDA)",desc:"Understand EDA objects: Account (institution), Contact (student/faculty), Program Enrollment, and Course Offering."},
-      {title:"Education Cloud Products",desc:"Differentiate Starter for Education, Education Cloud for Higher Ed, and K-12 Architecture Kit."},
-      {title:"Recruitment and Admissions",desc:"Configure prospect and applicant lifecycle management for student recruitment pipelines."}
-    ] },
-      { name: "Student Success Hub", pct: 22, color: "#2ECC71", desc: "Configure Student Success Hub tools to proactively monitor student health and coordinate intervention workflows.", keyTopics: [
-      {title:"Advisor Connect",desc:"Set up advisor appointment scheduling, caseloads, and nudge campaigns for student outreach."},
-      {title:"Early Alert",desc:"Configure early alert workflows triggered by academic risk indicators with advisor follow-up."},
-      {title:"Success Plans",desc:"Create student success plans with milestones and tasks to guide advisor-student engagements."}
-    ] },
-      { name: "Advancement Connect", pct: 18, color: "#F39C12", desc: "Configure Advancement Connect to manage alumni engagement, fundraising campaigns, and gift processing.", keyTopics: [
-      {title:"Constituent Management",desc:"Manage alumni and donor records with giving history, affiliations, and engagement scores."},
-      {title:"Campaign and Appeal Management",desc:"Set up fundraising campaigns, appeals, and gift acknowledgment workflows."},
-      {title:"Gift and Pledge Management",desc:"Record one-time gifts, pledges, and recurring donations with acknowledgment receipts."}
-    ] },
-      { name: "Education Data Architecture", pct: 20, color: "#E74C3C", desc: "Design and configure the Education Data Architecture (EDA) to model complex institutional relationships and processes.", keyTopics: [
-      {title:"EDA Object Model",desc:"Understand EDA Accounts-as-institutions model, affiliations, relationships, and program enrollment."},
-      {title:"Course and Curriculum",desc:"Model course offerings, sections, course connections, and academic program hierarchy."},
-      {title:"Settings and Configuration",desc:"Configure EDA settings hierarchy, trigger switches, and automated household management."}
-    ] },
-      { name: "Implementation & Configuration", pct: 20, color: "#1ABC9C", desc: "Apply implementation best practices for Education Cloud including discovery, data migration, and rollout planning.", keyTopics: [
-      {title:"Discovery and Design",desc:"Conduct Education Cloud discovery to map institutional processes to product capabilities."},
-      {title:"Data Migration",desc:"Plan migration of student, course, and advancement data into EDA from legacy SIS systems."},
-      {title:"Managed Package Governance",desc:"Manage EDA and Advancement Connect managed package upgrades and release cycles."}
-    ] }
+        domains:[
+      {name:"Domain Expertise",pct:18,color:"#00A1E0"},
+      {name:"Education Cloud Configuration",pct:22,color:"#2ECC71"},
+      {name:"Implementation Strategies and Best Practices",pct:18,color:"#F39C12"},
+      {name:"Solution Design",pct:19,color:"#E74C3C"},
+      {name:"Integration and Data Management",pct:16,color:"#9B59B6"},
+      {name:"Analytics",pct:7,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"edu-cloud-setup",focus:"Education Cloud fundamentals: Education Data Architecture (EDA), relationships, and student lifecycle",topics:[
@@ -699,32 +536,11 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-npsp-consultant---NP-Con-101",
     prerequisites: ["Platform Administrator"],
     overview: "Validates expertise in implementing Salesforce Nonprofit Cloud (NPC), Salesforce's modern nonprofit platform built on a purpose-built data model for constituent management, fundraising, and program delivery.",
-    domains: [
-      { name: "Nonprofit Cloud Fundamentals", pct: 22, color: "#00A1E0", desc: "Understand Nonprofit Cloud product suite, its data model, and core features for nonprofit mission delivery.", keyTopics: [
-      {title:"Nonprofit Cloud Products",desc:"Differentiate Nonprofit Success Pack (NPSP), Nonprofit Cloud Case Management, Program Management, and Grants Management."},
-      {title:"Nonprofit Data Model",desc:"Understand Household Accounts, Contacts, Affiliations, Relationships, and Opportunities in nonprofit context."},
-      {title:"Nonprofit Use Cases",desc:"Map common nonprofit workflows (fundraising, case management, volunteer tracking) to Salesforce products."}
-    ] },
-      { name: "Constituent Management", pct: 20, color: "#2ECC71", desc: "Configure constituent relationship management for individual donors, organizational funders, and volunteers.", keyTopics: [
-      {title:"Household Management",desc:"Configure NPSP household accounts including household naming, membership, and address management."},
-      {title:"Relationships and Affiliations",desc:"Set up relationship types and affiliation records to model constituent connections."},
-      {title:"Engagement Plans",desc:"Create engagement plan templates for automated outreach sequences to constituent segments."}
-    ] },
-      { name: "Fundraising", pct: 22, color: "#F39C12", desc: "Configure Salesforce fundraising capabilities including gift entry, pledges, campaigns, and donation acknowledgment.", keyTopics: [
-      {title:"Gift Entry",desc:"Use Gift Entry Manager for batch and single gift processing with soft credit and matching gift support."},
-      {title:"Recurring Donations",desc:"Configure enhanced recurring donations with flexible schedules and payment processor integration."},
-      {title:"Campaign Fundraising",desc:"Set up campaign hierarchies, goal tracking, and ROI measurement for multi-channel fundraising."}
-    ] },
-      { name: "Programs and Case Management", pct: 18, color: "#E74C3C", desc: "Configure Nonprofit Cloud Program Management and Case Management to track service delivery and client outcomes.", keyTopics: [
-      {title:"Program Management",desc:"Create programs, services, and service deliveries to track beneficiary engagement and impact."},
-      {title:"Case Management",desc:"Configure case plans, check-ins, and goals to manage client service journeys."},
-      {title:"Outcome Tracking",desc:"Measure program outcomes using indicator results and goal completion tracking."}
-    ] },
-      { name: "Implementation & Solution Design", pct: 18, color: "#1ABC9C", desc: "Apply nonprofit implementation best practices including solution architecture, data migration, and change management.", keyTopics: [
-      {title:"Solution Architecture",desc:"Design Salesforce solutions that blend NPSP, Nonprofit Cloud, and AppExchange products for nonprofit needs."},
-      {title:"Data Migration",desc:"Plan constituent, gift history, and program data migration from legacy nonprofit systems."},
-      {title:"Nonprofit Change Management",desc:"Design adoption programs for mission-driven staff with limited Salesforce experience."}
-    ] }
+        domains:[
+      {name:"Nonprofit Implementation Strategy",pct:11,color:"#00A1E0"},
+      {name:"Solution Design",pct:32,color:"#2ECC71"},
+      {name:"Nonprofit Cloud Setup",pct:22,color:"#F39C12"},
+      {name:"Nonprofit Cloud Feature Configuration",pct:35,color:"#E74C3C"},
     ],
     studyDays:[
       {tag:"npc-data-model", focus:"NPC data model — Constituent, Account, and Relationship objects", topics:[
@@ -786,32 +602,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-nonprofit-cld-consultant-npc---NP-Con-102",
     prerequisites: ["Platform Administrator"],
     overview: "Validates expertise in implementing the Nonprofit Success Pack (NPSP), the legacy open-source Salesforce platform for nonprofits covering constituent management, fundraising, and program delivery on top of standard Salesforce CRM objects.",
-    domains: [
-      { name: "NPSP Data Architecture", pct: 20, color: "#00A1E0", desc: "Understand NPSP's Household Account model, custom objects, and how they differ from standard Salesforce.", keyTopics: [
-      {title:"Household Account Model",desc:"Configure the one-to-one and household account models and understand their trade-offs."},
-      {title:"NPSP Custom Objects",desc:"Know NPSP-specific objects: Affiliations, Relationships, Engagements, and Recurring Donations."},
-      {title:"Settings Hierarchy",desc:"Configure NPSP Settings including contact and account merge settings, automated household naming."}
-    ] },
-      { name: "Fundraising & Gift Management", pct: 25, color: "#2ECC71", desc: "Configure NPSP gift entry, soft credits, matching gifts, and donation processing workflows.", keyTopics: [
-      {title:"Gift Entry Manager",desc:"Set up batch gift entry templates and process donations with custom field mapping."},
-      {title:"Soft Credits",desc:"Configure opportunity contact roles and soft credit rollup settings for attribution tracking."},
-      {title:"Matching Gifts",desc:"Set up matching gift employer records and the NPSP matching gift workflow."}
-    ] },
-      { name: "Household Management", pct: 18, color: "#F39C12", desc: "Configure NPSP household features including naming conventions, address management, and merge processes.", keyTopics: [
-      {title:"Household Naming",desc:"Configure automatic and manual household naming formats for address labels and salutations."},
-      {title:"Address Management",desc:"Use the address object and household address management including seasonal addresses."},
-      {title:"Household Merging",desc:"Execute constituent merges using NPSP merge tools to maintain giving history integrity."}
-    ] },
-      { name: "Relationships & Affiliations", pct: 17, color: "#E74C3C", desc: "Configure NPSP relationship and affiliation features to model constituent connections and organizational ties.", keyTopics: [
-      {title:"Relationship Types",desc:"Define custom relationship types and auto-reciprocal relationship pairs for contact-contact links."},
-      {title:"Affiliations",desc:"Configure org-to-contact affiliations with role, status, and primary affiliation designation."},
-      {title:"Relationship Viewer",desc:"Use the NPSP relationship viewer component to navigate constituent network maps."}
-    ] },
-      { name: "Customization & Reporting", pct: 20, color: "#1ABC9C", desc: "Customize NPSP with custom fields, rollup configurations, and build nonprofit-specific reports and dashboards.", keyTopics: [
-      {title:"Custom Rollup Summaries",desc:"Use NPSP's Customizable Rollups framework to create custom giving summary fields."},
-      {title:"NPSP Reports",desc:"Build constituent giving history, LYBUNT/SYBUNT, and major gift prospect reports."},
-      {title:"Duplicate Management",desc:"Configure NPSP deduplication rules and the merge process for constituent records."}
-    ] }
+        domains:[
+      {name:"Domain Expertise",pct:20,color:"#00A1E0"},
+      {name:"Nonprofit Cloud Product Configuration",pct:22,color:"#2ECC71"},
+      {name:"Implementation Strategies and Best Practices",pct:18,color:"#F39C12"},
+      {name:"Solution Design",pct:20,color:"#E74C3C"},
+      {name:"Integration and Data Management",pct:15,color:"#9B59B6"},
+      {name:"Analytics",pct:5,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"npsp-setup",focus:"NPSP fundamentals: Households, Affiliations, Relationships, and Donation Management",topics:[
@@ -873,32 +670,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-omnistudio-consultant---Plat-Con-201",
     prerequisites: ["Platform Administrator"],
     overview: "Validates expertise in consulting on OmniStudio implementations, including OmniScripts, FlexCards, DataRaptors, and Integration Procedures to create guided user experiences in Salesforce Industries solutions.",
-    domains: [
-      { name: "OmniStudio Fundamentals", pct: 18, color: "#00A1E0", desc: "Understand OmniStudio's component suite and how it accelerates guided experience development on Salesforce.", keyTopics: [
-      {title:"OmniStudio Components",desc:"Know the OmniStudio component family: OmniScript, FlexCard, DataRaptor, and Integration Procedures."},
-      {title:"Use Cases",desc:"Identify where OmniStudio adds value vs. standard Salesforce UI: guided flows, card UIs, and data operations."},
-      {title:"Deployment Model",desc:"Understand OmniStudio's metadata deployment, version control, and activation model."}
-    ] },
-      { name: "OmniScript Design", pct: 25, color: "#2ECC71", desc: "Build guided interaction scripts using OmniScript elements for data capture, branching, and remote actions.", keyTopics: [
-      {title:"OmniScript Elements",desc:"Configure Text, Number, Select, Formula, and Group elements to build multi-step guided forms."},
-      {title:"Conditional Visibility",desc:"Use conditions on elements and steps to show/hide fields based on user input."},
-      {title:"Remote Actions",desc:"Integrate DataRaptors and Integration Procedures as remote actions in OmniScript steps."}
-    ] },
-      { name: "FlexCards", pct: 20, color: "#F39C12", desc: "Create contextual data display cards using FlexCards for 360-degree views and embedded actions.", keyTopics: [
-      {title:"FlexCard Layout",desc:"Build multi-state FlexCards with different layouts for different data conditions."},
-      {title:"Datasources",desc:"Connect FlexCards to DataRaptors, Integration Procedures, and SOQL datasources."},
-      {title:"Embedded Actions",desc:"Add flyouts, OmniScript launches, and custom LWC actions to FlexCard interfaces."}
-    ] },
-      { name: "DataRaptors and Integration Procedures", pct: 22, color: "#E74C3C", desc: "Configure DataRaptors for CRUD operations and Integration Procedures for orchestrated multi-step data processes.", keyTopics: [
-      {title:"DataRaptor Types",desc:"Use Extract, Load, Transform, and Turbo Extract DataRaptors for appropriate data operation patterns."},
-      {title:"Integration Procedures",desc:"Build multi-step Integration Procedures with HTTP callouts, DataRaptors, and conditional logic."},
-      {title:"JSON Mapping",desc:"Map input/output JSON paths in DataRaptors and Integration Procedures using path syntax."}
-    ] },
-      { name: "Solution Design and Deployment", pct: 15, color: "#1ABC9C", desc: "Architect OmniStudio solutions for reusability, performance, and maintainable deployment across environments.", keyTopics: [
-      {title:"Design Patterns",desc:"Apply OmniStudio design patterns: separation of concerns between UI, logic, and data layers."},
-      {title:"Version Management",desc:"Activate, version, and deploy OmniStudio components using the metadata API and version numbering."},
-      {title:"Performance Optimization",desc:"Optimize OmniScript and DataRaptor performance to minimize load times and API consumption."}
-    ] }
+        domains:[
+      {name:"Omnistudio Fundamentals",pct:16,color:"#00A1E0"},
+      {name:"Flexcards",pct:18,color:"#2ECC71"},
+      {name:"Omniscripts",pct:17,color:"#F39C12"},
+      {name:"Integration Procedures",pct:17,color:"#E74C3C"},
+      {name:"Data Mappers",pct:17,color:"#9B59B6"},
+      {name:"Best Fit Solutions",pct:15,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"omnistudio-consultant",focus:"OmniStudio Consultant: architecture, FlexCards, OmniScripts, and DataRaptors for solution design",topics:[
@@ -960,32 +738,14 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-slack-consultant---Slack-Con-201",
     prerequisites: ["Slack Administrator"],
     overview: "Validates expertise in consulting on Slack implementations, including workspace design, Salesforce-Slack integrations, workflow automation, and governance strategies for enterprise Slack deployments.",
-    domains: [
-      { name: "Slack Architecture and Strategy", pct: 20, color: "#00A1E0", desc: "Understand Slack's enterprise architecture and plan workspace and channel strategy for organizational adoption.", keyTopics: [
-      {title:"Slack Platform Overview",desc:"Understand Slack's workspace, channel, and user model including Enterprise Grid for large orgs."},
-      {title:"Enterprise Grid Design",desc:"Design Slack Enterprise Grid org structure with appropriate workspace-to-team mapping."},
-      {title:"Governance Framework",desc:"Define channel creation policies, naming conventions, and archiving guidelines for Slack deployments."}
-    ] },
-      { name: "Workspace Design and Governance", pct: 22, color: "#2ECC71", desc: "Configure Slack workspace settings, channel structure, and administrative controls for enterprise governance.", keyTopics: [
-      {title:"Channel Strategy",desc:"Design public, private, shared, and DM channel taxonomy aligned to business processes."},
-      {title:"Workspace Administration",desc:"Configure workspace settings, admin roles, app whitelisting, and user provisioning."},
-      {title:"Data Retention and Compliance",desc:"Set message retention policies and eDiscovery integrations for regulated industries."}
-    ] },
-      { name: "Salesforce-Slack Integration", pct: 25, color: "#F39C12", desc: "Configure Salesforce for Slack app integrations to bring CRM records and notifications into Slack workflows.", keyTopics: [
-      {title:"Salesforce for Slack App",desc:"Install and configure the Salesforce for Slack app to surface records and notifications in channels."},
-      {title:"Record Alerts",desc:"Set up Salesforce record alerts to post deal, case, or opportunity updates to Slack channels."},
-      {title:"Salesforce Flows in Slack",desc:"Build Salesforce Flows with Slack actions to send messages and collect approvals from Slack."}
-    ] },
-      { name: "Automation and Workflows", pct: 18, color: "#E74C3C", desc: "Build Slack automation using Workflow Builder and Salesforce Flow to streamline business processes.", keyTopics: [
-      {title:"Workflow Builder",desc:"Create automated message sequences and form-based workflows using Slack Workflow Builder."},
-      {title:"Slash Commands",desc:"Design custom slash commands that trigger Salesforce actions or query CRM data."},
-      {title:"Approval Workflows",desc:"Route Salesforce approval requests to Slack for faster decision-making in context."}
-    ] },
-      { name: "Change Management and Adoption", pct: 15, color: "#1ABC9C", desc: "Drive Slack adoption through change management, training programs, and usage analytics.", keyTopics: [
-      {title:"Adoption Strategy",desc:"Design phased Slack rollouts with champion networks and use-case-led activation."},
-      {title:"Training Programs",desc:"Develop role-based Slack training covering etiquette, channels, integrations, and productivity."},
-      {title:"Analytics and Reporting",desc:"Use Slack Analytics dashboards to track active users, channel health, and message trends."}
-    ] }
+        domains:[
+      {name:"Delivery and Migration",pct:17,color:"#00A1E0"},
+      {name:"Discovery",pct:10,color:"#2ECC71"},
+      {name:"Grid Design",pct:15,color:"#F39C12"},
+      {name:"Policies and Settings",pct:22,color:"#E74C3C"},
+      {name:"Channel Strategy",pct:10,color:"#9B59B6"},
+      {name:"Governance Structure (Owner and Admin Roles)",pct:8,color:"#1ABC9C"},
+      {name:"Learning and Enablement",pct:18,color:"#E67E22"},
     ],
     studyDays:[
       {tag:"slack-consultant",focus:"Slack Consultant: workspace design, Enterprise Grid strategy, app governance, and ROI",topics:[
@@ -1047,32 +807,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-crm-analytics---Analytics-Con-201",
     prerequisites: ["Platform Administrator"],
     overview: "Validates expertise in designing and implementing CRM Analytics (formerly Tableau CRM / Einstein Analytics) and Einstein Discovery solutions, including datasets, dashboards, lenses, recipes, and predictive analytics.",
-    domains: [
-      { name: "CRM Analytics Architecture", pct: 20, color: "#00A1E0", desc: "Understand CRM Analytics platform architecture including datasets, lenses, dashboards, and Einstein Discovery.", keyTopics: [
-      {title:"Platform Components",desc:"Know the CRM Analytics component hierarchy: apps, datasets, lenses, dashboards, and stories."},
-      {title:"Data Architecture",desc:"Understand direct data connector, dataflow, and recipe approaches for populating datasets."},
-      {title:"Security Architecture",desc:"Design CRM Analytics security predicates and app sharing to enforce row-level data security."}
-    ] },
-      { name: "Data Integration and Preparation", pct: 22, color: "#2ECC71", desc: "Configure data flows, recipes, and connectors to ingest and transform data for CRM Analytics datasets.", keyTopics: [
-      {title:"Dataflows",desc:"Build dataflows with register, edgemart, augment, and computeExpression steps."},
-      {title:"Analytics Studio Recipes",desc:"Use Analytics Studio Recipes for visual, no-code data transformation and aggregation."},
-      {title:"External Data Connectors",desc:"Connect CRM Analytics to Salesforce orgs, Snowflake, AWS S3, and other external sources."}
-    ] },
-      { name: "Dashboards and Lenses", pct: 25, color: "#F39C12", desc: "Design and build CRM Analytics dashboards and lenses that deliver actionable business insights.", keyTopics: [
-      {title:"Dashboard Builder",desc:"Build multi-widget dashboards using charts, tables, filters, and binding expressions."},
-      {title:"SAQL Queries",desc:"Write Salesforce Analytics Query Language (SAQL) for advanced calculations and aggregations."},
-      {title:"Dynamic Bindings",desc:"Use faceting and dynamic bindings to create interactive, drill-through analytics experiences."}
-    ] },
-      { name: "Einstein Discovery", pct: 18, color: "#E74C3C", desc: "Build and deploy Einstein Discovery stories to generate AI-powered predictions and prescriptive recommendations.", keyTopics: [
-      {title:"Story Creation",desc:"Configure Einstein Discovery stories by selecting outcome variable, data, and model settings."},
-      {title:"Model Evaluation",desc:"Interpret model quality metrics (AUC, R-squared) and refine models for business accuracy."},
-      {title:"Prediction Deployment",desc:"Deploy Einstein Discovery predictions to Salesforce records and dashboards for inline scoring."}
-    ] },
-      { name: "Security and Administration", pct: 15, color: "#1ABC9C", desc: "Administer CRM Analytics security, access controls, and platform governance across analytics apps.", keyTopics: [
-      {title:"App and Asset Sharing",desc:"Share CRM Analytics apps with users and groups using viewer, editor, and manager access."},
-      {title:"Security Predicates",desc:"Write SAQL security predicates to filter dataset rows by user or profile attributes."},
-      {title:"Platform Administration",desc:"Manage analytics licenses, quotas, scheduled jobs, and dataflow execution monitoring."}
-    ] }
+        domains:[
+      {name:"Admin/Configuration",pct:17,color:"#00A1E0"},
+      {name:"Data Layer",pct:23,color:"#2ECC71"},
+      {name:"Security",pct:16,color:"#F39C12"},
+      {name:"Analytics Dashboard Design",pct:13,color:"#E74C3C"},
+      {name:"Analytics Dashboard Implementation",pct:19,color:"#9B59B6"},
+      {name:"Einstein Discovery",pct:12,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"crm-analytics-setup",focus:"CRM Analytics setup: datasets, lenses, dashboards, and SAQL queries",topics:[
@@ -1142,32 +883,14 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mulesoft-catalyst-consultant---Mule-Con-201",
     prerequisites: ["MuleSoft Developer"],
     overview: "Validates expertise in applying the MuleSoft Catalyst methodology to deliver successful integration and API-led connectivity projects, including discovery, design, delivery, and run phases.",
-    domains: [
-      { name: "Catalyst Methodology", pct: 25, color: "#00A1E0", desc: "Apply the MuleSoft Catalyst methodology to structure API and integration delivery programs.", keyTopics: [
-      {title:"Catalyst Framework",desc:"Understand the four Catalyst phases: Align, Define, Build, and Run for structured API delivery."},
-      {title:"Outcome-Based Delivery",desc:"Tie integration project phases to measurable business outcomes using Catalyst success criteria."},
-      {title:"Catalyst Templates",desc:"Use Catalyst deliverable templates for API strategy, project charters, and capability assessments."}
-    ] },
-      { name: "Discovery and Design", pct: 22, color: "#2ECC71", desc: "Lead discovery workshops and design API-led connectivity architectures aligned to business capabilities.", keyTopics: [
-      {title:"Capability Assessment",desc:"Map current integration landscape and identify gaps using the Catalyst capability model."},
-      {title:"API-Led Design",desc:"Design experience, process, and system API tiers aligned to identified business capabilities."},
-      {title:"RAML and API Specifications",desc:"Create API specifications using RAML or OAS to document contracts before implementation."}
-    ] },
-      { name: "API Strategy and Architecture", pct: 20, color: "#F39C12", desc: "Define enterprise API strategy including reuse programs, API lifecycle governance, and platform selection.", keyTopics: [
-      {title:"Reuse Strategy",desc:"Identify reusable process and system APIs to build an organizational integration asset portfolio."},
-      {title:"Governance Model",desc:"Establish API review, approval, and versioning governance through a Center for Enablement."},
-      {title:"Platform Architecture",desc:"Architect Anypoint Platform deployment topology for the organization's scale and compliance needs."}
-    ] },
-      { name: "Delivery and Execution", pct: 18, color: "#E74C3C", desc: "Manage MuleSoft integration project delivery including sprint planning, backlog management, and quality assurance.", keyTopics: [
-      {title:"Agile Delivery",desc:"Apply Scrum or Kanban to Mule project delivery with API-focused sprint goals and demos."},
-      {title:"Quality Assurance",desc:"Implement MUnit test coverage and CI/CD pipelines for automated API quality gates."},
-      {title:"Stakeholder Management",desc:"Report integration delivery progress to business and IT stakeholders using Catalyst metrics."}
-    ] },
-      { name: "Run and Operate", pct: 15, color: "#1ABC9C", desc: "Establish operational practices for running MuleSoft APIs in production including monitoring, incident response, and optimization.", keyTopics: [
-      {title:"Anypoint Monitoring",desc:"Configure Anypoint Monitoring alerts and dashboards for API health and SLA compliance."},
-      {title:"Incident Response",desc:"Define runbooks and escalation paths for API incidents with defined RTO/RPO targets."},
-      {title:"Continuous Improvement",desc:"Review API usage analytics and implement optimization cycles based on performance data."}
-    ] }
+        domains:[
+      {name:"Apply Catalyst principles",pct:9,color:"#00A1E0"},
+      {name:"Leverage Catalyst Knowledge Hub",pct:7,color:"#2ECC71"},
+      {name:"Architect to Catalyst Principles",pct:27,color:"#F39C12"},
+      {name:"Realize business outcomes with a Catalyst approach",pct:11,color:"#E74C3C"},
+      {name:"Implement a Center for Enablement (C4E)",pct:15,color:"#9B59B6"},
+      {name:"Position and reframe with Catalyst methodology",pct:11,color:"#1ABC9C"},
+      {name:"Design composable solutions",pct:20,color:"#E67E22"},
     ],
     studyDays:[
       {tag:"catalyst-methodology",focus:"MuleSoft Catalyst methodology: Discover, Design, Deliver, and Run phases",topics:[
@@ -1229,32 +952,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mce-consultant---MCE-Con-201",
     prerequisites: ["Marketing Cloud Email Specialist"],
     overview: "Validates advanced expertise in designing and implementing enterprise Marketing Cloud Engagement solutions including complex data architectures, multi-channel journeys, automation, and integration with Sales/Service Cloud.",
-    domains: [
-      { name: "Discovery and Architecture", pct: 18, color: "#00A1E0", desc: "Conduct Marketing Cloud discovery to assess business requirements and design a scalable email program architecture.", keyTopics: [
-      {title:"Business Requirements",desc:"Elicit marketing objectives, audience segments, and KPIs to scope the Marketing Cloud implementation."},
-      {title:"Account Architecture",desc:"Design Marketing Cloud account structure including business units, roles, and subscriber management."},
-      {title:"Data Architecture",desc:"Plan Marketing Cloud data extensions, sendable objects, and subscriber data model design."}
-    ] },
-      { name: "Account Configuration", pct: 20, color: "#2ECC71", desc: "Configure Marketing Cloud account settings including sender authentication, branding, and administrative controls.", keyTopics: [
-      {title:"Sender Authentication Package",desc:"Configure SAP with custom domain, private domain, and IP warming for deliverability."},
-      {title:"Business Unit Setup",desc:"Create and configure business units with appropriate role assignments and sharing settings."},
-      {title:"Brand Builder",desc:"Apply brand builder settings for default colors, fonts, and logo across content blocks."}
-    ] },
-      { name: "Automation and Journey Builder", pct: 22, color: "#F39C12", desc: "Build Marketing Cloud automations and journeys to trigger personalized communications at scale.", keyTopics: [
-      {title:"Journey Builder",desc:"Design multi-step journeys with entry sources, decision splits, and exit criteria."},
-      {title:"Automation Studio",desc:"Build scheduled and triggered automations for data imports, sends, and SQL activities."},
-      {title:"Einstein Features",desc:"Enable Einstein Send Time Optimization and Einstein Engagement Scoring for journey optimization."}
-    ] },
-      { name: "Data Management", pct: 22, color: "#E74C3C", desc: "Configure Marketing Cloud data extensions, contact builder, and data synchronization for subscriber management.", keyTopics: [
-      {title:"Data Extensions",desc:"Create and relate data extensions to support segmentation, personalization, and transactional sends."},
-      {title:"Contact Builder",desc:"Build contact data model with linked data extensions using Contact Builder attribute groups."},
-      {title:"AMPscript Personalization",desc:"Write AMPscript to personalize email content using subscriber and relational data."}
-    ] },
-      { name: "Analytics and Reporting", pct: 18, color: "#1ABC9C", desc: "Build Marketing Cloud reports and dashboards to measure email program performance and optimize campaigns.", keyTopics: [
-      {title:"Email Analytics",desc:"Analyze open rate, click rate, bounce rate, and unsubscribe metrics at send, journey, and program levels."},
-      {title:"Analytics Builder",desc:"Use Analytics Builder to create subscriber, engagement, and send performance reports."},
-      {title:"A/B Testing",desc:"Design subject line, content, and send time A/B tests with statistical significance evaluation."}
-    ] }
+        domains:[
+      {name:"Discovery and Architecture",pct:16,color:"#00A1E0"},
+      {name:"Integration",pct:20,color:"#2ECC71"},
+      {name:"Account Configuration",pct:12,color:"#F39C12"},
+      {name:"Automation",pct:20,color:"#E74C3C"},
+      {name:"Data Modeling and Management",pct:21,color:"#9B59B6"},
+      {name:"Messaging",pct:11,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"mc-engagement-solution",focus:"MC Engagement solution design: data model, channel strategy, and multi-cloud integration",topics:[
@@ -1316,32 +1020,15 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-engagement-consultant---MCAE-Con-201",
     prerequisites: ["Marketing Cloud Account Engagement Specialist"],
     overview: "Validates advanced expertise in implementing Marketing Cloud Account Engagement (Pardot) for B2B marketing automation, including Salesforce integration, lead management, advanced automation, and multi-org scenarios.",
-    domains: [
-      { name: "Evaluation", pct: 20, color: "#00A1E0", desc: "Assess client marketing automation requirements and evaluate how MCAE (Pardot) meets their B2B marketing needs.", keyTopics: [
-      {title:"Requirements Discovery",desc:"Gather B2B marketing objectives, lead lifecycle definitions, and reporting needs from stakeholders."},
-      {title:"MCAE Capabilities Review",desc:"Map client requirements to MCAE features: forms, automation rules, engagement studio, and scoring."},
-      {title:"Implementation Scoping",desc:"Define project scope including data migration, CRM integration setup, and phased feature enablement."}
-    ] },
-      { name: "Account Configuration", pct: 18, color: "#2ECC71", desc: "Configure MCAE account settings including CRM connector, user roles, domain setup, and email authentication.", keyTopics: [
-      {title:"Salesforce Connector",desc:"Set up and verify the Salesforce-MCAE connector, including connector user and sync settings."},
-      {title:"User Roles and SSO",desc:"Configure MCAE user roles (Admin, Marketing, Sales) and Salesforce SSO for unified login."},
-      {title:"Email Authentication",desc:"Configure SPF, DKIM, and custom sending domains for deliverability and brand recognition."}
-    ] },
-      { name: "Lead Management", pct: 22, color: "#F39C12", desc: "Design and configure MCAE lead scoring, grading, and lifecycle management to qualify and route marketing leads.", keyTopics: [
-      {title:"Scoring Models",desc:"Configure profile-based scoring rules that increment or decrement based on prospect behavior."},
-      {title:"Grading",desc:"Build prospect profiles and grade criteria to score fit against ideal customer profiles."},
-      {title:"Lead Assignment",desc:"Configure automation rules and Salesforce assignment rules for qualified lead routing to sales."}
-    ] },
-      { name: "Email Marketing", pct: 20, color: "#E74C3C", desc: "Build MCAE email templates, list emails, and Engagement Studio programs for B2B lead nurture.", keyTopics: [
-      {title:"Email Templates",desc:"Create branded MCAE email templates using the drag-and-drop builder or HTML editor."},
-      {title:"List Emails and Sending",desc:"Build list emails, test with sample lists, and schedule or send to segmented prospect lists."},
-      {title:"Engagement Studio",desc:"Design Engagement Studio programs with listen, think, and act steps for automated nurture sequences."}
-    ] },
-      { name: "Reporting", pct: 20, color: "#1ABC9C", desc: "Use MCAE reporting tools to measure marketing program performance and pipeline contribution.", keyTopics: [
-      {title:"Lifecycle Reports",desc:"Analyze the prospect lifecycle funnel from visitor to MQL, SQL, and closed-won opportunities."},
-      {title:"Email Performance",desc:"Review open rate, click rate, and bounce metrics at the email, program, and campaign level."},
-      {title:"B2B Marketing Analytics",desc:"Use B2B Marketing Analytics (Einstein Analytics for MCAE) for advanced attribution reporting."}
-    ] }
+        domains:[
+      {name:"Evaluation",pct:17,color:"#00A1E0"},
+      {name:"Account Configuration",pct:20,color:"#2ECC71"},
+      {name:"Automating Business Processes",pct:17,color:"#F39C12"},
+      {name:"Email Marketing",pct:10,color:"#E74C3C"},
+      {name:"Lead Management",pct:14,color:"#9B59B6"},
+      {name:"Personalizing the Prospect Experience",pct:8,color:"#1ABC9C"},
+      {name:"Reporting, Metrics and Analytics",pct:11,color:"#E67E22"},
+      {name:"Sales Emails and Alerts",pct:3,color:"#3498DB"},
     ],
     studyDays:[
       {tag:"pardot-consultant",focus:"Account Engagement (Pardot) Consultant: solution design, scoring, nurture programs, and Salesforce alignment",topics:[
@@ -1403,32 +1090,14 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-revenue-cloud-consultant---Rev-Con-201",
     prerequisites: ["Platform Administrator"],
     overview: "Validates expertise in implementing Salesforce Revenue Cloud, including CPQ (Configure Price Quote), Billing, subscription management, revenue recognition, and the full quote-to-cash process.",
-    domains: [
-      { name: "CPQ Configuration", pct: 25, color: "#00A1E0", desc: "Configure Salesforce CPQ product catalog, bundles, configuration rules, and approval workflows.", keyTopics: [
-      {title:"Product Catalog",desc:"Set up products, price books, and pricing methods including list, cost, and percent-of-total."},
-      {title:"Product Bundles",desc:"Configure bundle components, feature options, and configuration attributes for complex products."},
-      {title:"Configuration Rules",desc:"Build product rules (summary, alert, filter, validation) to enforce configuration constraints."}
-    ] },
-      { name: "Pricing and Discount Management", pct: 20, color: "#2ECC71", desc: "Configure CPQ pricing methods, discount schedules, and approval thresholds for controlled discounting.", keyTopics: [
-      {title:"Pricing Waterfall",desc:"Understand CPQ's pricing waterfall: list → customer → partner → additional → net price."},
-      {title:"Discount Schedules",desc:"Set up volume and term-based discount schedules applied by tier to quote line items."},
-      {title:"Approval Processes",desc:"Configure tiered approval rules that route quotes requiring deep discounts to management."}
-    ] },
-      { name: "Quote and Order Management", pct: 18, color: "#F39C12", desc: "Configure CPQ quoting, electronic signature, and order generation workflows for the quote-to-order process.", keyTopics: [
-      {title:"Quote Configuration",desc:"Build quote templates with conditional sections, field mapping, and document generation."},
-      {title:"Contracts and Amendments",desc:"Generate contracts from quotes and configure amendment and renewal quote generation."},
-      {title:"Order Generation",desc:"Configure order creation from contracts with product and pricing pass-through logic."}
-    ] },
-      { name: "Salesforce Billing", pct: 22, color: "#E74C3C", desc: "Configure Salesforce Billing for invoice generation, payment processing, and revenue recognition.", keyTopics: [
-      {title:"Billing Rules",desc:"Configure billing rules for billing type (advance, arrears) and billing cycle assignment."},
-      {title:"Invoice Generation",desc:"Automate invoice creation from orders with appropriate invoicing run schedules."},
-      {title:"Payment Processing",desc:"Set up payment gateways, payment methods, and dunning processes for collections."}
-    ] },
-      { name: "Implementation and Integration", pct: 15, color: "#1ABC9C", desc: "Apply Revenue Cloud implementation best practices including data migration, ERP integration, and go-live planning.", keyTopics: [
-      {title:"Data Migration",desc:"Plan CPQ product catalog and pricing data migration from legacy quoting systems."},
-      {title:"ERP Integration",desc:"Design order-to-cash integration between Revenue Cloud and ERP order management systems."},
-      {title:"Go-Live Readiness",desc:"Execute pre-launch validation of CPQ rules, billing configuration, and UAT sign-off."}
-    ] }
+        domains:[
+      {name:"Revenue Cloud Platform Concepts",pct:18,color:"#00A1E0"},
+      {name:"Implementation Readiness",pct:14,color:"#2ECC71"},
+      {name:"Catalog Management",pct:16,color:"#F39C12"},
+      {name:"Configure, Price, Quote",pct:18,color:"#E74C3C"},
+      {name:"Contracts and Orders",pct:11,color:"#9B59B6"},
+      {name:"Asset Management",pct:16,color:"#1ABC9C"},
+      {name:"Invoice Management",pct:7,color:"#E67E22"},
     ],
     studyDays:[
       {tag:"revenue-cloud-setup",focus:"Revenue Cloud solution design: CPQ, Billing, CLM, and Revenue Intelligence",topics:[
@@ -1490,32 +1159,11 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailhead.salesforce.com/credentials/tableauconsultant",
     prerequisites: [{name:"Tableau Desktop Specialist",required:true}],
     overview: "Validates expertise in consulting on Tableau deployments, including advanced analytics design, data source architecture, governance, Tableau Server/Cloud administration, and translating business requirements into Tableau solutions.",
-    domains: [
-      { name: "Data Connections and Preparation", pct: 22, color: "#00A1E0", desc: "Connect Tableau to data sources and prepare clean, analysis-ready datasets for business users.", keyTopics: [
-      {title:"Data Source Types",desc:"Connect Tableau to live and extract sources: databases, flat files, cloud sources, and web connectors."},
-      {title:"Data Prep with Prep Builder",desc:"Use Tableau Prep Builder to clean, reshape, and combine data before analysis."},
-      {title:"Published Data Sources",desc:"Publish certified data sources to Tableau Server for governed, reusable access."}
-    ] },
-      { name: "Visual Analytics Design", pct: 25, color: "#2ECC71", desc: "Design clear, accurate visualizations that answer business questions and drive decision-making.", keyTopics: [
-      {title:"Chart Selection",desc:"Select the right chart type (bar, line, scatter, map, etc.) for the analytical question at hand."},
-      {title:"Dashboard Layout",desc:"Apply best practices for dashboard layout: white space, visual hierarchy, and focus areas."},
-      {title:"Color and Formatting",desc:"Use color purposefully for encoding data and maintaining accessibility standards."}
-    ] },
-      { name: "Calculations and Analytics", pct: 20, color: "#F39C12", desc: "Write Tableau calculated fields, LOD expressions, and table calculations for advanced analytics.", keyTopics: [
-      {title:"Calculated Fields",desc:"Write row-level calculated fields using Tableau's formula language for custom metrics."},
-      {title:"LOD Expressions",desc:"Apply FIXED, INCLUDE, and EXCLUDE LOD expressions for complex aggregation scenarios."},
-      {title:"Table Calculations",desc:"Use window_sum, window_avg, and running totals for period-over-period and ranking analysis."}
-    ] },
-      { name: "Tableau Server and Cloud", pct: 18, color: "#E74C3C", desc: "Publish, manage, and govern Tableau content on Tableau Server or Tableau Cloud for enterprise distribution.", keyTopics: [
-      {title:"Publishing Workbooks",desc:"Publish workbooks with embedded or live data source connections to Tableau Server/Cloud."},
-      {title:"Permissions and Groups",desc:"Configure project, workbook, and data source permissions using Tableau's permission model."},
-      {title:"Subscriptions and Alerts",desc:"Set up scheduled subscriptions and data-driven alerts to deliver insights to stakeholders."}
-    ] },
-      { name: "Solution Design and Governance", pct: 15, color: "#1ABC9C", desc: "Design Tableau deployment architectures and governance frameworks for enterprise analytics at scale.", keyTopics: [
-      {title:"Site Architecture",desc:"Design Tableau sites, projects, and content hierarchies for multi-team enterprise deployments."},
-      {title:"Data Governance",desc:"Establish data source certification, naming standards, and stewardship workflows."},
-      {title:"Performance and Scalability",desc:"Optimize Tableau Server node sizing, extract scheduling, and workbook performance."}
-    ] }
+        domains:[
+      {name:"Evaluate Current State",pct:22,color:"#00A1E0"},
+      {name:"Plan and Prepare Data Connections",pct:22,color:"#2ECC71"},
+      {name:"Design and Troubleshoot Calculations and Workbooks",pct:40,color:"#F39C12"},
+      {name:"Establish Governance and Support Published Content",pct:16,color:"#E74C3C"},
     ],
     studyDays:[
       {tag:"tableau-consultant",focus:"Tableau Consultant: solution design, governance, data source strategy, and user adoption",topics:[
@@ -1577,27 +1225,11 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailhead.salesforce.com/credentials/tableaudataanalyst",
     prerequisites: [],
     overview: "Validates foundational to intermediate skills in Tableau for data analysts, including connecting to data, building visualizations, creating dashboards, and communicating insights through data storytelling.",
-    domains: [
-      { name: "Connect and Transform Data", pct: 22, color: "#00A1E0", desc: "Connect Tableau Desktop to data sources and transform raw data into analysis-ready structures.", keyTopics: [
-      {title:"Connecting to Data",desc:"Connect to Excel, databases, cloud sources, and published data sources from Tableau Desktop."},
-      {title:"Data Interpreter",desc:"Use Tableau's data interpreter to clean messy spreadsheet data for analysis."},
-      {title:"Joins and Unions",desc:"Build joins, unions, and cross-database joins to combine related data in Tableau."}
-    ] },
-      { name: "Explore and Analyze Data", pct: 28, color: "#2ECC71", desc: "Perform exploratory data analysis using Tableau's drag-and-drop interface and analytical features.", keyTopics: [
-      {title:"Building Views",desc:"Drag dimensions and measures to rows, columns, and marks to create initial data views."},
-      {title:"Filters and Context",desc:"Apply dimension, measure, quick, and context filters to focus analytical views."},
-      {title:"Analytics Pane",desc:"Use the Analytics pane to add trend lines, reference lines, forecasts, and cluster analysis."}
-    ] },
-      { name: "Create Charts and Dashboards", pct: 28, color: "#F39C12", desc: "Build effective charts, stories, and dashboards that communicate insights clearly to stakeholders.", keyTopics: [
-      {title:"Chart Types",desc:"Create bar, line, scatter, map, pie, and Gantt charts appropriate to each analytical question."},
-      {title:"Dashboard Actions",desc:"Add filter, highlight, and URL actions to create interactive dashboard experiences."},
-      {title:"Story Points",desc:"Build Tableau Stories that guide viewers through a data narrative with annotated points."}
-    ] },
-      { name: "Share and Publish", pct: 22, color: "#E74C3C", desc: "Share Tableau content through publishing, exporting, and embedding for broad organizational reach.", keyTopics: [
-      {title:"Publishing to Server/Cloud",desc:"Publish workbooks and data sources with appropriate permissions to Tableau Server or Cloud."},
-      {title:"Exporting and Embedding",desc:"Export views as images, PDFs, or data and embed Tableau views in portals or applications."},
-      {title:"Subscriptions",desc:"Set up email subscriptions so stakeholders receive regular dashboard snapshots in their inbox."}
-    ] }
+        domains:[
+      {name:"Connect To and Transform Data",pct:24,color:"#00A1E0"},
+      {name:"Explore and Analyze Data",pct:41,color:"#2ECC71"},
+      {name:"Create Content",pct:26,color:"#F39C12"},
+      {name:"Publish and Manage Content on Tableau Server and Tableau Cloud",pct:9,color:"#E74C3C"},
     ],
     studyDays:[
       {tag:"connect-and-prep", focus:"Connecting to data sources and basic data preparation in Tableau", topics:[

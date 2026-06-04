@@ -6,40 +6,11 @@ Object.assign(EXAM_DATA, {
       {name:"Platform Administrator",url:"https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_remote_process_invocation_request_reply.htm",note:"Not a hard requirement, but admin knowledge — sharing model, objects, flows — is assumed context for developer exam questions."}
     ],
     overview:"The Platform Developer certification is designed for developers who build custom applications on the Salesforce platform using Apex and Lightning Web Components. The exam assesses your understanding of Apex fundamentals, SOQL and DML, trigger patterns, asynchronous processing, LWC component architecture, Apex testing, and metadata deployment. It is the entry-level developer credential and serves as the foundation for Platform Developer II and other technical certifications.",
-    domains:[
-      {name:"Developer Fundamentals",pct:23,color:"#00A1E0",desc:"Core Apex programming concepts, SOQL/SOSL queries, and understanding the platform's execution model.",keyTopics:[
-        {title:"Apex Data Types & Collections",desc:"Apex supports primitives (String, Integer, Boolean), sObjects, and collections (List, Set, Map) — collections are essential for bulkification."},
-        {title:"SOQL & SOSL Syntax",desc:"SOQL queries a single object and its relationships; SOSL searches across multiple objects for text matches — know when each applies."},
-        {title:"DML Statements",desc:"insert, update, upsert, delete, undelete — each counts against the 150 DML operations per transaction governor limit."},
-        {title:"Governor Limits",desc:"Platform-enforced limits per transaction: 100 SOQL queries, 150 DML operations, 10MB heap, 60s CPU time — violating any throws a LimitException."},
-        {title:"Object-Oriented Apex",desc:"Apex supports classes, interfaces, inheritance, and access modifiers (public, private, global) — understand virtual and abstract classes."},
-        {title:"Apex Classes & Interfaces",desc:"Interfaces define contracts (Queueable, Schedulable, Batchable) that your class must implement to use async Apex features."}
-      ]},
-      {name:"Process Automation and Logic",pct:30,color:"#2ECC71",desc:"Write Apex triggers, async jobs, and understand when to use programmatic vs declarative automation.",keyTopics:[
-        {title:"Apex Triggers & Context Variables",desc:"Triggers fire before or after DML on an sObject — Trigger.new, Trigger.old, Trigger.newMap, and Trigger.isInsert are the key context variables."},
-        {title:"Bulkification Patterns",desc:"Never put SOQL or DML inside a for loop — always collect records into lists and operate on the full collection in a single statement."},
-        {title:"Future Methods",desc:"@future methods run asynchronously in a separate transaction — use for callouts from triggers or long-running work that can't run synchronously."},
-        {title:"Batch Apex",desc:"Implements Database.Batchable to process large record sets in configurable chunks (up to 2,000 per batch) with higher governor limits."},
-        {title:"Queueable Apex",desc:"More flexible than @future — supports complex types, allows chaining, and can be monitored via AsyncApexJob in the org."},
-        {title:"Scheduled Apex",desc:"Implements Schedulable to run on a cron schedule — useful for nightly data syncs, cleanups, or any recurring background work."},
-        {title:"Trigger Order of Execution",desc:"Understand the full save order: validation rules, before triggers, system validation, after triggers, workflow, and process automation."}
-      ]},
-      {name:"User Interface",pct:25,color:"#F39C12",desc:"Build and customize Lightning Web Components and Aura components for the Salesforce UI.",keyTopics:[
-        {title:"LWC Component Structure",desc:"Each LWC consists of an HTML template, a JavaScript controller, and an optional CSS file — the component name is the folder name."},
-        {title:"HTML Templates & Data Binding",desc:"Use {property} for one-way binding in templates; data flows down from parent to child via @api properties."},
-        {title:"@api, @track, @wire Decorators",desc:"@api exposes public properties; @track was pre-Spring '20 (now implicit); @wire connects to Apex or UI API data reactively."},
-        {title:"Lifecycle Hooks",desc:"connectedCallback fires on DOM insert; disconnectedCallback on removal; renderedCallback after each render — use for DOM manipulation."},
-        {title:"Component Communication",desc:"Parent→Child via @api properties; Child→Parent via CustomEvent dispatch; unrelated components via Lightning Message Service (LMS)."},
-        {title:"Aura vs LWC",desc:"LWC is the modern standard — faster, closer to web standards. Aura is legacy but still in use; both can coexist and interoperate."}
-      ]},
-      {name:"Testing, Debugging and Deployment",pct:22,color:"#E74C3C",desc:"Write Apex tests, debug with Developer Console, and deploy metadata between environments.",keyTopics:[
-        {title:"Test Class Structure & 75% Coverage",desc:"Every Apex class and trigger must have 75% aggregate coverage to deploy to production — coverage alone is not enough, assertions matter."},
-        {title:"Test.startTest / Test.stopTest",desc:"Wrapping code in Test.startTest/stopTest resets governor limits for the enclosed block and flushes async jobs started inside."},
-        {title:"HttpCalloutMock for Callout Testing",desc:"Apex callouts can't run in tests by default — implement HttpCalloutMock and register it with Test.setMock to simulate HTTP responses."},
-        {title:"Debug Logs & Log Levels",desc:"Debug logs capture execution details at levels (NONE, ERROR, WARN, INFO, DEBUG, FINE, FINER, FINEST) — use Developer Console or VS Code to analyze."},
-        {title:"Sandbox Types",desc:"Developer (200MB), Developer Pro (1GB), Partial (5GB sample), Full (full copy) — choose based on data needs and refresh frequency."},
-        {title:"Change Sets vs Salesforce CLI",desc:"Change sets are UI-based and suitable for simple deployments; Salesforce CLI with source tracking is the modern approach for CI/CD pipelines."}
-      ]}
+        domains:[
+      {name:"Developer Fundamentals",pct:27,color:"#00A1E0"},
+      {name:"Process Automation and Logic",pct:28,color:"#2ECC71"},
+      {name:"User Interface",pct:25,color:"#F39C12"},
+      {name:"Testing, Debugging, and Deployment",pct:20,color:"#E74C3C"},
     ],
     studyDays:[
       {tag:"apex-basics",focus:"Apex language fundamentals: classes, interfaces, collections, and exception handling",topics:[
@@ -163,56 +134,12 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-platform-dev2---Plat-Dev-301",
     prerequisites: ["Platform Developer"],
     overview: "The Salesforce Platform Developer II certification validates advanced development skills including complex Apex patterns, Lightning Web Components architecture, performance optimization, and enterprise integration. This is one of the most challenging Salesforce certifications.",
-    domains: [
-      { name: "Salesforce Fundamentals", pct: 7, color: "#00A1E0", desc: "Apply advanced Salesforce platform knowledge as the foundation for complex developer solutions.", keyTopics: [
-      {title:"Platform Architecture",desc:"Understand multi-tenancy implications: governor limits, event-driven processing, and the impact of shared resources on design choices."},
-      {title:"API Types",desc:"Salesforce REST, SOAP, Bulk, Streaming, GraphQL, and Metadata APIs — know when each is appropriate and their performance characteristics."},
-      {title:"Apex Runtime Execution",desc:"Understand the order of execution: validation rules, before triggers, system validation, after triggers, workflow, escalation, entitlements, Flow."},
-      {title:"Testing Framework",desc:"Understand the Apex testing framework: @IsTest, @TestSetup, Test.startTest/stopTest, mocking governor limits, and callout mocks."},
-      {title:"Governor Limits",desc:"Know all key limits: SOQL queries (100 sync/200 async), DML (150), heap size (6MB/12MB), CPU time (10s/60s) — design around them."}
-    ] },
-      { name: "Data Modeling and Management", pct: 7, color: "#2ECC71", desc: "Design complex data models and manage large data volumes efficiently in Salesforce.", keyTopics: [
-      {title:"Advanced Relationships",desc:"Understand self-relationships, External Lookups, Indirect Lookups, and many-to-many relationships via junction objects."},
-      {title:"External Objects",desc:"Salesforce Connect maps external system data as External Objects — understand limitations (no triggers, limited SOQL) for integration design."},
-      {title:"Large Data Volumes",desc:"Design for LDV: skinny tables, selective SOQL, index management, and batching strategies to avoid timeouts and lock contention."},
-      {title:"Big Objects",desc:"Store billions of historical records in Big Objects — query via Async SOQL with eventual consistency semantics."},
-      {title:"Custom Metadata Types",desc:"Deployable, cacheable configuration data — prefer over Custom Settings for feature flags and configuration-driven behavior."}
-    ] },
-      { name: "Business Logic and Process Automation", pct: 35, color: "#F39C12", desc: "Implement advanced business logic using Apex, triggers, and integration with declarative automation.", keyTopics: [
-      {title:"Trigger Frameworks",desc:"Use handler-based trigger frameworks (one trigger per object, handler class) to separate concerns and maintain testability."},
-      {title:"Apex Design Patterns",desc:"Apply Service Layer, Domain Layer, Selector Layer (Apex Enterprise Patterns) for clean, maintainable, testable Apex architectures."},
-      {title:"Advanced Flow",desc:"Build complex Flows with loops, collections, sub-flows, invocable methods, and fault paths — understand when to use Flow vs Apex."},
-      {title:"Batch Apex",desc:"Process millions of records asynchronously — implement Database.Batchable with proper start/execute/finish methods and test with Test.startTest."},
-      {title:"Queueable and Future Apex",desc:"Queueable supports chaining and complex types; Future handles callouts from synchronous contexts — know the differences and limits."}
-    ] },
-      { name: "User Interface", pct: 25, color: "#E74C3C", desc: "Build advanced LWC components, integrate with third-party systems, and customize the Salesforce UI.", keyTopics: [
-      {title:"Advanced LWC",desc:"Build complex LWC components with custom events, slots, dynamic components, and wire adapters for custom Apex methods."},
-      {title:"LWC and Apex Integration",desc:"Use @wire for reactive data binding; use imperative Apex calls when you need explicit control over when data is fetched."},
-      {title:"Lightning Data Service",desc:"LDS provides reactive record data without Apex — supports getRecord, getFieldValue, and updateRecord wires for standard operations."},
-      {title:"Aura Components",desc:"Understand legacy Aura component architecture for maintaining existing implementations — know when to migrate to LWC."},
-      {title:"Custom Experience Cloud",desc:"Build branded Experience Cloud sites with custom LWC components, custom themes, and Apex controllers for community data access."}
-    ] },
-      { name: "Performance", pct: 8, color: "#1ABC9C", desc: "Optimize Apex, SOQL, and UI performance to build fast, scalable Salesforce solutions.", keyTopics: [
-      {title:"SOQL Optimization",desc:"Use selective queries with indexed fields, avoid SOQL in loops, use relationship queries to reduce total query count."},
-      {title:"Apex CPU Optimization",desc:"Minimize logic in loops, use Maps for O(1) lookups instead of nested loops, and profile with Limits.getCpuTime() in debug logs."},
-      {title:"Platform Cache",desc:"Store frequently accessed data in Platform Cache (org or session partition) to avoid repeated SOQL queries across transactions."},
-      {title:"Caching in LWC",desc:"Use @wire adapter caching and local state to reduce redundant Apex calls — understand when wire cache is invalidated."},
-      {title:"Skinny Tables",desc:"Salesforce can create skinny tables for high-volume objects with frequently queried fields — request via support for LDV performance gains."}
-    ] },
-      { name: "Integration", pct: 8, color: "#BDC3E7", desc: "Build robust integrations using Salesforce APIs, callouts, platform events, and streaming.", keyTopics: [
-      {title:"REST Callouts",desc:"Make synchronous HTTP callouts from Apex using HttpRequest/HttpResponse — always use Named Credentials for secure endpoint management."},
-      {title:"Platform Events",desc:"Publish and subscribe to Platform Events for loosely coupled, scalable integration — events are retained on the bus for 72 hours."},
-      {title:"Change Data Capture",desc:"CDC publishes record change events for near-real-time integration — subscribe from external systems or Apex triggers."},
-      {title:"Streaming API",desc:"CometD-based streaming for real-time event consumption — used for push notifications to browser-based clients."},
-      {title:"Callout Limits",desc:"Synchronous callouts: 100/transaction, 120s timeout; Async callouts in Future/Queueable: 100/transaction — design around these limits."}
-    ] },
-      { name: "Testing, Debugging, and Deployment", pct: 10, color: "#FF6B35", desc: "Write comprehensive tests, debug issues, and deploy solutions safely to production.", keyTopics: [
-      {title:"Test Coverage Requirements",desc:"75% aggregate Apex coverage required for production deployment — coverage is necessary but not sufficient; meaningful assertions matter."},
-      {title:"Mocking Callouts",desc:"Use HttpCalloutMock and StaticResourceCalloutMock to test Apex that makes HTTP callouts — callouts are disallowed in direct test execution."},
-      {title:"Debug Logs",desc:"Analyze debug logs to trace execution flow, governor limit consumption, and SOQL queries — set appropriate log levels to capture relevant data."},
-      {title:"SFDX Deployment",desc:"Use sf project deploy start with --dry-run to validate before deploying — run specified tests to verify coverage in CI pipelines."},
-      {title:"Deployment Strategies",desc:"Understand the trade-offs between Change Sets, SFDX/CLI, unlocked packages, and managed packages for different deployment scenarios."}
-    ] }
+        domains:[
+      {name:"Advanced Developer Fundamentals",pct:15,color:"#00A1E0"},
+      {name:"Process Automation, Logic, and Integration",pct:27,color:"#2ECC71"},
+      {name:"User Interface",pct:20,color:"#F39C12"},
+      {name:"Testing, Debugging, and Deployment",pct:20,color:"#E74C3C"},
+      {name:"Performance",pct:18,color:"#9B59B6"},
     ],
     studyDays:[
       {tag:"advanced-apex",focus:"Advanced Apex patterns: design patterns, virtual/abstract classes, and interface hierarchies",topics:[
@@ -314,56 +241,14 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-javascript-dev---JS-Dev-101",
     prerequisites: [],
     overview: "The Salesforce JavaScript Developer I certification validates expertise in core JavaScript development on the Salesforce platform. Candidates demonstrate proficiency in ES6+, LWC, asynchronous patterns, testing, and debugging JavaScript applications.",
-    domains: [
-      { name: "Variables, Data Types, and Collections", pct: 23, color: "#00A1E0", desc: "Master JavaScript's variable declarations, primitive types, and collection data structures.", keyTopics: [
-      {title:"var, let, and const",desc:"var is function-scoped and hoisted; let and const are block-scoped — prefer const by default, let when reassignment is needed."},
-      {title:"Primitive Types",desc:"JavaScript has 7 primitives: string, number, bigint, boolean, undefined, null, and symbol — primitives are immutable and compared by value."},
-      {title:"Type Coercion",desc:"JavaScript performs implicit type coercion in comparisons — use === (strict equality) instead of == to avoid unexpected coercion bugs."},
-      {title:"Arrays",desc:"Arrays are ordered, zero-indexed collections — master map, filter, reduce, forEach, find, findIndex, some, every, and spread/rest operators."},
-      {title:"Objects and Maps",desc:"Objects are key-value stores; Maps maintain insertion order and support non-string keys — use Map when key order or type matters."}
-    ] },
-      { name: "Objects, Functions, and Classes", pct: 25, color: "#2ECC71", desc: "Understand JavaScript's object model, prototypal inheritance, closures, and ES6 class syntax.", keyTopics: [
-      {title:"Prototypal Inheritance",desc:"JavaScript objects inherit from other objects via the prototype chain — all objects ultimately inherit from Object.prototype."},
-      {title:"ES6 Classes",desc:"Class syntax is syntactic sugar over prototypes — constructor, methods, extends, and super provide a familiar OOP interface."},
-      {title:"Closures",desc:"A closure is a function that retains access to its enclosing scope after the outer function has returned — used for data encapsulation and callbacks."},
-      {title:"this Keyword",desc:"'this' refers to the calling context — arrow functions inherit 'this' from their enclosing scope; regular functions define their own 'this'."},
-      {title:"Destructuring and Spread",desc:"Destructuring unpacks arrays and objects into variables; spread (...) expands iterables — both improve code readability."}
-    ] },
-      { name: "Browser and Events", pct: 17, color: "#F39C12", desc: "Interact with the browser DOM, handle user events, and manage web APIs in client-side JavaScript.", keyTopics: [
-      {title:"DOM Manipulation",desc:"Use querySelector, getElementById, and createElement to select, create, and modify DOM elements from JavaScript."},
-      {title:"Event Listeners",desc:"addEventListener attaches event handlers — understand bubbling (up the DOM), capturing (down), and stopPropagation/preventDefault."},
-      {title:"Event Delegation",desc:"Attach a single listener to a parent element and use event.target to handle events from dynamically added children — improves performance."},
-      {title:"Browser Storage",desc:"localStorage and sessionStorage provide client-side key-value storage — localStorage persists across sessions; sessionStorage is tab-scoped."},
-      {title:"Fetch API",desc:"The Fetch API makes HTTP requests from the browser — returns Promises, supports async/await, and replaces XMLHttpRequest in modern code."}
-    ] },
-      { name: "Debugging and Error Handling", pct: 7, color: "#E74C3C", desc: "Debug JavaScript code effectively and implement robust error handling patterns.", keyTopics: [
-      {title:"Browser DevTools",desc:"Chrome/Firefox DevTools provides breakpoints, call stack inspection, network monitoring, and performance profiling — master these tools."},
-      {title:"try/catch/finally",desc:"Wrap risky code in try/catch to handle runtime errors gracefully — finally always executes for cleanup regardless of success or failure."},
-      {title:"Custom Error Types",desc:"Extend the Error class to create domain-specific error types — makes error handling more expressive and debugging easier."},
-      {title:"console Methods",desc:"Beyond console.log: console.error, console.warn, console.table, console.group, and console.time for structured debugging output."},
-      {title:"Error Propagation",desc:"In Promise chains and async functions, unhandled rejections cause silent failures — always chain .catch() or use try/catch with await."}
-    ] },
-      { name: "Asynchronous Programming", pct: 13, color: "#1ABC9C", desc: "Master JavaScript's asynchronous model including Promises, async/await, and the event loop.", keyTopics: [
-      {title:"Event Loop",desc:"JavaScript is single-threaded — the event loop processes the call stack, then the microtask queue (Promises), then the macrotask queue (setTimeout)."},
-      {title:"Promises",desc:"Promises represent an eventual value — chain .then() for success and .catch() for rejection; use Promise.all for parallel async operations."},
-      {title:"Async/Await",desc:"async functions return Promises; await pauses execution until a Promise resolves — makes async code read like synchronous code."},
-      {title:"Promise.all vs Promise.allSettled",desc:"Promise.all rejects immediately if any Promise fails; Promise.allSettled waits for all to complete regardless of outcome."},
-      {title:"Callbacks and Callback Hell",desc:"Callbacks are the original async pattern — deeply nested callbacks (callback hell) are replaced by Promises and async/await in modern code."}
-    ] },
-      { name: "Server-Side JavaScript", pct: 8, color: "#BDC3E7", desc: "Understand Node.js fundamentals for building server-side JavaScript applications.", keyTopics: [
-      {title:"Node.js Runtime",desc:"Node.js runs JavaScript outside the browser using the V8 engine — it is event-driven and non-blocking, ideal for I/O-intensive applications."},
-      {title:"CommonJS vs ES Modules",desc:"Node.js originally used CommonJS (require/module.exports); ES Modules (import/export) are now supported — know both syntaxes."},
-      {title:"npm and Package Management",desc:"npm manages JavaScript dependencies — understand package.json, node_modules, semantic versioning, and npm scripts."},
-      {title:"Express.js Basics",desc:"Express is the most popular Node.js web framework — understand routing, middleware, request/response objects, and error-handling middleware."},
-      {title:"File System and HTTP",desc:"Node.js built-in modules (fs, http, path) provide file access and HTTP server capabilities without third-party packages."}
-    ] },
-      { name: "Testing", pct: 7, color: "#FF6B35", desc: "Write and run unit and integration tests for JavaScript applications.", keyTopics: [
-      {title:"Jest Framework",desc:"Jest is the most popular JavaScript testing framework — provides test runner, assertions, mocking, and code coverage out of the box."},
-      {title:"Unit Tests",desc:"Test individual functions in isolation — mock dependencies to focus the test on the unit's behavior rather than its collaborators."},
-      {title:"Mocking",desc:"Jest's jest.fn(), jest.mock(), and jest.spyOn() mock modules, functions, and methods — prevent real network calls and side effects in tests."},
-      {title:"Test Coverage",desc:"Use Jest's --coverage flag to measure what percentage of code is executed by tests — aim for high coverage on critical business logic."},
-      {title:"Integration Tests",desc:"Test how components interact together — use tools like Supertest for testing Express APIs end-to-end in a test environment."}
-    ] }
+        domains:[
+      {name:"Variables, Types, and Collections",pct:23,color:"#00A1E0"},
+      {name:"Objects, Functions, and Classes",pct:25,color:"#2ECC71"},
+      {name:"Browser and Events",pct:17,color:"#F39C12"},
+      {name:"Debugging and Error Handling",pct:7,color:"#E74C3C"},
+      {name:"Asynchronous Programming",pct:13,color:"#9B59B6"},
+      {name:"Server Side JavaScript",pct:8,color:"#1ABC9C"},
+      {name:"Testing",pct:7,color:"#E67E22"},
     ],
     studyDays:[
       {tag:"js-fundamentals",focus:"JavaScript fundamentals: scope, closures, prototypes, and ES6+ syntax",topics:[
@@ -457,49 +342,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-omnistudio-developer---Plat-Dev-210",
     prerequisites: ["Platform Developer"],
     overview: "The OmniStudio Developer certification validates expertise in developing digital engagement solutions using OmniStudio tools. Candidates demonstrate proficiency in OmniScript, FlexCards, DataRaptors, Integration Procedures, and the overall OmniStudio architecture.",
-    domains: [
-      { name: "OmniStudio Fundamentals", pct: 12, color: "#00A1E0", desc: "Understand the OmniStudio platform, its components, and how they fit together in Industries solutions.", keyTopics: [
-      {title:"OmniStudio Component Family",desc:"OmniStudio includes OmniScripts (guided processes), FlexCards (display), DataRaptors (data I/O), and Integration Procedures (orchestration)."},
-      {title:"OmniStudio vs Standard Flows",desc:"OmniStudio uses a JSON-based client-side model for faster navigation; standard Flows are server-side — OmniStudio excels for complex guided UX."},
-      {title:"DataPack Migration",desc:"OmniStudio components are exported as DataPacks and imported between orgs — the primary deployment mechanism for all OmniStudio artifacts."},
-      {title:"Industries Cloud Context",desc:"OmniStudio is the UI and process layer for Health Cloud, FSC, Energy, and other Industries Clouds — it is not just a standalone tool."},
-      {title:"Version Management",desc:"OmniStudio components support versioning — only one version is active at a time; draft versions allow safe iteration without impacting production."}
-    ] },
-      { name: "FlexCards", pct: 20, color: "#2ECC71", desc: "Build FlexCards to display contextual data and provide quick actions on Salesforce record pages.", keyTopics: [
-      {title:"FlexCard Structure",desc:"A FlexCard has a data source, display elements (fields, images, icons), actions, and conditional visibility rules."},
-      {title:"Data Sources",desc:"FlexCards can pull data from DataRaptors, Integration Procedures, SOQL queries, or Apex — choose based on complexity and performance needs."},
-      {title:"FlexCard Actions",desc:"Actions include FlyOut (floating panel), Modal (overlay), Navigate (page nav), and custom actions — each serves a different interaction pattern."},
-      {title:"Child FlexCards",desc:"Embed one FlexCard inside another to create modular, reusable display components — child cards receive data from the parent context."},
-      {title:"Conditional Visibility",desc:"Show or hide FlexCard elements based on field values or conditions — keeps the UI clean and contextually relevant."}
-    ] },
-      { name: "OmniScript", pct: 22, color: "#F39C12", desc: "Design and build OmniScripts for guided, multi-step user interactions and transactions.", keyTopics: [
-      {title:"OmniScript Structure",desc:"An OmniScript is built from Steps (pages), Groups (sections), and Elements (inputs, outputs, actions) arranged in a tree structure."},
-      {title:"Input Elements",desc:"Text, Number, Date, Picklist, Radio, Checkbox, File Upload — each maps to a JSON key in the OmniScript data node."},
-      {title:"Conditional View",desc:"Show or hide elements dynamically using conditions on the data node — the primary tool for branching within a step."},
-      {title:"DataRaptor and IP Actions",desc:"Embed DataRaptor Extract/Load or Integration Procedure actions within the OmniScript to read and write data at any step."},
-      {title:"Error Handling",desc:"Configure custom error messages and validation patterns on input elements — server-side errors from actions surface as script-level errors."}
-    ] },
-      { name: "DataRaptors", pct: 22, color: "#E74C3C", desc: "Build DataRaptors to extract, transform, and load data between Salesforce and OmniStudio components.", keyTopics: [
-      {title:"DataRaptor Types",desc:"Extract reads from Salesforce into JSON; Turbo Extract reads with direct SOQL for speed; Load writes to Salesforce; Transform reshapes JSON without DML."},
-      {title:"Field Mapping",desc:"Map source fields to target fields using dot-notation paths — correct mapping is the core skill for DataRaptor development."},
-      {title:"Turbo Extract Performance",desc:"Turbo Extract bypasses JSON transformation overhead and queries Salesforce directly — use it when speed matters and transformation is minimal."},
-      {title:"DataRaptor Load DML",desc:"Load DataRaptors perform insert, update, upsert, or delete operations — configure the operation type and key field for upserts."},
-      {title:"Transform Use Cases",desc:"Transform DataRaptors reshape data without touching Salesforce — ideal for reformatting API responses before displaying in OmniScript."}
-    ] },
-      { name: "Integration Procedures", pct: 14, color: "#1ABC9C", desc: "Build Integration Procedures to orchestrate server-side data operations and external API calls.", keyTopics: [
-      {title:"IP Structure",desc:"Integration Procedures contain action elements (DataRaptor, HTTP, Conditional, Loop, Set Values) executed server-side in sequence."},
-      {title:"HTTP Action",desc:"Calls an external REST API — configure the endpoint, method, headers, and request body; map the response to the IP data node."},
-      {title:"Conditional and Loop Elements",desc:"Branch IP execution with Conditional elements; iterate over lists with Loop elements — enables complex orchestration logic."},
-      {title:"Error Handling in IPs",desc:"Use the 'Throw Error' element or conditional branching to handle failed HTTP calls or DataRaptor errors gracefully."},
-      {title:"Calling IPs from OmniScript",desc:"Call an Integration Procedure from an OmniScript action element — the IP runs server-side and returns results to the script's data node."}
-    ] },
-      { name: "OmniStudio for Industries", pct: 10, color: "#BDC3E7", desc: "Apply OmniStudio in the context of specific Industries Clouds including Health, FSC, and Energy.", keyTopics: [
-      {title:"Health Cloud Use Cases",desc:"OmniStudio powers care program enrollment, patient intake, and care gap closure workflows in Health Cloud."},
-      {title:"Financial Services Cloud Use Cases",desc:"FSC uses OmniStudio for loan applications, account onboarding, and financial planning guided processes."},
-      {title:"Industries Data Model",desc:"Each Industries Cloud has a specialized data model — OmniStudio components must align to the correct object and field structure."},
-      {title:"Vlocity Rebranding",desc:"OmniStudio was formerly known as Vlocity — legacy references to Vlocity components, DataPacks, and terms still appear in documentation."},
-      {title:"App Exchange OmniStudio Apps",desc:"Many pre-built OmniStudio solution templates are available on AppExchange — evaluate before building from scratch."}
-    ] }
+        domains:[
+      {name:"Omnistudio Fundamentals",pct:18,color:"#00A1E0"},
+      {name:"Flexcards",pct:15,color:"#2ECC71"},
+      {name:"Omniscripts",pct:20,color:"#F39C12"},
+      {name:"Integration Procedures",pct:15,color:"#E74C3C"},
+      {name:"Data Mappers",pct:17,color:"#9B59B6"},
+      {name:"Troubleshooting and Debugging",pct:15,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"omnistudio-overview",focus:"OmniStudio architecture: FlexCards, OmniScripts, DataRaptors, and Integration Procedures",topics:[
@@ -593,49 +442,12 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-industries-cpq---Ind-Dev-201",
     prerequisites: ["Platform Developer"],
     overview: "The Industries CPQ Developer certification validates expertise in developing and configuring the Salesforce Industries CPQ solution (formerly Vlocity CPQ). Candidates demonstrate proficiency in catalog management, pricing, OmniStudio integration, and CPQ customization for complex industry use cases.",
-    domains: [
-      { name: "Industries CPQ Fundamentals", pct: 15, color: "#00A1E0", desc: "Understand the Industries CPQ product, its architecture, and how it differs from Salesforce CPQ.", keyTopics: [
-      {title:"Industries CPQ vs Salesforce CPQ",desc:"Industries CPQ is purpose-built for telecom, utilities, and media — it uses a catalog-driven model vs Salesforce CPQ's product/price rule model."},
-      {title:"Product Catalog",desc:"The catalog defines products, bundles, and offers — it is managed in Enterprise Product Catalog (EPC) and published to storefronts."},
-      {title:"Configuration Engine",desc:"The configuration engine validates product selections against compatibility rules and cardinality constraints in real time."},
-      {title:"Cart Model",desc:"Industries CPQ uses a cart-based model — customers add configured products to a cart, which is then priced and converted to an order."},
-      {title:"OmniStudio Integration",desc:"Industries CPQ is built on OmniStudio — OmniScripts drive the quoting UI and Integration Procedures handle pricing and validation calls."}
-    ] },
-      { name: "Catalog Management", pct: 20, color: "#2ECC71", desc: "Build and manage the enterprise product catalog that drives Industries CPQ configuration.", keyTopics: [
-      {title:"Product Specifications",desc:"Product Specs define the attributes of a product — data type, cardinality, default values, and whether the attribute is configurable by the customer."},
-      {title:"Catalog Rules",desc:"Compatibility rules prevent invalid combinations; cardinality rules enforce min/max quantities — both run server-side during configuration."},
-      {title:"Bundles and Offers",desc:"Bundles group products into sellable offers — a broadband bundle might include internet service, router, and installation as components."},
-      {title:"Catalog Versioning",desc:"The catalog is versioned — changes are made in draft and published as a new version; existing quotes reference the version active when created."},
-      {title:"Catalog Publishing",desc:"After editing the catalog in EPC, publish to make changes available to the quoting engine — unpublished changes have no effect on quoting."}
-    ] },
-      { name: "Pricing", pct: 20, color: "#F39C12", desc: "Configure and extend the Industries CPQ pricing engine for complex telecom and utility pricing models.", keyTopics: [
-      {title:"Price Lists",desc:"Price Lists define the base prices for products and attributes — multiple price lists support different markets, channels, or customer segments."},
-      {title:"Charge Definitions",desc:"Charges define how a product is billed — one-time, recurring monthly, or usage-based charges can all be defined per product."},
-      {title:"Discount Management",desc:"Apply percentage or absolute discounts at the product, bundle, or cart level — discounts can be configured or applied by sales reps within authority limits."},
-      {title:"Pricing Procedures",desc:"Pricing Procedures are orchestrated Integration Procedures that calculate price — they run when a cart item is added or modified."},
-      {title:"Taxation",desc:"Configure tax codes on products and integrate with tax engines (Avalara, Vertex) to calculate applicable taxes during checkout."}
-    ] },
-      { name: "OmniStudio and CPQ Integration", pct: 20, color: "#E74C3C", desc: "Integrate OmniStudio components with the Industries CPQ catalog and pricing engine.", keyTopics: [
-      {title:"Quote and Order OmniScripts",desc:"OmniScripts drive the quoting UI — they call Integration Procedures that interact with the CPQ catalog, configuration engine, and pricing."},
-      {title:"Catalog API Calls",desc:"Integration Procedures call the CPQ REST APIs to retrieve available products, validate configurations, and calculate prices."},
-      {title:"DataRaptors for CPQ Data",desc:"Use DataRaptors to read quote, cart, and order data from Salesforce objects and map them to OmniScript display elements."},
-      {title:"Contextual Catalog",desc:"Configure the catalog context to filter available products based on customer segment, geography, or channel — drives relevant product display."},
-      {title:"Custom Pricing IPs",desc:"When standard pricing rules are insufficient, build custom pricing Integration Procedures that apply additional business logic to the price calculation."}
-    ] },
-      { name: "Cart and Order Management", pct: 15, color: "#1ABC9C", desc: "Manage the cart lifecycle from product selection through order submission and fulfillment initiation.", keyTopics: [
-      {title:"Cart Object Model",desc:"The cart consists of Cart Items (one per product) with attributes, pricing, and validation status — stored in Salesforce objects."},
-      {title:"Cart Validation",desc:"Validation runs compatibility and cardinality rules on the full cart before checkout — validation errors must be resolved before submission."},
-      {title:"Order Submission",desc:"Submitting the cart creates an Order record with Order Items — triggers downstream fulfillment and provisioning processes."},
-      {title:"Order Amendments",desc:"Amend an active order to add, remove, or change products — the CPQ engine calculates prorated charges for mid-term changes."},
-      {title:"Decomposition",desc:"Order decomposition breaks a complex order into service-level line items for routing to fulfillment systems — configured in the catalog."}
-    ] },
-      { name: "Customization and Extensibility", pct: 10, color: "#BDC3E7", desc: "Extend Industries CPQ with custom Apex, LWC, and API integrations for requirements beyond out-of-the-box capabilities.", keyTopics: [
-      {title:"Custom Apex in CPQ",desc:"Use Apex to implement custom validation, pricing overrides, or complex eligibility rules that cannot be expressed in the catalog."},
-      {title:"LWC for CPQ UI",desc:"Build custom LWC components to replace or augment standard CPQ UI elements — embed them in OmniScripts using the LWC element type."},
-      {title:"CPQ REST API",desc:"The Industries CPQ REST API exposes catalog, pricing, and cart operations — use it from Integration Procedures or external systems."},
-      {title:"Custom Events",desc:"Publish Platform Events from CPQ workflows to trigger downstream Salesforce automation or external system notifications."},
-      {title:"Testing CPQ Customizations",desc:"Test custom Apex with unit tests mocking CPQ API responses; test OmniScript flows in the OmniStudio test harness before deploying."}
-    ] }
+        domains:[
+      {name:"Products",pct:20,color:"#00A1E0"},
+      {name:"Promotions and Discounts",pct:7,color:"#2ECC71"},
+      {name:"Pricing",pct:17,color:"#F39C12"},
+      {name:"Ordering and Quoting",pct:12,color:"#E74C3C"},
+      {name:"Troubleshooting",pct:20,color:"#9B59B6"},
     ],
     studyDays:[
       {tag:"industries-cpq-overview",focus:"Industries CPQ architecture: product catalog, pricing, orders, and the Quote object",topics:[
@@ -705,49 +517,11 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailhead.salesforce.com/credentials/b2ccommerceclouddev",
     prerequisites: [],
     overview: "The Salesforce B2C Commerce Developer certification validates technical expertise in developing e-commerce storefronts on the Salesforce B2C Commerce platform. Candidates demonstrate proficiency in SFRA, cartridges, pipelines, controllers, templates, and API integration.",
-    domains: [
-      { name: "Commerce Cloud Fundamentals", pct: 10, color: "#00A1E0", desc: "Understand B2C Commerce Cloud architecture, the SFRA framework, and key platform concepts.", keyTopics: [
-      {title:"B2C Commerce Architecture",desc:"B2C Commerce Cloud is a multi-tenant SaaS ecommerce platform — each customer has their own realm with separate storefront instances."},
-      {title:"SFRA Overview",desc:"Storefront Reference Architecture is the modern B2C Commerce development framework — replaces the legacy SiteGenesis with a modular cartridge system."},
-      {title:"Business Manager",desc:"Business Manager is the admin UI for managing catalogs, pricing, promotions, content, and order management in B2C Commerce."},
-      {title:"Sandboxes and On-Demand Sandboxes",desc:"Developers use Sandboxes for development and testing — On-Demand Sandboxes (ODS) are shorter-lived environments for feature work."},
-      {title:"OCAPI and SCAPI",desc:"OCAPI is the legacy REST API; SCAPI (Salesforce Commerce API) is the modern, JWT-authenticated API — use SCAPI for new integrations."}
-    ] },
-      { name: "Cartridge Development", pct: 25, color: "#2ECC71", desc: "Build and customize B2C Commerce cartridges to implement storefront features and business logic.", keyTopics: [
-      {title:"Cartridge Structure",desc:"A cartridge is a folder containing controllers, templates, models, scripts, and static assets — it follows a strict directory convention."},
-      {title:"Cartridge Path",desc:"The cartridge path defines lookup order — cartridges earlier in the path override those later, enabling clean customization without forking."},
-      {title:"Controllers",desc:"Controllers handle HTTP requests — they retrieve models, call scripts, and render ISML templates. Extend base SFRA controllers via superModule."},
-      {title:"Scripts",desc:"Server-side JavaScript files in the scripts folder encapsulate business logic — import them into controllers and other scripts using require()."},
-      {title:"Custom Cartridge vs Plugin",desc:"Create a custom cartridge to override SFRA behavior — avoid modifying SFRA base cartridges directly to preserve upgrade compatibility."}
-    ] },
-      { name: "SFRA (Storefront Reference Architecture)", pct: 25, color: "#F39C12", desc: "Implement and customize the Storefront Reference Architecture for modern B2C Commerce storefronts.", keyTopics: [
-      {title:"SFRA Module Pattern",desc:"SFRA uses a module/extend pattern — override specific controller steps or template regions without replacing the entire component."},
-      {title:"Route Handling",desc:"Routes in SFRA are defined in controllers using server.get, server.post, and server.append — middleware chains process requests in order."},
-      {title:"Middleware",desc:"Middleware functions execute in sequence on each request — use them for authentication checks, logging, and data enrichment before the main handler."},
-      {title:"Client-Side JavaScript",desc:"SFRA uses a webpack-based client-side build system — write modular JavaScript in the client folder and compile with npm run compile:js."},
-      {title:"ISML Templates",desc:"ISML (Internet Store Markup Language) is B2C Commerce's server-side templating language — use isinclude, isloop, isif, and isprint tags."}
-    ] },
-      { name: "Business Manager", pct: 15, color: "#E74C3C", desc: "Configure and manage B2C Commerce storefronts using Business Manager's catalog, pricing, and content tools.", keyTopics: [
-      {title:"Catalog Management",desc:"Catalogs define products, categories, and assignments — master catalogs store product data; storefront catalogs define navigation and assignment."},
-      {title:"Price Books",desc:"Price books define sale prices for products — multiple price books support sales, customer groups, and currency-specific pricing."},
-      {title:"Promotions",desc:"Configure product, order, and shipping promotions with conditions and discounts — promotions can be stacked or mutually exclusive."},
-      {title:"Content Slots",desc:"Content slots define regions on a page where merchandisers can inject content (banners, product sets) without developer involvement."},
-      {title:"Jobs and Pipelines",desc:"Scheduled jobs automate catalog imports, inventory updates, and order exports — configure job schedules and monitor execution in Business Manager."}
-    ] },
-      { name: "Integrations", pct: 15, color: "#1ABC9C", desc: "Integrate B2C Commerce with external systems including payment, tax, search, and CRM platforms.", keyTopics: [
-      {title:"SCAPI Integration",desc:"Use Salesforce Commerce API (SCAPI) for headless commerce — SCAPI provides product, cart, order, and customer endpoints with OAuth 2.0 PKCE."},
-      {title:"Payment Integration",desc:"Integrate payment providers (Stripe, Adyen, Cybersource) via SFRA payment processor hooks — implement authorize, capture, and refund hooks."},
-      {title:"Tax Integration",desc:"Connect to tax engines (Avalara, Vertex) for real-time tax calculation during checkout — implement the TaxMgr hook in a custom cartridge."},
-      {title:"Search Integration",desc:"Einstein Product Recommendations and Predictive Sort use behavioral data to personalize search results and product display order."},
-      {title:"Marketing Cloud Connect",desc:"Connect B2C Commerce to Marketing Cloud for abandoned cart emails, order confirmation journeys, and post-purchase campaigns."}
-    ] },
-      { name: "Performance and Caching", pct: 10, color: "#BDC3E7", desc: "Optimize B2C Commerce storefront performance through effective caching and page design.", keyTopics: [
-      {title:"Page Caching",desc:"B2C Commerce uses full-page, partial-page, and fragment caching — configure cache TTLs in ISML templates and controller responses."},
-      {title:"CDN Integration",desc:"Static assets and cacheable pages are served through Akamai CDN — configure cache headers and purge rules appropriately."},
-      {title:"Pipeline Profiler",desc:"Use the Pipeline Profiler in Business Manager to identify slow controllers and scripts — the primary performance debugging tool."},
-      {title:"Lazy Loading",desc:"Defer non-critical content and images below the fold — improves Time to First Byte (TTFB) and Core Web Vitals scores."},
-      {title:"AB Testing Performance Impact",desc:"A/B tests and personalization rules add processing overhead — measure their performance impact and optimize high-traffic page variants."}
-    ] }
+        domains:[
+      {name:"B2C Commerce Setup",pct:11,color:"#00A1E0"},
+      {name:"Work With a B2C Site",pct:12,color:"#2ECC71"},
+      {name:"Data Management Using Business Manager Usage",pct:24,color:"#F39C12"},
+      {name:"Application Development",pct:53,color:"#E74C3C"},
     ],
     studyDays:[
       {tag:"b2c-dev-setup",focus:"Set up B2C Commerce developer environment: Business Manager, sandbox, and code upload",topics:[
@@ -833,49 +607,18 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mule-dev---Mule-Dev-201",
     prerequisites: [],
     overview: "The MuleSoft Certified Developer - Level 1 certification validates the ability to build Mule applications using Anypoint Studio. Candidates demonstrate proficiency in Mule 4 runtime, core components, connectors, DataWeave, error handling, and API design.",
-    domains: [
-      { name: "Anypoint Platform Overview", pct: 8, color: "#00A1E0", desc: "Navigate the Anypoint Platform and understand its key components for building and managing Mule integrations.", keyTopics: [
-      {title:"Anypoint Studio",desc:"Eclipse-based IDE for building Mule applications — provides a visual canvas, XML editor, and built-in connectors for all major systems."},
-      {title:"Design Center",desc:"Browser-based tool for designing RAML API specs and simple Mule flows — enables collaboration without a local IDE install."},
-      {title:"Anypoint Exchange",desc:"Internal marketplace for publishing and discovering APIs, connectors, and templates — promotes reuse across integration teams."},
-      {title:"Runtime Manager",desc:"Deploy and monitor Mule applications on CloudHub or on-premises Runtime Fabric — provides application metrics and alerting."},
-      {title:"API Manager",desc:"Apply governance policies (rate limiting, OAuth, logging) to deployed APIs — manages the full API lifecycle from design to retirement."}
-    ] },
-      { name: "API-Led Connectivity", pct: 10, color: "#2ECC71", desc: "Apply API-led connectivity to design reusable, layered integration architectures.", keyTopics: [
-      {title:"System APIs",desc:"Wrap backend systems (SAP, Salesforce, databases) with a stable API — abstracts system complexity from consuming applications."},
-      {title:"Process APIs",desc:"Orchestrate calls to System APIs to implement business logic — reusable across multiple Experience APIs and consumer channels."},
-      {title:"Experience APIs",desc:"Tailored for specific consumers (mobile app, web, partner) — call Process APIs to retrieve and format data for that consumer's needs."},
-      {title:"Anti-Patterns",desc:"Avoid bypassing layers (calling System APIs directly from Experience APIs) and building 'god' APIs that do everything — breaks reusability."},
-      {title:"C4E and Reuse",desc:"The Center for Enablement promotes API reuse — publish completed APIs to Exchange and measure reuse rates as a key success metric."}
-    ] },
-      { name: "Building Integration Applications", pct: 30, color: "#F39C12", desc: "Build Mule applications with flows, connectors, and routing to integrate systems.", keyTopics: [
-      {title:"Mule Flow Architecture",desc:"Flows have a Source (trigger), Process (logic), and Error Handler — sub-flows and private flows enable reuse of logic across the application."},
-      {title:"Core Connectors",desc:"HTTP, Database, File, SFTP, Salesforce, JMS, Kafka — each connector has operation-specific configuration and connection management."},
-      {title:"Routers and Scopes",desc:"Choice Router branches based on conditions; Scatter-Gather runs parallel routes; For Each iterates over collections — core flow control tools."},
-      {title:"Mule 4 Event Model",desc:"A Mule event contains a payload and attributes — understand how payload and variables are scoped across flow execution."},
-      {title:"Connector Configuration",desc:"Separate connector configuration (credentials, endpoints) from flow logic using global configuration elements — enables environment-specific overrides."}
-    ] },
-      { name: "DataWeave", pct: 25, color: "#E74C3C", desc: "Transform data between formats using DataWeave, MuleSoft's powerful transformation language.", keyTopics: [
-      {title:"DataWeave Syntax",desc:"DataWeave scripts have a header (imports, variables) and a body (the transformation expression) — output directive specifies the target format."},
-      {title:"Type System",desc:"DataWeave supports String, Number, Boolean, Date, Object, Array, Null — coerce types using as keyword for type-safe transformations."},
-      {title:"Mapping Patterns",desc:"Use map to transform arrays, filter to select items, reduce to aggregate, and mapObject to transform key-value pairs in objects."},
-      {title:"Format Support",desc:"DataWeave natively transforms JSON, XML, CSV, Java, and flat files — specify input/output MIME types in the Transform Message component."},
-      {title:"Functions and Modules",desc:"Define reusable functions with fun keyword; import dw::core modules for String, Array, Math, and Date utilities."}
-    ] },
-      { name: "Error Handling", pct: 12, color: "#1ABC9C", desc: "Implement robust error handling in Mule applications to manage failures gracefully.", keyTopics: [
-      {title:"Error Types",desc:"Mule errors have a type namespace (HTTP:CONNECTIVITY, DB:QUERY_EXECUTION) — use On Error Propagate (re-throws) or On Error Continue (resumes)."},
-      {title:"Try Scope",desc:"Wrap specific operations in a Try scope with its own error handler — catches errors locally without affecting the parent flow error handler."},
-      {title:"Global Error Handler",desc:"Configure a global default error handler for errors not caught by flow-level handlers — prevents unhandled errors from crashing flows."},
-      {title:"Error Logging",desc:"Log error type, message, and cause in every error handler — include correlation ID for tracing across distributed flows."},
-      {title:"Retry Patterns",desc:"Use Until Successful scope to retry failed operations with configurable retry count and delay — ideal for transient connectivity failures."}
-    ] },
-      { name: "Deployment", pct: 15, color: "#BDC3E7", desc: "Deploy Mule applications to CloudHub and understand deployment options and lifecycle management.", keyTopics: [
-      {title:"CloudHub Deployment",desc:"Deploy Mule apps to CloudHub via Runtime Manager UI, CLI, or Maven plugin — specify worker size, count, and region for each app."},
-      {title:"Environment Management",desc:"Anypoint Platform supports multiple environments (Dev, QA, Prod) — deploy the same application artifact to each with environment-specific properties."},
-      {title:"Properties and Secrets",desc:"Use secure properties (encrypted) for credentials and environment-specific values — never hardcode credentials in application code."},
-      {title:"CI/CD for MuleSoft",desc:"Use the Mule Maven Plugin in Jenkins, GitHub Actions, or Azure Pipelines to automate build, test, and deploy of Mule applications."},
-      {title:"Runtime Fabric (RTF)",desc:"RTF deploys Mule applications on customer-managed Kubernetes clusters — provides more control than CloudHub for regulated industries."}
-    ] }
+        domains:[
+      {name:"Designing APIs",pct:8,color:"#00A1E0"},
+      {name:"Accessing and Modifying Mule Events",pct:10,color:"#2ECC71"},
+      {name:"Structuring Mule Applications",pct:10,color:"#F39C12"},
+      {name:"Building API Implementation Interfaces",pct:7,color:"#E74C3C"},
+      {name:"Using Connectors",pct:10,color:"#9B59B6"},
+      {name:"Processing Records",pct:10,color:"#1ABC9C"},
+      {name:"Transforming Data",pct:10,color:"#E67E22"},
+      {name:"Routing Events",pct:8,color:"#3498DB"},
+      {name:"Handling Errors",pct:8,color:"#E91E63"},
+      {name:"Debugging and Troubleshooting Mule Applications",pct:5,color:"#607D8B"},
+      {name:"Deploying and Managing APIs and Integrations",pct:7,color:"#795548"},
     ],
     studyDays:[
       {tag:"mule4-basics",focus:"Mule 4 development fundamentals: flows, connectors, and the Mule event model",topics:[
@@ -969,17 +712,12 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mule-dev-2---Mule-Dev-301",
     prerequisites: [{name:"MuleSoft Developer",required:true}],
     overview: "The MuleSoft Certified Developer - Level 2 certification validates advanced Mule development skills. Candidates demonstrate proficiency in advanced DataWeave, performance optimization, security implementation, complex error handling, and enterprise integration patterns.",
-    domains: [
-      { name: "Anypoint Platform Architecture", pct: 10, color: "#00A1E0" },
-      { name: "Advanced Application Development", pct: 30, color: "#2ECC71" },
-      { name: "Advanced DataWeave", pct: 25, color: "#F39C12" },
-      { name: "Security", pct: 15, color: "#E74C3C", desc: "Secure Heroku applications through private networking, secrets management, and compliance controls.", keyTopics: [
-      {title:"Private Spaces",desc:"Deploy apps in Heroku Private Spaces for network isolation and IP allowlisting."},
-      {title:"Secrets Management",desc:"Store credentials in Heroku Config Vars and rotate them without downtime."},
-      {title:"Compliance",desc:"Align Heroku deployment practices with SOC 2, HIPAA, and PCI-DSS requirements."}
-    ] },
-      { name: "Performance and Scalability", pct: 10, color: "#1ABC9C" },
-      { name: "Enterprise Deployment", pct: 10, color: "#BDC3E7" }
+        domains:[
+      {name:"Expose production-ready Anypoint Platform-managed APIs from Mule applications",pct:13,color:"#00A1E0"},
+      {name:"Implement maintainable and modular Mule applications and their Maven builds",pct:25,color:"#2ECC71"},
+      {name:"Implement monitorable Mule applications",pct:15,color:"#F39C12"},
+      {name:"Implement performant and reliable Mule applications",pct:27,color:"#E74C3C"},
+      {name:"Secure data at rest and in transit",pct:20,color:"#9B59B6"},
     ],
     studyDays:[
       {tag:"advanced-mule4",focus:"Advanced Mule 4 patterns: scatter-gather, parallel foreach, and streaming",topics:[
@@ -1065,49 +803,15 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-hyperautomation-developer---Mule-Dev-202",
     prerequisites: [{name:"MuleSoft Developer",required:true}],
     overview: "The MuleSoft Hyperautomation Developer certification validates expertise in building end-to-end automation solutions using MuleSoft's Anypoint Platform combined with RPA (Robotic Process Automation) and intelligent automation capabilities.",
-    domains: [
-      { name: "Hyperautomation Fundamentals", pct: 15, color: "#00A1E0", desc: "Understand the concept of hyperautomation and how MuleSoft fits into an end-to-end automation strategy.", keyTopics: [
-      {title:"What Is Hyperautomation",desc:"Hyperautomation combines RPA, AI, integration, and process mining to automate complex, end-to-end business processes at scale."},
-      {title:"MuleSoft in Hyperautomation",desc:"MuleSoft provides the integration backbone — connecting RPA bots, AI services, and business applications in a unified automation platform."},
-      {title:"Automation Tiers",desc:"Identify which tier fits the process: simple task (RPA), structured workflow (Flow/Process Builder), or complex multi-system (MuleSoft + RPA)."},
-      {title:"Process Discovery",desc:"Use process mining and task capture tools to identify automation candidates — focus on high-volume, rule-based, repetitive processes first."},
-      {title:"ROI of Automation",desc:"Quantify automation value through time saved, error reduction, and headcount reallocation — build a business case before automating."}
-    ] },
-      { name: "MuleSoft RPA", pct: 25, color: "#2ECC71", desc: "Build and deploy MuleSoft RPA bots to automate repetitive desktop and web tasks.", keyTopics: [
-      {title:"RPA Builder",desc:"MuleSoft RPA Builder is the desktop tool for recording and building RPA automation sequences — uses a visual activity-based model."},
-      {title:"Activity Types",desc:"RPA activities include web interactions, desktop app interactions, file operations, email handling, and data extraction from documents."},
-      {title:"Bot Deployment",desc:"Deploy bots to RPA Bots (cloud) or on-premises Bot Agents — configure bot pools for high-availability and concurrent execution."},
-      {title:"RPA Manager",desc:"RPA Manager orchestrates bot execution, schedules runs, monitors results, and manages bot licenses — the control plane for RPA operations."},
-      {title:"RPA and Mule Integration",desc:"Trigger RPA bots from Mule flows using the RPA connector — pass data to bots and receive results back for downstream processing."}
-    ] },
-      { name: "Composer Integration", pct: 20, color: "#F39C12", desc: "Use MuleSoft Composer to build no-code integrations between SaaS applications.", keyTopics: [
-      {title:"Composer Overview",desc:"Composer is a no-code integration tool for business users — connect Salesforce, Slack, Google Sheets, NetSuite, and other SaaS apps with clicks."},
-      {title:"Flows in Composer",desc:"Composer flows have a trigger event and a series of actions — similar to Salesforce Flow but focused on cross-app data synchronization."},
-      {title:"When to Use Composer vs Mule",desc:"Use Composer for simple, citizen-developer integrations; use Mule for complex, high-volume, or multi-step enterprise integrations."},
-      {title:"Data Mapping in Composer",desc:"Map fields between source and target objects visually — Composer handles type conversion and provides formula support for transformations."},
-      {title:"Composer Governance",desc:"Admins can audit Composer flows, manage connections, and apply data governance policies to prevent unauthorized data flows."}
-    ] },
-      { name: "AI/ML in Automation", pct: 15, color: "#E74C3C", desc: "Incorporate AI and machine learning services into hyperautomation workflows.", keyTopics: [
-      {title:"Einstein AI Integration",desc:"Invoke Einstein models (prediction, NLP, classification) from Mule flows using the Einstein connector or REST API calls."},
-      {title:"Document Understanding",desc:"Use MuleSoft's IDP (Intelligent Document Processing) to extract structured data from unstructured documents like invoices and forms."},
-      {title:"AI Decision Points",desc:"Insert AI predictions as decision points in automation flows — e.g., route a claim based on fraud score or classify a support ticket by topic."},
-      {title:"Model Governance",desc:"Track model versions, monitor prediction accuracy, and retrain models when performance degrades — AI-driven automation requires ongoing monitoring."},
-      {title:"Responsible AI",desc:"Implement bias detection, explainability, and audit logging for AI decisions in automated processes — required for regulated industries."}
-    ] },
-      { name: "Process Automation Design", pct: 15, color: "#1ABC9C", desc: "Design end-to-end automated processes that combine integration, RPA, and AI components.", keyTopics: [
-      {title:"Process Decomposition",desc:"Break complex processes into atomic steps — identify which steps suit RPA (UI interaction), Mule (API calls), or AI (decisions)."},
-      {title:"Orchestration Patterns",desc:"Mule orchestrates the end-to-end flow — it triggers bots, invokes AI services, calls APIs, and handles exceptions in one coherent process."},
-      {title:"Human-in-the-Loop",desc:"Design approval and exception steps where humans must review AI decisions or handle edge cases before automation continues."},
-      {title:"Error Recovery",desc:"Design retry logic, dead letter queues, and human intervention workflows for bots and API calls that fail — automation must be resilient."},
-      {title:"Testing Automated Processes",desc:"Test each component in isolation before integrating — use mocks for RPA bot responses and AI service calls in unit tests."}
-    ] },
-      { name: "Monitoring and Governance", pct: 10, color: "#BDC3E7", desc: "Monitor hyperautomation deployments and establish governance to ensure reliable, compliant operations.", keyTopics: [
-      {title:"Unified Monitoring",desc:"Use Anypoint Monitoring alongside RPA Manager dashboards to get a unified view of integration and bot performance."},
-      {title:"Audit Logging",desc:"Log every automated action with timestamp, actor (bot or user), input, output, and result — essential for compliance and troubleshooting."},
-      {title:"Governance Policies",desc:"Define who can create automations, which data can be accessed by bots, and how AI decisions are reviewed — prevents shadow automation."},
-      {title:"SLA Management",desc:"Define SLAs for automated processes (max processing time, error rate threshold) and configure alerts when SLAs are breached."},
-      {title:"Continuous Improvement",desc:"Review automation performance metrics regularly — identify bottlenecks, retraining needs, and opportunities to extend automation scope."}
-    ] }
+        domains:[
+      {name:"Employ best practices when using hyperautomation",pct:20,color:"#00A1E0"},
+      {name:"Use Composer to automate data integrations in a hyperautomation project",pct:12,color:"#2ECC71"},
+      {name:"Design, build, and manage MuleSoft RPA processes used in hyperautomation",pct:17,color:"#F39C12"},
+      {name:"Use Salesforce Flow to build hyperautomation workflows",pct:13,color:"#E74C3C"},
+      {name:"Use Anypoint platform to deliver, and manage APIs in a hyperautomation project",pct:15,color:"#9B59B6"},
+      {name:"Use Anypoint Platform to monitor hyperautomation API endpoints",pct:7,color:"#1ABC9C"},
+      {name:"Use Anypoint Exchange to catalog (publish), share, discover, and reuse assets",pct:8,color:"#E67E22"},
+      {name:"Use Salesforce Flow Orchestrator to build parallel, multi-user, multi-step workstreams",pct:8,color:"#3498DB"},
     ],
     studyDays:[
       {tag:"hyperauto-overview",focus:"MuleSoft Hyperautomation: RPA, Composer, and intelligent automation capabilities",topics:[
@@ -1185,49 +889,15 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-slack-developer---Slack-Dev-201",
     prerequisites: ["Platform Developer"],
     overview: "The Slack Developer certification validates expertise in building Slack apps and integrations. Candidates demonstrate proficiency in the Slack API platform, Bolt framework, app distribution, Block Kit UI, and integration with Salesforce.",
-    domains: [
-      { name: "Slack Platform Fundamentals", pct: 15, color: "#00A1E0", desc: "Understand the Slack platform architecture, app types, and developer tools.", keyTopics: [
-      {title:"Slack App Types",desc:"Slack apps can be simple bots, workflow steps, shortcuts, slash commands, or full modular apps — choose the right type for the use case."},
-      {title:"App Manifest",desc:"App manifests define an app's configuration (scopes, features, event subscriptions) as YAML or JSON — enables version-controlled app setup."},
-      {title:"OAuth and Scopes",desc:"Slack uses OAuth 2.0 for app installation — request only the scopes your app needs; excess scopes violate the principle of least privilege."},
-      {title:"Event API",desc:"Subscribe to workspace events (message.channels, app_mention, reaction_added) via the Event API — Slack POSTs events to your endpoint."},
-      {title:"Socket Mode",desc:"Socket Mode enables receiving events over WebSocket without exposing a public HTTP endpoint — ideal for development and internal apps."}
-    ] },
-      { name: "Slack App Features", pct: 20, color: "#2ECC71", desc: "Build Slack app features including slash commands, shortcuts, and interactive components.", keyTopics: [
-      {title:"Slash Commands",desc:"Register slash commands (e.g., /ticket) that users can invoke — Slack POSTs the command payload to your endpoint for processing."},
-      {title:"Shortcuts",desc:"Global shortcuts appear in the search box; message shortcuts appear in message context menus — both open modals or trigger actions."},
-      {title:"Interactive Components",desc:"Buttons, select menus, overflow menus, date pickers, and checkboxes in messages and modals — submit user input back to your app."},
-      {title:"App Home",desc:"App Home is a dedicated space visible only to the user and the app — use it for personalized dashboards or persistent configuration UI."},
-      {title:"Bots and DMs",desc:"Bot users can send DMs, respond to mentions, and proactively message users — configure bot token scopes to allow the needed operations."}
-    ] },
-      { name: "Block Kit and UI Design", pct: 20, color: "#F39C12", desc: "Use Block Kit to build rich, interactive messages and modal dialogs in Slack.", keyTopics: [
-      {title:"Block Kit Structure",desc:"Messages and modals are built from blocks (section, actions, input, image, divider, context) — combine blocks to create rich layouts."},
-      {title:"Section Blocks",desc:"Section blocks display text and can include accessory elements (button, image, overflow) — the most common block type for display."},
-      {title:"Action Blocks",desc:"Action blocks contain interactive elements (buttons, select menus) — user interactions trigger action payloads sent to your app."},
-      {title:"Input Blocks",desc:"Input blocks collect user input in modals — each input element has a block_id and action_id for identifying the submitted value."},
-      {title:"Block Kit Builder",desc:"Slack's Block Kit Builder is a browser-based interactive tool for designing and previewing Block Kit layouts — use it during development."}
-    ] },
-      { name: "Bolt Framework", pct: 20, color: "#E74C3C", desc: "Use the Bolt for JavaScript/Python framework to build Slack apps efficiently.", keyTopics: [
-      {title:"Bolt Overview",desc:"Bolt is Slack's official framework for building apps — handles OAuth, event routing, action handling, and view submission out of the box."},
-      {title:"Event Handling",desc:"Use app.event() to subscribe to Slack events — Bolt automatically acknowledges events and routes them to the correct handler."},
-      {title:"Action Handling",desc:"Use app.action() to handle button clicks and menu selections — always acknowledge within 3 seconds to prevent Slack timeout errors."},
-      {title:"View Submission",desc:"Use app.view() to handle modal submissions — validate inputs, process data, and optionally push a new view or close the modal."},
-      {title:"Middleware",desc:"Bolt supports global and listener middleware for logging, authentication, and error handling — runs before or after event handlers."}
-    ] },
-      { name: "Salesforce and Slack Integration", pct: 15, color: "#1ABC9C", desc: "Integrate Slack apps with Salesforce using the Salesforce for Slack SDK and APIs.", keyTopics: [
-      {title:"Salesforce for Slack SDK",desc:"The SDK provides utilities for authenticating users, querying Salesforce data, and invoking Flows from Slack actions."},
-      {title:"User Authentication",desc:"Use the user token OAuth flow to act on behalf of the Slack user's Salesforce identity — required for user-specific record access."},
-      {title:"Salesforce REST API from Slack",desc:"Make authenticated Salesforce REST API calls from Bolt handlers — retrieve, create, and update records in response to Slack interactions."},
-      {title:"Salesforce Flow from Slack",desc:"Invoke screen-less Flows from Slack button actions — use Flows to encapsulate Salesforce business logic triggered by Slack events."},
-      {title:"Slack Connect and Salesforce",desc:"Build cross-company workflows where Slack Connect channels bridge internal Salesforce processes with external partner interactions."}
-    ] },
-      { name: "App Distribution and Security", pct: 10, color: "#BDC3E7", desc: "Distribute Slack apps securely and follow security best practices for production apps.", keyTopics: [
-      {title:"Internal vs Public Distribution",desc:"Internal apps are installed in one workspace; public apps are distributed via the Slack App Directory — different OAuth flows apply."},
-      {title:"Token Management",desc:"Store bot tokens and signing secrets in secure environment variables or secrets managers — never commit them to source control."},
-      {title:"Request Verification",desc:"Verify every incoming Slack request using the signing secret and HMAC-SHA256 — prevents spoofed payloads from malicious actors."},
-      {title:"App Review",desc:"Apps distributed in the App Directory must pass Slack's security review — complete the security checklist and submit for review before launch."},
-      {title:"Rate Limiting",desc:"Slack enforces API rate limits per method per workspace — implement exponential backoff and queue outgoing messages to avoid hitting limits."}
-    ] }
+        domains:[
+      {name:"Apps in the Slack Platform",pct:7,color:"#00A1E0"},
+      {name:"Design the Interactive Flow of Your App",pct:20,color:"#2ECC71"},
+      {name:"Design Your Workflows: Spotlight on Slack's APIs",pct:13,color:"#F39C12"},
+      {name:"Design a Great User Experience",pct:8,color:"#E74C3C"},
+      {name:"Design for Security",pct:19,color:"#9B59B6"},
+      {name:"Design for Scale",pct:9,color:"#1ABC9C"},
+      {name:"APIs for Managing Your Slack",pct:12,color:"#E67E22"},
+      {name:"Distribute Your App",pct:7,color:"#3498DB"},
     ],
     studyDays:[
       {tag:"slack-api-platform",focus:"Slack platform fundamentals: app types, scopes, tokens, and the Bolt framework",topics:[

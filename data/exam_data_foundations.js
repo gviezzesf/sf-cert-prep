@@ -7,37 +7,11 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-platform-foundations---Plat-101",
     prerequisites: [],
     overview: "The Salesforce Associate (Platform Foundations) certification is the entry-level credential for the Salesforce ecosystem. It validates a foundational understanding of the Salesforce platform — including CRM concepts, platform navigation, the data model, the security model, and basic automation — and is designed for those new to Salesforce with no prior experience required.",
-    domains: [
-      {name:"Salesforce Ecosystem and CRM",pct:21,color:"#00A1E0",desc:"Understand what Salesforce is, how CRM works, and the value the platform delivers to businesses.",keyTopics:[
-        {title:"What Is CRM",desc:"Customer Relationship Management systems centralize customer data, interactions, and history so teams can collaborate and deliver better experiences."},
-        {title:"Salesforce Products Overview",desc:"Salesforce offers Sales Cloud, Service Cloud, Marketing Cloud, Platform, and more — each addresses different business needs built on the same core platform."},
-        {title:"The Salesforce Ecosystem",desc:"The ecosystem includes partners, consultants, AppExchange ISVs, and Trailblazers — understanding it helps candidates understand career paths and the broader context."},
-        {title:"Trailhead and Learning Resources",desc:"Trailhead is Salesforce's free online learning platform — badges, modules, trails, and superbadges are the primary self-service learning paths for all Salesforce roles."}
-      ]},
-      {name:"Navigation and User Interface",pct:20,color:"#2ECC71",desc:"Navigate the Salesforce Lightning Experience UI, find records, and use core platform features.",keyTopics:[
-        {title:"Lightning Experience vs Classic",desc:"Lightning Experience is the modern Salesforce UI — it replaced Salesforce Classic and offers a faster, more visual interface with improved features and components."},
-        {title:"App Launcher and Navigation",desc:"The App Launcher lets users switch between apps; the navigation bar gives quick access to objects and records within the current app."},
-        {title:"List Views and Search",desc:"List views filter and display records by criteria; global search finds records, files, and metadata across the whole org using keywords."},
-        {title:"Home Page and Activity Timeline",desc:"The Home page shows tasks, pipeline charts, and recent items; the Activity Timeline on records shows the full history of emails, calls, meetings, and tasks."}
-      ]},
-      {name:"Data Model",pct:25,color:"#F39C12",desc:"Understand Salesforce objects, fields, and relationships — the building blocks of every Salesforce data model.",keyTopics:[
-        {title:"Standard vs Custom Objects",desc:"Standard objects (Account, Contact, Lead, Opportunity, Case) are built into Salesforce; custom objects store business-specific data and follow the same rules as standard objects."},
-        {title:"Fields and Field Types",desc:"Fields store data on records — common types include Text, Number, Date, Picklist, Checkbox, Formula, and Lookup — each with different storage and behaviour characteristics."},
-        {title:"Relationships",desc:"Lookup relationships link objects optionally; Master-Detail relationships enforce ownership and enable roll-up summary fields — understanding the difference is fundamental."},
-        {title:"Record IDs and External IDs",desc:"Every Salesforce record has a unique 18-character ID; external IDs allow records to be identified by a field from an external system, enabling upsert operations."}
-      ]},
-      {name:"Security Model",pct:19,color:"#E74C3C",desc:"Understand the layered Salesforce security model — who can see and do what, and how access is controlled.",keyTopics:[
-        {title:"Profiles and Permissions",desc:"Profiles control what objects and fields a user can access and what system actions they can perform — every user must have exactly one profile."},
-        {title:"Roles and Record Visibility",desc:"The role hierarchy determines which records users can see based on their position — users see their own records plus those of anyone below them in the hierarchy."},
-        {title:"Organization-Wide Defaults",desc:"OWDs set the most restrictive baseline for record access — Private means only the owner and hierarchy can see a record; Public Read/Write means everyone can."},
-        {title:"Field-Level Security",desc:"Field-level security controls whether a user can see or edit a specific field, independent of whether they can see the record — set on profiles or permission sets."}
-      ]},
-      {name:"Core Business Processes",pct:15,color:"#1ABC9C",desc:"Understand the core Sales and Service Cloud processes that most Salesforce implementations support.",keyTopics:[
-        {title:"Lead to Opportunity Process",desc:"Leads represent potential customers; converting a lead creates an Account, Contact, and optionally an Opportunity to track the sales deal."},
-        {title:"Case Management Basics",desc:"Cases track customer service issues from creation through resolution — they can be assigned to agents or queues and escalated based on rules."},
-        {title:"Reports and Dashboards",desc:"Reports query and display Salesforce data in tabular or grouped formats; dashboards visualize report data as charts and metrics on a single screen."},
-        {title:"Activities: Tasks and Events",desc:"Tasks are to-do items with a due date; Events are calendar meetings — both log to the Activity Timeline and help track customer touchpoints."}
-      ]}
+        domains:[
+      {name:"Salesforce Ecosystem",pct:32,color:"#00A1E0"},
+      {name:"Navigation",pct:28,color:"#2ECC71"},
+      {name:"Data Model",pct:25,color:"#F39C12"},
+      {name:"Reports & Dashboards",pct:15,color:"#E74C3C"},
     ],
     studyDays:[
       {tag:"platform-basics",focus:"Salesforce platform overview: clouds, org model, and the Salesforce ecosystem",topics:[
@@ -105,38 +79,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-sales-foundations---Sales-101",
     prerequisites: [],
     overview: "The Sales Foundations certification validates foundational knowledge of Sales Cloud and CRM concepts for individuals new to sales technology. The exam covers the sales process, account and contact management, opportunity management, sales productivity tools, and basic reporting — ideal for sales reps, sales operations staff, and anyone adopting Salesforce for the first time.",
-    domains: [
-      {name:"Sales Cloud Basics",pct:22,color:"#00A1E0",desc:"Understand Sales Cloud features and how they support the end-to-end sales process.",keyTopics:[
-        {title:"What Is Sales Cloud",desc:"Sales Cloud is Salesforce's CRM for sales teams — it manages the full sales cycle from lead generation through opportunity close and provides tools for forecasting, collaboration, and analysis."},
-        {title:"Sales Process Overview",desc:"A structured sales process moves prospects from Awareness through Consideration to Decision — Sales Cloud stages on Opportunities map to each step of the business's sales methodology."},
-        {title:"Sales Console",desc:"The Sales Console is a streamlined UI for sales reps that surfaces account, contact, and opportunity data in one view — it reduces clicks and increases productivity."},
-        {title:"Einstein Sales Features",desc:"Einstein Activity Capture automatically logs emails and calendar events; Einstein Lead Scoring prioritizes leads by conversion likelihood using AI."}
-      ]},
-      {name:"Leads and Accounts",pct:23,color:"#2ECC71",desc:"Manage leads through qualification and conversion, and maintain accurate account and contact records.",keyTopics:[
-        {title:"Lead Management",desc:"Leads represent unqualified prospects — they are captured from web forms, campaigns, or manual entry and worked through a qualification process before being converted."},
-        {title:"Lead Conversion",desc:"Converting a lead creates an Account, Contact, and optionally an Opportunity — lead field mapping controls which data carries over to the new records."},
-        {title:"Account Hierarchy",desc:"Accounts can be linked in a parent-child hierarchy to represent corporate structures — the Account Hierarchy view shows the full organizational relationship tree."},
-        {title:"Contact Roles on Opportunities",desc:"Contact Roles define each contact's role in a deal (Decision Maker, Influencer, Economic Buyer) — they help sales reps understand who to engage and how."}
-      ]},
-      {name:"Opportunity Management",pct:25,color:"#F39C12",desc:"Track deals through stages, manage pipeline, and forecast revenue using Salesforce Opportunities.",keyTopics:[
-        {title:"Opportunity Stages",desc:"Stages represent where a deal is in the sales process — each stage has a probability that rolls up into forecasting; customising stages to match the sales methodology improves data quality."},
-        {title:"Forecast Categories",desc:"Each stage maps to a forecast category (Pipeline, Best Case, Commit, Closed Won/Lost) — these roll up into collaborative forecasts for management reporting."},
-        {title:"Products and Price Books",desc:"Products are what you sell; Price Books set prices per product; Opportunity Line Items link Products to specific Opportunities at the agreed price."},
-        {title:"Close Date and Amount",desc:"The Close Date and Amount fields drive pipeline and forecast reporting — keeping them accurate is a core sales hygiene discipline."},
-        {title:"Opportunity Teams",desc:"Opportunity Teams let multiple sales reps collaborate on a deal with defined roles — team members can be given read or write access to the opportunity."}
-      ]},
-      {name:"Sales Productivity",pct:17,color:"#E74C3C",desc:"Use Salesforce productivity tools — activities, email, calendars, and mobile — to work more efficiently.",keyTopics:[
-        {title:"Tasks and Events",desc:"Tasks are action items; Events are calendar-based meetings — both log to the Activity Timeline and help track all customer interactions in one place."},
-        {title:"Email Integration",desc:"Salesforce integrates with Gmail and Outlook to log emails and sync calendar events automatically — this reduces manual data entry and keeps records current."},
-        {title:"Salesforce Mobile App",desc:"The mobile app gives sales reps access to accounts, contacts, opportunities, and tasks from anywhere — it supports logging calls and updating records in the field."},
-        {title:"Chatter Collaboration",desc:"Chatter lets sales team members collaborate on deals, share updates, and @mention colleagues directly on opportunity and account records."}
-      ]},
-      {name:"Reports and Dashboards",pct:13,color:"#1ABC9C",desc:"Use reports and dashboards to track sales performance, pipeline health, and forecast accuracy.",keyTopics:[
-        {title:"Sales Reports",desc:"Common sales reports include pipeline by stage, opportunities by owner, and close date reports — Summary and Matrix formats are most useful for sales analysis."},
-        {title:"Sales Dashboards",desc:"Sales dashboards typically show pipeline funnel, leaderboards, and quota attainment — each component is powered by a report and refreshes automatically."},
-        {title:"Forecast Reports",desc:"Collaborative forecasting reports roll up opportunity amounts by owner, stage, and forecast category — managers use them to review and adjust team forecasts."},
-        {title:"List Views for Pipeline Management",desc:"Filtered list views on Opportunities let reps quickly see their open pipeline, deals closing this month, or stalled opportunities without running a full report."}
-      ]}
+        domains:[
+      {name:"Planning",pct:21,color:"#00A1E0"},
+      {name:"Customer Engagement",pct:15,color:"#2ECC71"},
+      {name:"Deal Management",pct:37,color:"#F39C12"},
+      {name:"Pipeline Management",pct:12,color:"#E74C3C"},
+      {name:"Forecasting",pct:6,color:"#9B59B6"},
+      {name:"Customer Success",pct:9,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"sales-process",focus:"Salesforce Sales Cloud fundamentals: leads, accounts, contacts, and opportunities",topics:[
@@ -203,39 +152,12 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-marketing-foundations---MC-101",
     prerequisites: [],
     overview: "The Marketing Cloud Engagement Foundations certification is the entry-level credential for Salesforce Marketing Cloud. It validates a foundational understanding of the Marketing Cloud platform, email marketing concepts, audience management, Journey Builder basics, and analytics — designed for marketers new to the platform who want to demonstrate core competency.",
-    domains: [
-      {name:"Marketing Cloud Overview",pct:22,color:"#00A1E0",desc:"Understand the Marketing Cloud platform, its products, and how it fits in the Salesforce ecosystem.",keyTopics:[
-        {title:"Marketing Cloud Products",desc:"Marketing Cloud includes Email Studio, Mobile Studio, Social Studio, Advertising Studio, Journey Builder, Content Builder, and Audience Builder — each addresses a different channel or function."},
-        {title:"Business Units",desc:"Business Units segment a Marketing Cloud account by brand, region, or team — each BU has its own users, data, and sending settings while sharing a parent account."},
-        {title:"Marketing Cloud Connect",desc:"Marketing Cloud Connect integrates Marketing Cloud with Salesforce CRM, synchronizing Contacts, Leads, and Campaigns — enabling synchronized data and triggered sends."},
-        {title:"Subscriber vs Contact",desc:"A Subscriber is a person in a specific list or publication list; a Contact is the unified profile in Contact Builder that de-duplicates across channels using a Contact Key."}
-      ]},
-      {name:"Email Studio",pct:28,color:"#2ECC71",desc:"Create, test, and send email communications using Email Studio and Content Builder.",keyTopics:[
-        {title:"Content Builder",desc:"Content Builder is the unified content management tool in Marketing Cloud — it stores images, HTML blocks, email templates, and content blocks used across all channels."},
-        {title:"Email Templates",desc:"Templates define the structure and branding of an email — using templates ensures consistency and lets marketers focus on content rather than layout."},
-        {title:"AMPscript Basics",desc:"AMPscript is Marketing Cloud's scripting language used to personalize email content with subscriber data — basic personalization uses %%FieldName%% substitution strings."},
-        {title:"Send Classification",desc:"Send Classifications define whether an email is Commercial or Transactional — Commercial sends require unsubscribe handling; Transactional sends bypass unsubscribe for critical messages."},
-        {title:"Tracking and Analytics",desc:"Email tracking captures Opens, Clicks, Bounces, Unsubscribes, and Spam Complaints — these metrics appear in Tracking reports and the Send Summary view."}
-      ]},
-      {name:"Audience Management",pct:25,color:"#F39C12",desc:"Manage subscribers, lists, and data extensions to organize and segment email audiences.",keyTopics:[
-        {title:"Lists vs Data Extensions",desc:"Lists are simple flat subscriber tables suitable for small, non-segmented audiences; Data Extensions are relational tables that support complex segmentation and large volumes."},
-        {title:"Publication Lists",desc:"Publication Lists group subscribers by interest or preference — subscribers can manage their own subscriptions across lists from a preference centre."},
-        {title:"Suppression Lists",desc:"Suppression Lists prevent specific addresses from receiving an email send — used to exclude unsubscribes, competitors, or do-not-contact records."},
-        {title:"Subscriber Status",desc:"Subscriber statuses include Active, Unsubscribed, Bounced, and Held — only Active subscribers receive sends; Held subscribers have had 3 or more soft bounces."},
-        {title:"Data Import",desc:"Data can be imported into Marketing Cloud via manual file upload, FTP, or API — import activities in Automation Studio schedule recurring imports."}
-      ]},
-      {name:"Journey Builder",pct:15,color:"#E74C3C",desc:"Build automated customer journeys that send the right message at the right time based on customer behaviour.",keyTopics:[
-        {title:"Journey Entry Sources",desc:"Journeys can be triggered by a Data Extension, CRM Campaign, CloudPage form submission, API event, or date — the entry source determines who enters the journey and when."},
-        {title:"Activities in Journeys",desc:"Journey activities include Email Send, Wait, Decision Split, Random Split, Engagement Split, Update Contact, and Path Optimizer — each controls the path a contact follows."},
-        {title:"Engagement Splits",desc:"Engagement Splits route contacts based on whether they opened or clicked a previous email — they enable behaviour-based branching without manual segmentation."},
-        {title:"Journey Goals and Exit Criteria",desc:"A Goal defines what constitutes success in the journey (e.g., a purchase); Exit Criteria remove contacts who meet a condition — both are optional but improve journey effectiveness."}
-      ]},
-      {name:"Deliverability and Compliance",pct:10,color:"#1ABC9C",desc:"Understand email deliverability best practices and legal compliance requirements for email marketing.",keyTopics:[
-        {title:"CAN-SPAM and GDPR",desc:"CAN-SPAM (US) requires a physical address and unsubscribe mechanism in every commercial email; GDPR (EU) requires explicit consent and the right to erasure — both affect Marketing Cloud configuration."},
-        {title:"SPF, DKIM, and DMARC",desc:"SPF and DKIM authenticate sending domains and improve deliverability; DMARC builds on both to instruct receivers how to handle unauthenticated messages."},
-        {title:"Bounce Management",desc:"Hard bounces (invalid addresses) should be removed immediately; soft bounces (temporary failures) are retried — Marketing Cloud manages bounce handling automatically."},
-        {title:"IP Warming",desc:"New sending IPs must be warmed up by gradually increasing send volume — jumping to full volume on a new IP results in poor deliverability and spam filtering."}
-      ]}
+        domains:[
+      {name:"Marketing Concepts",pct:28,color:"#00A1E0"},
+      {name:"Marketing Cloud Engagement Basics",pct:22,color:"#2ECC71"},
+      {name:"Email Sending and Journeys",pct:22,color:"#F39C12"},
+      {name:"Data Management",pct:18,color:"#E74C3C"},
+      {name:"Reporting and Analytics",pct:10,color:"#9B59B6"},
     ],
     studyDays:[
       {tag:"mc-basics",focus:"Marketing Cloud Engagement foundations: Email Studio, Contact Builder, and Journey Builder basics",topics:[
@@ -295,38 +217,11 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-strategy-designer---Plat-UX-102",
     prerequisites: [],
     overview: "The Tableau Desktop Foundations certification is the entry-level credential for Tableau, validating foundational skills in connecting to data, building visualizations, and creating dashboards. It is designed for those new to Tableau who want to demonstrate they can use the tool for basic data analysis and business intelligence tasks.",
-    domains: [
-      {name:"Connecting to Data",pct:23,color:"#00A1E0",desc:"Connect Tableau to various data sources and understand the difference between live and extract connections.",keyTopics:[
-        {title:"Data Source Types",desc:"Tableau connects to files (Excel, CSV, JSON), databases (SQL Server, MySQL, PostgreSQL), cloud sources (Salesforce, Google Sheets, BigQuery), and web data connectors."},
-        {title:"Live vs Extract",desc:"Live connections query the source database in real time; Extracts (.hyper files) are snapshots of data stored in Tableau's optimized format — faster for analysis but require refreshing."},
-        {title:"Data Interpreter",desc:"Data Interpreter cleans messy Excel files by identifying and removing headers, footers, and formatting that would otherwise confuse Tableau's data model."},
-        {title:"Unions and Joins",desc:"Unions stack rows from similar tables; Joins combine columns from related tables using a key — understanding when to use each is essential for multi-table data models."}
-      ]},
-      {name:"Visual Analytics",pct:30,color:"#2ECC71",desc:"Build charts, maps, and visualizations using Tableau's Show Me panel and Marks card.",keyTopics:[
-        {title:"Dimensions vs Measures",desc:"Dimensions are categorical fields (discrete) that group data; Measures are numeric fields (continuous) that are aggregated — this distinction drives everything in Tableau."},
-        {title:"Show Me Panel",desc:"Show Me suggests appropriate chart types based on the fields you have selected — it is the fastest way to explore which visualization suits your data."},
-        {title:"Marks Card",desc:"The Marks card controls Color, Size, Label, Detail, and Tooltip for each mark — it is the primary tool for customizing how data points are visually encoded."},
-        {title:"Filters",desc:"Tableau has four filter types: Extract, Data Source, Context, and Dimension/Measure filters — they operate in this order of precedence and each serves a different purpose."},
-        {title:"Geographic Maps",desc:"Tableau auto-recognizes geographic fields (Country, State, City) and can create filled maps, symbol maps, and density maps — geographic roles must be assigned to ambiguous fields."}
-      ]},
-      {name:"Calculations",pct:22,color:"#F39C12",desc:"Create basic calculated fields, use built-in functions, and understand aggregation in Tableau.",keyTopics:[
-        {title:"Calculated Fields",desc:"Calculated fields create new fields using Tableau's formula language — they can reference existing fields, functions, and parameters to derive new values."},
-        {title:"Aggregation Functions",desc:"SUM, AVG, MIN, MAX, COUNT, COUNTD are the core aggregation functions — they determine how Tableau rolls up measure values when dimensions are added to the view."},
-        {title:"String and Date Functions",desc:"String functions (LEFT, REPLACE, CONTAINS, LEN) and date functions (DATEPART, DATEDIFF, TODAY) are commonly used to clean and transform data in calculated fields."},
-        {title:"Table Calculations",desc:"Table calculations compute values relative to other values in the view (RUNNING_SUM, WINDOW_AVG, RANK) — they compute after the query returns data, not in the database."}
-      ]},
-      {name:"Dashboards and Stories",pct:15,color:"#E74C3C",desc:"Assemble multiple views into interactive dashboards and build stories to communicate insights.",keyTopics:[
-        {title:"Dashboard Layout",desc:"Dashboards use tiled and floating layout containers — tiled objects snap to a grid for clean alignment; floating objects can be placed anywhere with precise control."},
-        {title:"Dashboard Actions",desc:"Filter, Highlight, and URL actions connect views in a dashboard — Filter actions let users click a mark to filter other views, creating interactive exploration experiences."},
-        {title:"Device Designer",desc:"Device Designer lets you create separate layouts for Phone, Tablet, and Desktop — the dashboard automatically shows the right layout for the viewer's device."},
-        {title:"Stories",desc:"Stories are sequences of story points — each point is a saved view or dashboard with an optional caption — used to walk an audience through a data-driven narrative."}
-      ]},
-      {name:"Tableau Concepts",pct:10,color:"#1ABC9C",desc:"Understand core Tableau concepts including the data model, LOD expressions, and the Tableau product family.",keyTopics:[
-        {title:"Tableau Product Family",desc:"Tableau Desktop creates content; Tableau Server/Cloud publishes and shares it; Tableau Prep Builder cleans and shapes data — understand the role of each product."},
-        {title:"LOD Expressions",desc:"Level of Detail (LOD) expressions — FIXED, INCLUDE, EXCLUDE — let you compute aggregations at a different granularity than the view, unlocking advanced analytics."},
-        {title:"Parameters",desc:"Parameters are dynamic values that users can change — they connect to filters, reference lines, calculated fields, and other elements to make views interactive."},
-        {title:"Tooltips",desc:"Tooltips appear on hover and can show field values, custom text, or even Viz in Tooltip — customizing tooltips improves the reader's ability to understand data points."}
-      ]}
+        domains:[
+      {name:"Connecting to and Preparing Data",pct:23,color:"#00A1E0"},
+      {name:"Exploring and Analyzing Data",pct:37,color:"#2ECC71"},
+      {name:"Sharing Insights",pct:25,color:"#F39C12"},
+      {name:"Understanding Tableau Concepts",pct:15,color:"#E74C3C"},
     ],
     studyDays:[
       {tag:"tableau-desktop-basics",focus:"Tableau Desktop fundamentals: connecting to data, building views, and basic charts",topics:[
@@ -386,37 +281,13 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mule-foundations---Mule-101",
     prerequisites: [],
     overview: "The MuleSoft Integration Foundations certification validates entry-level knowledge of integration concepts, APIs, and the MuleSoft Anypoint Platform. It is designed for those new to integration who want to understand how APIs and integrations work and how MuleSoft fits in the broader technology landscape.",
-    domains: [
-      {name:"Integration Concepts",pct:25,color:"#00A1E0",desc:"Understand what integration is, why it matters, and the key patterns used to connect systems.",keyTopics:[
-        {title:"What Is Integration",desc:"Integration connects different systems so they can share data and functionality — without integration, businesses operate in siloed applications that cannot communicate."},
-        {title:"Point-to-Point vs Hub-and-Spoke",desc:"Point-to-point connects each system directly, creating a spaghetti architecture; hub-and-spoke routes all integrations through a central platform, reducing complexity."},
-        {title:"Synchronous vs Asynchronous",desc:"Synchronous integrations wait for a response (real-time); asynchronous integrations fire and continue without waiting (batch, events) — the choice depends on latency and reliability needs."},
-        {title:"APIs vs ETL vs Messaging",desc:"APIs expose functionality on demand; ETL moves bulk data between systems on a schedule; messaging queues deliver events reliably — each pattern suits different use cases."}
-      ]},
-      {name:"API Basics",pct:25,color:"#2ECC71",desc:"Understand what APIs are, how REST APIs work, and the role APIs play in modern integration.",keyTopics:[
-        {title:"What Is an API",desc:"An API (Application Programming Interface) is a contract that defines how software components communicate — REST APIs use HTTP and JSON/XML to exchange data over the web."},
-        {title:"REST Fundamentals",desc:"REST APIs use HTTP methods (GET, POST, PUT, PATCH, DELETE) and URLs to identify resources — understanding these methods and status codes is foundational for any integration work."},
-        {title:"API Specification",desc:"API specifications (RAML, OpenAPI/Swagger) define an API's endpoints, data types, and behavior before any code is written — they enable design-first API development."},
-        {title:"API Security",desc:"APIs are secured with API keys, OAuth 2.0 tokens, or JWT — understanding authentication vs authorization is essential for building safe integrations."}
-      ]},
-      {name:"Anypoint Platform Overview",pct:25,color:"#F39C12",desc:"Navigate the MuleSoft Anypoint Platform and understand its key components and tools.",keyTopics:[
-        {title:"Anypoint Studio",desc:"Anypoint Studio is the Eclipse-based IDE for building Mule applications — it provides a visual flow designer, connectors, and built-in testing capabilities."},
-        {title:"Anypoint Exchange",desc:"Anypoint Exchange is MuleSoft's marketplace for reusable assets — APIs, connectors, templates, and examples that teams can discover and reuse across projects."},
-        {title:"Runtime Manager",desc:"Runtime Manager deploys and manages Mule applications on CloudHub (MuleSoft's iPaaS) or on-premises runtimes — it provides monitoring, logging, and alerting."},
-        {title:"API Manager",desc:"API Manager applies policies (rate limiting, authentication, caching) to published APIs — it is the control plane for enforcing API governance without changing application code."}
-      ]},
-      {name:"Mule Applications",pct:15,color:"#E74C3C",desc:"Understand the building blocks of a Mule application — flows, connectors, and transformations.",keyTopics:[
-        {title:"Flows and Sub-flows",desc:"Flows are the basic processing unit in Mule — they consist of a source (trigger), processing components, and an optional target; sub-flows are reusable processing logic without a trigger."},
-        {title:"Connectors",desc:"Connectors integrate Mule with external systems (HTTP, Database, Salesforce, File, SFTP) — each connector provides pre-built operations to read, write, and listen for events."},
-        {title:"DataWeave Basics",desc:"DataWeave is MuleSoft's data transformation language — it converts between formats (JSON, XML, CSV) and restructures data payloads as they flow through a Mule application."},
-        {title:"Error Handling",desc:"On Error Continue allows a flow to continue after an error; On Error Propagate re-throws the error to the parent flow — every integration should handle failures gracefully."}
-      ]},
-      {name:"API-led Connectivity",pct:10,color:"#1ABC9C",desc:"Understand MuleSoft's API-led connectivity methodology and the three API layers.",keyTopics:[
-        {title:"System APIs",desc:"System APIs expose data from backend systems (databases, ERPs, Salesforce) with no transformation — they are the connection point to core systems of record."},
-        {title:"Process APIs",desc:"Process APIs orchestrate calls to multiple System APIs and apply business logic — they are the business layer, combining and transforming data for specific use cases."},
-        {title:"Experience APIs",desc:"Experience APIs tailor data for specific consumers (mobile app, web portal, partner) — they are the presentation layer and change frequently as consumer needs evolve."},
-        {title:"Benefits of API-led",desc:"API-led connectivity enables reuse, reduces duplication, and makes integrations composable — a System API built once can serve multiple Process APIs without rebuilding."}
-      ]}
+        domains:[
+      {name:"Identify the roles, responsibilities, and lifecycle of a integration project",pct:17,color:"#00A1E0"},
+      {name:"Recognize and interpret essential integration concepts and terminology",pct:20,color:"#2ECC71"},
+      {name:"Recognize common integration problems, use cases, and technical solutions",pct:17,color:"#F39C12"},
+      {name:"Explain the common technical complexities and patterns in integration development",pct:18,color:"#E74C3C"},
+      {name:"Describe the components and benefits of Anypoint Platform for system integration",pct:18,color:"#9B59B6"},
+      {name:"Describe the components and benefits of Anypoint Platform for API management",pct:10,color:"#1ABC9C"},
     ],
     studyDays:[
       {tag:"mulesoft-basics",focus:"MuleSoft integration fundamentals: Anypoint Platform, Mule flows, and connector basics",topics:[

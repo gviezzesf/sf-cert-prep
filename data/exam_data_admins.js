@@ -4,62 +4,15 @@ Object.assign(EXAM_DATA, {
     trailheadUrl:"https://trailheadacademy.salesforce.com/certificate/exam-platform-admin---Plat-Admn-201",
     prerequisites:[],
     overview:"The Platform Administrator certification validates your ability to configure and manage a Salesforce org for a business. It covers the full admin toolkit — user management, the security and sharing model, object and field customisation, Sales and Service Cloud features, Flow Builder automation, reports and dashboards, and data management tools. It is the recommended starting point for anyone new to the Salesforce ecosystem and is a prerequisite for many advanced certifications.",
-    domains:[
-      {name:"Configuration and Setup",pct:20,color:"#00A1E0",desc:"Configure the Salesforce org: company settings, user management, security model, and the multi-layer sharing architecture.",keyTopics:[
-        {title:"User Creation & Deactivation",desc:"Create users with appropriate licenses, set roles and profiles, and deactivate (not delete) departing users to preserve data history."},
-        {title:"Profiles & Permission Sets",desc:"Profiles set baseline access for a group of users; Permission Sets layer additional permissions on top without changing the profile."},
-        {title:"Password Policies & Session Settings",desc:"Enforce password complexity, expiration, and lockout rules; configure session timeout and login IP ranges at the org level."},
-        {title:"Organization-Wide Defaults",desc:"OWDs set the most restrictive baseline for record access — Public Read/Write, Public Read Only, or Private — per object."},
-        {title:"Role Hierarchy & Sharing Rules",desc:"The role hierarchy grants upward visibility; sharing rules extend access horizontally to users outside the hierarchy path."},
-        {title:"Login Hours & IP Restrictions",desc:"Restrict when and from where users can log in via profile-level login hours and trusted IP ranges."}
-      ]},
-      {name:"Object Manager and Lightning App Builder",pct:20,color:"#2ECC71",desc:"Design and customize the data model and build app pages using declarative tools — no code required.",keyTopics:[
-        {title:"Standard & Custom Objects",desc:"Standard objects (Account, Contact, Opportunity) are built in; custom objects store business-specific data and follow the same rules."},
-        {title:"Custom Fields & Field Types",desc:"Choose the right field type (Text, Number, Picklist, Formula, etc.) — field type determines storage, filtering, and formula compatibility."},
-        {title:"Lookup vs Master-Detail Relationships",desc:"Lookup is flexible and optional; Master-Detail enforces ownership, enables roll-up summaries, and cascades delete to child records."},
-        {title:"Validation Rules & Formula Fields",desc:"Validation rules prevent bad data on save; formula fields calculate read-only values from other fields without storing data."},
-        {title:"Lightning App Builder Pages",desc:"Build App, Home, and Record pages by dragging standard and custom components onto a canvas — no code needed."},
-        {title:"Dynamic Forms & Component Visibility",desc:"Dynamic Forms move fields off the page layout onto the canvas with individual visibility rules per field or section."}
-      ]},
-      {name:"Sales and Marketing Applications",pct:12,color:"#F39C12",desc:"Configure Sales Cloud features including leads, opportunities, campaigns, and the sales process.",keyTopics:[
-        {title:"Lead Conversion Process",desc:"Converting a lead creates an Account, Contact, and optionally an Opportunity — field mapping controls what data carries over."},
-        {title:"Opportunity Stages & Forecast Categories",desc:"Stages track deal progress; each stage maps to a forecast category that rolls up into collaborative forecasting totals."},
-        {title:"Campaign Management & ROI",desc:"Campaigns track marketing spend and member responses; campaign influence connects campaigns to opportunities for ROI reporting."},
-        {title:"Price Books & Products",desc:"Products define what you sell; price books set prices per product per currency — opportunities reference a single price book."},
-        {title:"Activity Management",desc:"Tasks (to-dos) and Events (calendar items) are the core activity types — both log to the Activity Timeline on records."},
-        {title:"Collaborative Forecasting",desc:"Forecasting rolls up opportunity amounts by owner and stage, allowing managers to adjust and submit forecasts up the hierarchy."}
-      ]},
-      {name:"Service and Support Applications",pct:11,color:"#E74C3C",desc:"Set up Service Cloud for case management, knowledge, entitlements, and the service console.",keyTopics:[
-        {title:"Case Management & Queues",desc:"Cases track customer issues; queues hold unassigned cases so agents can pick up work based on skills or availability."},
-        {title:"Assignment & Escalation Rules",desc:"Assignment rules route new cases to the right queue or agent; escalation rules auto-escalate cases that breach SLA time limits."},
-        {title:"Salesforce Knowledge Articles",desc:"Knowledge stores FAQ and how-to articles that agents attach to cases — article types and data categories control visibility."},
-        {title:"Entitlements & Milestones",desc:"Entitlements define the support level a customer is owed; milestones track SLA targets (e.g., first response within 4 hours) on cases."},
-        {title:"Service Console Configuration",desc:"The console is a multi-tab browser-like UI for agents — configure it with push notifications, macros, and quick text for efficiency."},
-        {title:"Omni-Channel Routing Basics",desc:"Omni-Channel routes work items (cases, chats) to agents based on capacity, skills, and availability in real time."}
-      ]},
-      {name:"Productivity and Collaboration",pct:7,color:"#1ABC9C",desc:"Enable user productivity with Chatter, calendars, activity tracking, and mobile access.",keyTopics:[
-        {title:"Chatter Feeds & Groups",desc:"Chatter lets users post updates, share files, and collaborate on records — groups organize conversations by team or project."},
-        {title:"Activity Tracking",desc:"Tasks and Events on the Activity Timeline give a chronological history of all touchpoints with a customer or record."},
-        {title:"Salesforce Mobile App",desc:"The mobile app gives field users access to records, tasks, and approvals — admins control layout via mobile-specific page assignments."},
-        {title:"Email Integration",desc:"Einstein Activity Capture and Outlook/Gmail integrations sync emails and events between Salesforce and email clients automatically."},
-        {title:"Calendars & Availability",desc:"Shared calendars and the resource calendar let teams see colleague availability and schedule customer-facing events."}
-      ]},
-      {name:"Data and Analytics Management",pct:14,color:"#FF6B35",desc:"Manage data quality, run imports and exports, and build reports and dashboards for insights.",keyTopics:[
-        {title:"Data Import Wizard & Data Loader",desc:"Import Wizard handles up to 50,000 records via browser for supported objects; Data Loader handles larger volumes via CSV and CLI."},
-        {title:"Duplicate Rules & Matching Rules",desc:"Matching rules identify potential duplicates using field comparisons; duplicate rules define what happens when a match is found (alert or block)."},
-        {title:"Report Types & Formats",desc:"Report types define available objects and fields; formats are Tabular, Summary, Matrix, and Joined — each suited to different analytical needs."},
-        {title:"Dashboard Components",desc:"Charts, tables, metrics, and gauges visualize report data in real time — each component is powered by a single source report."},
-        {title:"Analytic Snapshots",desc:"Analytic snapshots capture report data at a point in time to a custom object, enabling trend tracking over days, weeks, or months."},
-        {title:"Weekly Export & Backup",desc:"The weekly export service generates a full data backup as CSV files — schedule it regularly as a disaster recovery measure."}
-      ]},
-      {name:"Workflow/Process Automation",pct:16,color:"#BDC3E7",desc:"Automate business processes declaratively using Flow Builder, approval processes, and automation tools.",keyTopics:[
-        {title:"Record-Triggered Flows",desc:"Fire automatically when a record is created or updated — before-save flows update fields without DML; after-save flows can update related records."},
-        {title:"Screen Flows",desc:"Guide users through multi-step processes with input screens, decisions, and loops — launched from buttons, Quick Actions, or LWC."},
-        {title:"Scheduled Flows",desc:"Run on a recurring schedule or at a time relative to a record field — used for follow-up reminders, batch updates, and SLA enforcement."},
-        {title:"Approval Processes",desc:"Multi-step approval workflows route records to approvers based on criteria — supports parallel and sequential approval chains."},
-        {title:"Flow Best Practices",desc:"Use before-save flows for field updates, minimize DML in after-save flows, and bulkify using loop collections to avoid governor limits."},
-        {title:"Retiring Workflow Rules & Process Builder",desc:"Salesforce is retiring Workflow Rules and Process Builder — migrate all automation to Flow Builder as the single automation tool."}
-      ]}
+        domains:[
+      {name:"Configuration and Setup",pct:15,color:"#00A1E0"},
+      {name:"Object Manager and Lightning App Builder",pct:15,color:"#2ECC71"},
+      {name:"Sales and Marketing Applications",pct:10,color:"#F39C12"},
+      {name:"Service and Support Applications",pct:10,color:"#E74C3C"},
+      {name:"Productivity and Collaboration",pct:10,color:"#9B59B6"},
+      {name:"Data and Analytics Management",pct:17,color:"#1ABC9C"},
+      {name:"Automation",pct:15,color:"#E67E22"},
+      {name:"Agentforce",pct:8,color:"#3498DB"},
     ],
     studyDays:[
       {tag:"user-management",focus:"User management: profiles, roles, permission sets, and user licenses",topics:[
@@ -166,47 +119,12 @@ Object.assign(EXAM_DATA, {
       {name:"Platform Administrator",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_contracts_overview.htm",note:"App Builder builds directly on admin concepts — user management, security model, and object configuration are prerequisite knowledge."}
     ],
     overview:"The Platform App Builder certification is for professionals who design, build, and deploy custom applications using the declarative capabilities of the Salesforce platform. The exam covers the platform fundamentals, data modelling with objects and relationships, Flow Builder automation, Lightning App Builder page design, and app deployment using sandboxes and packages. It is the go-to credential for admins looking to move into a more technical building role without writing code.",
-    domains:[
-      {name:"Salesforce Fundamentals",pct:23,color:"#00A1E0",desc:"Understand the Salesforce platform capabilities, cloud products, multi-tenancy, and the AppExchange ecosystem.",keyTopics:[
-        {title:"Salesforce Cloud Product Overview",desc:"Sales Cloud, Service Cloud, Marketing Cloud, Experience Cloud, and Platform are the core clouds — understand what each is designed to do."},
-        {title:"Multi-Tenant Architecture",desc:"All Salesforce customers share the same infrastructure; data is logically isolated by org ID — governor limits enforce fair resource usage."},
-        {title:"Declarative vs Programmatic Development",desc:"Declarative tools (flows, validation rules, Lightning App Builder) require no code; programmatic tools (Apex, LWC) handle complex logic."},
-        {title:"AppExchange Managed Packages",desc:"AppExchange solutions are installed into an org as managed (locked, upgradeable) or unmanaged (editable source) packages."},
-        {title:"Governor Limits Overview",desc:"Limits apply per transaction to CPU, heap, SOQL, and DML — they exist to protect shared infrastructure in the multi-tenant model."},
-        {title:"Sandboxes & Environments",desc:"Sandboxes are copies of production used for development and testing — Developer, Developer Pro, Partial, and Full each have different data and refresh limits."}
-      ]},
-      {name:"Data Modeling and Management",pct:22,color:"#2ECC71",desc:"Design scalable data models using standard and custom objects, relationships, and external data sources.",keyTopics:[
-        {title:"Custom Objects & Fields",desc:"Custom objects extend the platform's data model; choose field types carefully as they affect storage, filtering, and formula capabilities."},
-        {title:"Lookup vs Master-Detail Relationships",desc:"Lookup is optional and flexible; Master-Detail is required, enables roll-up summaries, and cascades delete from parent to child."},
-        {title:"Many-to-Many Relationships",desc:"Implemented via a junction object with two Master-Detail relationships — models scenarios like Students enrolled in many Courses."},
-        {title:"Roll-Up Summary Fields",desc:"Aggregate child record values (COUNT, SUM, MIN, MAX) onto the master record — only available on Master-Detail relationships."},
-        {title:"Formula Fields",desc:"Read-only calculated fields that reference other fields, functions, and operators — evaluated at runtime and not stored."},
-        {title:"External Objects & Salesforce Connect",desc:"External objects surface data from outside Salesforce in real time via OData adapters — data stays in the external system."}
-      ]},
-      {name:"Business Logic and Process Automation",pct:28,color:"#F39C12",desc:"Automate business processes declaratively with Flow Builder and approval processes — the largest exam domain.",keyTopics:[
-        {title:"Record-Triggered Flows (Before Save)",desc:"Before-save flows run before the record is written to the database — use for field updates as no DML statement is needed."},
-        {title:"Record-Triggered Flows (After Save)",desc:"After-save flows run after the record is committed — use when updating related records or triggering downstream processes."},
-        {title:"Screen Flows for Guided UI",desc:"Screen flows present users with input forms, decisions, and confirmation steps — launched from buttons, Quick Actions, or embedded in pages."},
-        {title:"Scheduled Flows",desc:"Run on a fixed schedule or relative to a date field on a record — used for reminders, recurring updates, and time-based automation."},
-        {title:"Sub-Flows & Reusable Components",desc:"Extract repeated logic into a reusable flow and call it as a subflow — reduces duplication and centralises maintenance."},
-        {title:"Approval Processes",desc:"Route records through one or more approval steps with defined approvers, entry criteria, and actions on approve/reject."}
-      ]},
-      {name:"User Interface",pct:17,color:"#E74C3C",desc:"Build and customize Lightning pages, record pages, and app pages using Lightning App Builder.",keyTopics:[
-        {title:"Lightning App Builder Page Types",desc:"App pages, Home pages, and Record pages each have different layouts, available components, and assignment scopes."},
-        {title:"Dynamic Forms",desc:"Move fields from the page layout directly onto the Lightning page canvas — enables per-field visibility rules and conditional layouts."},
-        {title:"Dynamic Actions",desc:"Place action buttons directly on the canvas with visibility rules — replaces the static page layout action bar."},
-        {title:"Component Visibility Rules",desc:"Show or hide any component based on profile, permission set, record field value, or device type without writing code."},
-        {title:"Custom Lightning Components",desc:"LWC and Aura components can be made available in Lightning App Builder by exposing them with a design resource."},
-        {title:"Lightning Experience Customization",desc:"Customize navigation bars, app branding, list views, and compact layouts to tailor the UI for different user groups."}
-      ]},
-      {name:"App Deployment",pct:10,color:"#1ABC9C",desc:"Manage the change lifecycle using sandboxes, change sets, and packages to deploy to production.",keyTopics:[
-        {title:"Sandbox Types",desc:"Developer (200MB) for coding; Developer Pro (1GB) for more space; Partial (5GB sample) for realistic testing; Full for UAT with production data."},
-        {title:"Change Sets",desc:"Outbound change sets bundle metadata in the source org; inbound change sets are deployed in the target — UI-based, no CLI needed."},
-        {title:"Managed vs Unmanaged Packages",desc:"Managed packages lock source code for distribution on AppExchange; unmanaged packages are open source with no upgrade path."},
-        {title:"Unlocked Packages",desc:"Salesforce DX packages that support modular, source-tracked development — preferred for enterprise orgs using CI/CD."},
-        {title:"Deployment Best Practices",desc:"Always deploy to a sandbox first, validate before deploying to production, and run all tests as part of the deployment."},
-        {title:"Environment Hub",desc:"The Environment Hub connects and manages multiple Salesforce orgs from a single location — useful for ISVs and multi-org enterprises."}
-      ]}
+        domains:[
+      {name:"Salesforce Fundamentals",pct:23,color:"#00A1E0"},
+      {name:"Data Modeling and Management",pct:22,color:"#2ECC71"},
+      {name:"Business Logic and Process Automation",pct:28,color:"#F39C12"},
+      {name:"User Interface",pct:17,color:"#E74C3C"},
+      {name:"App Deployment",pct:10,color:"#9B59B6"},
     ],
     studyDays:[
       {tag:"declarative-data",focus:"Data model design: custom objects, fields, relationships, and schema planning",topics:[
@@ -289,87 +207,14 @@ Object.assign(EXAM_DATA, {
     trailheadUrl:"https://trailheadacademy.salesforce.com/certificate/exam-slack-administrator---Slack-Admn-201",
     prerequisites:[],
     overview:"The Slack Administrator credential validates the skills needed to configure, manage, and optimize a Slack workspace or Enterprise Grid for an organization. Topics include workspace setup, channel management, user provisioning, security and compliance policies, app integrations, and enterprise administration.",
-    domains:[
-      {
-        name:"Workspace & Org Management",
-        pct:30,
-        color:"#0070d2",
-        desc:"Configure workspace settings, manage org-wide defaults, and govern the Slack environment.",
-        keyTopics:[
-          {
-            title:"Workspace Settings",
-            desc:"Name, icon, messaging policies, and workspace-level preferences."
-          },
-          {
-            title:"Enterprise Grid",
-            desc:"Multi-workspace management, org-level settings, and connected workspaces."
-          },
-          {
-            title:"Billing & Plans",
-            desc:"Slack plan differences and how billing is managed for teams and Enterprise."
-          }
-        ]
-      },
-      {
-        name:"Channels & Messaging",
-        pct:20,
-        color:"#1b96ff",
-        desc:"Manage channels, messaging policies, and communication workflows.",
-        keyTopics:[
-          {
-            title:"Channel Types",
-            desc:"Public, private, shared channels, and DMs — governance and use cases."
-          },
-          {
-            title:"Channel Management",
-            desc:"Creating, archiving, and naming convention policies for channels."
-          },
-          {
-            title:"Messaging Policies",
-            desc:"Message retention, deletion policies, and admin controls."
-          }
-        ]
-      },
-      {
-        name:"Security & Compliance",
-        pct:25,
-        color:"#ff6b6b",
-        desc:"Data retention, DLP, eDiscovery, and security settings for regulated environments.",
-        keyTopics:[
-          {
-            title:"Data Retention Policies",
-            desc:"Setting message and file retention at workspace and channel level."
-          },
-          {
-            title:"DLP & eDiscovery",
-            desc:"Integration with third-party DLP and eDiscovery tools for compliance."
-          },
-          {
-            title:"SSO & 2FA",
-            desc:"Configuring SSO with SAML and enforcing two-factor authentication."
-          }
-        ]
-      },
-      {
-        name:"Integrations & Apps",
-        pct:25,
-        color:"#4bc885",
-        desc:"Manage the Slack App Directory, custom integrations, and Salesforce-Slack integrations.",
-        keyTopics:[
-          {
-            title:"App Directory Management",
-            desc:"Approving, restricting, and managing Slack App Directory access."
-          },
-          {
-            title:"Salesforce for Slack",
-            desc:"Salesforce CRM integrations available via Slack and their configuration."
-          },
-          {
-            title:"Workflow Builder",
-            desc:"Creating no-code automated workflows within Slack."
-          }
-        ]
-      }
+        domains:[
+      {name:"Fundamentals",pct:9,color:"#00A1E0"},
+      {name:"Workspace Administration",pct:9,color:"#2ECC71"},
+      {name:"Channel and User Group Administration",pct:28,color:"#F39C12"},
+      {name:"User Lifecycle Management",pct:14,color:"#E74C3C"},
+      {name:"App Administration",pct:10,color:"#9B59B6"},
+      {name:"Security",pct:15,color:"#1ABC9C"},
+      {name:"Enabling Slack Success",pct:15,color:"#E67E22"},
     ],
     studyDays:[
       {tag:"foundation",focus:"Understand the Slack platform, workspace structure, and key features",topics:[{text:"Trailhead: Slack Basics",url:"https://trailhead.salesforce.com/content/learn/modules/slack-basics"},{text:"Salesforce Help: Slack Administrator Overview",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_overview.htm"}]},
@@ -680,87 +525,12 @@ Object.assign(EXAM_DATA, {
     trailheadUrl:"https://trailhead.salesforce.com/credentials/tableauservercertifiedassociate",
     prerequisites:[],
     overview:"The Tableau Server Certified Associate (Server Administrator) credential validates skills in deploying, managing, and maintaining Tableau Server and Tableau Cloud environments. It covers installation and configuration, site and user management, security, content governance, and performance monitoring.",
-    domains:[
-      {
-        name:"Installation & Configuration",
-        pct:30,
-        color:"#0070d2",
-        desc:"Tableau Server architecture, installation, and configuration.",
-        keyTopics:[
-          {
-            title:"Architecture Overview",
-            desc:"Tableau Server components: Gateway, Application Server, VizQL Server, Data Server, Repository."
-          },
-          {
-            title:"Installation Options",
-            desc:"Single-node vs multi-node deployments, hardware requirements, and distributed topology."
-          },
-          {
-            title:"Configuration Settings",
-            desc:"TSM (Tableau Services Manager) for configuring server processes and settings."
-          }
-        ]
-      },
-      {
-        name:"Site & User Management",
-        pct:25,
-        color:"#1b96ff",
-        desc:"Managing Tableau sites, users, groups, and role assignments.",
-        keyTopics:[
-          {
-            title:"Sites",
-            desc:"Creating and configuring Tableau Server sites — site roles and isolation."
-          },
-          {
-            title:"User & Group Management",
-            desc:"Adding users, assigning site roles, managing groups, and import via Active Directory."
-          },
-          {
-            title:"License Management",
-            desc:"Creator, Explorer, Viewer licenses — assignment and usage tracking."
-          }
-        ]
-      },
-      {
-        name:"Security",
-        pct:25,
-        color:"#ff6b6b",
-        desc:"Tableau Server security: authentication, authorization, and data access control.",
-        keyTopics:[
-          {
-            title:"Authentication Methods",
-            desc:"Local auth, Active Directory, SAML, OpenID Connect, and Trusted Tickets."
-          },
-          {
-            title:"Permissions Model",
-            desc:"Content permissions, capabilities, and effective permissions in Tableau."
-          },
-          {
-            title:"Row-Level Security",
-            desc:"Implementing row-level data security using user filters and entitlement tables."
-          }
-        ]
-      },
-      {
-        name:"Performance & Maintenance",
-        pct:20,
-        color:"#4bc885",
-        desc:"Monitoring, tuning, backup, and maintenance of Tableau Server.",
-        keyTopics:[
-          {
-            title:"Monitoring & Alerts",
-            desc:"TSM status pages, log files, and Resource Monitoring Tool (RMT)."
-          },
-          {
-            title:"Backup & Recovery",
-            desc:"tsm maintenance backup and restore procedures."
-          },
-          {
-            title:"Performance Tuning",
-            desc:"Caching strategies, extract refresh optimization, and process scaling."
-          }
-        ]
-      }
+        domains:[
+      {name:"Connecting to and Preparing Data",pct:20,color:"#00A1E0"},
+      {name:"Installation and Configuration",pct:26,color:"#2ECC71"},
+      {name:"Administration",pct:36,color:"#F39C12"},
+      {name:"Troubleshooting",pct:12,color:"#E74C3C"},
+      {name:"Migration & Upgrade",pct:6,color:"#9B59B6"},
     ],
     studyDays:[
       {tag:"foundation",focus:"Understand Tableau Server architecture: processes, nodes, and high availability",topics:[{text:"Tableau Help: Tableau Server Architecture Overview",url:"https://help.tableau.com/current/server/en-us/server_process_concepts.htm"},{text:"Trailhead: Tableau Server Administrator Cert Prep",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-tableau-server-certified-administrator-credential"}]},
@@ -1077,77 +847,14 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin2---Plat-Admn-301",
     prerequisites: ["Platform Administrator"],
     overview: "The Salesforce Advanced Administrator certification validates expertise in advanced Salesforce features including advanced automation, data management, analytics, and security. Candidates demonstrate mastery beyond the admin fundamentals.",
-    domains: [
-      { name: "Security and Access", pct: 20, color: "#00A1E0", desc: "Design and configure Salesforce's layered security model for user access, record visibility, and data protection.", keyTopics: [
-      {title:"Profiles and Permission Sets",desc:"Profiles set baseline access; Permission Sets layer additional permissions — use Permission Set Groups to bundle sets by job role."},
-      {title:"OWD and Role Hierarchy",desc:"OWD defines the most restrictive sharing baseline; the role hierarchy grants upward visibility — together they form the foundation of record access."},
-      {title:"Sharing Rules",desc:"Criteria-based and ownership-based sharing rules extend access beyond OWD to users who need it for their role."},
-      {title:"Field-Level Security",desc:"FLS controls which fields each profile or permission set can read or edit — enforced in the UI and API (with enforced FLS in Apex)."},
-      {title:"Login Security",desc:"Restrict access with login hours, trusted IP ranges, MFA enforcement, and session timeout settings."}
-    ] },
-      { name: "Extending Custom Objects and Applications", pct: 8, color: "#2ECC71", desc: "Create and configure custom objects, fields, and relationships to extend the Salesforce data model.", keyTopics: [
-      {title:"Custom Object Design",desc:"Custom objects store business-specific data — define field types, required fields, record name format, and search layout at creation time."},
-      {title:"Relationship Types",desc:"Master-Detail enforces ownership and enables roll-up summaries; Lookup is flexible and optional; Many-to-Many requires a junction object."},
-      {title:"Record Types",desc:"Record types allow different picklist values, page layouts, and business processes for different user groups on the same object."},
-      {title:"Formula and Roll-Up Fields",desc:"Formula fields calculate values at runtime; roll-up summaries aggregate child records — both are read-only and require no code."},
-      {title:"Schema Builder",desc:"Schema Builder provides a visual ERD-style view for designing and modifying the data model — useful for understanding complex object relationships."}
-    ] },
-      { name: "Auditing and Monitoring", pct: 6, color: "#F39C12", desc: "Monitor user activity, configuration changes, and data access across the Salesforce org.", keyTopics: [
-      {title:"Setup Audit Trail",desc:"Records the last 180 days of configuration changes — captures who changed what and when, essential for compliance and troubleshooting."},
-      {title:"Field History Tracking",desc:"Track changes to up to 20 fields per object — captures old and new values, who changed them, and when."},
-      {title:"Login History",desc:"View recent login attempts including IP address, browser, and success/failure status — identify suspicious login patterns."},
-      {title:"Event Monitoring",desc:"Premium feature that captures detailed event logs for API calls, report exports, logins, and more — requires Shield or Event Monitoring license."},
-      {title:"Debug Logs",desc:"Debug logs capture Apex execution details for troubleshooting — set log levels per user and download from Setup."}
-    ] },
-      { name: "Sales Cloud", pct: 10, color: "#E74C3C", desc: "Configure Sales Cloud features including leads, opportunities, forecasting, and territory management.", keyTopics: [
-      {title:"Lead Management",desc:"Configure lead assignment rules, web-to-lead capture, auto-response rules, and conversion field mapping."},
-      {title:"Opportunity Management",desc:"Set up opportunity stages, sales processes per record type, path guidance, and probability settings."},
-      {title:"Forecasting",desc:"Configure collaborative forecasting: forecast types, quota management, and adjustment permissions for managers."},
-      {title:"Territory Management",desc:"Enterprise Territory Management assigns accounts to territories based on rules — supports complex, hierarchical sales territory structures."},
-      {title:"Einstein Activity Capture",desc:"Sync emails and calendar events from Gmail or Outlook to Salesforce automatically — reduces manual logging for sales reps."}
-    ] },
-      { name: "Service Cloud", pct: 10, color: "#1ABC9C", desc: "Configure Service Cloud features including case management, knowledge, entitlements, and service channels.", keyTopics: [
-      {title:"Case Management",desc:"Configure case assignment and escalation rules, queues, and auto-response rules to route and acknowledge incoming customer requests."},
-      {title:"Knowledge Management",desc:"Set up Knowledge article types, data categories, and publishing workflows — enable agents and customers to find answers quickly."},
-      {title:"Entitlements and Milestones",desc:"Entitlements define the service level a customer is owed; milestones track SLA deadlines (e.g., first response, resolution time) on cases."},
-      {title:"Omni-Channel Routing",desc:"Route cases, chats, and messaging conversations to agents based on capacity, skills, and availability in real time."},
-      {title:"Service Console",desc:"Configure the Lightning Service Console with utility bar, push notifications, split view, and macros for agent efficiency."}
-    ] },
-      { name: "Data Management", pct: 10, color: "#BDC3E7", desc: "Manage data quality, imports, exports, duplicate prevention, and data archiving in Salesforce.", keyTopics: [
-      {title:"Data Import Wizard",desc:"Supports imports of up to 50,000 records for standard objects via the browser — includes duplicate matching during import."},
-      {title:"Data Loader",desc:"CLI tool for bulk inserts, updates, upserts, deletes, and exports — handles millions of records using CSV files."},
-      {title:"Duplicate Rules and Matching Rules",desc:"Matching rules identify potential duplicates; duplicate rules define actions (alert or block) when a match is found on save or import."},
-      {title:"Data Export Service",desc:"Schedule automated weekly or monthly exports of all org data as CSV files — a basic backup mechanism."},
-      {title:"Big Objects and Archiving",desc:"Big Objects store billions of historical records at low cost — use Async SOQL to query them. Consider archiving strategies for LDV."}
-    ] },
-      { name: "Content Management", pct: 4, color: "#FF6B35", desc: "Manage files, documents, and content sharing across the Salesforce org using Files and Content Libraries.", keyTopics: [
-      {title:"Salesforce Files",desc:"Salesforce Files is the primary content management tool — attach files to records, share them with users or groups, and version them."},
-      {title:"Libraries",desc:"Content Libraries organize files into shared repositories — control access with library permissions and member roles."},
-      {title:"File Sharing Settings",desc:"Control how files can be shared: internally, externally, or publicly — set org-wide defaults and per-file sharing."},
-      {title:"Google Drive and SharePoint Integration",desc:"Files Connect integrates Salesforce with Google Drive and SharePoint — users access external files within Salesforce without migration."},
-      {title:"Chatter and Files",desc:"Files shared in Chatter posts are visible to all feed followers — understand the sharing implications of posting files in public groups."}
-    ] },
-      { name: "Change Management", pct: 6, color: "#9B59B6", desc: "Plan and execute Salesforce changes using best practices for deployment, testing, and user adoption.", keyTopics: [
-      {title:"Sandbox Strategy",desc:"Use Developer sandboxes for build, Developer Pro for isolated testing, Partial/Full for UAT — match sandbox type to use case."},
-      {title:"Change Sets",desc:"Change sets move metadata between related orgs — build outbound sets in source, deploy inbound in target — UI-driven with no version history."},
-      {title:"Deployment Tools",desc:"Choose between Change Sets (simple), SFDX CLI (automated), DevOps Center (native pipeline), and third-party tools (Copado, Gearset)."},
-      {title:"User Training",desc:"Train users before go-live using role-based training, sandbox environments, and Trailhead — adoption depends on preparation."},
-      {title:"Release Communication",desc:"Communicate upcoming changes to users in advance — release notes, training sessions, and sandbox previews reduce resistance."}
-    ] },
-      { name: "Analytics, Reports, and Dashboards", pct: 13, color: "#00A1E0", desc: "Design reports and dashboards that give users actionable insights from Salesforce data.", keyTopics: [
-      {title:"Report Types",desc:"Report types define the objects and fields available — choose or create the right report type before building the report."},
-      {title:"Report Formats",desc:"Tabular (flat list), Summary (grouped), Matrix (cross-tab), and Joined (multiple blocks) — match format to the analytical need."},
-      {title:"Filters and Bucketing",desc:"Use field filters, cross-filters, and bucket columns to slice and categorize data without modifying the underlying records."},
-      {title:"Dashboard Components",desc:"Charts, tables, gauges, and metrics powered by source reports — each component answers a specific business question."},
-      {title:"Report Subscriptions",desc:"Schedule reports to be emailed to users — keep stakeholders informed without requiring them to log in."}
-    ] },
-      { name: "Process Automation", pct: 13, color: "#2ECC71", desc: "Automate business processes using Flow Builder, approval processes, and declarative automation tools.", keyTopics: [
-      {title:"Record-Triggered Flows",desc:"Fire on record insert or update — before-save flows update the triggering record efficiently; after-save flows can update related records."},
-      {title:"Scheduled Flows",desc:"Run on a recurring schedule or at a date-relative time — useful for SLA follow-ups, batch updates, and reminder notifications."},
-      {title:"Screen Flows",desc:"Guide users through multi-step processes with input screens, decisions, and confirmation steps — launched from buttons or quick actions."},
-      {title:"Approval Processes",desc:"Multi-step approval chains with auto-approve/reject, parallel approvals, and recall — used for discounts, PTO requests, and change approvals."},
-      {title:"Flow Best Practices",desc:"Use before-save flows for field updates on the triggering record; bulkify with collections; avoid SOQL or DML inside loops."}
-    ] }
+        domains:[
+      {name:"Security and Access",pct:20,color:"#00A1E0"},
+      {name:"Objects and Applications",pct:19,color:"#2ECC71"},
+      {name:"Auditing and Monitoring",pct:10,color:"#F39C12"},
+      {name:"Cloud Applications",pct:11,color:"#E74C3C"},
+      {name:"Data and Analytics Management",pct:13,color:"#9B59B6"},
+      {name:"Environment Management and Deployment",pct:7,color:"#1ABC9C"},
+      {name:"Process Automation",pct:20,color:"#E67E22"},
     ],
     studyDays:[
       {tag:"advanced-automation",focus:"Advanced Flow: subflows, fault paths, loops, and screen flow components",topics:[
@@ -1233,49 +940,15 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-cpq-admin---Sales-Admn-202",
     prerequisites: ["Platform Administrator"],
     overview: "The Salesforce CPQ Specialist certification validates the ability to implement and configure Salesforce CPQ (Configure, Price, Quote). Candidates demonstrate expertise in product catalog setup, pricing, quoting processes, contracts, and amendments.",
-    domains: [
-      { name: "CPQ Package Settings", pct: 8, color: "#00A1E0", desc: "Configure the core Salesforce CPQ package settings that govern calculator behavior and global defaults.", keyTopics: [
-      {title:"CPQ Installation and Setup",desc:"Install Salesforce CPQ from AppExchange and configure the CPQ package settings object to set global defaults for pricing and quoting."},
-      {title:"Calculator Settings",desc:"Configure when the CPQ calculator runs, background calculation settings, and rounding behavior for pricing calculations."},
-      {title:"Quote Settings",desc:"Set default quote validity, quote line grouping behavior, and how line items are sorted and displayed on quotes."},
-      {title:"Localization",desc:"Configure currency settings, multi-currency support, and locale-specific formatting for international CPQ deployments."},
-      {title:"CPQ Permissions",desc:"Assign CPQ-specific permission sets (CPQ Quote User, CPQ Admin) to control access to quoting, pricing rules, and configuration tools."}
-    ] },
-      { name: "Products and Product Catalog", pct: 20, color: "#2ECC71", desc: "Build and manage the product catalog including bundles, options, and product features.", keyTopics: [
-      {title:"Product Setup",desc:"Create products with the correct product family, subscription type (One-Time, Evergreen, Termed), and pricing tier."},
-      {title:"Product Bundles",desc:"Bundles group products together — define a bundle parent and add options that can be required, optional, or conditionally displayed."},
-      {title:"Product Options",desc:"Options within a bundle can have min/max quantities, default quantities, and be required or user-selectable."},
-      {title:"Feature Groups",desc:"Features organize bundle options into logical groups with their own min/max selection rules — e.g., 'Choose 1-2 support tiers'."},
-      {title:"Configuration Attributes",desc:"Bundle-level fields that drive product rules or pricing — e.g., a 'Deployment Type' attribute that changes available options."}
-    ] },
-      { name: "Pricing", pct: 25, color: "#F39C12", desc: "Configure CPQ's pricing engine including price rules, discount schedules, and contracted pricing.", keyTopics: [
-      {title:"Price Books",desc:"Standard and custom price books set per-product prices — CPQ uses the price book assigned to the quote to start pricing."},
-      {title:"Discount Schedules",desc:"Volume-based discount tables — Slab applies the tier discount to the full quantity; Range applies each tier's rate only to that quantity band."},
-      {title:"Price Rules",desc:"Automated rules that update quote line fields (price, quantity, discount) based on conditions — run in a defined calculation sequence."},
-      {title:"Block Pricing",desc:"A flat fee for a quantity range — regardless of exact quantity within the range, the same price applies."},
-      {title:"Contracted Pricing",desc:"Account-specific pricing negotiated outside the standard price book — overrides standard prices for named accounts automatically."}
-    ] },
-      { name: "Quote Templates and Quote Documents", pct: 15, color: "#E74C3C", desc: "Design professional quote documents using CPQ templates and conditional content sections.", keyTopics: [
-      {title:"Quote Template Structure",desc:"Templates define the header, line item section, totals block, and footer of the generated PDF or Word document."},
-      {title:"Line Columns",desc:"Configure which fields appear as columns in the line items section — show product name, quantity, unit price, discount, and total."},
-      {title:"Dynamic Content",desc:"Use conditional template sections to include or exclude content blocks based on quote fields — e.g., show a data processing agreement only for EU customers."},
-      {title:"HTML Templates",desc:"CPQ supports HTML-based templates for full design flexibility — embed logos, custom CSS, and brand styling."},
-      {title:"Quote Document Generation",desc:"Trigger document generation via the Generate Document button, Flow, or Apex — output can be PDF or Word format."}
-    ] },
-      { name: "Orders, Contracts, Amendments, and Renewals", pct: 20, color: "#1ABC9C", desc: "Manage the post-quote lifecycle including order generation, contract creation, amendments, and renewals.", keyTopics: [
-      {title:"Order Generation",desc:"Ordered quotes create Order records with Order Products — the order captures what was sold and triggers fulfillment processes."},
-      {title:"Contracts",desc:"Contracts are created from orders — they track subscription start/end dates, account terms, and are the basis for amendments and renewals."},
-      {title:"Amendment Quotes",desc:"Mid-term changes generate an Amendment Quote — CPQ calculates prorated charges for added or removed products automatically."},
-      {title:"Renewal Quotes",desc:"At contract end, CPQ generates a Renewal Quote pre-populated with existing products — reps can adjust and send without rebuilding from scratch."},
-      {title:"Evergreen vs Termed Subscriptions",desc:"Evergreen subscriptions have no end date and auto-renew; Termed subscriptions have a fixed period and generate renewal quotes."}
-    ] },
-      { name: "Approvals", pct: 12, color: "#BDC3E7", desc: "Configure CPQ approval processes that gate quoting based on discount levels, product types, or deal size.", keyTopics: [
-      {title:"CPQ Approval Conditions",desc:"Define what triggers an approval — common conditions include discount over a threshold, specific product included, or total deal value exceeded."},
-      {title:"Approval Chains",desc:"Chain approvals sequentially or in parallel — a deal might need both a manager and a finance approver before submission."},
-      {title:"Approval Rules",desc:"CPQ's native approval engine (different from standard Salesforce Approvals) — configure approval rules, groups, and steps within the CPQ package."},
-      {title:"Approver Groups",desc:"Groups allow any member to approve — use when any manager in a group can sign off rather than requiring a specific individual."},
-      {title:"Approval Notifications",desc:"Configure email alerts to notify approvers when action is required — include a direct link to the quote for one-click review."}
-    ] }
+        domains:[
+      {name:"CPQ Platform",pct:23,color:"#00A1E0"},
+      {name:"Bundle Configurations",pct:17,color:"#2ECC71"},
+      {name:"Pricing",pct:16,color:"#F39C12"},
+      {name:"Quote Templates",pct:7,color:"#E74C3C"},
+      {name:"Product Selection",pct:7,color:"#9B59B6"},
+      {name:"Orders, Contracts, Amendments, and Renewals",pct:15,color:"#1ABC9C"},
+      {name:"Products",pct:11,color:"#E67E22"},
+      {name:"Approvals",pct:4,color:"#3498DB"},
     ],
     studyDays:[
       {tag:"cpq-products",focus:"CPQ product catalog: products, options, features, and product rules",topics:[
@@ -1353,49 +1026,11 @@ Object.assign(EXAM_DATA, {
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mce-admin---MCE-Admn-201",
     prerequisites: [],
     overview: "The Marketing Cloud Engagement Administrator certification validates expertise in administering the Marketing Cloud Engagement platform. Candidates demonstrate ability to configure the platform, manage users and security, implement data architecture, and maintain deliverability.",
-    domains: [
-      { name: "Digital Marketing Concepts", pct: 10, color: "#00A1E0", desc: "Understand fundamental digital marketing concepts that underpin Marketing Cloud configuration decisions.", keyTopics: [
-      {title:"Email Marketing Fundamentals",desc:"Email remains the highest-ROI digital channel — understand open rates, click rates, conversion rates, and unsubscribe rates as KPIs."},
-      {title:"Customer Lifecycle",desc:"Map customer stages (awareness, acquisition, engagement, retention, advocacy) to MCE journeys and messaging strategies."},
-      {title:"Permission-Based Marketing",desc:"Only send to subscribers who have opted in — permission-based marketing improves deliverability and brand trust."},
-      {title:"Omnichannel Marketing",desc:"Coordinate messaging across email, SMS, push, and advertising to create a consistent, personalized customer experience."},
-      {title:"Marketing Attribution",desc:"Track which campaigns influenced a conversion — first-touch, last-touch, and multi-touch attribution models answer different questions."}
-    ] },
-      { name: "Subscriber Data Management", pct: 20, color: "#2ECC71", desc: "Manage subscriber data using lists, data extensions, and Contact Builder for accurate targeting.", keyTopics: [
-      {title:"Lists vs Data Extensions",desc:"Lists are simple subscriber tables; Data Extensions are flexible relational tables — use DEs for complex segmentation and triggered sends."},
-      {title:"Contact Builder",desc:"Contact Builder links data extensions to contacts using a defined relationship — enables cross-channel personalization."},
-      {title:"Attribute Groups",desc:"Attribute groups in Contact Builder define how data extensions relate to contacts — foundational for Journey Builder entry sources."},
-      {title:"Subscriber Status",desc:"Track subscription status (Active, Unsubscribed, Bounced, Held) and ensure suppression logic respects all unsubscribed records."},
-      {title:"Data Retention",desc:"Configure data retention policies on sendable DEs to automatically delete old records — balances data freshness and storage costs."}
-    ] },
-      { name: "Messaging Features", pct: 20, color: "#F39C12", desc: "Configure email, SMS, and push messaging features across Marketing Cloud's messaging tools.", keyTopics: [
-      {title:"Content Builder",desc:"The primary content creation tool — build reusable email templates, content blocks, and landing pages with drag-and-drop."},
-      {title:"AMPscript",desc:"AMPscript personalizes content at send time — use it for conditional content blocks, data lookups, and dynamic product recommendations."},
-      {title:"MobileConnect SMS",desc:"Configure short codes, keywords, and MO/MT message handling for SMS campaigns — comply with carrier and regulatory requirements."},
-      {title:"MobilePush",desc:"Set up iOS and Android push notifications — configure apps, certificates, and push messages in the MobilePush app."},
-      {title:"CloudPages",desc:"Create landing pages, microsites, and smart capture forms hosted on Salesforce infrastructure — integrates directly with subscriber data."}
-    ] },
-      { name: "Platform Administration", pct: 20, color: "#E74C3C", desc: "Administer Marketing Cloud users, business units, permissions, and org-level configuration.", keyTopics: [
-      {title:"Business Units",desc:"Partition the MCE org into separate units for brands or regions — each BU has its own contacts, content, sends, and tracking."},
-      {title:"User Roles and Permissions",desc:"Assign roles (Admin, Content Creator, Analyst) to control what each user can see and do in Marketing Cloud."},
-      {title:"SSO Configuration",desc:"Configure SAML SSO so users log into Marketing Cloud with their corporate identity provider credentials."},
-      {title:"Reply Mail Management",desc:"Configure automated handling of reply emails — auto-forward to agents, auto-reply to recipients, or suppress based on reply content."},
-      {title:"IP Allowlisting",desc:"Restrict Marketing Cloud access to known corporate IP addresses — adds a network-level layer of security for admin functions."}
-    ] },
-      { name: "Data Management and Analytics", pct: 15, color: "#1ABC9C", desc: "Import data, manage storage, and extract performance analytics from Marketing Cloud.", keyTopics: [
-      {title:"FTP Import",desc:"Automate data imports via the Marketing Cloud FTP site — schedule Import Activities in Automation Studio to process files regularly."},
-      {title:"Data Views",desc:"System tables (e.g., _Sent, _Open, _Click, _Bounce) store all send and engagement data — query them via SQL for custom reporting."},
-      {title:"Tracking and Analytics",desc:"Email Studio tracking provides open, click, bounce, and unsubscribe metrics per send — use them to optimize future campaigns."},
-      {title:"Einstein Engagement Analytics",desc:"Einstein Engagement Scoring predicts which subscribers are likely to engage — use scores for win-back campaigns and suppression."},
-      {title:"SQL Query Activity",desc:"Write SQL queries in Automation Studio to create or refresh data extensions from tracking data and subscriber data."}
-    ] },
-      { name: "Setup, Configuration, and Troubleshooting", pct: 15, color: "#BDC3E7", desc: "Configure Marketing Cloud integrations, troubleshoot common issues, and maintain platform health.", keyTopics: [
-      {title:"Marketing Cloud Connect",desc:"Connect MCE to Sales or Service Cloud — configure synced data extensions, triggered sends, and journey entry from CRM events."},
-      {title:"Sender Authentication Package (SAP)",desc:"SAP includes a dedicated sending IP, custom tracking domain, and reply mail management — foundational for deliverability."},
-      {title:"Deliverability Troubleshooting",desc:"Investigate high bounce rates, spam complaints, and inbox placement issues — check SPF/DKIM records, IP reputation, and list quality."},
-      {title:"API Troubleshooting",desc:"Use the Marketing Cloud REST and SOAP APIs to diagnose automation failures, subscriber sync issues, and send errors."},
-      {title:"Audit and Error Logs",desc:"Review Automation Studio error logs, Import Activity logs, and the Email Studio bounce summary to identify and resolve processing failures."}
-    ] }
+        domains:[
+      {name:"Digital Marketing Proficiency",pct:13,color:"#00A1E0"},
+      {name:"Subscriber Data Management",pct:18,color:"#2ECC71"},
+      {name:"Channel Management",pct:16,color:"#F39C12"},
+      {name:"Maintenance",pct:15,color:"#E74C3C"},
     ],
     studyDays:[
       {tag:"mc-setup",focus:"Marketing Cloud account setup: business units, users, roles, and IP warming",topics:[
