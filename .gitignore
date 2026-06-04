@@ -15,20 +15,19 @@ beforemockexam.html
 data.js
 
 # Old numbered split files from a previous attempt
-exam_data_admins.js.bak
-exam_data_architects_1.js
-exam_data_architects_2.js
-exam_data_architects_3.js
-exam_data_architects_4.js
-exam_data_consultants_1.js
-exam_data_consultants_2.js
-exam_data_consultants_3.js
-exam_data_developers_1.js
-exam_data_developers_2.js
-exam_data_developers_3.js
-exam_data_foundations_1.js
-exam_data_foundations_2.js
-exam_data_foundations_3.js
+data/exam_data_architects_1.js
+data/exam_data_architects_2.js
+data/exam_data_architects_3.js
+data/exam_data_architects_4.js
+data/exam_data_consultants_1.js
+data/exam_data_consultants_2.js
+data/exam_data_consultants_3.js
+data/exam_data_developers_1.js
+data/exam_data_developers_2.js
+data/exam_data_developers_3.js
+data/exam_data_foundations_1.js
+data/exam_data_foundations_2.js
+data/exam_data_foundations_3.js
 
 # Claude Code session data
 .claude/
