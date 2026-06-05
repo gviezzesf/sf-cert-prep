@@ -38,4 +38,4 @@ All 61 official Salesforce certs across: Foundations, Administrators, Designers,
 
 ## Tech
 
-Single-page app — plain HTML, CSS, and JavaScript. No framework, no build step, no backend. All data lives in `data.js`. Progress and notes are stored in `localStorage`.
+Single-page app — plain HTML, CSS, and JavaScript. No framework, no build step, no backend. Progress and notes are stored in `localStorage`.
