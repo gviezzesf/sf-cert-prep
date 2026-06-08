@@ -29,6 +29,11 @@ data/exam_data_foundations_1.js
 data/exam_data_foundations_2.js
 data/exam_data_foundations_3.js
 
+# Local scraper reference data (not needed in repo)
+article_ids.json
+exam_guide_data.json
+*.json
+
 # Claude Code session data
 .claude/
 
