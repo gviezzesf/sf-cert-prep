@@ -316,7 +316,7 @@ function launchApp(){
   clearInterval(mockTimerInterval);
   mockState=null;mockQuestions=[];mockAnswers={};
   const d=getExamData(currentExam);
-  const isDesignation=d&&d.designation;
+  const isDesignation=!!(d&&d.designation);
   const hiddenTabs=['plan','resources','quiz','mock','tips'];
   document.querySelectorAll('.tab-btn').forEach(b=>{
     b.classList.toggle('hidden',isDesignation&&hiddenTabs.includes(b.dataset.tab));
@@ -357,12 +357,14 @@ function launchExam(examName,tab){
   appExamName.textContent=currentExam;
   clearInterval(mockTimerInterval);
   mockState=null;mockQuestions=[];mockAnswers={};
+  const d=getExamData(currentExam);
+  const isDesignation=!!(d&&d.designation);
+  const hiddenTabs=['plan','resources','quiz','mock','tips'];
+  document.querySelectorAll('.tab-btn').forEach(b=>{
+    b.classList.toggle('hidden',isDesignation&&hiddenTabs.includes(b.dataset.tab));
+  });
   renderOverview();
-  renderPlan();
-  renderResources();
-  renderQuiz();
-  renderMock();
-  renderTips();
+  if(!isDesignation){renderPlan();renderResources();renderQuiz();renderMock();renderTips();}
   switchTab(tab||'overview');
 }
 
