@@ -8,44 +8,12 @@ Object.assign(EXAM_DATA, {
     prerequisites: [],
     overview: "The Agentforce Specialist certification validates your ability to build, configure, and deploy autonomous AI agents on the Salesforce platform using Agentforce. The exam covers Agent Builder, Prompt Builder, Einstein Trust Layer, Data Cloud grounding, agent topics and actions, and the practical deployment of AI agents across Sales, Service, and HR use cases.",
         domains:[
-      {name:"Prompt Engineering",pct:20,color:"#00A1E0",desc:"Design and manage prompt templates using Prompt Builder, applying grounding techniques and Trust Layer security.",keyTopics:[
-        {title:"When to use Prompt Builder",desc:"Given business requirements, identify when it's appropriate to use Prompt Builder."},
-        {title:"Access controls",desc:"Identify access controls governing prompt templates."},
-        {title:"Prompt template types",desc:"Identify the considerations for using a prompt template type such as field generation and flex types."},
-        {title:"Grounding techniques",desc:"Given a scenario, identify the appropriate grounding technique."},
-        {title:"Creating and executing templates",desc:"Explain the process for creating, activating, and executing prompt templates."},
-        {title:"Prompt writing best practices",desc:"Explain how to implement best practices for writing effective prompts."},
-        {title:"Trust Layer security",desc:"Identify the security and privacy features of the Trust Layer."},
-        {title:"Model access management",desc:"Explain how to manage and prevent specific models from being accessed."},
-      ]},
-      {name:"Data 360 Fundamentals",pct:20,color:"#2ECC71",desc:"Understand Agentforce Data Library and the foundational Data 360 concepts that power agent grounding.",keyTopics:[
-        {title:"Agentforce Data Library",desc:"Explain the considerations of Agentforce Data Library and its concepts."},
-        {title:"Chunking, indexing, and retrievers",desc:"Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers."},
-      ]},
-      {name:"AI Agents",pct:35,color:"#F39C12",desc:"Build, configure, and deploy Agentforce agents including topics, actions, channels, and security context.",keyTopics:[
-        {title:"How agents work",desc:"Explain how an agent works and its basic building blocks of agent script."},
-        {title:"Hybrid reasoning and Canvas/Script View",desc:"Explain the components and benefits of hybrid reasoning, including how Agent Script functions in Canvas and Script View."},
-        {title:"Deterministic behavior",desc:"Given a use case, manage deterministic behavior for the agent using mechanisms like filters, variables, and template expressions."},
-        {title:"Topics and actions",desc:"Given a scenario, select and configure standard topics, custom topics, standard Agent actions, and custom Agent actions."},
-        {title:"Channel connections",desc:"Explain the process for connecting agents to various channels such as digital experience, email, voice, and Slack."},
-        {title:"Security context",desc:"Explain the security context in which the agent is actually running, and how it impacts agent action execution."},
-        {title:"Employee vs Service agent",desc:"Given a scenario, identify when to use an Employee or Service agent."},
-        {title:"Agent API",desc:"Given a scenario, identify when it's appropriate to use Agent API."},
-      ]},
-      {name:"Testing, Deployment, & Maintenance",pct:10,color:"#E74C3C",desc:"Test agents with Testing Center and manage deployment from sandbox to production.",keyTopics:[
-        {title:"Testing Center",desc:"Given a scenario, test an agent using Testing Center."},
-        {title:"Testing Center evaluations",desc:"Explain how Testing Center evaluations work."},
-        {title:"Deploying agents",desc:"Identify the considerations for deploying an agent from sandbox to production."},
-        {title:"Deploying templates",desc:"Identify the considerations for deploying a template from sandbox to production."},
-      ]},
-      {name:"Governance & Observability",pct:10,color:"#9B59B6",desc:"Monitor and manage agents in production using analytics and optimization tools.",keyTopics:[
-        {title:"Managing and monitoring agents",desc:"Explain the process for managing and monitoring agents."},
-        {title:"Agent analytics and optimization",desc:"Explain agent analytics and agent optimization."},
-      ]},
-      {name:"Multi-Agent Orchestration",pct:5,color:"#1ABC9C",desc:"Understand when and how to use multi-agent architectures including SOMA, MCP, and A2A protocols.",keyTopics:[
-        {title:"Single-Agent (SOMA) architecture",desc:"Given a scenario, determine whether a Single-Agent (SOMA) architecture is appropriate for scalability and control."},
-        {title:"Open standard multi-agent protocols",desc:"Explain the purpose of existing open standard multi-agent protocols such as MCP and A2A."},
-      ]},
+      {name:"Prompt Engineering",pct:20,color:"#00A1E0",desc:"Given business requirements, identify when it's appropriate to use Prompt Builder.",keyTopics:[{title:"Given business requirements, identify when it's appropria...",desc:"Given business requirements, identify when it's appropriate to use Prompt Builder."},{title:"Identify access controls governing prompt templates",desc:"Identify access controls governing prompt templates."},{title:"considerations for using a prompt template type such as f...",desc:"Identify the considerations for using a prompt template type such as field generation and flex types."},{title:"identify the appropriate grounding technique",desc:"Given a scenario, identify the appropriate grounding technique."},{title:"process for creating, activating,",desc:"Explain the process for creating, activating, and executing prompt templates."},{title:"implement best practices for writing effective prompts",desc:"Explain how to implement best practices for writing effective prompts."},{title:"security",desc:"Identify the security and privacy features of the Trust Layer."},{title:"manage",desc:"Explain how to manage and prevent specific models from being accessed."}]},
+      {name:"Data 360 Fundamentals",pct:20,color:"#2ECC71",desc:"Explain the considerations of Agentforce Data Library and its concepts.",keyTopics:[{title:"considerations of Agentforce Data Library",desc:"Explain the considerations of Agentforce Data Library and its concepts."},{title:"Explain foundational concepts of Data 360 such as chunkin...",desc:"Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers."}]},
+      {name:"AI Agents",pct:35,color:"#F39C12",desc:"Explain how an agent works and its basic building blocks of agent script.",keyTopics:[{title:"Explain how an agent works",desc:"Explain how an agent works and its basic building blocks of agent script."},{title:"components",desc:"Explain the components and benefits of hybrid reasoning, including how Agent Script functions in Canvas and Script View."},{title:"Given a use case, manage deterministic behavior for the a...",desc:"Given a use case, manage deterministic behavior for the agent using mechanisms like filters, variables, and template expressions."},{title:"select",desc:"Given a scenario, select and configure standard topics, custom topics, standard Agent actions, and custom Agent actions."},{title:"process for connecting agents to various channels such as...",desc:"Explain the process for connecting agents to various channels such as digital experience, email, voice, and Slack."},{title:"security context in which the agent is actually running,",desc:"Explain the security context in which the agent is actually running, and how it impacts agent action execution."},{title:"identify when to use an Employee or Service agent",desc:"Given a scenario, identify when to use an Employee or Service agent."},{title:"identify when it's appropriate to use Agent API",desc:"Given a scenario, identify when it's appropriate to use Agent API."}]},
+      {name:"Testing, Deployment, & Maintenance",pct:10,color:"#E74C3C",desc:"Apply knowledge to test an agent using Testing Center.",keyTopics:[{title:"test an agent using Testing Center",desc:"Given a scenario, test an agent using Testing Center."},{title:"Explain how Testing Center evaluations work",desc:"Explain how Testing Center evaluations work."},{title:"considerations for deploying an agent from sandbox to pro...",desc:"Identify the considerations for deploying an agent from sandbox to production."},{title:"considerations for deploying a template from sandbox to p...",desc:"Identify the considerations for deploying a template from sandbox to production."}]},
+      {name:"Governance & Observability",pct:10,color:"#9B59B6",desc:"Explain the process for managing and monitoring agents.",keyTopics:[{title:"process for managing",desc:"Explain the process for managing and monitoring agents."},{title:"Explain agent analytics",desc:"Explain agent analytics and agent optimization"}]},
+      {name:"Multi-Agent Orchestration",pct:5,color:"#1ABC9C",desc:"Apply knowledge to determine whether a Single-Agent (SOMA) architecture is appropriate for scalability and control.",keyTopics:[{title:"determine whether a Single-Agent",desc:"Given a scenario, determine whether a Single-Agent (SOMA) architecture is appropriate for scalability and control."},{title:"purpose of existing open standard multi-agent protocols s...",desc:"Explain the purpose of existing open standard multi-agent protocols such as MCP and A2A."}]},
     ],
     studyDays:[
       {tag:"agentforce-overview",focus:"Agentforce fundamentals: agents, topics, actions, and the Einstein Trust Layer",topics:[

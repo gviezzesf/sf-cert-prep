@@ -440,7 +440,7 @@ ${d.designation ? '' : `<div class="domains-section">
     <div class="domain-detail">
       <div class="domain-detail-inner">
         ${dom.desc?`<div class="domain-desc">${dom.desc}</div>`:''}
-        ${(dom.keyTopics||[]).length>0?`<ul class="domain-topic-list">${dom.keyTopics.map(t=>`<li class="domain-topic-item"><div><div class="domain-topic-title">${t.title}</div><div class="domain-topic-desc">${t.desc}</div></div></li>`).join('')}</ul>`:''}
+        ${(dom.keyTopics||[]).length>0?`<ul class="domain-topic-list">${dom.keyTopics.map(t=>`<li class="domain-topic-item"><div><div class="domain-topic-desc">${t.desc}</div></div></li>`).join('')}</ul>`:''}
         ${!dom.desc&&(!dom.keyTopics||dom.keyTopics.length===0)?`<div class="domain-desc" style="color:var(--muted)">${dom.name} — ${dom.pct}% of the exam</div>`:''}
       </div>
     </div>

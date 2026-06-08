@@ -133,7 +133,7 @@ button{cursor:pointer;font-family:inherit}
 .domain-topic-item{display:flex;gap:10px;align-items:flex-start}
 .domain-topic-item::before{content:'→';color:var(--blue);flex-shrink:0;font-size:0.85rem;margin-top:1px}
 .domain-topic-title{font-weight:600;font-size:0.88rem;color:var(--text)}
-.domain-topic-desc{font-size:0.82rem;color:var(--muted);line-height:1.5;margin-top:2px}
+.domain-topic-desc{font-size:0.82rem;color:var(--text);line-height:1.5;margin-top:2px;opacity:0.85}
 
 .progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:gap}
 .progress-note{background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:8px 14px;font-size:0.85rem;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
