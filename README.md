@@ -14,7 +14,7 @@ Pick your target exam and your study pace, and the app builds a personalized day
 Generates a daily schedule based on how many days per week you can study. Each day has a focused topic, curated Trailhead links, and a domain tag so you know what area you're covering. Check off days as you go — progress persists.
 
 ### Quiz
-20 practice questions per cert. Filter by domain, shuffle the order, and reset anytime. Answers are saved so you can come back mid-session.
+20 practice questions per cert. Every questions has an explanation for the correct answer. Filter by domain, shuffle the order, and reset anytime. Answers are saved so you can come back mid-session.
 
 ### Mock Exam
 Simulates real exam conditions — timed, shuffled, no feedback until you submit. Results show your score, pass/fail, time taken, and a domain breakdown. Includes a full review screen with correct answers and explanations.
@@ -39,3 +39,7 @@ All 61 official Salesforce certs across: Foundations, Administrators, Designers,
 ## Tech
 
 Single-page app — plain HTML, CSS, and JavaScript. No framework, no build step, no backend. Progress and notes are stored in `localStorage`.
+
+## Potential Issues
+Dead links, 404s or redirects, although titles should still be correct and searcheable. Scrapping some Salesforce pages is difficult due to permissions and how the pages render. It constantly shifts urls as well.
+
