@@ -1,6 +1,6 @@
 # SF Cert Prep
 
-A browser-based study tool for all 61 official Salesforce certifications.
+A browser-based study tool for most official Salesforce certifications.
 
 **Live app → https://gviezzesf.github.io/sf-cert-prep/**
 
@@ -32,7 +32,7 @@ A floating notes panel (bottom-right) that's always accessible while you study. 
 
 ## Certifications covered
 
-All 61 official Salesforce certs across: Foundations, Administrators, Designers, Developers, Architects, Consultants, Marketers, and AI.
+Most official Salesforce certs across: Foundations, Administrators, Designers, Developers, Architects, Consultants, Marketers, and AI.
 
 ---
 
