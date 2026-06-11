@@ -26,9 +26,10 @@ function getGenericResources(examName){
     resources.push({type:"Official",title:"Exam Registration & Guide",desc:"Official exam page on Trailhead Academy — find the exam guide, registration link, and credential requirements.",url:d.trailheadUrl});
   }
 
-  // 2. Cert-specific trailmix slug (Salesforce official prep trailmixes follow this pattern)
+  // 2. Cert-specific trailmix — use explicit override if provided, else auto-generate from slug
   const slug=examName.toLowerCase().replace(/[^a-z0-9 ]/g,'').replace(/ +/g,'-');
-  resources.push({type:"Trailhead",title:"Official Cert Prep Trailmix",desc:"Salesforce-curated collection of modules, projects, and superbadges to prepare for this exam.",url:`https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-${slug}-credential`});
+  const trailmixUrl=(d&&d.trailmixUrl)?d.trailmixUrl:`https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-${slug}-credential`;
+  resources.push({type:"Trailhead",title:"Official Cert Prep Trailmix",desc:"Salesforce-curated collection of modules, projects, and superbadges to prepare for this exam.",url:trailmixUrl});
 
   // 3. Trailblazer Community cert study group
   resources.push({type:"Community",title:"Trailblazer Community",desc:"Connect with other candidates, ask questions, and find study tips from certified professionals.",url:"https://trailhead.salesforce.com/trailblazer-community/feed?sort=LAST_MODIFIED_DATE_DESC"});

@@ -5,6 +5,7 @@ Object.assign(EXAM_DATA, {
     pass: "65%",
     experience: "6 months",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-agentforce-specialist---AI-201",
+    trailmixUrl: "https://trailhead.salesforce.com/agentblazer",
     prerequisites: [],
     overview: "The Agentforce Specialist certification validates your ability to build, configure, and deploy autonomous AI agents on the Salesforce platform using Agentforce. The exam covers Agent Builder, Prompt Builder, Einstein Trust Layer, Data Cloud grounding, agent topics and actions, and the practical deployment of AI agents across Sales, Service, and HR use cases.",
         domains:[
@@ -17,36 +18,36 @@ Object.assign(EXAM_DATA, {
     ],
     studyDays:[
       {tag:"agentforce-overview",focus:"Agentforce fundamentals: agents, topics, actions, and the Einstein Trust Layer",topics:[
-        {text:"Agentforce Overview",url:"https://help.salesforce.com/s/articleView?id=sf.agentforce_overview.htm"},
-        {text:"Agentforce Specialist Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-AI-Associate-Exam-Guide"},
-        {text:"Einstein Trust Layer",url:"https://help.salesforce.com/s/articleView?id=sf.einstein_trust_layer.htm"},
-        {text:"Agentforce Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/agentforce-specialist"},
-        {text:"Agentforce Topics and Actions",url:"https://help.salesforce.com/s/articleView?id=sf.agentforce_topics.htm"},
-        {text:"Agentforce for Service Cloud",url:"https://help.salesforce.com/s/articleView?id=sf.agentforce_service_cloud.htm"}
+        {text:"Agentforce Agents",url:"https://help.salesforce.com/s/articleView?id=ai.copilot_intro.htm"},
+        {text:"Agentforce Specialist Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Agentforce-Specialist-Exam-Guide"},
+        {text:"Agentforce and Generative AI",url:"https://help.salesforce.com/s/articleView?id=ai.generative_ai.htm"},
+        {text:"Set Up Your Agent",url:"https://help.salesforce.com/s/articleView?id=ai.copilot_setup.htm"},
+        {text:"Agent Actions",url:"https://help.salesforce.com/s/articleView?id=ai.copilot_actions.htm"},
+        {text:"Deploy Service Agent to Enhanced Chat",url:"https://help.salesforce.com/s/articleView?id=ai.service_agent_deploy_enhanced_chat_v2.htm"}
       ]},
       {tag:"agent-building",focus:"Build and configure Agentforce agents: system prompts, topics, actions, and testing",topics:[
-        {text:"Build an Agentforce Agent",url:"https://help.salesforce.com/s/articleView?id=sf.agentforce_build_agent.htm"},
-        {text:"Agent Topics Configuration",url:"https://help.salesforce.com/s/articleView?id=sf.agentforce_topics.htm"},
-        {text:"Agent Actions: Flow, Apex, and APIs",url:"https://help.salesforce.com/s/articleView?id=sf.agentforce_actions.htm"},
-        {text:"Agent Testing and Preview",url:"https://help.salesforce.com/s/articleView?id=sf.agentforce_test.htm"},
-        {text:"Agentforce Prompt Templates",url:"https://help.salesforce.com/s/articleView?id=sf.prompt_builder_overview.htm"},
-        {text:"Agentforce Guardrails",url:"https://help.salesforce.com/s/articleView?id=sf.einstein_trust_layer.htm"}
+        {text:"Create an Agent",url:"https://help.salesforce.com/s/articleView?id=ai.agent_setup_create.htm"},
+        {text:"Agentforce Builder",url:"https://help.salesforce.com/s/articleView?id=ai.agent_builder_intro.htm"},
+        {text:"Agent Actions",url:"https://help.salesforce.com/s/articleView?id=ai.copilot_actions.htm"},
+        {text:"Call an Agent from a Flow or Apex Class",url:"https://help.salesforce.com/s/articleView?id=ai.agent_custom_invocable_action_flow_apex.htm"},
+        {text:"Agentforce Testing Center",url:"https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm"},
+        {text:"Flow Core Action: Generate Prompt Response",url:"https://help.salesforce.com/s/articleView?id=platform.flow_ref_elements_actions_generate_prompt_response.htm"}
       ]},
-      {tag:"einstein-ai",focus:"Einstein AI features: Einstein Copilot, Prompt Builder, Generative AI in flows",topics:[
-        {text:"Einstein Copilot Overview",url:"https://help.salesforce.com/s/articleView?id=sf.einstein_copilot.htm"},
-        {text:"Prompt Builder",url:"https://help.salesforce.com/s/articleView?id=sf.prompt_builder_overview.htm"},
-        {text:"Einstein Generative AI in Flow",url:"https://help.salesforce.com/s/articleView?id=sf.flow_ref_elements_actions_einstein.htm"},
-        {text:"Einstein Trust Layer",url:"https://help.salesforce.com/s/articleView?id=sf.einstein_trust_layer.htm"},
-        {text:"Data Grounding for AI",url:"https://help.salesforce.com/s/articleView?id=sf.agentforce_data_grounding.htm"},
-        {text:"Einstein AI Ethics and Bias",url:"https://help.salesforce.com/s/articleView?id=sf.einstein_trust_layer.htm"}
+      {tag:"einstein-ai",focus:"Prompt Builder, grounding, Trust Layer, and generative AI in Agentforce",topics:[
+        {text:"Prompt Builder",url:"https://help.salesforce.com/s/articleView?id=ai.prompt_builder_intro.htm"},
+        {text:"Create a Prompt Template",url:"https://help.salesforce.com/s/articleView?id=ai.prompt_builder_build_template.htm"},
+        {text:"Manage Prompt Templates",url:"https://help.salesforce.com/s/articleView?id=ai.prompt_builder_manage_prompt_templates.htm"},
+        {text:"Agentforce Data Library",url:"https://help.salesforce.com/s/articleView?id=ai.data_library_parent.htm"},
+        {text:"Set Up Einstein Generative AI Audit and Feedback",url:"https://help.salesforce.com/s/articleView?id=ai.generative_ai_feedback_enable.htm"},
+        {text:"Agentforce and Generative AI Usage and Billing",url:"https://help.salesforce.com/s/articleView?id=ai.generative_ai_usage.htm"}
       ]},
-      {tag:"exam-prep-agentforce",focus:"Agentforce Specialist exam prep: agents, actions, Einstein Trust Layer, and use cases",topics:[
-        {text:"Agentforce Specialist Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-AI-Associate-Exam-Guide"},
-        {text:"Agentforce Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/agentforce-specialist"},
-        {text:"Agentforce Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.agentforce_overview.htm"},
-        {text:"Prompt Builder Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.prompt_builder_overview.htm"},
-        {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-agentforce-spec---AI-Spec-201"},
-        {text:"Trailhead: Agentforce Trail",url:"https://trailhead.salesforce.com/content/learn/trails/build-agentforce"}
+      {tag:"exam-prep-agentforce",focus:"Agentforce Specialist exam prep: agents, actions, Trust Layer, observability, and use cases",topics:[
+        {text:"Agentforce Specialist Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Agentforce-Specialist-Exam-Guide"},
+        {text:"Agentforce Agents",url:"https://help.salesforce.com/s/articleView?id=ai.copilot_intro.htm"},
+        {text:"Prompt Builder",url:"https://help.salesforce.com/s/articleView?id=ai.prompt_builder_intro.htm"},
+        {text:"Agentforce Data Library",url:"https://help.salesforce.com/s/articleView?id=ai.data_library_parent.htm"},
+        {text:"Set Up Agentforce Session Tracing",url:"https://help.salesforce.com/s/articleView?id=ai.generative_ai_session_trace_setup.htm"},
+        {text:"Agentforce Testing Center",url:"https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm"}
       ]}
     ],
     quiz:[
