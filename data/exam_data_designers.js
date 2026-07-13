@@ -5,6 +5,7 @@ Object.assign(EXAM_DATA, {
     pass: "65%",
     experience: "2+ years",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-ux-designer---Plat-UX-101",
+    trailmixUrl: "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-ux-designer-credential",
     prerequisites: [
       {name:"Platform Administrator",url:"https://trailhead.salesforce.com/content/learn/trails/force_com_admin_intermediate",note:"Admin knowledge of page layouts, components, and app configuration is assumed throughout the exam."}
     ],
@@ -22,7 +23,7 @@ Object.assign(EXAM_DATA, {
         {text:"UX Designer Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-User-Experience-Designer-Exam-Guide"},
         {text:"User-Centered Design Trailhead",url:"https://trailhead.salesforce.com/content/learn/modules/ux-designer"},
         {text:"WCAG Accessibility Guidelines",url:"https://www.w3.org/WAI/standards-guidelines/wcag/"},
-        {text:"Salesforce Accessibility Standards",url:"https://help.salesforce.com/s/articleView?id=sf.accessibility_overview.htm"},
+        {text:"Salesforce Accessibility Standards",url:"https://www.salesforce.com/company/accessibility/resources/"},
         {text:"UX Designer Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-user-experience-designer-credential"},
         {text:"Salesforce Design System (SLDS)",url:"https://www.lightningdesignsystem.com/"}
       ]},
@@ -32,15 +33,15 @@ Object.assign(EXAM_DATA, {
         {text:"SLDS Design Tokens",url:"https://www.lightningdesignsystem.com/design-tokens/"},
         {text:"SLDS Patterns",url:"https://www.lightningdesignsystem.com/patterns/"},
         {text:"LWC and SLDS",url:"https://developer.salesforce.com/docs/platform/lwc/guide/create-components-css.html"},
-        {text:"Dynamic Forms and Dynamic Actions",url:"https://help.salesforce.com/s/articleView?id=sf.dynamic_forms_overview.htm"}
+        {text:"Break Up Your Record Details with Dynamic Forms",url:"https://help.salesforce.com/s/articleView?id=platform.dynamic_forms_overview.htm&type=5"}
       ]},
       {tag:"declarative-ux",focus:"Declarative UX tooling: Lightning App Builder, Global Actions, and page templates",topics:[
-        {text:"Lightning App Builder",url:"https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_overview.htm"},
-        {text:"Page Templates",url:"https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_templates.htm"},
-        {text:"Global Actions",url:"https://help.salesforce.com/s/articleView?id=sf.actions_overview.htm"},
-        {text:"Quick Actions",url:"https://help.salesforce.com/s/articleView?id=sf.actions_overview_quick.htm"},
-        {text:"In-App Guidance",url:"https://help.salesforce.com/s/articleView?id=sf.customhelp_lex_prompt_parent.htm"},
-        {text:"Utility Bar",url:"https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_utility_overview.htm"}
+        {text:"Get Help for Lightning App Builder",url:"https://help.salesforce.com/s/articleView?id=platform.lightning_app_builder_overview.htm&type=5"},
+        {text:"Lightning Page Templates",url:"https://help.salesforce.com/s/articleView?id=platform.lightning_page_templates.htm&type=5"},
+        {text:"Global Quick Actions",url:"https://help.salesforce.com/s/articleView?id=platform.actions_overview_global.htm&type=5"},
+        {text:"Empower Your Users with Quick Actions",url:"https://trailhead.salesforce.com/content/learn/modules/lex_customization/lex_customization_actions"},
+        {text:"Getting Started with In-App Guidance",url:"https://help.salesforce.com/s/articleView?id=sales.iag_create.htm&type=5"},
+        {text:"Add a Utility Bar to Lightning Apps",url:"https://help.salesforce.com/s/articleView?id=platform.apps_lightning_utilities.htm&type=5"}
       ]},
       {tag:"exam-prep-ux",focus:"UX Designer exam prep: SLDS, accessibility, user-centered design, and Lightning pages",topics:[
         {text:"UX Designer Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-User-Experience-Designer-Exam-Guide"},
@@ -90,6 +91,7 @@ Object.assign(EXAM_DATA, {
     pass: "65%",
     experience: "2+ years",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-strategy-designer---Plat-UX-102",
+    trailmixUrl: "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-strategy-designer-credential",
     prerequisites: [
       {name:"Platform Administrator",url:"https://developer.salesforce.com/docs/platform/lwc/guide/data-ui-api.html",note:"Understanding the Salesforce platform's capabilities is essential for advising clients on org strategy."}
     ],

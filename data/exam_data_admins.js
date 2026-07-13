@@ -16,60 +16,60 @@ Object.assign(EXAM_DATA, {
     ],
     studyDays:[
       {tag:"user-management",focus:"User management: profiles, roles, permission sets, and user licenses",topics:[
-        {text:"Profiles Overview",url:"https://help.salesforce.com/s/articleView?id=sf.admin_userprofiles.htm"},
-        {text:"Permission Sets",url:"https://help.salesforce.com/s/articleView?id=sf.perm_sets_overview.htm"},
-        {text:"Role Hierarchy",url:"https://help.salesforce.com/s/articleView?id=sf.user_role_hierarchy.htm"},
-        {text:"User License Types",url:"https://help.salesforce.com/s/articleView?id=sf.users_understanding_license_types.htm"},
-        {text:"Permission Set Groups",url:"https://help.salesforce.com/s/articleView?id=sf.perm_set_groups.htm"},
-        {text:"Delegated Administration",url:"https://help.salesforce.com/s/articleView?id=sf.delegated_admin_overview.htm"}
+        {text:"Profiles",url:"https://help.salesforce.com/s/articleView?id=platform.admin_userprofiles.htm&type=5"},
+        {text:"Permission Sets",url:"https://help.salesforce.com/s/articleView?id=platform.perm_sets_overview.htm&type=5"},
+        {text:"Create a Role Hierarchy",url:"https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_roles"},
+        {text:"User License Type Options",url:"https://help.salesforce.com/s/articleView?id=platform.users_license_types_options.htm&type=5"},
+        {text:"Permission Set Groups",url:"https://trailhead.salesforce.com/content/learn/modules/permission-set-groups"},
+        {text:"Define Delegate Administrators",url:"https://help.salesforce.com/s/articleView?id=platform.delegating_user_administration.htm&type=5"}
       ]},
       {tag:"security-sharing",focus:"Security and sharing model: OWDs, sharing rules, field-level security, and record access",topics:[
-        {text:"Org-Wide Sharing Defaults",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_owd_setting.htm"},
-        {text:"Sharing Rules",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_rules.htm"},
-        {text:"Field-Level Security",url:"https://help.salesforce.com/s/articleView?id=sf.admin_fls.htm"},
-        {text:"Record Access Overview",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_overview.htm"},
-        {text:"Manual Sharing",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_manual.htm"},
-        {text:"Shield Platform Encryption",url:"https://help.salesforce.com/s/articleView?id=sf.security_pe_overview.htm"}
+        {text:"Org-Wide Sharing Defaults",url:"https://help.salesforce.com/s/articleView?id=platform.security_sharing_owd_about.htm&type=5"},
+        {text:"Sharing Rules",url:"https://help.salesforce.com/s/articleView?id=platform.security_about_sharing_rules.htm&type=5"},
+        {text:"Field-Level Security",url:"https://help.salesforce.com/s/articleView?id=platform.users_profiles_field_perms.htm&type=5"},
+        {text:"Sharing and Record Access Features",url:"https://help.salesforce.com/s/articleView?id=platform.managing_the_sharing_model.htm&type=5"},
+        {text:"Control Manual Sharing for User Records",url:"https://help.salesforce.com/s/articleView?id=platform.security_sharing_owd_user_manual.htm&type=5"},
+        {text:"Shield Platform Encryption",url:"https://trailhead.salesforce.com/content/learn/modules/spe_admins"}
       ]},
       {tag:"objects-fields",focus:"Data model: standard and custom objects, fields, relationships, and schema",topics:[
-        {text:"Custom Object Creation",url:"https://help.salesforce.com/s/articleView?id=sf.dev_objectcreate_task.htm"},
-        {text:"Field Types Reference",url:"https://help.salesforce.com/s/articleView?id=sf.custom_field_types.htm"},
-        {text:"Object Relationships",url:"https://help.salesforce.com/s/articleView?id=sf.relationships_considerations.htm"},
-        {text:"Schema Builder",url:"https://help.salesforce.com/s/articleView?id=sf.schema_builder.htm"},
-        {text:"Validation Rules",url:"https://help.salesforce.com/s/articleView?id=sf.fields_about_validation_rules.htm"},
-        {text:"Formula Fields",url:"https://help.salesforce.com/s/articleView?id=sf.customize_formulas.htm"}
+        {text:"Create a Custom Object",url:"https://help.salesforce.com/s/articleView?id=platform.dev_objectcreate_task_parent.htm&type=5"},
+        {text:"Custom Field Types",url:"https://help.salesforce.com/s/articleView?id=platform.custom_field_types.htm&type=5"},
+        {text:"Object Relationships",url:"https://help.salesforce.com/s/articleView?id=platform.relationships_considerations.htm&type=5"},
+        {text:"Work with Schema Builder",url:"https://trailhead.salesforce.com/content/learn/modules/data_modeling/schema_builder"},
+        {text:"Validation Rules",url:"https://help.salesforce.com/s/articleView?id=platform.fields_about_field_validation.htm&type=5"},
+        {text:"Build a Formula Field",url:"https://help.salesforce.com/s/articleView?id=platform.customize_formulas.htm&type=5"}
       ]},
       {tag:"automation",focus:"Automation tools: Flow Builder, approval processes, and when to use each",topics:[
-        {text:"Flow Builder Overview",url:"https://help.salesforce.com/s/articleView?id=sf.flow_overview.htm"},
-        {text:"Flow Types Reference",url:"https://help.salesforce.com/s/articleView?id=sf.flow_concepts_type.htm"},
-        {text:"Approval Processes",url:"https://help.salesforce.com/s/articleView?id=sf.approvals_create_approval_process.htm"},
-        {text:"Flow and Process Automation Overview",url:"https://help.salesforce.com/s/articleView?id=sf.flow_overview.htm"},
-        {text:"Before-Save Flows",url:"https://help.salesforce.com/s/articleView?id=sf.flow_concepts_trigger_record_before.htm"},
-        {text:"Scheduled Flows",url:"https://help.salesforce.com/s/articleView?id=sf.flow_concepts_trigger_scheduled.htm"}
+        {text:"Build Flows with Flow Builder",url:"https://trailhead.salesforce.com/content/learn/trails/build-flows-with-flow-builder"},
+        {text:"Flow Types",url:"https://help.salesforce.com/s/articleView?id=platform.flow_concepts_type.htm&type=5"},
+        {text:"Automate Your Approvals with Flow Approval Processes",url:"https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals.htm&type=5"},
+        {text:"Build Flows with Flow Builder",url:"https://trailhead.salesforce.com/content/learn/trails/build-flows-with-flow-builder"},
+        {text:"Before-Save Record-Triggered Flows",url:"https://help.salesforce.com/s/articleView?id=platform.flow_concepts_trigger_record.htm&type=5"},
+        {text:"What Is a Schedule-Triggered Flow?",url:"https://admin.salesforce.com/blog/2023/what-is-a-schedule-triggered-flow"}
       ]},
       {tag:"sales-service",focus:"Sales Cloud and Service Cloud features: leads, opportunities, cases, and queues",topics:[
-        {text:"Lead Management",url:"https://help.salesforce.com/s/articleView?id=sf.leads_overview.htm"},
-        {text:"Opportunities Overview",url:"https://help.salesforce.com/s/articleView?id=sf.opportunities_overview.htm"},
-        {text:"Cases Overview",url:"https://help.salesforce.com/s/articleView?id=sf.cases_def_what_is_a_case.htm"},
-        {text:"Queues",url:"https://help.salesforce.com/s/articleView?id=sf.queues_overview.htm"},
-        {text:"Entitlements and SLAs",url:"https://help.salesforce.com/s/articleView?id=sf.entitlements_overview.htm"},
-        {text:"Email-to-Case Setup",url:"https://help.salesforce.com/s/articleView?id=sf.setting_up_email_to_case.htm"}
+        {text:"What Is Lead Management?",url:"https://www.salesforce.com/eu/sales/what-is-lead-management/"},
+        {text:"Opportunities",url:"https://help.salesforce.com/s/articleView?id=sales.opportunities.htm&type=5"},
+        {text:"Manage and Work with Cases",url:"https://help.salesforce.com/s/articleView?id=service.support_agents_intro.htm&type=5"},
+        {text:"Set Up Queues",url:"https://help.salesforce.com/s/articleView?id=service.queues_overview.htm&type=5"},
+        {text:"What Are SLA Policies, Entitlements, and Milestones?",url:"https://help.salesforce.com/s/articleView?id=service.it_srvcs_sla_policies_explainer.htm&type=5"},
+        {text:"Send and Receive Emails with Email-to-Case",url:"https://help.salesforce.com/s/articleView?id=service.customizesupport_email.htm&type=5"}
       ]},
       {tag:"reports-dashboards",focus:"Reports and dashboards: report types, filters, groupings, and dashboard components",topics:[
-        {text:"Reports Overview",url:"https://help.salesforce.com/s/articleView?id=sf.reports_overview.htm"},
-        {text:"Report Types",url:"https://help.salesforce.com/s/articleView?id=sf.reports_report_types_overview.htm"},
-        {text:"Report Builder",url:"https://help.salesforce.com/s/articleView?id=sf.reports_builder_create.htm"},
-        {text:"Dashboards Overview",url:"https://help.salesforce.com/s/articleView?id=sf.dashboards_overview.htm"},
-        {text:"Report Filters",url:"https://help.salesforce.com/s/articleView?id=sf.reports_filters_overview.htm"},
-        {text:"Dynamic Dashboards",url:"https://help.salesforce.com/s/articleView?id=sf.dashboards_dynamic.htm"}
+        {text:"Custom Report Types",url:"https://help.salesforce.com/s/articleView?id=xcloud.reports_report_type_setup.htm&type=5"},
+        {text:"Standard Report Types",url:"https://help.salesforce.com/s/articleView?id=analytics.standard_report_folders.htm&type=5"},
+        {text:"Build a Report in Lightning Experience",url:"https://help.salesforce.com/s/articleView?id=analytics.reports_build_lex.htm&type=5"},
+        {text:"Dashboards",url:"https://help.salesforce.com/s/articleView?id=analytics.rd_dashboards_overview.htm&type=5"},
+        {text:"Filter Report Data",url:"https://help.salesforce.com/s/articleView?id=analytics.reports_builder_filtering_overview.htm&type=5"},
+        {text:"Dynamic Dashboards",url:"https://help.salesforce.com/s/articleView?id=analytics.dashboards_dynamic_overview.htm&type=5"}
       ]},
       {tag:"data-management",focus:"Data management: import wizard, data loader, duplicate rules, and data quality",topics:[
-        {text:"Data Import Wizard",url:"https://help.salesforce.com/s/articleView?id=sf.data_import_wizard.htm"},
+        {text:"Data Import Wizard",url:"https://help.salesforce.com/s/articleView?id=sf.data_import_wizard.htm&type=5"},
         {text:"Data Loader Guide",url:"https://developer.salesforce.com/docs/atlas.en-us.dataLoader.meta/dataLoader/data_loader.htm"},
-        {text:"Duplicate Management",url:"https://help.salesforce.com/s/articleView?id=sf.duplicate_prevention_overview.htm"},
-        {text:"Mass Transfer Records",url:"https://help.salesforce.com/s/articleView?id=sf.admin_massxfer.htm"},
-        {text:"Recycle Bin",url:"https://help.salesforce.com/s/articleView?id=sf.recycle_bin.htm"},
-        {text:"Data Export Service",url:"https://help.salesforce.com/s/articleView?id=sf.admin_exportdata.htm"}
+        {text:"Customize Duplicate Management",url:"https://help.salesforce.com/s/articleView?id=sales.duplicate_prevention_map_of_tasks.htm&type=5"},
+        {text:"Mass Transfer Records",url:"https://help.salesforce.com/s/articleView?id=platform.admin_transfer.htm&type=5"},
+        {text:"Recycle Bin",url:"https://help.salesforce.com/s/articleView?id=xcloud.recycle_bin.htm&type=5"},
+        {text:"Data Export FAQ",url:"https://help.salesforce.com/s/articleView?id=000383962&type=1"}
       ]},
       {tag:"exam-prep-admin",focus:"Platform Administrator exam prep: review all domains and scenario-based questions",topics:[
         {text:"Platform Administrator Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Administrator-Exam-Guide"},
@@ -115,8 +115,9 @@ Object.assign(EXAM_DATA, {
   "Platform App Builder":{
     questions:60,time:105,pass:"63%",experience:"6 months",
     trailheadUrl:"https://trailheadacademy.salesforce.com/certificate/exam-app-builder---Plat-Admn-202",
+    trailmixUrl: "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential",
     prerequisites:[
-      {name:"Platform Administrator",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_contracts_overview.htm",note:"App Builder builds directly on admin concepts — user management, security model, and object configuration are prerequisite knowledge."}
+      {name:"Platform Administrator",url:"https://help.salesforce.com/s/articleView?id=000381709&type=1",note:"App Builder builds directly on admin concepts — user management, security model, and object configuration are prerequisite knowledge."}
     ],
     overview:"The Platform App Builder certification is for professionals who design, build, and deploy custom applications using the declarative capabilities of the Salesforce platform. The exam covers the platform fundamentals, data modelling with objects and relationships, Flow Builder automation, Lightning App Builder page design, and app deployment using sandboxes and packages. It is the go-to credential for admins looking to move into a more technical building role without writing code.",
         domains:[
@@ -129,39 +130,38 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"declarative-data",focus:"Data model design: custom objects, fields, relationships, and schema planning",topics:[
         {text:"Data Modeling Module",url:"https://trailhead.salesforce.com/content/learn/modules/data_modeling"},
-        {text:"Custom Objects",url:"https://help.salesforce.com/s/articleView?id=sf.dev_objectcreate_task.htm"},
-        {text:"Object Relationships",url:"https://help.salesforce.com/s/articleView?id=sf.relationships_considerations.htm"},
-        {text:"Schema Builder",url:"https://help.salesforce.com/s/articleView?id=sf.schema_builder.htm"},
-        {text:"Validation Rules",url:"https://help.salesforce.com/s/articleView?id=sf.fields_about_validation_rules.htm"},
+        {text:"Create a Custom Object",url:"https://help.salesforce.com/s/articleView?id=platform.dev_objectcreate_task_parent.htm&type=5"},
+        {text:"Object Relationships",url:"https://help.salesforce.com/s/articleView?id=platform.relationships_considerations.htm&type=5"},
+        {text:"Work with Schema Builder",url:"https://trailhead.salesforce.com/content/learn/modules/data_modeling/schema_builder"},
+        {text:"Validation Rules",url:"https://help.salesforce.com/s/articleView?id=platform.fields_about_field_validation.htm&type=5"},
         {text:"App Builder Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-App-Builder-Exam-Guide"}
       ]},
       {tag:"automation-builder",focus:"Flow Builder automation: record-triggered, screen flows, and decision elements",topics:[
-        {text:"Flow Builder Overview",url:"https://help.salesforce.com/s/articleView?id=sf.flow_overview.htm"},
-        {text:"Record-Triggered Flows",url:"https://help.salesforce.com/s/articleView?id=sf.flow_concepts_trigger_record.htm"},
-        {text:"Screen Flows",url:"https://help.salesforce.com/s/articleView?id=sf.flow_concepts_trigger_screen.htm"},
-        {text:"Scheduled Flows",url:"https://help.salesforce.com/s/articleView?id=sf.flow_concepts_trigger_scheduled.htm"},
-        {text:"Flow Decision Elements",url:"https://help.salesforce.com/s/articleView?id=sf.flow_ref_elements_decision.htm"},
-        {text:"Approval Processes",url:"https://help.salesforce.com/s/articleView?id=sf.approvals_create_approval_process.htm"}
+        {text:"Build Flows with Flow Builder",url:"https://trailhead.salesforce.com/content/learn/trails/build-flows-with-flow-builder"},
+        {text:"What Is a Record-Triggered Flow?",url:"https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow"},
+        {text:"What Is a Screen Flow?",url:"https://admin.salesforce.com/blog/2023/what-is-a-screen-flow"},
+        {text:"What Is a Schedule-Triggered Flow?",url:"https://admin.salesforce.com/blog/2023/what-is-a-schedule-triggered-flow"},
+        {text:"Decision Element",url:"https://help.salesforce.com/s/articleView?id=platform.flow_ref_elements_decision.htm&type=5"},
+        {text:"Automate Your Approvals with Flow Approval Processes",url:"https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals.htm&type=5"}
       ]},
       {tag:"lightning-pages",focus:"Lightning App Builder: page types, components, visibility filters, and deployment",topics:[
-        {text:"Lightning App Builder",url:"https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_overview.htm"},
-        {text:"Record Page Layouts",url:"https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_record_page.htm"},
-        {text:"Standard Lightning Components",url:"https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_standard_components.htm"},
-        {text:"Component Visibility Filters",url:"https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_component_visibility.htm"},
-        {text:"Dynamic Forms",url:"https://help.salesforce.com/s/articleView?id=sf.dynamic_forms_overview.htm"},
-        {text:"Dynamic Actions",url:"https://help.salesforce.com/s/articleView?id=sf.dynamic_actions_overview.htm"}
+        {text:"Get Help for Lightning App Builder",url:"https://help.salesforce.com/s/articleView?id=platform.lightning_app_builder_overview.htm&type=5"},
+        {text:"Page Layouts",url:"https://help.salesforce.com/s/articleView?id=platform.customize_layout.htm&type=5"},
+        {text:"Standard Lightning Page Components",url:"https://help.salesforce.com/s/articleView?id=platform.lightning_page_components.htm&type=5"},
+        {text:"Add Visibility Rules for Dynamic Pages",url:"https://trailhead.salesforce.com/content/learn/modules/lightning_app_builder/add-visibility-rules-for-dynamic-pages-lab"},
+        {text:"Break Up Your Record Details with Dynamic Forms",url:"https://help.salesforce.com/s/articleView?id=platform.dynamic_forms_overview.htm&type=5"},
       ]},
       {tag:"app-deployment",focus:"App deployment: sandboxes, change sets, and App Exchange packaging basics",topics:[
-        {text:"Sandboxes for Development",url:"https://help.salesforce.com/s/articleView?id=sf.create_test_instance.htm"},
-        {text:"Change Sets",url:"https://help.salesforce.com/s/articleView?id=sf.changesets.htm"},
-        {text:"Managed vs Unmanaged Packages",url:"https://help.salesforce.com/s/articleView?id=sf.sharing_apps.htm"},
+        {text:"Salesforce Sandboxes",url:"https://www.salesforce.com/eu/platform/sandboxes-environments/"},
+        {text:"Change Sets",url:"https://help.salesforce.com/s/articleView?id=platform.changesets.htm&type=5"},
+        {text:"Managed Package Types",url:"https://www.youtube.com/watch?v=q1nmQFpKAac"},
         {text:"AppExchange Overview",url:"https://appexchange.salesforce.com/"},
-        {text:"Change Set Best Practices",url:"https://help.salesforce.com/s/articleView?id=sf.changesets_best_practices.htm"},
-        {text:"App Builder Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-app-builder-credential"}
+        {text:"Deploy Your Changes",url:"https://help.salesforce.com/s/articleView?id=platform.deploy_overview.htm&type=5"},
+        {text:"App Builder Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential"}
       ]},
       {tag:"exam-prep-appbuilder",focus:"App Builder exam prep: data model, automation, Lightning pages, and deployment",topics:[
         {text:"App Builder Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-App-Builder-Exam-Guide"},
-        {text:"App Builder Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-app-builder-credential"},
+        {text:"App Builder Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential"},
         {text:"App Customization Specialist Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_lightning_app_builder"},
         {text:"Process Automation Specialist Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_process_automation"},
         {text:"Data Modeling Module",url:"https://trailhead.salesforce.com/content/learn/modules/data_modeling"},
@@ -205,6 +205,7 @@ Object.assign(EXAM_DATA, {
     pass:"65%",
     experience:"6+ months Slack workspace administration experience",
     trailheadUrl:"https://trailheadacademy.salesforce.com/certificate/exam-slack-administrator---Slack-Admn-201",
+    trailmixUrl: null,
     prerequisites:[],
     overview:"The Slack Administrator credential validates the skills needed to configure, manage, and optimize a Slack workspace or Enterprise Grid for an organization. Topics include workspace setup, channel management, user provisioning, security and compliance policies, app integrations, and enterprise administration.",
         domains:[
@@ -217,15 +218,15 @@ Object.assign(EXAM_DATA, {
       {name:"Enabling Slack Success",pct:15,color:"#E67E22",desc:"Develop a vision and identify goals for Slack at an organization.",keyTopics:[{title:"Develop a vision",desc:"Develop a vision and identify goals for Slack at an organization."},{title:"Use the analytics dashboard to track Slack usage",desc:"Use the analytics dashboard to track Slack usage."},{title:"Make recommendations based on analytics data",desc:"Make recommendations based on analytics data (for example, channel archival, work with Slack Champions, publish a Slack etiquette guide)."},{title:"Build a Slack team to maintain a workspace or org based o...",desc:"Build a Slack team to maintain a workspace or org based on best practices."},{title:"Enable admins to promote Slack as the Digital HQ for thei...",desc:"Enable admins to promote Slack as the Digital HQ for their organization."},{title:"Promote ongoing member enablement",desc:"Promote ongoing member enablement and engagement with specific programs and resources."}]},
     ],
     studyDays:[
-      {tag:"foundation",focus:"Understand the Slack platform, workspace structure, and key features",topics:[{text:"Trailhead: Slack Basics",url:"https://trailhead.salesforce.com/content/learn/modules/slack-basics"},{text:"Salesforce Help: Slack Administrator Overview",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_overview.htm"}]},
-      {tag:"setup",focus:"Set up a Slack workspace: workspace settings, profile fields, and domain claiming",topics:[{text:"Salesforce Help: Workspace Settings in Slack",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_workspace_settings.htm"},{text:"Trailhead: Slack Administrator Cert Prep",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-slack-administrator-credential"}]},
-      {tag:"users",focus:"Manage users: inviting, deactivating, and provisioning with SCIM",topics:[{text:"Salesforce Help: Manage Slack Members",url:"https://help.salesforce.com/s/articleView?id=sf.slack_setup_manage_members.htm"},{text:"Salesforce Help: SCIM Provisioning for Slack",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_scim.htm"}]},
-      {tag:"channels",focus:"Manage channels: naming conventions, permissions, and governance policies",topics:[{text:"Salesforce Help: Slack Channel Management",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_getting_started.htm"},{text:"Salesforce Help: Channel Permissions in Slack",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_channel_permissions.htm"}]},
-      {tag:"security",focus:"Configure SSO, two-factor authentication, and session management",topics:[{text:"Salesforce Help: Slack Security Overview",url:"https://help.salesforce.com/s/articleView?id=sf.slack_security_overview.htm"},{text:"Salesforce Help: SAML SSO for Slack",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_sso.htm"}]},
-      {tag:"enterprise",focus:"Understand Enterprise Grid: org management, multi-workspace policies",topics:[{text:"Salesforce Help: Slack Enterprise Grid Overview",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_enterprise_grid.htm"},{text:"Salesforce Help: Manage Workspaces in Enterprise Grid",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_manage_workspace.htm"}]},
-      {tag:"apps",focus:"Manage the app directory: approve, restrict, and configure third-party apps",topics:[{text:"Salesforce Help: Slack App Directory Overview",url:"https://help.salesforce.com/s/articleView?id=sf.slack_apps_apps_directory.htm"},{text:"Salesforce Help: Restrict App Installations",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_app_approvals.htm"}]},
-      {tag:"connect",focus:"Configure Slack Connect for external collaboration with partner organizations",topics:[{text:"Salesforce Help: Slack Connect Overview",url:"https://help.salesforce.com/s/articleView?id=sf.slack_connect_overview.htm"},{text:"Trailhead: Slack Basics — Slack Connect",url:"https://trailhead.salesforce.com/content/learn/modules/slack-basics"}]},
-      {tag:"analytics",focus:"Use Slack analytics to track workspace usage and adoption",topics:[{text:"Salesforce Help: Slack Analytics",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_analytics.htm"},{text:"Salesforce Help: Message and Channel Activity Reports",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_activity_reports.htm"}]}
+      {tag:"foundation",focus:"Understand the Slack platform, workspace structure, and key features",topics:[{text:"Workspace administration",url:"https://trailhead.salesforce.com/content/learn/modules/slack-basics"},{text:"Salesforce Help: Slack Administrator Overview",url:"https://slack.com/intl/en-gb/help/categories/200122103-Workspace-administration"}]},
+      {tag:"setup",focus:"Set up a Slack workspace: workspace settings, profile fields, and domain claiming",topics:[{text:"Review your workspace’s settings",url:"https://slack.com/intl/en-gb/help/articles/360000355143-Review-your-workspace%E2%80%99s-settings"},{text:"Trailhead: Slack Administrator Cert Prep",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-slack-administrator-credential"}]},
+      {tag:"users",focus:"Manage users: inviting, deactivating, and provisioning with SCIM",topics:[{text:"Manage members with SCIM provisioning",url:"https://help.salesforce.com/s/articleView?id=slack.slack_salesforce_channels_setup.htm&type=5"},{text:"Salesforce Help: SCIM Provisioning for Slack",url:"https://slack.com/intl/en-gb/help/articles/212572638-Manage-members-with-SCIM-provisioning"}]},
+      {tag:"channels",focus:"Manage channels: naming conventions, permissions, and governance policies",topics:[{text:"Use channel management tools",url:"https://slack.com/intl/en-gb/help/articles/360047512554-Use-channel-management-tools"},{text:"Salesforce Help: Channel Permissions in Slack",url:"https://slack.com/intl/en-gb/help/articles/360004635551-Manage-channel-posting-permissions"}]},
+      {tag:"security",focus:"Configure SSO, two-factor authentication, and session management",topics:[{text:"Security tips to protect your workspace",url:"https://slack.com/intl/en-gb/help/articles/115004155306-Security-tips-to-protect-your-workspace"},{text:"Salesforce Help: SAML SSO for Slack",url:"https://slack.com/intl/en-gb/help/articles/203772216-Set-up-SAML-single-sign-on-for-Slack"}]},
+      {tag:"enterprise",focus:"Understand Enterprise Grid: org management, multi-workspace policies",topics:[{text:"An introduction to Slack Enterprise Grid",url:"https://slack.com/intl/en-gb/resources/why-use-slack/slack-enterprise-grid"},{text:"Salesforce Help: Manage Workspaces in Enterprise Grid",url:"https://trailhead.salesforce.com/content/learn/modules/slack-workspace-design"}]},
+      {tag:"apps",focus:"Manage the app directory: approve, restrict, and configure third-party apps",topics:[{text:"Guide to apps in Slack",url:"https://slack.com/intl/en-gb/help/articles/360001537467-Guide-to-apps-in-Slack"},{text:"Salesforce Help: Restrict App Installations",url:"https://slack.com/intl/en-gb/help/articles/1500009181142-Manage-app-settings-and-permissions"}]},
+      {tag:"connect",focus:"Configure Slack Connect for external collaboration with partner organizations",topics:[{text:"Getting started with Slack Connect",url:"https://slack.com/intl/en-gb/resources/using-slack/getting-started-with-slack-connect"},{text:"Trailhead: Slack Basics — Slack Connect",url:"https://trailhead.salesforce.com/content/learn/modules/slack-basics"}]},
+      {tag:"analytics",focus:"Use Slack analytics to track workspace usage and adoption",topics:[{text:"Understand the data in your Slack analytics dashboard",url:"https://slack.com/intl/en-gb/help/articles/360057638533-Understand-the-data-in-your-Slack-analytics-dashboard"},{text:"Salesforce Help: Message and Channel Activity Reports",url:"https://slack.com/intl/en-gb/help/articles/218407447-View-your-Slack-analytics-dashboard"}]}
     ],
     quiz:[
       {
@@ -523,6 +524,7 @@ Object.assign(EXAM_DATA, {
     pass:"72%",
     experience:"Hands-on Tableau Server or Tableau Cloud administration experience",
     trailheadUrl:"https://trailhead.salesforce.com/credentials/tableauservercertifiedassociate",
+    trailmixUrl: null,
     prerequisites:[],
     overview:"The Tableau Server Certified Associate (Server Administrator) credential validates skills in deploying, managing, and maintaining Tableau Server and Tableau Cloud environments. It covers installation and configuration, site and user management, security, content governance, and performance monitoring.",
         domains:[
@@ -796,7 +798,7 @@ Object.assign(EXAM_DATA, {
         type:"Official",
         title:"Tableau Server Admin Exam Guide",
         desc:"Official exam outline for the Server Certified Associate credential.",
-        url:"https://help.salesforce.com/s/articleView?id=sf.opportunities_overview.htm"
+        url:"https://help.salesforce.com/s/articleView?id=sales.opportunities.htm&type=5"
       },
       {
         type:"Trailhead",
@@ -858,35 +860,35 @@ Object.assign(EXAM_DATA, {
     ],
     studyDays:[
       {tag:"advanced-automation",focus:"Advanced Flow: subflows, fault paths, loops, and screen flow components",topics:[
-        {text:"Advanced Flow Building",url:"https://help.salesforce.com/s/articleView?id=sf.flow_build.htm"},
-        {text:"Subflows",url:"https://help.salesforce.com/s/articleView?id=sf.flow_ref_elements_subflow.htm"},
-        {text:"Fault Paths in Flow",url:"https://help.salesforce.com/s/articleView?id=sf.flow_add_fault_path.htm"},
+        {text:"Build Flows with Flow Builder",url:"https://trailhead.salesforce.com/content/learn/trails/build-flows-with-flow-builder"},
+        {text:"What Is a Subflow?",url:"https://admin.salesforce.com/blog/2023/what-is-a-subflow"},
+        {text:"Customize What Happens When a Flow Fails",url:"https://help.salesforce.com/s/articleView?id=platform.flow_build_logic_fault.htm&type=5"},
         {text:"Screen Flow Custom Components",url:"https://developer.salesforce.com/docs/platform/lwc/guide/use-flow.html"},
-        {text:"Flow Debugging",url:"https://help.salesforce.com/s/articleView?id=sf.flow_test.htm"},
+        {text:"Flow Debugging",url:"https://help.salesforce.com/s/articleView?id=release-notes.rn_forcecom_flow_debug.htm&release=230&type=5"},
         {text:"Admin II Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Advanced-Administrator-Exam-Guide"}
       ]},
       {tag:"advanced-security",focus:"Advanced security: session policies, transaction security, audit trail, and health check",topics:[
-        {text:"Session Security Settings",url:"https://help.salesforce.com/s/articleView?id=sf.security_auth_timeout.htm"},
-        {text:"Transaction Security Policies",url:"https://help.salesforce.com/s/articleView?id=sf.transaction_security_policy.htm"},
-        {text:"Setup Audit Trail",url:"https://help.salesforce.com/s/articleView?id=sf.admin_monitorsetup.htm"},
-        {text:"Salesforce Health Check",url:"https://help.salesforce.com/s/articleView?id=sf.security_health_check.htm"},
-        {text:"Login Forensics",url:"https://help.salesforce.com/s/articleView?id=sf.security_login_forensics.htm"},
-        {text:"Shield Event Monitoring",url:"https://help.salesforce.com/s/articleView?id=sf.event_monitoring_overview.htm"}
+        {text:"Session Security",url:"https://help.salesforce.com/s/articleView?id=xcloud.security_overview_sessions.htm&type=5"},
+        {text:"Get Started with Transaction Security",url:"https://trailhead.salesforce.com/content/learn/modules/enhanced_transaction_security/enhanced_transaction_security_basics"},
+        {text:"Setup Audit Trail Control",url:"https://help.salesforce.com/s/articleView?id=xcloud.shr_set_up_audit_trail.htm&type=5"},
+        {text:"Security Health Check",url:"https://help.salesforce.com/s/articleView?id=xcloud.security_health_check.htm&type=5"},
+        {text:"Investigate Login Anomalies",url:"https://help.salesforce.com/s/articleView?id=xcloud.real_time_em_threat_detection_questions_for_investigation.htm&type=5"},
+        {text:"Event Monitoring",url:"https://help.salesforce.com/s/articleView?id=xcloud.real_time_event_monitoring_overview.htm&type=5"}
       ]},
       {tag:"change-management",focus:"Change and release management: sandboxes, change sets, and deployment strategies",topics:[
-        {text:"Sandbox Types",url:"https://help.salesforce.com/s/articleView?id=sf.data_sandbox_environments.htm"},
-        {text:"Change Sets",url:"https://help.salesforce.com/s/articleView?id=sf.changesets.htm"},
-        {text:"Sandbox Refresh",url:"https://help.salesforce.com/s/articleView?id=sf.data_sandbox_refresh.htm"},
-        {text:"Deployment Best Practices",url:"https://help.salesforce.com/s/articleView?id=sf.changesets_best_practices.htm"},
+        {text:"Sandbox Types and Templates",url:"https://help.salesforce.com/s/articleView?id=platform.create_test_instance.htm&type=5"},
+        {text:"Change Sets",url:"https://help.salesforce.com/s/articleView?id=platform.changesets.htm&type=5"},
+        {text:"What Happens When a Sandbox Is Refreshed",url:"https://help.salesforce.com/s/articleView?id=platform.devops_center_sandbox_refresh.htm&type=5"},
+        {text:"Deploy Your Changes",url:"https://help.salesforce.com/s/articleView?id=platform.deploy_overview.htm&type=5"},
         {text:"Metadata Coverage Report",url:"https://developer.salesforce.com/docs/metadata-coverage"},
         {text:"Unlocked Packages Overview",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_unlocked_pkg_intro.htm"}
       ]},
       {tag:"analytics-advanced",focus:"Advanced analytics: joined reports, historical trending, Einstein Analytics basics",topics:[
-        {text:"Joined Reports",url:"https://help.salesforce.com/s/articleView?id=sf.reports_joined_overview.htm"},
-        {text:"Historical Trending Reports",url:"https://help.salesforce.com/s/articleView?id=sf.reports_enable_historical_trending.htm"},
-        {text:"CRM Analytics Overview",url:"https://help.salesforce.com/s/articleView?id=sf.bi_overview.htm"},
-        {text:"Report Subscriptions",url:"https://help.salesforce.com/s/articleView?id=sf.reports_subscribe_overview.htm"},
-        {text:"Analytics Snapshots",url:"https://help.salesforce.com/s/articleView?id=sf.data_about_analytic_snap.htm"},
+        {text:"Create a Joined Report",url:"https://help.salesforce.com/s/articleView?id=analytics.reports_joined_create.htm&type=5"},
+        {text:"Track Changes Over Time with Historical Trend Reporting",url:"https://help.salesforce.com/s/articleView?id=analytics.reports_historical_concepts.htm&type=5"},
+        {text:"CRM Analytics",url:"https://help.salesforce.com/s/articleView?id=analytics.bi.htm&type=5"},
+        {text:"Subscribe to Reports in Lightning Experience",url:"https://help.salesforce.com/s/articleView?id=analytics.reports_subscribe_lex.htm&type=5"},
+        {text:"Report on Historical Data with Reporting Snapshots",url:"https://help.salesforce.com/s/articleView?id=analytics.data_about_analytic_snap.htm&type=5"},
         {text:"Admin II Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-advanced-administrator-credential"}
       ]},
       {tag:"exam-prep-admin2",focus:"Admin II exam prep: scenarios across advanced automation, security, and change management",topics:[
@@ -932,98 +934,13 @@ Object.assign(EXAM_DATA, {
     ]
   },
 
-  "CPQ Administrator": {
-    questions: 60,
-    time: 105,
-    pass: 65,
-    experience: "6+ months administering Salesforce CPQ with hands-on configuration experience",
-    trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-cpq-admin---Sales-Admn-202",
-    prerequisites: ["Platform Administrator"],
-    overview: "The Salesforce CPQ Specialist certification validates the ability to implement and configure Salesforce CPQ (Configure, Price, Quote). Candidates demonstrate expertise in product catalog setup, pricing, quoting processes, contracts, and amendments.",
-        domains:[
-      {name:"CPQ Platform",pct:23,color:"#00A1E0",desc:"Design, configure, and troubleshoot Price Rules using lookup objects and formula fields to meet business requirements.",keyTopics:[{title:"Design, configure,",desc:"Design, configure, and troubleshoot Price Rules using lookup objects and formula fields to meet business requirements."},{title:"understanding of quote calculation sequence",desc:"Apply understanding of quote calculation sequence and Quote Line pricing fields to meet pricing and business requirements."},{title:"Utilize out-of-the-box",desc:"Utilize out-of-the-box and custom permissions, record types, field sets, and page layouts to ensure users can fulfill their job requirements."},{title:"Given a business process, demonstrate knowledge of CPQ da...",desc:"Given a business process, demonstrate knowledge of CPQ data flow (for example, twin fields) across CPQ objects."},{title:"Demonstrate knowledge about the CPQ object data model as ...",desc:"Demonstrate knowledge about the CPQ object data model as it relates to data migration."},{title:"Set up CPQ for localization",desc:"Set up CPQ for localization and multi-currency for international customers and users."},{title:"determine the necessary CPQ package-level settings",desc:"Given a scenario, determine the necessary CPQ package-level settings."},{title:"Determine how the CPQ managed package fits within a Sales...",desc:"Determine how the CPQ managed package fits within a Salesforce org."}]},
-      {name:"Bundle Configurations",pct:17,color:"#2ECC71",desc:"Apply knowledge to set up a bundle structure to meet business requirements.",keyTopics:[{title:"set up a bundle structure to meet business requirements",desc:"Given a scenario, set up a bundle structure to meet business requirements."},{title:"set up Product Rules to meet business requirements",desc:"Given a scenario, set up Product Rules to meet business requirements."}]},
-      {name:"Pricing",pct:16,color:"#F39C12",desc:"Apply knowledge to identify the appropriate pricing strategy (Discount Schedules, Block Prices, Contracted Prices, subscription pricing, percent-of-total).",keyTopics:[{title:"identify the appropriate pricing strategy",desc:"Given a scenario, identify the appropriate pricing strategy (Discount Schedules, Block Prices, Contracted Prices, subscription pricing, percent-of-total)."},{title:"determine expected pricing outcomes",desc:"Given a scenario, determine expected pricing outcomes."}]},
-      {name:"Quote Templates",pct:7,color:"#E74C3C",desc:"Apply knowledge to set up a Quote Template to meet business requirements.",keyTopics:[{title:"set up a Quote Template to meet business requirements",desc:"Given a scenario, set up a Quote Template to meet business requirements."}]},
-      {name:"Product Selection",pct:7,color:"#9B59B6",desc:"Apply knowledge to use Search Filters, field sets, and Custom Actions to enable product selection and configuration.",keyTopics:[{title:"use Search Filters, field sets,",desc:"Given a scenario, use Search Filters, field sets, and Custom Actions to enable product selection and configuration."}]},
-      {name:"Orders, Contracts, Amendments, and Renewals",pct:15,color:"#1ABC9C",desc:"Demonstrate understanding of the data required to generate Orders and Contracts.",keyTopics:[{title:"Demonstrate understanding of the data required to generat...",desc:"Demonstrate understanding of the data required to generate Orders and Contracts."},{title:"Demonstrate understanding of how to generate renewal",desc:"Demonstrate understanding of how to generate renewal and amendment Quotes to meet business requirements."},{title:"recommend when to use Orders, Contracts, Subscriptions,",desc:"Given a scenario, recommend when to use Orders, Contracts, Subscriptions, and Assets to meet business requirements."}]},
-      {name:"Products",pct:11,color:"#E67E22",desc:"Demonstrate how to set up Products, Price Books, and Price Book Entries.",keyTopics:[{title:"Demonstrate how to set up Products, Price Books,",desc:"Demonstrate how to set up Products, Price Books, and Price Book Entries."},{title:"Demonstrate how product catalog setup impacts overall CPQ...",desc:"Demonstrate how product catalog setup impacts overall CPQ data flow."}]},
-      {name:"Approvals",pct:4,color:"#3498DB",desc:"Select and set up native or Advanced Approvals to meet business requirements.",keyTopics:[{title:"Select",desc:"Select and set up native or Advanced Approvals to meet business requirements."}]},
-    ],
-    studyDays:[
-      {tag:"cpq-products",focus:"CPQ product catalog: products, options, features, and product rules",topics:[
-        {text:"CPQ Product Setup",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_product_setup.htm"},
-        {text:"Product Options",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_product_options.htm"},
-        {text:"Product Features",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_product_features.htm"},
-        {text:"Product Rules",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_product_rules.htm"},
-        {text:"Product Filter Fields",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_product_filter_field.htm"},
-        {text:"CPQ Admin Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-CPQ-Specialist-Exam-Guide"}
-      ]},
-      {tag:"cpq-pricing",focus:"CPQ pricing: price rules, discount schedules, block pricing, and contracted prices",topics:[
-        {text:"CPQ Pricing Methods",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_pricing_methods.htm"},
-        {text:"Price Rules",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_price_rules.htm"},
-        {text:"Discount Schedules",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_discount_schedules.htm"},
-        {text:"Block Pricing",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_block_pricing.htm"},
-        {text:"Contracted Prices",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_contracted_prices.htm"},
-        {text:"Proration and Subscription Pricing",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_subscription_pricing.htm"}
-      ]},
-      {tag:"cpq-quotes-contracts",focus:"CPQ quotes, quote templates, contracts, and renewal management",topics:[
-        {text:"Quote Templates",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_quote_templates.htm"},
-        {text:"Quote Line Editor",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_quote_line_editor.htm"},
-        {text:"CPQ Contracts",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_contracts_overview.htm"},
-        {text:"CPQ Renewals",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_renewals.htm"},
-        {text:"CPQ Amendments",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_amendments.htm"},
-        {text:"CPQ Orders",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_orders_overview.htm"}
-      ]},
-      {tag:"exam-prep-cpq",focus:"CPQ Administrator exam prep: product catalog, pricing, and contract scenarios",topics:[
-        {text:"CPQ Specialist Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-CPQ-Specialist-Exam-Guide"},
-        {text:"CPQ Specialist Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-cpq-specialist-credential"},
-        {text:"CPQ Specialist Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_cpq_specialist"},
-        {text:"CPQ Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_overview.htm"},
-        {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-cpq-specialist---CPQ-Spec-201"},
-        {text:"Revenue Cloud Trailhead Module",url:"https://trailhead.salesforce.com/content/learn/modules/salesforce-cpq-basics"}
-      ]}
-    ],
-    quiz:[
-      {domain:"Products and Product Catalog",q:"What is the correct order of the CPQ pricing waterfall?",opts:["Cost Price → List Price → Net Price", "List Price → Discount Schedule → Special Price → Customer Price", "Customer Price → Special Price → Net Price", "List Price → Block Price → Net Price"],correct:1,explanation:"The CPQ pricing waterfall flows sequentially: List Price is the starting point, Discount Schedules reduce it to Special Price, the rep\'s Additional Discount yields Customer Price, and partner discounts produce Net Price."},
-      {domain:"Pricing",q:"Which product rule type prevents a quote from being saved if conditions are violated?",opts:["Alert Rule", "Filter Rule", "Selection Rule", "Validation Rule"],correct:3,explanation:"CPQ Validation Rules block the quote from being saved when their conditions are met — for example, preventing a save if a required product is missing. Alert rules warn without blocking; Selection rules add/remove products; Filter rules hide options from the catalog."},
-      {domain:"Pricing",q:"What is a Contracted Price used for in CPQ?",opts:["To apply volume discounts automatically", "To provide account-specific pricing that overrides the price book", "To define subscription renewal pricing", "To block discounts on specific products"],correct:1,explanation:"Contracted Prices are stored on a Contract and auto-apply to new quotes for that account, overriding the standard price book. They\'re used when an account has negotiated fixed pricing that must persist across all future quotes."},
-      {domain:"Pricing",q:"Which CPQ feature allows different prices based on quantity tiers?",opts:["Block Pricing", "Discount Schedule", "Price Rule", "Subscription Pricing"],correct:1,explanation:"Discount Schedules define tiered pricing bands where different discount percentages apply based on quantity ranges or subscription terms — they\'re evaluated automatically during quote calculation without any rep input."},
-      {domain:"Pricing",q:"What is the purpose of a Price Rule in CPQ?",opts:["To prevent discounting below a threshold", "To automate price calculations based on conditions", "To enforce product selection constraints", "To generate renewal opportunities"],correct:1,explanation:"Price Rules evaluate conditions and execute Price Actions to set or modify field values on quote lines automatically — enabling complex conditional pricing logic (like adjusting price based on product combinations) without writing Apex."},
-      {domain:"Products and Product Catalog",q:"Which type of product is used to group related products that are sold together?",opts:["Kit", "Bundle", "Package", "Configuration"],correct:1,explanation:"In CPQ a Bundle is a parent product with child Product Options — adding the bundle to a quote includes its components according to their configuration rules (required, optional, or feature-based)."},
-      {domain:"Products and Product Catalog",q:"What CPQ setting controls whether a product is available for individual sale or only as a bundle component?",opts:["Optional", "Required", "Component", "Feature"],correct:2,explanation:"Setting a product as Component (true) removes it from the standalone product catalog during quoting — it can only be selected as part of a configured bundle, enforcing that it\'s never sold in isolation."},
-      {domain:"Pricing",q:"Which field on a Quote Line stores the price after all automated discounts but before the rep's manual discount?",opts:["Net Price", "Customer Price", "Special Price", "List Price"],correct:2,explanation:"In the CPQ waterfall, Special Price is the result after Discount Schedules are applied to List Price. It represents the automated floor before the rep applies their Additional Discount, which then produces Customer Price."},
-      {domain:"Orders, Contracts, Amendments, and Renewals",q:"What is the purpose of Co-termination in CPQ subscriptions?",opts:["To automatically renew contracts", "To align subscription end dates for products on the same account", "To merge multiple quotes into one", "To synchronize discount schedules"],correct:1,explanation:"Co-termination ensures that new subscriptions added mid-contract have their end dates aligned with existing subscriptions on the account — simplifying renewals by having all products expire simultaneously."},
-      {domain:"Orders, Contracts, Amendments, and Renewals",q:"Which CPQ object stores the line items for an active contract?",opts:["Contract Products", "Order Products", "Subscriptions", "Contracted Products"],correct:2,explanation:"When a CPQ quote is contracted, each subscription-type product generates a Subscription record on the Contract, storing quantity, pricing, start/end dates, and the link back to the originating Quote Line — this is what drives all amendment and renewal logic."},
-      {domain:"Orders, Contracts, Amendments, and Renewals",q:"What is required before generating an Order from a CPQ Quote?",opts:["The Quote must be approved", "The Quote must be marked as Primary and the Opportunity stage must be Closed Won", "The Contract must be activated", "The customer must sign the quote document"],correct:1,explanation:"CPQ enforces that the Quote is marked Primary (linking it to the Opportunity) and the Opportunity is Closed Won before an Order can be generated — ensuring only won deals produce orders and only one quote per opportunity is processed."},
-      {domain:"CPQ Package Settings",q:"Which feature in CPQ allows you to synchronize a field value from a Quote Line to a standard Salesforce object field?",opts:["Formula Fields", "Twin Fields", "Price Actions", "Lookup Queries"],correct:1,explanation:"Twin Fields are identically-named fields across CPQ objects (e.g. Quote Line and Order Product) — CPQ automatically copies values between them when records are contracted or ordered, without needing custom code or flows."},
-      {domain:"Orders, Contracts, Amendments, and Renewals",q:"What happens during an Amendment in CPQ?",opts:["The original contract is deleted and replaced", "A new quote is created to modify an existing active contract", "Contract lines are updated directly without a quote", "A renewal opportunity is automatically created"],correct:1,explanation:"Amending a contract in CPQ creates a new Amendment Quote tied to the original contract — reps modify products on this quote, and when contracted, only the delta changes are applied to the active subscriptions."},
-      {domain:"Orders, Contracts, Amendments, and Renewals",q:"Which CPQ setting determines whether subscription products renew at the same price or at the current list price?",opts:["Renewal Term", "Co-term Method", "Renewal Pricing Method", "Subscription Pricing Method"],correct:2,explanation:"Renewal Pricing Method (set in CPQ Package Settings) controls how renewal quote prices are calculated — options include Same (keeps contracted price), List (uses current price book), and Uplift (applies a percentage increase)."},
-      {domain:"Pricing",q:"What is a Lookup Query used for in CPQ Price Rules?",opts:["To search the product catalog during quoting", "To retrieve values from a lookup object to use in price calculations", "To query historical pricing data", "To look up account-specific discounts"],correct:1,explanation:"Lookup Queries let Price Rules query a custom lookup table to dynamically retrieve a value — for example, fetching a discount percentage based on product family and deal size — and inject it into a Price Action."},
-      {domain:"CPQ Package Settings",q:"Which option in the Quote Line Editor allows reps to configure a bundle's components?",opts:["Edit Components button", "Configure button", "Bundle Setup link", "Product Options tab"],correct:1,explanation:"The Configure button appears on bundle parent lines in the Quote Line Editor — clicking it opens the bundle configuration screen where reps select optional components, set quantities, and apply feature constraints before saving the quote."},
-      {domain:"Products and Product Catalog",q:"What does the CPQ 'Percent Of Total' pricing method calculate?",opts:["A discount as a percentage of the list price", "A product price as a percentage of the total quote value", "Tax as a percentage of the order total", "A fee as a percentage of the subscription term"],correct:1,explanation:"Percent Of Total prices a product as a percentage of the combined value of all other lines on the quote — commonly used for professional services or implementation fees that should scale proportionally with overall deal size."},
-      {domain:"Quote Templates and Quote Documents",q:"Which CPQ feature allows different sections of a quote document to show/hide based on data conditions?",opts:["Dynamic Sections", "Conditional Template Content", "Template Variables", "Quote Rules"],correct:1,explanation:"Conditional Template Content blocks have filter conditions on them — when conditions evaluate to true the section renders in the document, otherwise it\'s hidden. This lets a single template serve multiple quoting scenarios."},
-      {domain:"CPQ Package Settings",q:"In CPQ, what is the purpose of an Option Constraint?",opts:["To limit the quantity of a product option", "To define dependency rules between product options in a bundle", "To restrict which accounts can select certain options", "To enforce approval for high-value options"],correct:1,explanation:"Option Constraints enforce selection rules between product options in a bundle — for example, requiring that selecting Option A forces selection of Option B, or preventing two mutually exclusive options from being chosen together."},
-      {domain:"Products and Product Catalog",q:"Which object in CPQ represents a product that has been placed on an activated contract?",opts:["Contracted Product", "Order Product", "Quote Line", "Subscription"],correct:3,explanation:"The Subscription object is created for each subscription-type product on an activated CPQ Contract — storing quantity, pricing, term dates, and the link to the originating Quote Line that drives all subsequent amendment and renewal logic."},
-    ],
-    tips:[
-      "Memorize the CPQ pricing waterfall — nearly every pricing question is based on understanding it.",
-      "Know all four product rule types (validation, selection, filter, alert) and when to use each.",
-      "Understand the amendment and renewal flows thoroughly — these are a major exam focus.",
-      "Practice building discount schedules with both volume and term dimensions.",
-      "Know the difference between Subscriptions and Order Products in the CPQ data model.",
-      "Be able to explain what co-termination is and how it affects renewal dates.",
-      "Understand the purpose of Twin Fields for syncing data to standard Salesforce objects.",
-      "Know the full order-of-operations: Quote → Order → Contract → Amendment/Renewal."
-    ]
-  },
-
   "Marketing Cloud Engagement Administrator": {
     questions: 60,
     time: 90,
     pass: 67,
     experience: "1+ year administering Marketing Cloud Engagement with hands-on experience across core features",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mce-admin---MCE-Admn-201",
+    trailmixUrl: "https://trailhead.salesforce.com/content/learn/trails/study-for-the-marketing-cloud-administrator-exam",
     prerequisites: [],
     overview: "The Marketing Cloud Engagement Administrator certification validates expertise in administering the Marketing Cloud Engagement platform. Candidates demonstrate ability to configure the platform, manage users and security, implement data architecture, and maintain deliverability.",
         domains:[
@@ -1034,33 +951,33 @@ Object.assign(EXAM_DATA, {
     ],
     studyDays:[
       {tag:"mc-setup",focus:"Marketing Cloud account setup: business units, users, roles, and IP warming",topics:[
-        {text:"Marketing Cloud Account Setup",url:"https://help.salesforce.com/s/articleView?id=sf.mc_overview_administrators.htm"},
-        {text:"Business Units",url:"https://help.salesforce.com/s/articleView?id=sf.mc_overview_business_units.htm"},
-        {text:"User Roles and Permissions",url:"https://help.salesforce.com/s/articleView?id=sf.mc_overview_role_permissions.htm"},
-        {text:"IP Warming Best Practices",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_ip_warming.htm"},
+        {text:"Marketing Cloud Engagement Setup",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_overview_administration.htm&type=5"},
+        {text:"Managing Your Business Unit",url:"https://help.salesforce.com/s/articleView?id=mktg.pardot_administration.htm&type=5"},
+        {text:"User Roles in Marketing Cloud Engagement",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_overview_marketing_cloud_roles.htm&type=5"},
+        {text:"Reputation Warming",url:"https://help.salesforce.com/s/articleView?id=mktg.pardot_email_warm_ip.htm&type=5"},
         {text:"MC Admin Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Marketing-Cloud-Administrator-Exam-Guide"},
         {text:"MC Admin Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-administrator-credential"}
       ]},
       {tag:"mc-data",focus:"Marketing Cloud data management: data extensions, contact model, and data retention",topics:[
-        {text:"Data Extensions Overview",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_create_data_extension.htm"},
-        {text:"Contact Model",url:"https://help.salesforce.com/s/articleView?id=sf.mc_cab_contact_builder.htm"},
-        {text:"Data Retention Policies",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_data_retention_policy.htm"},
-        {text:"Marketing Cloud Connect",url:"https://help.salesforce.com/s/articleView?id=sf.mc_co_marketing_cloud_connect.htm"},
-        {text:"Profile and Preference Center",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_profile_center.htm"},
-        {text:"Subscriber Management",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_subscribers.htm"}
+        {text:"Learn About Data Extensions",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-contact-management/learn-about-data-extensions"},
+        {text:"Data Designer in Contact Builder",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_cab_data_designer.htm&type=5"},
+        {text:"Data Deletion in Account Engagement",url:"https://help.salesforce.com/s/articleView?id=xcloud.data_deletion_pardot.htm&type=5"},
+        {text:"Configure the Marketing Cloud Connection",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-connect/finish-mc-connect-configuration"},
+        {text:"Email Preference Pages",url:"https://help.salesforce.com/s/articleView?id=mktg.pardot_emails_preference_center_parent.htm&type=5"},
+        {text:"Subscribers",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_es_subscribers.htm&type=5"}
       ]},
       {tag:"mc-deliverability",focus:"Email deliverability: authentication, SPF, DKIM, DMARC, and bounce handling",topics:[
-        {text:"Email Deliverability Overview",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_deliverability.htm"},
-        {text:"SPF and DKIM Authentication",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_spf_dkim.htm"},
-        {text:"DMARC Configuration",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_dmarc.htm"},
-        {text:"Bounce and Unsubscribe Management",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_bounce_management.htm"},
-        {text:"Reply Mail Management",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_reply_mail.htm"},
-        {text:"Compliance and CAN-SPAM",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_can_spam.htm"}
+        {text:"Email Deliverability Overview",url:"https://www.salesforce.com/marketing/email/deliverability/"},
+        {text:"Salesforce SPF and DKIM FAQ",url:"https://help.salesforce.com/s/articleView?id=000389240&type=1"},
+        {text:"DMARC Support in Account Engagement",url:"https://help.salesforce.com/s/articleView?id=000381338&type=1"},
+        {text:"Managing Bounce Data Between Account Engagement & Salesforce",url:"https://help.salesforce.com/s/articleView?id=000393429&type=1"},
+        {text:"Reply Mail Management for Email Studio",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_es_reply_mail_management.htm&type=5"},
+        {text:"CAN-SPAM Requirements",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_es_can_spam_requirements.htm&type=5"}
       ]},
       {tag:"exam-prep-mc-admin",focus:"MC Administrator exam prep: setup, data, deliverability, and compliance scenarios",topics:[
         {text:"MC Administrator Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Marketing-Cloud-Administrator-Exam-Guide"},
         {text:"MC Admin Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-administrator-credential"},
-        {text:"Marketing Cloud Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.mc_overview.htm"},
+        {text:"What is a Marketing Cloud?",url:"https://www.salesforce.com/eu/marketing/cloud/"},
         {text:"Email Specialist Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_email_studio_specialist"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-mc-email-admin---MC-Admin-201"},
         {text:"Marketing Cloud Basics Module",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-basics"}

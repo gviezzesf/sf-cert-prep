@@ -5,6 +5,7 @@ Object.assign(EXAM_DATA, {
     pass: "65%",
     experience: "No experience required",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-platform-foundations---Plat-101",
+    trailmixUrl: null,
     prerequisites: [],
     overview: "The Salesforce Associate (Platform Foundations) certification is the entry-level credential for the Salesforce ecosystem. It validates a foundational understanding of the Salesforce platform — including CRM concepts, platform navigation, the data model, the security model, and basic automation — and is designed for those new to Salesforce with no prior experience required.",
         domains:[
@@ -16,19 +17,19 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"platform-basics",focus:"Salesforce platform overview: clouds, org model, and the Salesforce ecosystem",topics:[
         {text:"Salesforce Platform Basics Trailhead",url:"https://trailhead.salesforce.com/content/learn/modules/salesforce_platform_basics"},
-        {text:"What is Salesforce?",url:"https://help.salesforce.com/s/articleView?id=sf.overview_what_is_salesforce.htm"},
+        {text:"What is Salesforce?",url:"https://www.salesforce.com/eu/products/what-is-salesforce/"},
         {text:"Org Model and Multi-Tenancy",url:"https://trailhead.salesforce.com/content/learn/modules/salesforce_platform_basics"},
         {text:"Data Model Overview",url:"https://trailhead.salesforce.com/content/learn/modules/data_modeling"},
         {text:"Platform Foundations Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Platform-Foundations-Exam-Guide"},
-        {text:"Trailmix: Platform Foundations",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-foundations-credential"}
+        {text:"Trailmix: Platform Foundations",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-certified-associate-credential"}
       ]},
       {tag:"navigation-customization",focus:"Lightning Experience navigation, App Builder, and basic org customization",topics:[
-        {text:"Lightning Experience Overview",url:"https://help.salesforce.com/s/articleView?id=sf.lex_overview.htm"},
-        {text:"Lightning App Builder",url:"https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_overview.htm"},
-        {text:"Custom Objects and Fields",url:"https://help.salesforce.com/s/articleView?id=sf.dev_objectcreate_task.htm"},
-        {text:"Page Layouts",url:"https://help.salesforce.com/s/articleView?id=sf.customize_layout.htm"},
-        {text:"List Views",url:"https://help.salesforce.com/s/articleView?id=sf.listviews_edit.htm"},
-        {text:"Formula Fields Basics",url:"https://help.salesforce.com/s/articleView?id=sf.customize_formulas.htm"}
+        {text:"Lightning Experience Overview",url:"https://www.salesforce.com/campaign/lightning/resources/"},
+        {text:"Get Help for Lightning App Builder",url:"https://help.salesforce.com/s/articleView?id=platform.lightning_app_builder_overview.htm&type=5"},
+        {text:"Create a Custom Object",url:"https://help.salesforce.com/s/articleView?id=platform.dev_objectcreate_task_parent.htm&type=5"},
+        {text:"Page Layouts",url:"https://help.salesforce.com/s/articleView?id=platform.customize_layout.htm&type=5"},
+        {text:"Create and Update List Views",url:"https://help.salesforce.com/s/articleView?id=000392853&type=1"},
+        {text:"Build a Formula Field",url:"https://help.salesforce.com/s/articleView?id=platform.customize_formulas.htm&type=5"}
       ]},
       {tag:"exam-prep-foundations",focus:"Platform Foundations exam prep: platform overview, data model, and navigation",topics:[
         {text:"Platform Foundations Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Platform-Foundations-Exam-Guide"},
@@ -36,7 +37,7 @@ Object.assign(EXAM_DATA, {
         {text:"Data Modeling Module",url:"https://trailhead.salesforce.com/content/learn/modules/data_modeling"},
         {text:"Lightning Experience Basics",url:"https://trailhead.salesforce.com/content/learn/modules/lex_migration_introduction"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-platform-foundations---Plat-Found-101"},
-        {text:"Trailhead Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-foundations-credential"}
+        {text:"Trailhead Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-certified-associate-credential"}
       ]}
     ],
     quiz:[
@@ -77,6 +78,7 @@ Object.assign(EXAM_DATA, {
     pass: "65%",
     experience: "No experience required",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-sales-foundations---Sales-101",
+    trailmixUrl: null,
     prerequisites: [],
     overview: "The Sales Foundations certification validates foundational knowledge of Sales Cloud and CRM concepts for individuals new to sales technology. The exam covers the sales process, account and contact management, opportunity management, sales productivity tools, and basic reporting — ideal for sales reps, sales operations staff, and anyone adopting Salesforce for the first time.",
         domains:[
@@ -90,25 +92,25 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"sales-process",focus:"Salesforce Sales Cloud fundamentals: leads, accounts, contacts, and opportunities",topics:[
         {text:"Sales Cloud Basics Trailhead",url:"https://trailhead.salesforce.com/content/learn/modules/sales-cloud-platform-quick-look"},
-        {text:"Lead Management",url:"https://help.salesforce.com/s/articleView?id=sf.leads_overview.htm"},
-        {text:"Opportunity Management",url:"https://help.salesforce.com/s/articleView?id=sf.opportunities_overview.htm"},
-        {text:"Accounts and Contacts",url:"https://help.salesforce.com/s/articleView?id=sf.accounts_overview.htm"},
+        {text:"What Is Lead Management?",url:"https://www.salesforce.com/eu/sales/what-is-lead-management/"},
+        {text:"Opportunities",url:"https://help.salesforce.com/s/articleView?id=sales.opportunities.htm&type=5"},
+        {text:"Accounts and Contacts",url:"https://trailhead.salesforce.com/content/learn/modules/accounts_contacts_lightning_experience"},
         {text:"Sales Foundations Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Sales-Cloud-Foundations-Exam-Guide"},
-        {text:"Trailmix: Sales Foundations",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-sales-foundations-credential"}
+        {text:"Trailmix: Sales Foundations",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-certified-sales-representative-cred"}
       ]},
       {tag:"sales-tools",focus:"Sales productivity tools: activities, tasks, events, and Salesforce Inbox",topics:[
-        {text:"Tasks and Events",url:"https://help.salesforce.com/s/articleView?id=sf.tasks.htm"},
-        {text:"Activity Timeline",url:"https://help.salesforce.com/s/articleView?id=sf.activity_timeline.htm"},
-        {text:"Sales Cadences",url:"https://help.salesforce.com/s/articleView?id=sf.sales_cadences_intro.htm"},
-        {text:"Forecasting Overview",url:"https://help.salesforce.com/s/articleView?id=sf.forecasts3_overview.htm"},
-        {text:"Reports for Sales",url:"https://help.salesforce.com/s/articleView?id=sf.reports_overview.htm"},
-        {text:"Einstein Activity Capture",url:"https://help.salesforce.com/s/articleView?id=sf.einstein_sales_activity_capture.htm"}
+        {text:"Access the Tasks and Events list views",url:"https://help.salesforce.com/s/articleView?id=000385406&type=1"},
+        {text:"Configure Activity Timeline General Settings",url:"https://help.salesforce.com/s/articleView?id=ind.lsc_activity_timeline_configure_timeline_general_settings.htm&type=5"},
+        {text:"Standard Cadences for Sales Engagement",url:"https://trailhead.salesforce.com/content/learn/modules/standard-cadences-for-sales-engagement"},
+        {text:"Collaborative Forecasting Best Practice Guide",url:"https://help.salesforce.com/s/articleView?id=000392673&type=1"},
+        {text:"Custom Report Types",url:"https://help.salesforce.com/s/articleView?id=xcloud.reports_report_type_setup.htm&type=5"},
+        {text:"Einstein Activity Capture",url:"https://help.salesforce.com/s/articleView?id=sales.einstein_sales_aac.htm&type=5"}
       ]},
       {tag:"exam-prep-sales-found",focus:"Sales Foundations exam prep: lead-to-close process and productivity tools",topics:[
         {text:"Sales Foundations Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Sales-Cloud-Foundations-Exam-Guide"},
         {text:"Sales Cloud Basics Module",url:"https://trailhead.salesforce.com/content/learn/modules/sales-cloud-platform-quick-look"},
         {text:"Lead and Opportunity Management Module",url:"https://trailhead.salesforce.com/content/learn/modules/leads_opportunities_lightning_experience"},
-        {text:"Trailmix: Sales Foundations",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-sales-foundations-credential"},
+        {text:"Trailmix: Sales Foundations",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-certified-sales-representative-cred"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-sales-foundations---Sales-Found-101"},
         {text:"Trailhead: Sales Cloud Trail",url:"https://trailhead.salesforce.com/content/learn/trails/sell-using-salesforce-crm"}
       ]}
@@ -150,6 +152,7 @@ Object.assign(EXAM_DATA, {
     pass: "65%",
     experience: "No experience required",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-marketing-foundations---MC-101",
+    trailmixUrl: null,
     prerequisites: [],
     overview: "The Marketing Cloud Engagement Foundations certification is the entry-level credential for Salesforce Marketing Cloud. It validates a foundational understanding of the Marketing Cloud platform, email marketing concepts, audience management, Journey Builder basics, and analytics — designed for marketers new to the platform who want to demonstrate core competency.",
         domains:[
@@ -162,18 +165,18 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"mc-basics",focus:"Marketing Cloud Engagement foundations: Email Studio, Contact Builder, and Journey Builder basics",topics:[
         {text:"Marketing Cloud Basics Trailhead",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-basics"},
-        {text:"Email Studio Overview",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_overview.htm"},
-        {text:"Contact Builder Overview",url:"https://help.salesforce.com/s/articleView?id=sf.mc_cab_contact_builder.htm"},
-        {text:"Journey Builder Overview",url:"https://help.salesforce.com/s/articleView?id=sf.mc_jb_overview.htm"},
+        {text:"Email Studio Overview",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_es_email_studio.htm&type=5"},
+        {text:"Data Designer in Contact Builder",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_cab_data_designer.htm&type=5"},
+        {text:"What is Journey Builder?",url:"https://www.salesforce.com/in/blog/what-is-salesforce-journey-builder/"},
         {text:"MC Engagement Foundations Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Marketing-Cloud-Engagement-Foundations-Exam-Guide"},
-        {text:"Trailmix: MC Engagement Foundations",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-engagement-foundations-credential"}
+        {text:"Trailmix: MC Engagement Foundations",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-marketing-associate-credential"}
       ]},
       {tag:"exam-prep-mc-found",focus:"MC Engagement Foundations exam prep: Email Studio and Journey Builder fundamentals",topics:[
         {text:"MC Engagement Foundations Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Marketing-Cloud-Engagement-Foundations-Exam-Guide"},
         {text:"Marketing Cloud Basics",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-basics"},
         {text:"Email Studio Module",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-email-studio"},
         {text:"Journey Builder Module",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-journey-builder"},
-        {text:"Trailmix: MC Foundations",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-engagement-foundations-credential"},
+        {text:"Trailmix: MC Foundations",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-marketing-associate-credential"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-mc-foundations---MC-Found-101"}
       ]}
     ],
@@ -236,7 +239,6 @@ Object.assign(EXAM_DATA, {
         {text:"Tableau Desktop Foundations Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Tableau-Desktop-Specialist-Exam-Guide"},
         {text:"Tableau Help Documentation",url:"https://help.tableau.com"},
         {text:"Tableau Training Videos",url:"https://www.tableau.com/learn/training"},
-        {text:"Trailmix: Tableau Desktop",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/tableau-desktop-specialist"},
         {text:"Exam Registration",url:"https://trailhead.salesforce.com/credentials/tableaudesktopspecialist"},
         {text:"Tableau Public Gallery",url:"https://public.tableau.com/app/discover"}
       ]}
@@ -295,15 +297,13 @@ Object.assign(EXAM_DATA, {
         {text:"Anypoint Platform Overview",url:"https://docs.mulesoft.com/general/"},
         {text:"MuleSoft Basics Trailhead",url:"https://trailhead.salesforce.com/content/learn/modules/mulesoft-basics"},
         {text:"Mule 4 Overview",url:"https://docs.mulesoft.com/mule-runtime/latest/"},
-        {text:"DataWeave Basics",url:"https://docs.mulesoft.com/dataweave/latest/"},
-        {text:"Trailmix: MuleSoft Integration Foundations",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-integration-foundations"}
+        {text:"DataWeave Basics",url:"https://docs.mulesoft.com/dataweave/latest/"}
       ]},
       {tag:"exam-prep-mule-found",focus:"MuleSoft Integration Foundations exam prep: Anypoint Platform and basic integration concepts",topics:[
         {text:"MuleSoft Integration Foundations Exam Guide",url:"https://trailhead.salesforce.com/help?article=MuleSoft-Certified-Integration-Foundations-Exam-Guide"},
         {text:"MuleSoft Basics Module",url:"https://trailhead.salesforce.com/content/learn/modules/mulesoft-basics"},
         {text:"Anypoint Platform Docs",url:"https://docs.mulesoft.com/"},
         {text:"DataWeave Playground",url:"https://dataweave.mulesoft.com/learn/playground"},
-        {text:"Trailmix: MuleSoft Foundations",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-integration-foundations"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-mule-foundations---Mule-Found-101"}
       ]}
     ],
