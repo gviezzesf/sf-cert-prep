@@ -57,24 +57,24 @@ Object.assign(EXAM_DATA, {
         {text:"Event Bus Allocations",url:"https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_limits.htm"}
       ]},
       {tag:"oauth",focus:"Design OAuth 2.0 flows for server-to-server, user-agent, JWT Bearer, and device flows",topics:[
-        {text:"OAuth 2.0 Flows in Salesforce",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_flows.htm"},
-        {text:"JWT Bearer Token Flow",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_jwt_flow.htm"},
-        {text:"Web Server OAuth Flow",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_web_server_flow.htm"},
-        {text:"Client Credentials OAuth Flow",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_client_credentials_flow.htm"},
-        {text:"Named Credentials Overview",url:"https://help.salesforce.com/s/articleView?id=sf.named_credentials_about.htm"},
-        {text:"Connected Apps Overview",url:"https://help.salesforce.com/s/articleView?id=sf.connected_app_overview.htm"}
+        {text:"Integrating Heroku and the Salesforce Platform Overview",url:"https://devcenter.heroku.com/articles/integrating-heroku-and-salesforce"},
+        {text:"OAuth 2.0 JWT Bearer Flow for Server-to-Server Integration",url:"https://help.salesforce.com/s/articleView?id=xcloud.remoteaccess_oauth_jwt_flow_ca.htm&type=5"},
+        {text:"OAuth 2.0 Web Server Flow for Web App Integration",url:"https://help.salesforce.com/s/articleView?id=xcloud.remoteaccess_oauth_web_server_flow.htm&type=5"},
+        {text:"Configure a Client Credentials Flow",url:"https://help.salesforce.com/s/articleView?id=xcloud.configure_client_credentials_flow_for_external_client_apps.htm&type=5"},
+        {text:"NamedCredential",url:"https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_namedcredential.htm"},
+        {text:"External Client Apps and Connected Apps",url:"https://help.salesforce.com/s/articleView?id=xcloud.external_integrations.htm&type=5"}
       ]},
       {tag:"named-credentials",focus:"Implement Named Credentials, External Credentials, and secure callout authentication",topics:[
-        {text:"Named Credentials as Callout Endpoints",url:"https://help.salesforce.com/s/articleView?id=sf.named_credentials_about.htm"},
-        {text:"External Credentials Overview",url:"https://help.salesforce.com/s/articleView?id=sf.external_credentials.htm"},
-        {text:"Per-User Named Credentials",url:"https://help.salesforce.com/s/articleView?id=sf.named_credentials_per_user.htm"},
+        {text:"NamedCredential",url:"https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_namedcredential.htm"},
+        {text:"Enable User External Credentials",url:"https://help.salesforce.com/s/articleView?id=xcloud.nc_user_external_credentials.htm&type=5"},
+        {text:"Named Credentials Glossary",url:"https://help.salesforce.com/s/articleView?id=xcloud.nc_named_credentials_glossary.htm&type=5"},
         {text:"Apex HTTP Callouts with Named Credentials",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_callouts_named_credentials.htm"},
-        {text:"External Services and Swagger Integration",url:"https://help.salesforce.com/s/articleView?id=sf.external_services.htm"},
-        {text:"Remote Site Settings",url:"https://help.salesforce.com/s/articleView?id=sf.configuring_remoteproxy.htm"}
+        {text:"Design a Swagger API with Code to Bring Data into Salesforce",url:"https://developer.salesforce.com/blogs/2023/06/design-a-swagger-api-with-code-to-bring-data-into-salesforce"},
+        {text:"Event-Driven Architectures",url:"https://architect.salesforce.com/docs/architect/decision-guides/guide/event-driven.html"}
       ]},
       {tag:"middleware",focus:"Evaluate MuleSoft, Salesforce Connect, and ESB middleware patterns for integration governance",topics:[
-        {text:"Salesforce Connect Overview",url:"https://help.salesforce.com/s/articleView?id=sf.platform_connect_about.htm"},
-        {text:"OData Adapter for Salesforce Connect",url:"https://help.salesforce.com/s/articleView?id=sf.platform_connect_adapters.htm"},
+        {text:"Access External Data With Salesforce Connect",url:"https://help.salesforce.com/s/articleView?id=platform.salesforce_connect.htm&type=5"},
+        {text:"OData Adapters for Salesforce Connect",url:"https://help.salesforce.com/s/articleView?id=platform.odata_adapter_about.htm&type=5"},
         {text:"MuleSoft Anypoint Platform Overview",url:"https://docs.mulesoft.com/general/"},
         {text:"API-Led Connectivity Whitepaper",url:"https://www.mulesoft.com/resources/api/what-is-api-led-connectivity"},
         {text:"Integration Architecture Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-integration-architecture"},
@@ -86,15 +86,15 @@ Object.assign(EXAM_DATA, {
         {text:"Platform Event Error Handling",url:"https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_error_handling.htm"},
         {text:"Queueable Apex for Async Retry",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_queueing_jobs.htm"},
         {text:"Idempotent Design Patterns",url:"https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_idempotent_capability.htm"},
-        {text:"API Request Limits",url:"https://help.salesforce.com/s/articleView?id=sf.integrate_api_rate_limiting.htm"}
+        {text:"API Request Limits and Allocations",url:"https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_api.htm"}
       ]},
       {tag:"security-shield",focus:"Secure integrations with Shield Platform Encryption, TLS, IP restrictions, and audit trail",topics:[
-        {text:"Shield Platform Encryption Architecture",url:"https://help.salesforce.com/s/articleView?id=sf.security_pe_overview.htm"},
-        {text:"Shield Platform Encryption Considerations for Integrations",url:"https://help.salesforce.com/s/articleView?id=sf.security_pe_considerations.htm"},
-        {text:"TLS Requirements for API Callouts",url:"https://help.salesforce.com/s/articleView?id=sf.security_tls.htm"},
-        {text:"IP Allowlisting for Connected Apps",url:"https://help.salesforce.com/s/articleView?id=sf.connected_app_continuous_ip.htm"},
-        {text:"Field Audit Trail",url:"https://help.salesforce.com/s/articleView?id=sf.field_audit_trail.htm"},
-        {text:"Event Monitoring",url:"https://help.salesforce.com/s/articleView?id=sf.event_monitoring_overview.htm"}
+        {text:"Shield Platform Encryption",url:"https://trailhead.salesforce.com/content/learn/modules/spe_admins"},
+        {text:"General Shield Platform Encryption Considerations",url:"https://help.salesforce.com/s/articleView?id=sf.security_pe_considerations_general.htm&type=5"},
+        {text:" TLS Handshake",url:"https://help.salesforce.com/s/articleView?id=000386138&type=1"},
+        {text:"Connected App IP Relaxation and Continuous IP Enforcement",url:"https://help.salesforce.com/s/articleView?id=xcloud.connected_app_continuous_ip.htm&type=5"},
+        {text:"Data Integration with Salesforce",url:"https://architect.salesforce.com/docs/architect/decision-guides/guide/data-integration.html"},
+        {text:"Event Monitoring",url:"https://help.salesforce.com/s/articleView?id=xcloud.real_time_event_monitoring_overview.htm&type=5"}
       ]},
       {tag:"apex-integration",focus:"Build Apex HTTP callouts, REST services, and SOAP services within governor limits",topics:[
         {text:"Apex Callouts Overview",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_callouts.htm"},
@@ -107,17 +107,17 @@ Object.assign(EXAM_DATA, {
       {tag:"event-driven",focus:"Architect event-driven solutions using Platform Events, Change Data Capture, and outbound messaging",topics:[
         {text:"Platform Events Use Cases",url:"https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_use_cases.htm"},
         {text:"Change Data Capture Events Reference",url:"https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_event_fields.htm"},
-        {text:"Outbound Messaging",url:"https://help.salesforce.com/s/articleView?id=sf.workflow_outbound_messaging.htm"},
+        {text:"Understanding Outbound Messaging",url:"https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_om_outboundmessaging_understanding.htm"},
         {text:"EventBus.publish() in Apex",url:"https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_publish_apex.htm"},
         {text:"Platform Events in Flows",url:"https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_subscribe_flow.htm"},
         {text:"CometD Subscription and Replay",url:"https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/using_streaming_api_stateless.htm"}
       ]},
       {tag:"governance",focus:"Design integration governance: API versioning strategy, monitoring, and capacity planning",topics:[
         {text:"API Version Management",url:"https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_guidelines_versioning.htm"},
-        {text:"API Usage Monitoring",url:"https://help.salesforce.com/s/articleView?id=sf.monitoring_api_total_calls.htm"},
+        {text:"Analyze Total API Requests Consumption and Limits in Salesforce",url:"https://help.salesforce.com/s/articleView?id=000385367&type=1"},
         {text:"Integration Architecture Decision Guide",url:"https://architect.salesforce.com/design/decision-guides/integrate-salesforce"},
         {text:"Architect: Integration Well-Formed",url:"https://architect.salesforce.com/well-formed-architecture/integration"},
-        {text:"Salesforce API Versioning Policy",url:"https://help.salesforce.com/s/articleView?id=sf.integrate_api_versioning.htm"},
+        {text:"Integration Patterns",url:"https://architect.salesforce.com/docs/architect/fundamentals/guide/integration-patterns.html"},
         {text:"Trailmix: Architect Integration Architecture",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-integration-architecture"}
       ]},
       {tag:"mulesoft-sf",focus:"Design MuleSoft-to-Salesforce integration using Anypoint Connector, DataSense, and DataWeave",topics:[
@@ -190,10 +190,10 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"data-modeling",focus:"Design complex Salesforce data models: objects, relationships, and schema trade-offs",topics:[
         {text:"Data Modeling Trailhead Module",url:"https://trailhead.salesforce.com/content/learn/modules/data_modeling"},
-        {text:"Object Relationships Overview",url:"https://help.salesforce.com/s/articleView?id=sf.relationships_considerations.htm"},
-        {text:"Many-to-Many Relationships with Junction Objects",url:"https://help.salesforce.com/s/articleView?id=sf.relationships_manytomany.htm"},
-        {text:"External Objects and Salesforce Connect",url:"https://help.salesforce.com/s/articleView?id=sf.platform_connect_about.htm"},
-        {text:"Schema Builder",url:"https://help.salesforce.com/s/articleView?id=sf.schema_builder.htm"},
+        {text:"Object Relationships Overview",url:"https://help.salesforce.com/s/articleView?id=platform.relationships_considerations.htm&type=5"},
+        {text:"Relationships Among Standard Objects and Fields",url:"https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/relationships_among_objects.htm"},
+        {text:"Access External Data With Salesforce Connect",url:"https://help.salesforce.com/s/articleView?id=platform.salesforce_connect.htm&type=5"},
+        {text:"Work with Schema Builder",url:"https://trailhead.salesforce.com/content/learn/modules/data_modeling/schema_builder"},
         {text:"Data Architecture Decision Guide",url:"https://architect.salesforce.com/design/decision-guides/store-data"}
       ]},
       {tag:"ldv",focus:"Architect for Large Data Volumes: skinny tables, indexing, and query optimization",topics:[
@@ -216,57 +216,57 @@ Object.assign(EXAM_DATA, {
         {text:"Data Loader Guide",url:"https://developer.salesforce.com/docs/atlas.en-us.dataLoader.meta/dataLoader/data_loader.htm"},
         {text:"Data Migration Best Practices",url:"https://developer.salesforce.com/docs/atlas.en-us.ldv_dev.meta/ldv_dev/ldv_deployments.htm"},
         {text:"Bulk API for Data Migration",url:"https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_intro.htm"},
-        {text:"Field History Tracking Considerations",url:"https://help.salesforce.com/s/articleView?id=sf.tracking_field_history.htm"},
-        {text:"Data Import Wizard",url:"https://help.salesforce.com/s/articleView?id=sf.data_import_wizard.htm"},
-        {text:"External IDs for Upsert",url:"https://help.salesforce.com/s/articleView?id=sf.faq_import_general_what_is_an_external.htm"}
+        {text:"Field History Tracking Considerations with respect to Email-to-Case.",url:"https://help.salesforce.com/s/articleView?id=004576653&type=1"},
+        {text:"Data Import Wizard",url:"https://help.salesforce.com/s/articleView?id=sf.data_import_wizard.htm&type=5"},
+        {text:"Insert or Update (Upsert) a Record Using an External ID",url:"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_upsert.htm"}
       ]},
       {tag:"data-quality",focus:"Implement data quality: validation rules, duplicate management, and matching rules",topics:[
-        {text:"Validation Rules",url:"https://help.salesforce.com/s/articleView?id=sf.fields_about_validation_rules.htm"},
-        {text:"Duplicate Management Overview",url:"https://help.salesforce.com/s/articleView?id=sf.duplicate_prevention_overview.htm"},
-        {text:"Matching Rules",url:"https://help.salesforce.com/s/articleView?id=sf.matching_rules_overview.htm"},
-        {text:"Duplicate Rules",url:"https://help.salesforce.com/s/articleView?id=sf.duplicate_rules_overview.htm"},
+        {text:"Validation Rules",url:"https://help.salesforce.com/s/articleView?id=platform.fields_about_field_validation.htm&type=5"},
+        {text:"Customize Duplicate Management",url:"https://help.salesforce.com/s/articleView?id=sales.duplicate_prevention_map_of_tasks.htm&type=5"},
+        {text:"Matching Rules",url:"https://help.salesforce.com/s/articleView?id=sales.matching_rule_map_of_reference.htm&type=5"},
+        {text:"Duplicate Rules",url:"https://help.salesforce.com/s/articleView?id=sales.duplicate_rules_map_of_reference.htm&type=5"},
         {text:"Data Quality Trailhead",url:"https://trailhead.salesforce.com/content/learn/modules/salesforce-data-quality"},
-        {text:"Einstein Data Detect",url:"https://help.salesforce.com/s/articleView?id=sf.data_detect_overview.htm"}
+        {text:"Einstein Data Detect",url:"https://help.salesforce.com/s/articleView?id=release-notes.rn_security_einstein_data_detect.htm&release=234&type=5"}
       ]},
       {tag:"data-governance",focus:"Design data governance policies: stewardship, classification, retention, and compliance",topics:[
         {text:"Data Governance Overview",url:"https://architect.salesforce.com/design/decision-guides/store-data"},
-        {text:"Field-Level Security",url:"https://help.salesforce.com/s/articleView?id=sf.admin_fls.htm"},
-        {text:"Data Classification Fields",url:"https://help.salesforce.com/s/articleView?id=sf.security_data_classification_fields.htm"},
+        {text:"Field-Level Security",url:"https://help.salesforce.com/s/articleView?id=platform.users_profiles_field_perms.htm&type=5"},
+        {text:"Data Classification Metadata Fields",url:"https://help.salesforce.com/s/articleView?id=platform.data_classification_metadata_fields.htm&type=5"},
         {text:"Retention Policies and Data Archiving",url:"https://developer.salesforce.com/docs/atlas.en-us.ldv_dev.meta/ldv_dev/ldv_deployments.htm"},
-        {text:"Shield Platform Encryption for Data at Rest",url:"https://help.salesforce.com/s/articleView?id=sf.security_pe_overview.htm"},
-        {text:"GDPR Compliance on Salesforce",url:"https://help.salesforce.com/s/articleView?id=sf.gdpr_overview.htm"}
+        {text:"Shield Platform Encryption",url:"https://trailhead.salesforce.com/content/learn/modules/spe_admins"},
+        {text:"General Data Protection Regulation",url:"https://security.salesforce.com/general-data-protection-regulation"}
       ]},
       {tag:"master-data",focus:"Implement Master Data Management: golden records, deduplication, and cross-system identity",topics:[
         {text:"Salesforce MDM Patterns",url:"https://architect.salesforce.com/design/decision-guides/store-data"},
-        {text:"Duplicate Prevention for Master Data",url:"https://help.salesforce.com/s/articleView?id=sf.duplicate_prevention_overview.htm"},
-        {text:"External ID Strategy",url:"https://help.salesforce.com/s/articleView?id=sf.faq_import_general_what_is_an_external.htm"},
-        {text:"Contact and Account Merging",url:"https://help.salesforce.com/s/articleView?id=sf.contacts_merge.htm"},
-        {text:"Data Cloud for MDM",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_data_cloud_overview.htm"},
-        {text:"Cross-Object Relationships and MDM",url:"https://help.salesforce.com/s/articleView?id=sf.relationships_considerations.htm"}
+        {text:"Customize Duplicate Management",url:"https://help.salesforce.com/s/articleView?id=sales.duplicate_prevention_map_of_tasks.htm&type=5"},
+        {text:"Insert or Update (Upsert) a Record Using an External ID",url:"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_upsert.htm"},
+        {text:"Merge Duplicate Accounts in Lightning Experience",url:"https://help.salesforce.com/s/articleView?id=sales.account_merge_lex.htm&type=5"},
+        {text:"Data 360",url:"https://www.salesforce.com/eu/data/"},
+        {text:"Cross-Object Relationships and MDM",url:"https://help.salesforce.com/s/articleView?id=platform.relationships_considerations.htm&type=5"}
       ]},
       {tag:"archiving",focus:"Architect data archiving and purging strategies for regulatory compliance and performance",topics:[
         {text:"Big Objects Overview",url:"https://developer.salesforce.com/docs/atlas.en-us.bigobjects.meta/bigobjects/big_object.htm"},
         {text:"Big Objects Implementation Guide",url:"https://developer.salesforce.com/docs/atlas.en-us.bigobjects.meta/bigobjects/big_object_define.htm"},
         {text:"Heroku Connect for Offloading Data",url:"https://devcenter.heroku.com/articles/heroku-connect"},
-        {text:"Field History Retention Policy",url:"https://help.salesforce.com/s/articleView?id=sf.tracking_field_history.htm"},
+        {text:"Field History Tracking Considerations with respect to Email-to-Case.",url:"https://help.salesforce.com/s/articleView?id=004576653&type=1"},
         {text:"Data Archiving Best Practices",url:"https://developer.salesforce.com/docs/atlas.en-us.ldv_dev.meta/ldv_dev/ldv_deployments.htm"},
-        {text:"Einstein Analytics Connect Live Datasets",url:"https://help.salesforce.com/s/articleView?id=sf.bi_integrate_connectors_sfdc.htm"}
+        {text:"Unlock CRM Analytics Insights on Data 360",url:"https://help.salesforce.com/s/articleView?id=analytics.bi_direct_data_for_cdp.htm&type=5"}
       ]},
       {tag:"multi-org",focus:"Design multi-org data strategies: data replication, org sync, and cross-org sharing",topics:[
-        {text:"Salesforce to Salesforce Overview",url:"https://help.salesforce.com/s/articleView?id=sf.business_network_intro.htm"},
-        {text:"Cross-Org Adapter for Salesforce Connect",url:"https://help.salesforce.com/s/articleView?id=sf.platform_connect_cross_org_adapter.htm"},
+        {text:"Set Up Salesforce to Salesforce",url:"https://help.salesforce.com/s/articleView?id=sales.business_network_setup.htm&type=5"},
+        {text:"Considerations for Salesforce Connect—Cross-Org Adapter",url:"https://help.salesforce.com/s/articleView?id=platform.xorg_considerations.htm&type=5"},
         {text:"Data Federation Patterns",url:"https://architect.salesforce.com/design/decision-guides/store-data"},
-        {text:"Shield Event Monitoring Across Orgs",url:"https://help.salesforce.com/s/articleView?id=sf.event_monitoring_overview.htm"},
+        {text:"Event Monitoring",url:"https://help.salesforce.com/s/articleView?id=xcloud.real_time_event_monitoring_overview.htm&type=5"},
         {text:"Change Data Capture for Replication",url:"https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_intro.htm"},
-        {text:"Sandboxes as Org Strategy",url:"https://help.salesforce.com/s/articleView?id=sf.create_test_instance.htm"}
+        {text:"Salesforce Sandboxes",url:"https://www.salesforce.com/eu/platform/sandboxes-environments/"}
       ]},
       {tag:"analytics-data",focus:"Feed data into CRM Analytics, Tableau, and Data Cloud from Salesforce data models",topics:[
-        {text:"CRM Analytics Data Integration",url:"https://help.salesforce.com/s/articleView?id=sf.bi_integrate_connectors_sfdc.htm"},
+        {text:"Unlock CRM Analytics Insights on Data 360",url:"https://help.salesforce.com/s/articleView?id=analytics.bi_direct_data_for_cdp.htm&type=5"},
         {text:"Data Cloud Ingestion API",url:"https://developer.salesforce.com/docs/atlas.en-us.c360a_api.meta/c360a_api/c360a_api_overview.htm"},
-        {text:"Salesforce Reports and Dashboards",url:"https://help.salesforce.com/s/articleView?id=sf.analytics_overview.htm"},
+        {text:"Reports & Dashboards for Lightning Experience",url:"https://trailhead.salesforce.com/content/learn/modules/lex_implementation_reports_dashboards"},
         {text:"Tableau Hyper API",url:"https://help.tableau.com/current/api/hyper_api/en-us/index.html"},
-        {text:"Data Streams in Data Cloud",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_data_stream_overview.htm"},
-        {text:"Report Builder Overview",url:"https://help.salesforce.com/s/articleView?id=sf.reports_builder_create.htm"}
+        {text:"Create an Ingestion API Data Stream",url:"https://developer.salesforce.com/docs/data/data-cloud-int/guide/c360-a-create-ingestion-data-stream.html"},
+        {text:"Build a Report in Lightning Experience",url:"https://help.salesforce.com/s/articleView?id=analytics.reports_build_lex.htm&type=5"}
       ]},
       {tag:"exam-prep",focus:"Platform Data Architect exam guide review, practice scenarios, and domain scoring",topics:[
         {text:"Platform Data Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Data-Architect-Exam-Guide"},
@@ -327,28 +327,28 @@ Object.assign(EXAM_DATA, {
     ],
     studyDays:[
       {tag:"owds",focus:"Configure Org-Wide Defaults and understand their impact on data visibility",topics:[
-        {text:"Org-Wide Sharing Defaults",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_owd_setting.htm"},
-        {text:"OWD for External Access",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_external_owd.htm"},
-        {text:"Controlled by Parent Sharing Setting",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_owd_setting.htm"},
-        {text:"Sharing Settings Page",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_settings.htm"},
-        {text:"Record Access Levels",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_access_levels.htm"},
+        {text:"Org-Wide Sharing Defaults",url:"https://help.salesforce.com/s/articleView?id=platform.security_sharing_owd_about.htm&type=5"},
+        {text:"External Organization-Wide Defaults Overview",url:"https://help.salesforce.com/s/articleView?id=platform.security_owd_external.htm&type=5"},
+        {text:"Controlled by Parent Sharing Setting",url:"https://help.salesforce.com/s/articleView?id=platform.security_sharing_owd_about.htm&type=5"},
+        {text:"Manage Additional Sharing Settings",url:"https://help.salesforce.com/s/articleView?id=platform.other_sharing_settings.htm&type=5"},
+        {text:"Data Access in Salesforce",url:"https://developer.salesforce.com/docs/atlas.en-us.salesforce_record_access_under_the_hood.meta/salesforce_record_access_under_the_hood/uth_intro.htm"},
         {text:"Implicit Sharing",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_security_sharing_understanding.htm"}
       ]},
       {tag:"role-hierarchy",focus:"Design role hierarchies for data access rollup and understand territory management",topics:[
-        {text:"Role Hierarchy Overview",url:"https://help.salesforce.com/s/articleView?id=sf.user_role_hierarchy.htm"},
-        {text:"Sharing and the Role Hierarchy",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_role_hierarchy.htm"},
-        {text:"Enterprise Territory Management",url:"https://help.salesforce.com/s/articleView?id=sf.territory2_overview.htm"},
-        {text:"Territory Hierarchy vs Role Hierarchy",url:"https://help.salesforce.com/s/articleView?id=sf.territory2_limitations.htm"},
-        {text:"Role Hierarchy and Forecasting",url:"https://help.salesforce.com/s/articleView?id=sf.forecasts3_overview.htm"},
+        {text:"Create a Role Hierarchy",url:"https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_roles"},
+        {text:"Salesforce Hierarchical Sharing Structure and Record Visibility concepts",url:"https://help.salesforce.com/s/articleView?id=000385383&type=1"},
+        {text:"Territory Management Best Practices",url:"https://help.salesforce.com/s/articleView?id=000386766&type=1"},
+        {text:"Territory Hierarchy",url:"https://help.salesforce.com/s/articleView?id=sales.tm2_territory_hierarchy.htm&type=5"},
+        {text:"Collaborative Forecasting Best Practice Guide",url:"https://help.salesforce.com/s/articleView?id=000392673&type=1"},
         {text:"Sharing Architecture Decision Guide",url:"https://architect.salesforce.com/design/decision-guides/share-protect-data"}
       ]},
       {tag:"sharing-rules",focus:"Implement sharing rules: criteria-based, owner-based, and manual sharing",topics:[
-        {text:"Sharing Rules Overview",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_rules.htm"},
-        {text:"Criteria-Based Sharing Rules",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_rules_criteria_based.htm"},
-        {text:"Owner-Based Sharing Rules",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_rules_owner_based.htm"},
-        {text:"Manual Sharing",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_manual.htm"},
-        {text:"Sharing Set for Portals",url:"https://help.salesforce.com/s/articleView?id=sf.customer_portal_associate_sharing_sets.htm"},
-        {text:"Share Group for High Volume Users",url:"https://help.salesforce.com/s/articleView?id=sf.customer_portal_share_groups.htm"}
+        {text:"Sharing Rules",url:"https://help.salesforce.com/s/articleView?id=platform.security_about_sharing_rules.htm&type=5"},
+        {text:"Sharing Rule Types",url:"https://help.salesforce.com/s/articleView?id=platform.security_sharing_rule_types.htm&type=5"},
+        {text:"Create Owner-Based Sharing Rules",url:"https://help.salesforce.com/s/articleView?id=platform.security_sharing_rules_owner.htm&type=5"},
+        {text:"Control Manual Sharing for User Records",url:"https://help.salesforce.com/s/articleView?id=platform.security_sharing_owd_user_manual.htm&type=5"},
+        {text:"Create a Sharing Set for Experience Cloud Site Users",url:"https://help.salesforce.com/s/articleView?id=platform.networks_setting_light_users.htm&type=5"},
+        {text:"Use Share Groups to Share Records Owned by High-Volume Experience Cloud Site Users",url:"https://help.salesforce.com/s/articleView?id=platform.networks_sharing_light_users.htm&type=5"}
       ]},
       {tag:"apex-sharing",focus:"Use Apex Managed Sharing: sharing objects, share records, and with sharing keywords",topics:[
         {text:"Apex Managed Sharing Overview",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_security_sharing_understanding.htm"},
@@ -359,51 +359,51 @@ Object.assign(EXAM_DATA, {
         {text:"User Mode Operations in SOQL",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_enforce_usermode.htm"}
       ]},
       {tag:"permission-sets",focus:"Design permission sets, permission set groups, and muting permission sets",topics:[
-        {text:"Permission Sets Overview",url:"https://help.salesforce.com/s/articleView?id=sf.perm_sets_overview.htm"},
-        {text:"Permission Set Groups",url:"https://help.salesforce.com/s/articleView?id=sf.perm_set_groups.htm"},
-        {text:"Muting Permission Sets",url:"https://help.salesforce.com/s/articleView?id=sf.perm_set_groups_muting.htm"},
-        {text:"User Licenses and Permission Sets",url:"https://help.salesforce.com/s/articleView?id=sf.users_permsets_overview.htm"},
-        {text:"Object-Level Security",url:"https://help.salesforce.com/s/articleView?id=sf.admin_abl.htm"},
-        {text:"Field-Level Security",url:"https://help.salesforce.com/s/articleView?id=sf.admin_fls.htm"}
+        {text:"Permission Sets",url:"https://help.salesforce.com/s/articleView?id=platform.perm_sets_overview.htm&type=5"},
+        {text:"Permission Set Groups",url:"https://trailhead.salesforce.com/content/learn/modules/permission-set-groups"},
+        {text:"Mute Permissions in Permission Set Groups",url:"https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups"},
+        {text:"Permission Set Licenses",url:"https://help.salesforce.com/s/articleView?id=platform.users_permissionset_licenses_overview.htm&type=5"},
+        {text:"Control Access to Objects",url:"https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects"},
+        {text:"Field-Level Security",url:"https://help.salesforce.com/s/articleView?id=platform.users_profiles_field_perms.htm&type=5"}
       ]},
       {tag:"communities-sharing",focus:"Configure sharing for Experience Cloud sites: sharing sets, super user access, and guest access",topics:[
-        {text:"Experience Cloud Sharing Overview",url:"https://help.salesforce.com/s/articleView?id=sf.networks_sharing_overview.htm"},
-        {text:"Sharing Sets for Experience Cloud",url:"https://help.salesforce.com/s/articleView?id=sf.customer_portal_associate_sharing_sets.htm"},
-        {text:"Guest User Security Best Practices",url:"https://help.salesforce.com/s/articleView?id=sf.networks_guest_user_security.htm"},
-        {text:"External OWD for Partner and Customer Users",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_external_owd.htm"},
-        {text:"Community User Sharing",url:"https://help.salesforce.com/s/articleView?id=sf.customer_portal_sharing_usermodel.htm"},
-        {text:"Super User Access",url:"https://help.salesforce.com/s/articleView?id=sf.customer_portal_super_user.htm"}
+        {text:"File Visibility and Sharing in Experience Cloud Sites",url:"https://help.salesforce.com/s/articleView?id=experience.networks_files_visibility_and_sharing.htm&type=5"},
+        {text:"Create a Sharing Set for Experience Cloud Site Users",url:"https://help.salesforce.com/s/articleView?id=platform.networks_setting_light_users.htm&type=5"},
+        {text:"Protecting Your Data: Essential Actions to Secure Experience Cloud Guest User Access",url:"https://www.salesforce.com/blog/protecting-your-data-essential-actions-to-secure-experience-cloud-guest-user-access/"},
+        {text:"External Organization-Wide Defaults Overview",url:"https://help.salesforce.com/s/articleView?id=platform.security_owd_external.htm&type=5"},
+        {text:"Create a Sharing Set for Experience Cloud Site Users",url:"https://help.salesforce.com/s/articleView?id=platform.networks_setting_light_users.htm&type=5"},
+        {text:"Troubleshoot Why a Customer or Partner User Has Unexpected Object or Record Access",url:"https://help.salesforce.com/s/articleView?id=platform.admin_troubleshoot_external_unexpected.htm&type=5"}
       ]},
       {tag:"teams",focus:"Implement account teams, opportunity teams, and case teams for collaborative access",topics:[
-        {text:"Account Teams Overview",url:"https://help.salesforce.com/s/articleView?id=sf.accountteam_def.htm"},
-        {text:"Opportunity Teams",url:"https://help.salesforce.com/s/articleView?id=sf.salesteam_def.htm"},
-        {text:"Case Teams",url:"https://help.salesforce.com/s/articleView?id=sf.caseteam_def.htm"},
-        {text:"Team Member Roles",url:"https://help.salesforce.com/s/articleView?id=sf.accountteam_custom_roles.htm"},
+        {text:"Administer Account Teams",url:"https://help.salesforce.com/s/articleView?id=sales.accountteam_admin.htm&type=5"},
+        {text:"Opportunity Teams and Opportunity Splits",url:"https://help.salesforce.com/s/articleView?id=sales.teamselling.htm&type=5"},
+        {text:"Case Teams",url:"https://help.salesforce.com/s/articleView?id=service.caseteam_setup.htm&type=5"},
+        {text:"Administer Account Teams",url:"https://help.salesforce.com/s/articleView?id=sales.accountteam_admin.htm&type=5"},
         {text:"Sharing Teams with Apex",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_bulk_sharing_creating_with_apex.htm"},
-        {text:"Territory and Team Interaction",url:"https://help.salesforce.com/s/articleView?id=sf.territory2_limitations.htm"}
+        {text:"Territory Hierarchy",url:"https://help.salesforce.com/s/articleView?id=sales.tm2_territory_hierarchy.htm&type=5"}
       ]},
       {tag:"encryption-fls",focus:"Layer field-level security with encryption, data masking, and Shield for sensitive data",topics:[
-        {text:"Field-Level Security",url:"https://help.salesforce.com/s/articleView?id=sf.admin_fls.htm"},
-        {text:"Shield Platform Encryption",url:"https://help.salesforce.com/s/articleView?id=sf.security_pe_overview.htm"},
-        {text:"Shield Encryption Key Management",url:"https://help.salesforce.com/s/articleView?id=sf.security_pe_manage_keys.htm"},
-        {text:"Dynamic Data Masking",url:"https://help.salesforce.com/s/articleView?id=sf.security_pe_data_masking.htm"},
-        {text:"Data Classification and Sensitivity",url:"https://help.salesforce.com/s/articleView?id=sf.security_data_classification_fields.htm"},
-        {text:"Restriction Rules",url:"https://help.salesforce.com/s/articleView?id=sf.security_restriction_rules.htm"}
+        {text:"Field-Level Security",url:"https://help.salesforce.com/s/articleView?id=platform.users_profiles_field_perms.htm&type=5"},
+        {text:"Shield Platform Encryption",url:"https://trailhead.salesforce.com/content/learn/modules/spe_admins"},
+        {text:"External Key Management",url:"https://help.salesforce.com/s/articleView?id=xcloud.security_pe_ekm_overview.htm&type=5"},
+        {text:"Dynamic Data Masking Policies in Data 360",url:"https://help.salesforce.com/s/articleView?id=data.c360_a_dynamic_data_masking_policies.htm&type=5"},
+        {text:"Data Classification Metadata Fields",url:"https://help.salesforce.com/s/articleView?id=platform.data_classification_metadata_fields.htm&type=5"},
+        {text:"Restriction Rules",url:"https://help.salesforce.com/s/articleView?id=platform.security_restriction_rule.htm&type=5"}
       ]},
       {tag:"restriction-scoping",focus:"Use restriction rules, scoping rules, and record access summaries for fine-grained visibility",topics:[
-        {text:"Restriction Rules Overview",url:"https://help.salesforce.com/s/articleView?id=sf.security_restriction_rules.htm"},
-        {text:"Scoping Rules Overview",url:"https://help.salesforce.com/s/articleView?id=sf.security_scoping_rules.htm"},
-        {text:"Record Access Recalculation",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_recalc.htm"},
-        {text:"Access Policy Overview",url:"https://help.salesforce.com/s/articleView?id=sf.security_restriction_rules.htm"},
+        {text:"Restriction Rules",url:"https://help.salesforce.com/s/articleView?id=platform.security_restriction_rule.htm&type=5"},
+        {text:"Scoping Rules",url:"https://developer.salesforce.com/docs/atlas.en-us.scoping_rules.meta/scoping_rules/scoping_rules_about.htm"},
+        {text:"Record Access Recalculation",url:"https://help.salesforce.com/s/articleView?id=platform.security_sharing_defer_sharing_calculations.htm&type=5"},
+        {text:"Restriction Rules",url:"https://help.salesforce.com/s/articleView?id=platform.security_restriction_rule.htm&type=5"},
         {text:"Sharing Architecture Guide",url:"https://architect.salesforce.com/design/decision-guides/share-protect-data"},
         {text:"Large-Scale Sharing Considerations",url:"https://developer.salesforce.com/docs/atlas.en-us.ldv_dev.meta/ldv_dev/ldv_elements_sharing.htm"}
       ]},
       {tag:"audit-compliance",focus:"Configure audit, compliance, and event monitoring for sharing model validation",topics:[
-        {text:"Field Audit Trail",url:"https://help.salesforce.com/s/articleView?id=sf.field_audit_trail.htm"},
-        {text:"Setup Audit Trail",url:"https://help.salesforce.com/s/articleView?id=sf.admin_monitorsetup.htm"},
-        {text:"Event Monitoring Overview",url:"https://help.salesforce.com/s/articleView?id=sf.event_monitoring_overview.htm"},
-        {text:"Transaction Security Policies",url:"https://help.salesforce.com/s/articleView?id=sf.transaction_security_policy.htm"},
-        {text:"Login History",url:"https://help.salesforce.com/s/articleView?id=sf.users_login_history.htm"},
+        {text:"Data Integration with Salesforce",url:"https://architect.salesforce.com/docs/architect/decision-guides/guide/data-integration.html"},
+        {text:"Setup Audit Trail Control",url:"https://help.salesforce.com/s/articleView?id=xcloud.shr_set_up_audit_trail.htm&type=5"},
+        {text:"Event Monitoring",url:"https://help.salesforce.com/s/articleView?id=xcloud.real_time_event_monitoring_overview.htm&type=5"},
+        {text:"Get Started with Transaction Security",url:"https://trailhead.salesforce.com/content/learn/modules/enhanced_transaction_security/enhanced_transaction_security_basics"},
+        {text:"Monitor Login History",url:"https://help.salesforce.com/s/articleView?id=xcloud.users_login_history.htm&type=5"},
         {text:"Debug Log and Apex Sharing Tests",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_debugging_debug_log.htm"}
       ]},
       {tag:"exam-prep",focus:"Sharing and Visibility exam guide review, practice with complex sharing scenarios",topics:[
@@ -469,89 +469,88 @@ Object.assign(EXAM_DATA, {
       {tag:"identity-fundamentals",focus:"Understand Salesforce identity concepts: federation, provisioning, and the identity layer",topics:[
         {text:"Identity and Access Management Trailhead",url:"https://trailhead.salesforce.com/content/learn/modules/identity_login"},
         {text:"Identity Overview on Trailhead",url:"https://trailhead.salesforce.com/content/learn/trails/identity"},
-        {text:"Salesforce Identity Features",url:"https://help.salesforce.com/s/articleView?id=sf.identity_overview.htm"},
-        {text:"Identity Provider vs Service Provider",url:"https://help.salesforce.com/s/articleView?id=sf.sso_about.htm"},
-        {text:"Authentication vs Authorization",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_flows.htm"},
+        {text:"Guide to Identity Access Management (IAM)",url:"https://www.salesforce.com/uk/platform/cloud-data-security/identity-access-management-iam/"},
+        {text:"Identity Providers and Service Providers",url:"https://help.salesforce.com/s/articleView?id=xcloud.mobile_security_providers.htm&type=5"},
+        {text:"Integrating Heroku and the Salesforce Platform Overview",url:"https://devcenter.heroku.com/articles/integrating-heroku-and-salesforce"},
         {text:"Identity Architect Decision Guide",url:"https://architect.salesforce.com/design/decision-guides/manage-identities"}
       ]},
       {tag:"saml-sso",focus:"Configure SAML 2.0 SSO: IdP-initiated, SP-initiated, just-in-time provisioning",topics:[
-        {text:"SAML SSO Overview",url:"https://help.salesforce.com/s/articleView?id=sf.sso_about.htm"},
-        {text:"Configure SSO with SAML",url:"https://help.salesforce.com/s/articleView?id=sf.sso_saml_idp.htm"},
-        {text:"SP-Initiated SSO",url:"https://help.salesforce.com/s/articleView?id=sf.sso_sp_initiated.htm"},
-        {text:"IdP-Initiated SSO",url:"https://help.salesforce.com/s/articleView?id=sf.sso_idp_initiated.htm"},
-        {text:"Just-in-Time (JIT) Provisioning",url:"https://help.salesforce.com/s/articleView?id=sf.sso_jit_about.htm"},
-        {text:"SAML Assertion Validator",url:"https://help.salesforce.com/s/articleView?id=sf.sso_saml_validating_assertion.htm"}
+        {text:"Identity Providers and Service Providers",url:"https://help.salesforce.com/s/articleView?id=xcloud.mobile_security_providers.htm&type=5"},
+        {text:"Salesforce as a SAML Identity Provider",url:"https://help.salesforce.com/s/articleView?id=xcloud.sso_sfdc_idp_saml_parent.htm&type=5"},
+        {text:"Identity Provider Control",url:"https://help.salesforce.com/s/articleView?id=xcloud.shr_identity_provider.htm&type=5"},
+        {text:"Understanding Just-in-Time (JIT) Provisioning for SAML Single Sign-On (SSO)",url:"https://help.salesforce.com/s/articleView?id=000385744&type=1"},
+        {text:"Troubleshoot SAML Assertion Errors",url:"https://help.salesforce.com/s/articleView?id=xcloud.sso_saml_validation.htm&type=5"}
       ]},
       {tag:"oauth-flows",focus:"Implement all OAuth 2.0 flows: Web Server, JWT Bearer, Device, PKCE, and Client Credentials",topics:[
-        {text:"OAuth 2.0 Overview",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_flows.htm"},
-        {text:"JWT Bearer Token Flow",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_jwt_flow.htm"},
-        {text:"Web Server Flow",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_web_server_flow.htm"},
-        {text:"Client Credentials Flow",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_client_credentials_flow.htm"},
-        {text:"PKCE for Mobile and Native Apps",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_PKCE_flow.htm"},
-        {text:"Refresh Token Policy",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_refresh_token_flow.htm"}
+        {text:"Integrating Heroku and the Salesforce Platform Overview",url:"https://devcenter.heroku.com/articles/integrating-heroku-and-salesforce"},
+        {text:"OAuth 2.0 JWT Bearer Flow for Server-to-Server Integration",url:"https://help.salesforce.com/s/articleView?id=xcloud.remoteaccess_oauth_jwt_flow_ca.htm&type=5"},
+        {text:"OAuth 2.0 Web Server Flow for Web App Integration",url:"https://help.salesforce.com/s/articleView?id=xcloud.remoteaccess_oauth_web_server_flow.htm&type=5"},
+        {text:"Configure a Client Credentials Flow",url:"https://help.salesforce.com/s/articleView?id=xcloud.configure_client_credentials_flow_for_external_client_apps.htm&type=5"},
+        {text:"Secure Your Connected Apps and External Client Apps",url:"https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/secure_code_ac_eca.htm"},
+        {text:"Manage OAuth Access Policies for a Connected App: Refresh Token Expiration Policy Control",url:"https://help.salesforce.com/s/articleView?id=xcloud.shr_manage_oauth_access_policies_for_a_connected_app_refresh_token_expiration_policy.htm&type=5"}
       ]},
       {tag:"connected-apps",focus:"Configure Connected Apps: access policies, OAuth scopes, IP restrictions, and session policies",topics:[
-        {text:"Connected Apps Overview",url:"https://help.salesforce.com/s/articleView?id=sf.connected_app_overview.htm"},
-        {text:"Create a Connected App",url:"https://help.salesforce.com/s/articleView?id=sf.connected_app_create.htm"},
-        {text:"Connected App OAuth Policies",url:"https://help.salesforce.com/s/articleView?id=sf.connected_app_manage_oauth.htm"},
-        {text:"IP Relaxation and Continuous IP",url:"https://help.salesforce.com/s/articleView?id=sf.connected_app_continuous_ip.htm"},
-        {text:"Connected App Session Policies",url:"https://help.salesforce.com/s/articleView?id=sf.connected_app_session_policies.htm"},
-        {text:"OAuth Scopes Reference",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_scopes.htm"}
+        {text:"External Client Apps and Connected Apps",url:"https://help.salesforce.com/s/articleView?id=xcloud.external_integrations.htm&type=5"},
+        {text:"External Client Apps",url:"https://help.salesforce.com/s/articleView?id=xcloud.external_client_apps.htm&type=5"},
+        {text:"Configure OAuth Policies",url:"https://help.salesforce.com/s/articleView?id=xcloud.external_client_app_oauth_policies_configuration.htm&type=5"},
+        {text:"Connected App IP Relaxation and Continuous IP Enforcement",url:"https://help.salesforce.com/s/articleView?id=xcloud.connected_app_continuous_ip.htm&type=5"},
+        {text:"Manage Session Policies for a Connected App",url:"https://help.salesforce.com/s/articleView?id=xcloud.connected_app_manage_session_policies.htm&type=5"},
+        {text:"Assign an OAuth Custom Scope to an External Client App",url:"https://help.salesforce.com/s/articleView?id=xcloud.remoteaccess_oauth_customscopes_assign.htm&type=5"}
       ]},
       {tag:"mfa-security",focus:"Configure MFA, passwordless login, and high-assurance session policies",topics:[
-        {text:"MFA Overview",url:"https://help.salesforce.com/s/articleView?id=sf.security_overview_2fa.htm"},
-        {text:"MFA Enforcement",url:"https://help.salesforce.com/s/articleView?id=sf.security_require_2fa_all_users.htm"},
-        {text:"Salesforce Authenticator App",url:"https://help.salesforce.com/s/articleView?id=sf.security_overview_2fa_salesforce_authenticator.htm"},
-        {text:"Session Security Levels",url:"https://help.salesforce.com/s/articleView?id=sf.security_auth_assurance.htm"},
-        {text:"High Assurance and Session Policies",url:"https://help.salesforce.com/s/articleView?id=sf.security_auth_policies.htm"},
-        {text:"Passwordless Login",url:"https://help.salesforce.com/s/articleView?id=sf.networks_member_login_options.htm"}
+        {text:"Multi-Factor Authentication for Salesforce",url:"https://security.salesforce.com/mfa"},
+        {text:"Prepare for MFA Enforcement for All Employee Users",url:"https://help.salesforce.com/s/articleView?id=005321561&type=1"},
+        {text:"Register Salesforce Authenticator as an Identity Verification Method for Salesforce Orgs",url:"https://help.salesforce.com/s/articleView?id=xcloud.salesforce_authenticator_add_account.htm&type=5"},
+        {text:"Session Security Level Policies Control",url:"https://help.salesforce.com/s/articleView?id=xcloud.shr_session_security_level_policies.htm&type=5"},
+        {text:"Require High-Assurance Session Security for Sensitive Operations",url:"https://help.salesforce.com/s/articleView?id=xcloud.security_auth_require_ha_session.htm&type=5"},
+        {text:"Passwordless Login",url:"https://help.salesforce.com/s/articleView?id=xcloud.external_identity_passwordless_login_use_cases.htm&type=5"}
       ]},
       {tag:"identity-provider",focus:"Use Salesforce as an Identity Provider for external systems with SAML and OIDC",topics:[
-        {text:"Salesforce as Identity Provider",url:"https://help.salesforce.com/s/articleView?id=sf.sso_saml_salesforce_as_idp.htm"},
-        {text:"Configure OIDC Provider",url:"https://help.salesforce.com/s/articleView?id=sf.sso_provider_openid_connect.htm"},
-        {text:"Social Sign-On Providers",url:"https://help.salesforce.com/s/articleView?id=sf.sso_provider_google.htm"},
-        {text:"Delegated Authentication",url:"https://help.salesforce.com/s/articleView?id=sf.sso_delauthentication.htm"},
-        {text:"Identity Provider Login Page",url:"https://help.salesforce.com/s/articleView?id=sf.sso_idp_login.htm"},
-        {text:"Salesforce Identity Licensing",url:"https://help.salesforce.com/s/articleView?id=sf.users_license_types_identity.htm"}
+        {text:"Authentication Provider SSO",url:"https://help.salesforce.com/s/articleView?id=xcloud.sso_authentication_providers.htm&type=5"},
+        {text:"Configure an Authentication Provider Using OpenID Connect",url:"https://help.salesforce.com/s/articleView?id=xcloud.sso_provider_openid_connect.htm&type=5"},
+        {text:"Set Up Social Sign-On",url:"https://trailhead.salesforce.com/content/learn/modules/identity_external/identity_external_social"},
+        {text:"Delegated Authentication",url:"https://help.salesforce.com/s/articleView?id=xcloud.sso_delauthentication.htm&type=5"},
+        {text:"Add Identity Providers to the My Domain Login Page",url:"https://help.salesforce.com/s/articleView?id=xcloud.domain_name_login_id_prov.htm&type=5"},
+        {text:"Salesforce Identity Licenses",url:"https://help.salesforce.com/s/articleView?id=xcloud.identity_licenses.htm&type=5"}
       ]},
       {tag:"scim-provisioning",focus:"Automate user provisioning and deprovisioning with SCIM and identity governance",topics:[
-        {text:"SCIM Overview",url:"https://help.salesforce.com/s/articleView?id=sf.identity_scim_overview.htm"},
-        {text:"SCIM Configuration",url:"https://help.salesforce.com/s/articleView?id=sf.identity_scim_configure.htm"},
-        {text:"Automated User Provisioning with Okta",url:"https://help.salesforce.com/s/articleView?id=sf.identity_scim_configure.htm"},
-        {text:"JIT Provisioning Handlers",url:"https://help.salesforce.com/s/articleView?id=sf.sso_jit_registration_handler.htm"},
-        {text:"User Provisioning for Connected Apps",url:"https://help.salesforce.com/s/articleView?id=sf.connected_app_manage_user_provisioning.htm"},
+        {text:"Manage Salesforce User Identities with SCIM",url:"https://help.salesforce.com/s/articleView?id=xcloud.identity_scim_overview.htm&type=5"},
+        {text:"Manage Salesforce User Identities with SCIM Control",url:"https://help.salesforce.com/s/articleView?id=xcloud.shr_manage_salesforce_user_identities_with_scim.htm&type=5"},
+        {text:"Manage Salesforce User Identities with SCIM Control",url:"https://help.salesforce.com/s/articleView?id=xcloud.shr_manage_salesforce_user_identities_with_scim.htm&type=5"},
+        {text:"Customize How Just-in-Time Provisioning Handlers Process Attributes in SAML Assertions",url:"https://help.salesforce.com/s/articleView?id=release-notes.rn_identity_jit_assertions.htm&release=234&type=5"},
+        {text:"Configure User Provisioning for Connected Apps",url:"https://help.salesforce.com/s/articleView?id=xcloud.connected_app_user_provisioning_configure.htm&type=5"},
         {text:"Identity Governance Best Practices",url:"https://architect.salesforce.com/design/decision-guides/manage-identities"}
       ]},
       {tag:"experience-cloud-identity",focus:"Configure identity for Experience Cloud: self-registration, social login, and B2C flows",topics:[
-        {text:"Experience Cloud Identity Overview",url:"https://help.salesforce.com/s/articleView?id=sf.networks_member_login_options.htm"},
-        {text:"Self-Registration for Sites",url:"https://help.salesforce.com/s/articleView?id=sf.networks_self_registration.htm"},
-        {text:"Social Sign-On for Communities",url:"https://help.salesforce.com/s/articleView?id=sf.sso_provider_google.htm"},
-        {text:"Custom Login Flow",url:"https://help.salesforce.com/s/articleView?id=sf.security_login_flow_overview.htm"},
-        {text:"Authentication Providers",url:"https://help.salesforce.com/s/articleView?id=sf.sso_provider_google.htm"},
-        {text:"Guest User Identity",url:"https://help.salesforce.com/s/articleView?id=sf.networks_guest_user_security.htm"}
+        {text:"Passwordless Login",url:"https://help.salesforce.com/s/articleView?id=xcloud.external_identity_passwordless_login_use_cases.htm&type=5"},
+        {text:"Self-Registration",url:"https://help.salesforce.com/s/articleView?id=xcloud.external_identity_self_registration_use_cases.htm&type=5"},
+        {text:"Set Up Social Sign-On",url:"https://trailhead.salesforce.com/content/learn/modules/identity_external/identity_external_social"},
+        {text:"Custom Login Flows",url:"https://help.salesforce.com/s/articleView?id=xcloud.security_login_flow.htm&type=5"},
+        {text:"Set Up Social Sign-On",url:"https://trailhead.salesforce.com/content/learn/modules/identity_external/identity_external_social"},
+        {text:"Protecting Your Data: Essential Actions to Secure Experience Cloud Guest User Access",url:"https://www.salesforce.com/blog/protecting-your-data-essential-actions-to-secure-experience-cloud-guest-user-access/"}
       ]},
       {tag:"certificates-keys",focus:"Manage digital certificates, key pairs, and mutual TLS for secure integrations",topics:[
-        {text:"Certificates and Keys Overview",url:"https://help.salesforce.com/s/articleView?id=sf.security_keys_about.htm"},
-        {text:"Generate a Self-Signed Certificate",url:"https://help.salesforce.com/s/articleView?id=sf.security_keys_creating.htm"},
-        {text:"Mutual TLS (mTLS)",url:"https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm"},
-        {text:"JWT Signing Certificates",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_jwt_flow.htm"},
-        {text:"Shield Encryption Key Management",url:"https://help.salesforce.com/s/articleView?id=sf.security_pe_manage_keys.htm"},
-        {text:"Named Credentials and Auth Providers",url:"https://help.salesforce.com/s/articleView?id=sf.named_credentials_about.htm"}
+        {text:"Certificates and Keys",url:"https://help.salesforce.com/s/articleView?id=xcloud.security_keys_about.htm&type=5"},
+        {text:"Generate a Self-Signed Certificate",url:"https://help.salesforce.com/s/articleView?id=xcloud.security_keys_creating.htm&type=5"},
+        {text:"Certificates in Mutual Authentication for Salesforce",url:"https://help.salesforce.com/s/articleView?id=000383575&type=1"},
+        {text:"OAuth 2.0 JWT Bearer Flow for Server-to-Server Integration",url:"https://help.salesforce.com/s/articleView?id=xcloud.remoteaccess_oauth_jwt_flow_ca.htm&type=5"},
+        {text:"External Key Management",url:"https://help.salesforce.com/s/articleView?id=xcloud.security_pe_ekm_overview.htm&type=5"},
+        {text:"NamedCredential",url:"https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_namedcredential.htm"}
       ]},
       {tag:"login-policies",focus:"Design login policies: IP restrictions, login hours, and trusted IP ranges",topics:[
-        {text:"Login IP Ranges",url:"https://help.salesforce.com/s/articleView?id=sf.security_networkaccess.htm"},
-        {text:"Login Hours",url:"https://help.salesforce.com/s/articleView?id=sf.users_login_hours.htm"},
-        {text:"Org-Wide Login IP Restrictions",url:"https://help.salesforce.com/s/articleView?id=sf.security_networkaccess.htm"},
-        {text:"Transaction Security for Login Events",url:"https://help.salesforce.com/s/articleView?id=sf.transaction_security_policy.htm"},
-        {text:"Session Settings",url:"https://help.salesforce.com/s/articleView?id=sf.security_auth_timeout.htm"},
-        {text:"Login History",url:"https://help.salesforce.com/s/articleView?id=sf.users_login_history.htm"}
+        {text:"Restrict Login IP Addresses in Profiles",url:"https://help.salesforce.com/s/articleView?id=xcloud.login_ip_ranges.htm&type=5"},
+        {text:"View and Edit Login Hours in Profiles",url:"https://help.salesforce.com/s/articleView?id=platform.login_hours.htm&type=5"},
+        {text:"Restrict Login IP Addresses in Profiles",url:"https://help.salesforce.com/s/articleView?id=xcloud.login_ip_ranges.htm&type=5"},
+        {text:"Get Started with Transaction Security",url:"https://trailhead.salesforce.com/content/learn/modules/enhanced_transaction_security/enhanced_transaction_security_basics"},
+        {text:"Session Security",url:"https://help.salesforce.com/s/articleView?id=xcloud.security_overview_sessions.htm&type=5"},
+        {text:"Monitor Login History",url:"https://help.salesforce.com/s/articleView?id=xcloud.users_login_history.htm&type=5"}
       ]},
       {tag:"exam-prep",focus:"IAM Architect exam guide, scenario practice across SSO, OAuth, and provisioning domains",topics:[
         {text:"Identity and Access Management Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Identity-and-Access-Management-Architect-Exam-Guide"},
         {text:"Trailmix: Architect Identity and Access Management",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-identity-and-access-management"},
         {text:"Identity Architect Decision Guide",url:"https://architect.salesforce.com/design/decision-guides/manage-identities"},
         {text:"Identity Well-Formed Architecture",url:"https://architect.salesforce.com/well-formed-architecture/identity"},
-        {text:"OAuth 2.0 Flows Reference",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_flows.htm"},
+        {text:"Integrating Heroku and the Salesforce Platform Overview",url:"https://devcenter.heroku.com/articles/integrating-heroku-and-salesforce"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-identity-access---Plat-Arch-203"}
       ]}
     ],
@@ -609,8 +608,8 @@ Object.assign(EXAM_DATA, {
     ],
     studyDays:[
       {tag:"env-strategy",focus:"Design environment strategy: sandboxes, scratch orgs, and org types for SDLC",topics:[
-        {text:"Sandbox Overview",url:"https://help.salesforce.com/s/articleView?id=sf.create_test_instance.htm"},
-        {text:"Sandbox Types: Developer, Partial, Full",url:"https://help.salesforce.com/s/articleView?id=sf.data_sandbox_environments.htm"},
+        {text:"Salesforce Sandboxes",url:"https://www.salesforce.com/eu/platform/sandboxes-environments/"},
+        {text:"Sandbox Types and Templates",url:"https://help.salesforce.com/s/articleView?id=platform.create_test_instance.htm&type=5"},
         {text:"Scratch Orgs Overview",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs.htm"},
         {text:"Org Shape and Snapshot",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_shape_intro.htm"},
         {text:"Dev Hub Configuration",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_setup_enable_devhub.htm"},
@@ -627,10 +626,10 @@ Object.assign(EXAM_DATA, {
       {tag:"metadata-deploy",focus:"Deploy metadata with Metadata API, Salesforce CLI, and change sets",topics:[
         {text:"Metadata API Developer Guide",url:"https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_intro.htm"},
         {text:"Deploy and Retrieve with Metadata API",url:"https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_deploy.htm"},
-        {text:"Change Sets Overview",url:"https://help.salesforce.com/s/articleView?id=sf.changesets.htm"},
+        {text:"Change Sets",url:"https://help.salesforce.com/s/articleView?id=platform.changesets.htm&type=5"},
         {text:"Salesforce CLI Deploy Command",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm"},
         {text:"Package.xml Manifest",url:"https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/manifest_samples.htm"},
-        {text:"Deployment Rollback Strategies",url:"https://help.salesforce.com/s/articleView?id=sf.changesets_best_practices.htm"}
+        {text:"Deploy Your Changes",url:"https://help.salesforce.com/s/articleView?id=platform.deploy_overview.htm&type=5"}
       ]},
       {tag:"unlocked-packages",focus:"Architect packaging strategy with Unlocked Packages and 2nd Generation Packaging",topics:[
         {text:"Unlocked Packages Overview",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_unlocked_pkg_intro.htm"},
@@ -641,7 +640,7 @@ Object.assign(EXAM_DATA, {
         {text:"AppExchange ISV Packaging",url:"https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/packaging_intro.htm"}
       ]},
       {tag:"cicd",focus:"Build CI/CD pipelines: Jenkins, GitHub Actions, or Salesforce DevOps Center",topics:[
-        {text:"DevOps Center Overview",url:"https://help.salesforce.com/s/articleView?id=sf.devops_center_overview.htm"},
+        {text:"Manage and Release Changes Easily and Collaboratively with DevOps Center",url:"https://help.salesforce.com/s/articleView?id=platform.devops_center_overview.htm&type=5"},
         {text:"GitHub Actions for Salesforce",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ci_github_actions.htm"},
         {text:"CI Pipeline with Salesforce CLI",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ci.htm"},
         {text:"Salesforce CLI Auth for CI",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_auth_connected_app.htm"},
@@ -658,10 +657,10 @@ Object.assign(EXAM_DATA, {
       ]},
       {tag:"release-management",focus:"Govern release management: release trains, feature flags, and deployment windows",topics:[
         {text:"Salesforce Release Management Trailhead",url:"https://trailhead.salesforce.com/content/learn/modules/application_lifecycle_and_development_models"},
-        {text:"DevOps Center Pipeline Stages",url:"https://help.salesforce.com/s/articleView?id=sf.devops_center_pipeline.htm"},
+        {text:"Plan Your Pipeline",url:"https://help.salesforce.com/s/articleView?id=platform.devops_center_pipeline_plan.htm&type=5"},
         {text:"Feature Management in Unlocked Packages",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_unlocked_pkg_feature_flags.htm"},
-        {text:"Sandbox Refresh Strategy",url:"https://help.salesforce.com/s/articleView?id=sf.data_sandbox_refresh.htm"},
-        {text:"Post-Copy Apex Classes",url:"https://help.salesforce.com/s/articleView?id=sf.data_sandbox_post_copy.htm"},
+        {text:"What Happens When a Sandbox Is Refreshed",url:"https://help.salesforce.com/s/articleView?id=platform.devops_center_sandbox_refresh.htm&type=5"},
+        {text:"SandboxPostCopy Interface",url:"https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_interface_System_SandboxPostCopy.htm"},
         {text:"Development Lifecycle Decision Guide",url:"https://architect.salesforce.com/design/decision-guides/deploy"}
       ]},
       {tag:"static-analysis",focus:"Use PMD, Code Analyzer, and Apex linting for code quality enforcement in pipelines",topics:[
@@ -675,7 +674,7 @@ Object.assign(EXAM_DATA, {
       {tag:"exam-prep",focus:"DLDC Architect exam guide, practice scenarios around environment strategy and deployment patterns",topics:[
         {text:"Development Lifecycle Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Development-Lifecycle-and-Deployment-Architect-Exam-Guide"},
         {text:"Trailmix: Architect Development Lifecycle",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-dev-lifecycle-and-deployment"},
-        {text:"DevOps Center Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.devops_center_overview.htm"},
+        {text:"Manage and Release Changes Easily and Collaboratively with DevOps Center",url:"https://help.salesforce.com/s/articleView?id=platform.devops_center_overview.htm&type=5"},
         {text:"Salesforce DX Developer Guide",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm"},
         {text:"Deployment Architecture Decision Guide",url:"https://architect.salesforce.com/design/decision-guides/deploy"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-dev-lifecycle---Plat-Arch-202"}
@@ -743,7 +742,6 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"domain-review",focus:"Review all four Architect domain exams and how they intersect for System Architect",topics:[
         {text:"System Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-System-Architect-Exam-Guide"},
-        {text:"Trailmix: Architect System Design",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-system-architect"},
         {text:"Platform Data Architect Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-data-architecture-and-management"},
         {text:"Sharing and Visibility Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-sharing-and-visibility"},
         {text:"IAM Architect Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-identity-and-access-management"},
@@ -753,25 +751,25 @@ Object.assign(EXAM_DATA, {
         {text:"Large Data Volumes Developer Guide",url:"https://developer.salesforce.com/docs/atlas.en-us.ldv_dev.meta/ldv_dev/ldv_intro.htm"},
         {text:"Data Architecture Decision Guide",url:"https://architect.salesforce.com/design/decision-guides/store-data"},
         {text:"Big Objects for Archiving",url:"https://developer.salesforce.com/docs/atlas.en-us.bigobjects.meta/bigobjects/big_object.htm"},
-        {text:"External Objects and Salesforce Connect",url:"https://help.salesforce.com/s/articleView?id=sf.platform_connect_about.htm"},
+        {text:"Access External Data With Salesforce Connect",url:"https://help.salesforce.com/s/articleView?id=platform.salesforce_connect.htm&type=5"},
         {text:"Master Data Management Patterns",url:"https://architect.salesforce.com/design/decision-guides/store-data"},
-        {text:"Multi-Org Replication Patterns",url:"https://help.salesforce.com/s/articleView?id=sf.business_network_intro.htm"}
+        {text:"Set Up Salesforce to Salesforce",url:"https://help.salesforce.com/s/articleView?id=sales.business_network_setup.htm&type=5"}
       ]},
       {tag:"cross-domain-security",focus:"Design enterprise security: layering OWDs, sharing rules, FLS, and Apex sharing",topics:[
         {text:"Security and Sharing Architecture",url:"https://architect.salesforce.com/design/decision-guides/share-protect-data"},
-        {text:"Org-Wide Defaults",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_owd_setting.htm"},
+        {text:"Org-Wide Defaults",url:"https://help.salesforce.com/s/articleView?id=platform.security_sharing_owd_about.htm&type=5"},
         {text:"Apex Managed Sharing",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_security_sharing_understanding.htm"},
-        {text:"Permission Set Groups",url:"https://help.salesforce.com/s/articleView?id=sf.perm_set_groups.htm"},
-        {text:"Restriction and Scoping Rules",url:"https://help.salesforce.com/s/articleView?id=sf.security_restriction_rules.htm"},
-        {text:"Shield Platform Encryption",url:"https://help.salesforce.com/s/articleView?id=sf.security_pe_overview.htm"}
+        {text:"Permission Set Groups",url:"https://trailhead.salesforce.com/content/learn/modules/permission-set-groups"},
+        {text:"Restriction Rules",url:"https://help.salesforce.com/s/articleView?id=platform.security_restriction_rule.htm&type=5"},
+        {text:"Shield Platform Encryption",url:"https://trailhead.salesforce.com/content/learn/modules/spe_admins"}
       ]},
       {tag:"cross-domain-identity",focus:"Integrate identity patterns with data and sharing: SSO, SCIM, and attribute-based access",topics:[
         {text:"Identity Architecture Decision Guide",url:"https://architect.salesforce.com/design/decision-guides/manage-identities"},
-        {text:"SAML SSO with Attribute Mapping",url:"https://help.salesforce.com/s/articleView?id=sf.sso_jit_about.htm"},
-        {text:"OAuth Integration and Sharing Model",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_flows.htm"},
-        {text:"Connected App Policies",url:"https://help.salesforce.com/s/articleView?id=sf.connected_app_manage_oauth.htm"},
-        {text:"SCIM and JIT Provisioning",url:"https://help.salesforce.com/s/articleView?id=sf.identity_scim_overview.htm"},
-        {text:"MFA and Session Assurance",url:"https://help.salesforce.com/s/articleView?id=sf.security_auth_assurance.htm"}
+        {text:"Understanding Just-in-Time (JIT) Provisioning for SAML Single Sign-On (SSO)",url:"https://help.salesforce.com/s/articleView?id=000385744&type=1"},
+        {text:"Integrating Heroku and the Salesforce Platform Overview",url:"https://devcenter.heroku.com/articles/integrating-heroku-and-salesforce"},
+        {text:"Configure OAuth Policies",url:"https://help.salesforce.com/s/articleView?id=xcloud.external_client_app_oauth_policies_configuration.htm&type=5"},
+        {text:"Manage Salesforce User Identities with SCIM",url:"https://help.salesforce.com/s/articleView?id=xcloud.identity_scim_overview.htm&type=5"},
+        {text:"Session Security Level Policies Control",url:"https://help.salesforce.com/s/articleView?id=xcloud.shr_session_security_level_policies.htm&type=5"}
       ]},
       {tag:"cross-domain-integration",focus:"Cross-domain integration design: API selection, event-driven patterns, and middleware",topics:[
         {text:"Integration Patterns and Practices Guide",url:"https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_intro_overview.htm"},
@@ -779,14 +777,14 @@ Object.assign(EXAM_DATA, {
         {text:"Change Data Capture",url:"https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_intro.htm"},
         {text:"Bulk API for System-to-System Data",url:"https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_intro.htm"},
         {text:"MuleSoft API-Led Connectivity",url:"https://www.mulesoft.com/resources/api/what-is-api-led-connectivity"},
-        {text:"Named Credentials and External Credentials",url:"https://help.salesforce.com/s/articleView?id=sf.named_credentials_about.htm"}
+        {text:"NamedCredential",url:"https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_namedcredential.htm"}
       ]},
       {tag:"cross-domain-deployment",focus:"Design deployment strategy across all domains: packages, CI/CD, and environment governance",topics:[
         {text:"Development Lifecycle Decision Guide",url:"https://architect.salesforce.com/design/decision-guides/deploy"},
         {text:"Unlocked Packages for Cross-Domain Metadata",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_unlocked_pkg_intro.htm"},
-        {text:"DevOps Center",url:"https://help.salesforce.com/s/articleView?id=sf.devops_center_overview.htm"},
-        {text:"Sandbox Refresh Strategy",url:"https://help.salesforce.com/s/articleView?id=sf.data_sandbox_refresh.htm"},
-        {text:"Change Set Limitations at Scale",url:"https://help.salesforce.com/s/articleView?id=sf.changesets.htm"},
+        {text:"Manage and Release Changes Easily and Collaboratively with DevOps Center",url:"https://help.salesforce.com/s/articleView?id=platform.devops_center_overview.htm&type=5"},
+        {text:"What Happens When a Sandbox Is Refreshed",url:"https://help.salesforce.com/s/articleView?id=platform.devops_center_sandbox_refresh.htm&type=5"},
+        {text:"Change Sets",url:"https://help.salesforce.com/s/articleView?id=platform.changesets.htm&type=5"},
         {text:"Scratch Org Pooling for CI",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs.htm"}
       ]},
       {tag:"well-formed-arch",focus:"Apply Salesforce Well-Formed Architecture principles across all technical domains",topics:[
@@ -889,16 +887,16 @@ Object.assign(EXAM_DATA, {
         {text:"Architect Website",url:"https://architect.salesforce.com"}
       ]},
       {tag:"data-model-security",focus:"Design data models with security in mind: FLS, OWD, and relationships that affect sharing",topics:[
-        {text:"Object Relationships and Sharing",url:"https://help.salesforce.com/s/articleView?id=sf.relationships_considerations.htm"},
+        {text:"Object Relationships and Sharing",url:"https://help.salesforce.com/s/articleView?id=platform.relationships_considerations.htm&type=5"},
         {text:"Implicit Sharing via Relationships",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_security_sharing_understanding.htm"},
-        {text:"Lookup vs Master-Detail Sharing Implications",url:"https://help.salesforce.com/s/articleView?id=sf.relationships_considerations.htm"},
-        {text:"Field-Level Security",url:"https://help.salesforce.com/s/articleView?id=sf.admin_fls.htm"},
-        {text:"Org-Wide Defaults",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_owd_setting.htm"},
+        {text:"Lookup vs Master-Detail Sharing Implications",url:"https://help.salesforce.com/s/articleView?id=platform.relationships_considerations.htm&type=5"},
+        {text:"Field-Level Security",url:"https://help.salesforce.com/s/articleView?id=platform.users_profiles_field_perms.htm&type=5"},
+        {text:"Org-Wide Defaults",url:"https://help.salesforce.com/s/articleView?id=platform.security_sharing_owd_about.htm&type=5"},
         {text:"Schema Design Best Practices",url:"https://architect.salesforce.com/design/decision-guides/store-data"}
       ]},
       {tag:"ldv-sharing",focus:"LDV at scale with sharing: deferring sharing recalculation and performance implications",topics:[
         {text:"Large Data Volumes and Sharing",url:"https://developer.salesforce.com/docs/atlas.en-us.ldv_dev.meta/ldv_dev/ldv_elements_sharing.htm"},
-        {text:"Defer Sharing Recalculation",url:"https://help.salesforce.com/s/articleView?id=sf.security_sharing_recalc.htm"},
+        {text:"Defer Sharing Recalculation",url:"https://help.salesforce.com/s/articleView?id=platform.security_sharing_defer_sharing_calculations.htm&type=5"},
         {text:"Skinny Tables",url:"https://developer.salesforce.com/docs/atlas.en-us.ldv_dev.meta/ldv_dev/ldv_elements_skinny_tables.htm"},
         {text:"SOQL Selective Queries",url:"https://developer.salesforce.com/docs/atlas.en-us.ldv_dev.meta/ldv_dev/ldv_elements_soql.htm"},
         {text:"Sharing Rules at Scale",url:"https://developer.salesforce.com/docs/atlas.en-us.ldv_dev.meta/ldv_dev/ldv_elements_sharing.htm"},
@@ -913,7 +911,6 @@ Object.assign(EXAM_DATA, {
         {text:"Schema.describeSObjectResult",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_methods_system_sobject_describe.htm"}
       ]},
       {tag:"scenario-practice",focus:"Practice Application Architect scenarios: data model + sharing rules combined exam questions",topics:[
-        {text:"Application Architect Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-application-architect"},
         {text:"Data Architecture Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-data-architecture-and-management"},
         {text:"Sharing and Visibility Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-sharing-and-visibility"},
         {text:"Trailhead Superbadge: Security Specialist",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_security"},
@@ -955,129 +952,6 @@ Object.assign(EXAM_DATA, {
     ]
   },
 
-  "B2B Solution Architect": {
-    questions: 60,
-    time: 120,
-    pass: 63,
-    experience: "2+ years architecting Salesforce solutions for B2B commerce and sales organizations",
-    trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-b2b-solution-architect---Arch-301",
-    prerequisites: ["Platform Developer", "Platform Administrator"],
-    overview: "The Salesforce B2B Solution Architect certification validates expertise in architecting end-to-end Salesforce solutions for B2B companies. Candidates demonstrate the ability to design multi-cloud solutions spanning Sales Cloud, Service Cloud, Experience Cloud, CPQ, and Revenue Cloud.",
-        domains:[
-      {name:"Discovery and Customer Success",pct:25,color:"#00A1E0",desc:"Apply knowledge to in which a customer wants a B2B multi-cloud solution, document and articulate the business needs, value, and vision of the customer to support their desired business outcomes.",keyTopics:[{title:"in which a customer wants a B2B multi-cloud solution, doc...",desc:"Given a scenario in which a customer wants a B2B multi-cloud solution, document and articulate the business needs, value, and vision of the customer to support their desired business outcomes."},{title:"Given the identified business needs, vision,",desc:"Given the identified business needs, vision, and current customer landscape, define the future blueprint architecture of a B2B multi-cloud Salesforce solution in order to define the product roadmap."},{title:"Given that a future blueprint architecture has been agree...",desc:"Given that a future blueprint architecture has been agreed upon, define the incremental steps necessary to reach the recommended future end state that supports business outcomes."}]},
-      {name:"Data Governance and Integration",pct:26,color:"#2ECC71",desc:"Given a complex data architecture, define the data flows across systems, the methods and techniques to connect systems, and the relationship each system has to the data it contains.",keyTopics:[{title:"Given a complex data architecture, define the data flows ...",desc:"Given a complex data architecture, define the data flows across systems, the methods and techniques to connect systems, and the relationship each system has to the data it contains."},{title:"Given the current architecture, define the strategy to mi...",desc:"Given the current architecture, define the strategy to migrate data, and synchronize data across systems to support a multi-cloud B2B solution."},{title:"Given existing customer personas",desc:"Given existing customer personas and the defined business requirements, design and map a sharing and visibility model for a B2B multi-cloud Salesforce solution."},{title:"Given customer expectations around data volumes, provide ...",desc:"Given customer expectations around data volumes, provide governance to satisfy business requirements."}]},
-      {name:"Design",pct:29,color:"#F39C12",desc:"Given information gathered during discovery, define the functional and technical solution, in line with Salesforce standards, keeping the business value and objectives in mind.",keyTopics:[{title:"Given information gathered during discovery, define the f...",desc:"Given information gathered during discovery, define the functional and technical solution, in line with Salesforce standards, keeping the business value and objectives in mind."},{title:"Given a set of business requirements, recommend an approp...",desc:"Given a set of business requirements, recommend an appropriate Salesforce multi-cloud or AppExchange solution."},{title:"identify design options",desc:"Given a scenario, identify design options and their associated risks, assess their level of criticality, and recommend the solution that most accurately meets the specified functional and nonfunctional requirements."},{title:"in which the design document is being shared, facilitate ...",desc:"Given a scenario in which the design document is being shared, facilitate final acceptance from stakeholders by ensuring any concerns raised are adequately addressed."},{title:"Given a defined future state B2B multi-cloud solution arc...",desc:"Given a defined future state B2B multi-cloud solution architecture alongside business requirements, choose the preferred method for integrating data across different clouds."}]},
-      {name:"Delivery",pct:12,color:"#E74C3C",desc:"When planning a B2B multi-cloud set of orgs and environments, define appropriate strategies that balance resources and effort to deliver an effective and efficient delivery method.",keyTopics:[{title:"When planning a B2B multi-cloud set of orgs",desc:"When planning a B2B multi-cloud set of orgs and environments, define appropriate strategies that balance resources and effort to deliver an effective and efficient delivery method."},{title:"When planning the steps involved in delivering a customer...",desc:"When planning the steps involved in delivering a customer's business outcomes, ensure that there is a clear understanding of business requirements through to the delivered configuration."},{title:"in which the designed solution is being implemented, prov...",desc:"Given a scenario in which the designed solution is being implemented, provide the appropriate display of the capabilities of that solution to stakeholders (demos) that demonstrate continued alignment with the desired business outcomes and priorities."}]},
-      {name:"Operationalize the Solution",pct:8,color:"#9B59B6",desc:"Given that a solution has been implemented, ensure that stakeholders are appropriately enabled to manage the solution moving forward (for example, updating documentation, center of excellence, training).",keyTopics:[{title:"Given that a solution has been implemented, ensure that s...",desc:"Given that a solution has been implemented, ensure that stakeholders are appropriately enabled to manage the solution moving forward (for example, updating documentation, center of excellence, training)."},{title:"in which a B2B multi-cloud solution has been implemented,...",desc:"Given a scenario in which a B2B multi-cloud solution has been implemented, determine how to further improve the solution to ensure business benefits are continuously realized."},{title:"Determine how to facilitate adoption in order for the bus...",desc:"Determine how to facilitate adoption in order for the business to benefit from a B2B multi-cloud solution."}]},
-    ],
-    studyDays:[
-      {tag:"b2b-landscape",focus:"Understand the B2B Salesforce product landscape: Sales Cloud, Service Cloud, Revenue Cloud, CPQ",topics:[
-        {text:"B2B Solution Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2B-Solution-Architect-Exam-Guide"},
-        {text:"Sales Cloud Overview",url:"https://help.salesforce.com/s/articleView?id=sf.sales_core.htm"},
-        {text:"Revenue Cloud Overview",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_rev_cloud.htm"},
-        {text:"CPQ Overview",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_overview.htm"},
-        {text:"Experience Cloud for B2B",url:"https://help.salesforce.com/s/articleView?id=sf.networks_overview.htm"},
-        {text:"Trailmix: Architect B2B Solutions",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-b2b-solution"}
-      ]},
-      {tag:"cpq-design",focus:"Design CPQ solutions: product catalog, pricing rules, quote templates, and contracts",topics:[
-        {text:"CPQ Product Catalog",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_product_catalog.htm"},
-        {text:"CPQ Pricing Methods",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_pricing_methods.htm"},
-        {text:"CPQ Discount Schedules",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_discount_schedules.htm"},
-        {text:"CPQ Quote Templates",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_quote_templates.htm"},
-        {text:"CPQ Contracts and Renewals",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_contracts_overview.htm"},
-        {text:"CPQ Order Management",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_orders_overview.htm"}
-      ]},
-      {tag:"sales-cloud-advanced",focus:"Advanced Sales Cloud configuration: territory management, forecasting, and pipeline management",topics:[
-        {text:"Enterprise Territory Management",url:"https://help.salesforce.com/s/articleView?id=sf.territory2_overview.htm"},
-        {text:"Collaborative Forecasting",url:"https://help.salesforce.com/s/articleView?id=sf.forecasts3_overview.htm"},
-        {text:"Opportunity Splits",url:"https://help.salesforce.com/s/articleView?id=sf.teamselling_opportunity_splits.htm"},
-        {text:"Account Hierarchy",url:"https://help.salesforce.com/s/articleView?id=sf.account_hierarchy.htm"},
-        {text:"Sales Engagement (Cadences)",url:"https://help.salesforce.com/s/articleView?id=sf.sales_cadences_intro.htm"},
-        {text:"Einstein Activity Capture",url:"https://help.salesforce.com/s/articleView?id=sf.einstein_sales_activity_capture.htm"}
-      ]},
-      {tag:"service-cloud-b2b",focus:"Design Service Cloud for B2B: case management, entitlements, and field service",topics:[
-        {text:"Entitlements and SLAs",url:"https://help.salesforce.com/s/articleView?id=sf.entitlements_overview.htm"},
-        {text:"Service Cloud Voice",url:"https://help.salesforce.com/s/articleView?id=sf.voice_overview.htm"},
-        {text:"Omni-Channel Routing",url:"https://help.salesforce.com/s/articleView?id=sf.omnichannel_intro.htm"},
-        {text:"Knowledge Management",url:"https://help.salesforce.com/s/articleView?id=sf.knowledge_whatis.htm"},
-        {text:"Field Service Lightning Overview",url:"https://help.salesforce.com/s/articleView?id=sf.fs_overview.htm"},
-        {text:"Service Cloud Einstein",url:"https://help.salesforce.com/s/articleView?id=sf.einstein_service_overview.htm"}
-      ]},
-      {tag:"experience-cloud-b2b",focus:"Build B2B portals with Experience Cloud: partner community, account portal, and CMS",topics:[
-        {text:"Experience Cloud Overview",url:"https://help.salesforce.com/s/articleView?id=sf.networks_overview.htm"},
-        {text:"Partner Relationship Management",url:"https://help.salesforce.com/s/articleView?id=sf.partner_overview.htm"},
-        {text:"Experience Cloud Templates",url:"https://help.salesforce.com/s/articleView?id=sf.networks_lightning_templates.htm"},
-        {text:"CMS Connect and Content",url:"https://help.salesforce.com/s/articleView?id=sf.cms_overview.htm"},
-        {text:"Sharing and Visibility for Communities",url:"https://help.salesforce.com/s/articleView?id=sf.networks_sharing_overview.htm"},
-        {text:"Partner User License Types",url:"https://help.salesforce.com/s/articleView?id=sf.users_license_types_partner.htm"}
-      ]},
-      {tag:"data-cloud-b2b",focus:"Unify B2B customer data with Data Cloud: ingestion, identity resolution, and segments",topics:[
-        {text:"Data Cloud Overview",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_data_cloud_overview.htm"},
-        {text:"Data Cloud Ingestion API",url:"https://developer.salesforce.com/docs/atlas.en-us.c360a_api.meta/c360a_api/c360a_api_overview.htm"},
-        {text:"Identity Resolution",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_identity_resolution_overview.htm"},
-        {text:"Segmentation in Data Cloud",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_segment_overview.htm"},
-        {text:"Data Cloud and CRM Analytics",url:"https://help.salesforce.com/s/articleView?id=sf.bi_integrate_connectors_sfdc.htm"},
-        {text:"Data Cloud Activation",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_activation_overview.htm"}
-      ]},
-      {tag:"integration-b2b",focus:"Design B2B integrations: ERP sync, order management, and middleware patterns",topics:[
-        {text:"Integration Patterns and Practices",url:"https://developer.salesforce.com/docs/atlas.en-us.integration_patterns_and_practices.meta/integration_patterns_and_practices/integ_pat_intro_overview.htm"},
-        {text:"MuleSoft Anypoint Platform",url:"https://docs.mulesoft.com/general/"},
-        {text:"Platform Events for ERP Integration",url:"https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_intro.htm"},
-        {text:"Salesforce Connect for ERP Data",url:"https://help.salesforce.com/s/articleView?id=sf.platform_connect_about.htm"},
-        {text:"Change Data Capture",url:"https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_intro.htm"},
-        {text:"B2B Commerce Integration Patterns",url:"https://help.salesforce.com/s/articleView?id=sf.b2b_comm_integration.htm"}
-      ]},
-      {tag:"multi-cloud-design",focus:"Architect multi-cloud B2B solutions: data flow, process alignment, and platform limits",topics:[
-        {text:"Multi-Cloud Reference Architecture",url:"https://architect.salesforce.com/design/decision-guides"},
-        {text:"Cross-Cloud Data Model Design",url:"https://architect.salesforce.com/design/decision-guides/store-data"},
-        {text:"Shared Services vs Separate Orgs",url:"https://architect.salesforce.com/design/decision-guides/deploy"},
-        {text:"Governor Limits Across Clouds",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_gov_limits.htm"},
-        {text:"Salesforce Platform Architecture Overview",url:"https://architect.salesforce.com"},
-        {text:"Automation in Multi-Cloud Flows",url:"https://help.salesforce.com/s/articleView?id=sf.flow_builder.htm"}
-      ]},
-      {tag:"exam-prep",focus:"B2B Solution Architect exam review: scenarios combining CPQ, Sales, Service, and Experience Cloud",topics:[
-        {text:"B2B Solution Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2B-Solution-Architect-Exam-Guide"},
-        {text:"Trailmix: B2B Solution Architect",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-b2b-solution"},
-        {text:"Architect Decision Guides",url:"https://architect.salesforce.com/design/decision-guides"},
-        {text:"CPQ Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_cpq_specialist"},
-        {text:"B2B Solution Architect Credential",url:"https://trailheadacademy.salesforce.com/certificate/exam-b2b-solution-architect---Arch-301"},
-        {text:"Focus on Force Practice Exams",url:"https://focusonforce.com"}
-      ]}
-    ],
-    quiz:[
-      {domain:"B2B Digital Commerce",q:"Which Salesforce cloud provides self-service partner deal registration and lead distribution in B2B?",opts:["Sales Cloud Partner module", "Experience Cloud with Partner Relationship Management (PRM)", "Marketing Cloud for Partners", "Salesforce for Partners App"],correct:1,explanation:"Experience Cloud with PRM provides the partner portal where partners self-register deals, access shared content, and receive distributed leads. Salesforce's native PRM templates and sharing models are built on top of Experience Cloud, not a separate product."},
-      {domain:"B2B Customer Journey Design",q:"In a B2B quote-to-cash architecture, what happens after a CPQ quote is accepted by the customer?",opts:["The quote becomes an Invoice automatically", "An Order is generated from the quote, which leads to a Contract for subscription products", "The opportunity is closed won and the process ends", "A Service Contract is created for support entitlements"],correct:1,explanation:"The quote-to-cash flow: Quote accepted → Order generated → Order activated → Contract created (for subscription products) → Subscriptions stored on Contract → Renewals and amendments use Contract as the source of truth. Billing then invoices against the Contract."},
-      {domain:"B2B Customer Journey Design",q:"How does Account-Based Marketing (ABM) in Pardot differ from standard lead-based marketing?",opts:["ABM sends only one email per account to avoid spam", "ABM targets specific accounts and buying committees rather than individual leads in isolation", "ABM focuses on post-sale marketing only", "ABM uses only direct mail instead of digital channels"],correct:1,explanation:"ABM treats the account as the unit of focus — marketing and sales align on target accounts, and campaigns are orchestrated to engage multiple stakeholders (buying committee) within each account simultaneously, rather than nurturing individual leads independently."},
-      {domain:"B2B Data Model and Governance",q:"What is the purpose of the Account Hierarchy in a B2B data model?",opts:["To define which account owns related contacts", "To model parent-child relationships between corporate accounts and their subsidiaries or divisions", "To rank accounts by revenue tier", "To link accounts to their associated price books"],correct:1,explanation:"Account Hierarchy uses the ParentId field to model corporate structures — a global headquarters Account can have regional subsidiaries as children, which in turn have local entities as their children. Roll-up summaries, consolidated reporting, and territory management all leverage this hierarchy."},
-      {domain:"B2B Data Model and Governance",q:"Which B2B Commerce feature allows specific customers to see account-specific prices?",opts:["Dynamic Pricing Rules", "Contracted Prices or Account-Based Price Books", "Customer-Specific Discount Schedules", "Account Price Visibility Settings"],correct:1,explanation:"In Salesforce B2B Commerce, account-specific pricing is achieved through custom price books or CPQ Contracted Prices tied to the account — ensuring that when a buyer logs in, they see pricing negotiated specifically for their account rather than the standard catalog price."},
-      {domain:"Solution Delivery",q:"In a multi-cloud B2B architecture, what is the recommended approach for data synchronization between Salesforce and an ERP system?",opts:["Direct Apex callouts to the ERP from Salesforce triggers", "MuleSoft integration layer with bi-directional sync using Platform Events or scheduled batch processes", "Nightly CSV file exchange via FTP", "Real-time REST API calls in both directions for every change"],correct:1,explanation:"MuleSoft as an integration layer decouples Salesforce from the ERP — handling protocol translation, error retry, and transformation. Platform Events enable event-driven near-real-time sync; scheduled batch handles bulk reconciliation. Direct trigger callouts create tight coupling and risk governor limit exhaustion."},
-      {domain:"Functional and Technical Requirements",q:"What is Einstein Opportunity Scoring used for in B2B sales?",opts:["Scoring the quality of opportunity descriptions entered by reps", "Predicting the probability of an opportunity closing based on historical patterns and engagement signals", "Assigning numerical scores to accounts for prioritization", "Scoring the performance of sales reps"],correct:1,explanation:"Einstein Opportunity Scoring uses machine learning trained on historical opportunity outcomes to assign each open opportunity a score (1–99) representing its likelihood to close. Sales managers use this to prioritize coaching and reps focus effort on the most likely deals."},
-      {domain:"Functional and Technical Requirements",q:"How does Data Cloud support B2B use cases?",opts:["By replacing Salesforce Sales Cloud for B2B companies", "By unifying fragmented data from multiple sources to create a single view of the account and its contacts", "By providing real-time analytics dashboards for B2B metrics", "By automating B2B order management workflows"],correct:1,explanation:"Data Cloud ingests data from CRM, marketing, commerce, and external sources and resolves identities to build a unified account and contact profile — giving sales and marketing a complete view of the buying committee's engagement history across all touchpoints."},
-      {domain:"Functional and Technical Requirements",q:"What is the key challenge of implementing CPQ for a B2B company with complex product configurations?",opts:["Migrating existing quotes from legacy systems", "Modeling product compatibility rules and pricing logic that match the complexity of the actual product catalog", "Getting sales reps to adopt the new quoting process", "Connecting CPQ to the website product catalog"],correct:1,explanation:"Complex B2B products often have thousands of possible configurations with interdependencies (requires X if Y is selected), volume-based pricing, and contract-specific discounts. Modeling this accurately in CPQ product rules, option constraints, and discount schedules is the primary technical and business challenge."},
-      {domain:"B2B Digital Commerce",q:"In a partner portal (Experience Cloud) implementation, what sharing mechanism grants partners access to their account's opportunities?",opts:["Role Hierarchy", "Sharing Sets based on account relationship", "Public Groups", "Manual Sharing"],correct:1,explanation:"Sharing Sets grant portal users access to records related to their Account — e.g. all Opportunities where AccountId = the partner's Account. This works for high-volume portal user licenses that don't participate in the role hierarchy, making Sharing Sets the correct mechanism for partner portals."},
-      {domain:"B2B Data Model and Governance",q:"What B2B solution design approach is recommended for a company with complex service entitlements?",opts:["Build custom Apex to manage SLA tracking", "Service Cloud with Entitlement Management: service contracts, entitlement processes, and milestones", "Use Salesforce CPQ subscription products to track service tiers", "Configure Cases with SLA fields using custom automation"],correct:1,explanation:"Entitlement Management provides out-of-the-box SLA tracking — Entitlement Processes define the steps and milestones for resolving cases within contracted SLAs, with automatic escalation and violation detection. Building this in custom Apex would be far more costly to maintain."},
-      {domain:"B2B Data Model and Governance",q:"When designing a B2B solution for a company expanding internationally, what data considerations are critical?",opts:["Adding custom text fields for each language", "Multi-currency support, GDPR compliance, data residency requirements, and language/locale settings", "Deploying separate Salesforce orgs for each country", "Using translation workbench only for UI labels"],correct:1,explanation:"International B2B deployments must address: multi-currency for pricing and reporting, GDPR/local privacy laws for data handling, data residency requirements (which region data is stored in), and locale/language settings for user interfaces. Each has architectural implications that must be designed upfront."},
-      {domain:"Functional and Technical Requirements",q:"Which CRM Analytics (Tableau CRM) capability helps B2B sales teams prioritize accounts?",opts:["Standard Salesforce dashboards and reports", "AI-powered account health scoring and pipeline risk analysis", "Territory management assignment visualization only", "Email engagement tracking reports"],correct:1,explanation:"CRM Analytics provides AI-driven insights that go beyond standard reports — account health scores combine multiple signals (activity, engagement, open cases, renewal risk) to surface which accounts need attention, helping sales teams prioritize their book of business."},
-      {domain:"Solution Delivery",q:"In B2B Solution Architecture, what is the purpose of a 'connected campaign' between Salesforce and Pardot?",opts:["To automatically convert leads from Pardot to Salesforce contacts", "To synchronize campaign data between both platforms so marketing and sales have a unified view of campaign performance", "To allow sales reps to send Pardot emails from Salesforce", "To trigger Pardot nurture programs from Salesforce opportunity stages"],correct:1,explanation:"Connected Campaigns link a Pardot campaign to a Salesforce Campaign — engagement data (opens, clicks, form fills) from Pardot flows into the Salesforce Campaign as Influenced Contacts and Converted Leads, giving both marketing and sales a unified ROI view."},
-      {domain:"B2B Digital Commerce",q:"What is the recommended approach for handling product bundles across both B2B Commerce and CPQ?",opts:["Maintain separate product catalogs in each system", "Design a single product catalog in Salesforce CPQ that surfaces into B2B Commerce through integration", "Use B2B Commerce as the master catalog and sync to CPQ", "Configure products manually in both systems with identical names"],correct:1,explanation:"A single source of truth for the product catalog eliminates the maintenance overhead and risk of divergence. CPQ holds the authoritative catalog and pricing; B2B Commerce pulls from it via integration — ensuring reps and online buyers see the same products and prices."},
-      {domain:"Functional and Technical Requirements",q:"What is 'Revenue Cloud' in Salesforce?",opts:["A financial analytics dashboard for revenue reporting", "A suite combining CPQ, Billing, and Revenue lifecycle management for end-to-end quote-to-cash", "A module within Sales Cloud for tracking revenue forecasts", "A Commerce Cloud feature for B2B revenue management"],correct:1,explanation:"Revenue Cloud is Salesforce's quote-to-cash suite — it combines CPQ (configure, price, quote), Billing (invoicing, payment collection), and Revenue Lifecycle Management (contract amendments, renewals, recognition) into a unified platform for end-to-end revenue operations."},
-      {domain:"B2B Digital Commerce",q:"How should an architect handle the requirement to display real-time inventory levels from an ERP in Salesforce quotes?",opts:["Nightly batch sync of inventory data into a custom Salesforce object", "Salesforce Connect External Objects to federate ERP inventory data in real-time", "Display inventory via an embedded Visualforce page calling the ERP API", "Cache inventory data in Platform Cache refreshed every hour"],correct:1,explanation:"Salesforce Connect federated data from the ERP via OData — the inventory data is never copied to Salesforce, ensuring it's always current. Nightly batch sync adds a 24-hour staleness risk; Platform Cache with hourly refresh still risks showing outdated stock levels for fast-moving items."},
-      {domain:"Solution Delivery",q:"What is the Agile approach recommended for complex B2B Salesforce implementations?",opts:["Waterfall with full upfront design to avoid rework", "Scrum with iterative delivery in 2-week sprints, prioritizing business value in the backlog", "Kanban with no fixed sprint length for maximum flexibility", "SAFe for enterprise-wide transformation programs only"],correct:1,explanation:"Scrum with 2-week sprints enables regular business stakeholder feedback and course correction — critical for complex B2B implementations where requirements evolve as users see working software. Waterfall upfront design is high-risk for complex, multi-cloud architectures where unknowns emerge during build."},
-      {domain:"Integration and APIs",q:"What technology enables Salesforce to trigger real-time notifications to external systems when a B2B opportunity is closed won?",opts:["Outbound Messaging via Workflow", "Platform Events or Change Data Capture (CDC)", "Scheduled Apex batch job", "SOAP API callback registration"],correct:1,explanation:"Platform Events provide a real-time, reliable pub/sub messaging layer — a trigger or flow publishes an event when an opportunity is closed won, and the subscribing external system receives it within seconds via the Streaming API or a MuleSoft subscriber. CDC streams all record changes automatically."},
-      {domain:"Functional and Technical Requirements",q:"In a B2B implementation, which stakeholder group typically defines the business requirements for the CPQ process?",opts:["IT department", "Sales reps directly", "Sales Operations team with input from Sales, Finance, and Product Management", "Salesforce implementation partner only"],correct:2,explanation:"Sales Operations owns the quoting process — they understand deal desk rules, discount approval thresholds, and pricing exceptions. Finance defines revenue recognition and billing requirements; Product Management owns the catalog. The implementation partner facilitates but doesn't define business requirements."},
-    ],
-    tips:[
-      "Think end-to-end: understand the complete B2B journey from lead acquisition through renewal — the exam tests holistic thinking.",
-      "Know CPQ architecture thoroughly: the quote-to-cash flow, contracts, amendments, and renewals.",
-      "Understand how multiple Salesforce clouds integrate: Sales + Marketing + Service + CPQ + Experience Cloud.",
-      "Know partner portal architecture: Experience Cloud with PRM, sharing sets, and deal registration.",
-      "Be able to identify when to use Data Cloud vs. standard Salesforce data for B2B use cases.",
-      "Understand the MuleSoft integration patterns for ERP connectivity in a B2B context.",
-      "Know how Pardot/MCAE integrates with Sales Cloud for B2B ABM campaigns.",
-      "Practice scenario-based questions where you must select the right Salesforce cloud(s) for a business requirement."
-    ]
-  },
-
   "B2C Solution Architect": {
     questions: 60,
     time: 120,
@@ -1097,13 +971,13 @@ Object.assign(EXAM_DATA, {
       {tag:"b2c-landscape",focus:"Understand the B2C Salesforce product landscape: Commerce, Marketing Cloud, Service Cloud, Loyalty",topics:[
         {text:"B2C Solution Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2C-Solution-Architect-Exam-Guide"},
         {text:"B2C Commerce Developer Guide",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/"},
-        {text:"Marketing Cloud Overview",url:"https://help.salesforce.com/s/articleView?id=sf.mc_overview.htm"},
-        {text:"Loyalty Management Overview",url:"https://help.salesforce.com/s/articleView?id=sf.loyalty_overview.htm"},
-        {text:"Trailmix: B2C Solution Architect",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-b2c-solution"},
+        {text:"What is a Marketing Cloud?",url:"https://www.salesforce.com/eu/marketing/cloud/"},
+        {text:"Loyalty Management",url:"https://help.salesforce.com/s/articleView?id=xcloud.loyaltyoverview.htm&type=5"},
+        {text:"Trailmix: B2C Solution Architect",url:"https://trailhead.salesforce.com/users/teamtrailhead/trailmixes/prepare-for-the-salesforce-b-2-c-solution-architect-credential"},
         {text:"Architect Website",url:"https://architect.salesforce.com"}
       ]},
       {tag:"b2c-commerce",focus:"Design B2C Commerce Cloud solutions: storefront, cartridge architecture, and APIs",topics:[
-        {text:"B2C Commerce SFRA",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/sfra.html"},
+        {text:"B2C Commerce SFRA",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/sfra-overview.html"},
         {text:"B2C Commerce APIs",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/scapi.html"},
         {text:"Cartridge Architecture",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/cartridges.html"},
         {text:"B2C Commerce Order Management",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/order-management.html"},
@@ -1111,56 +985,55 @@ Object.assign(EXAM_DATA, {
         {text:"Page Designer",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/page-designer.html"}
       ]},
       {tag:"marketing-cloud-b2c",focus:"Design Marketing Cloud journeys, data extensions, and cross-channel engagement",topics:[
-        {text:"Journey Builder Overview",url:"https://help.salesforce.com/s/articleView?id=sf.mc_jb_overview.htm"},
-        {text:"Data Extensions and Segmentation",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_create_data_extension.htm"},
-        {text:"Marketing Cloud Connect",url:"https://help.salesforce.com/s/articleView?id=sf.mc_co_marketing_cloud_connect.htm"},
-        {text:"Contact Builder and Data Designer",url:"https://help.salesforce.com/s/articleView?id=sf.mc_cab_contact_builder.htm"},
+        {text:"What is Journey Builder?",url:"https://www.salesforce.com/in/blog/what-is-salesforce-journey-builder/"},
+        {text:"Learn About Data Extensions",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-contact-management/learn-about-data-extensions"},
+        {text:"Configure the Marketing Cloud Connection",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-connect/finish-mc-connect-configuration"},
+        {text:"Data Designer in Contact Builder",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_cab_data_designer.htm&type=5"},
         {text:"Transactional Messaging API",url:"https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/transactional-messaging-api.html"},
-        {text:"Marketing Cloud Personalization (Interaction Studio)",url:"https://help.salesforce.com/s/articleView?id=sf.mc_pers_overview.htm"}
+        {text:"Marketing Cloud Personalization",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_pers.htm&type=5"}
       ]},
       {tag:"identity-b2c",focus:"Design B2C customer identity: self-registration, social login, progressive profiling",topics:[
-        {text:"Experience Cloud for B2C",url:"https://help.salesforce.com/s/articleView?id=sf.networks_overview.htm"},
-        {text:"Self-Registration for Sites",url:"https://help.salesforce.com/s/articleView?id=sf.networks_self_registration.htm"},
-        {text:"Social Sign-On Providers",url:"https://help.salesforce.com/s/articleView?id=sf.sso_provider_google.htm"},
-        {text:"Customer Identity and Access Management",url:"https://help.salesforce.com/s/articleView?id=sf.identity_overview.htm"},
-        {text:"Customer 360 Identity",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_data_cloud_overview.htm"},
-        {text:"Guest User Security Best Practices",url:"https://help.salesforce.com/s/articleView?id=sf.networks_guest_user_security.htm"}
+        {text:"Experience Cloud for B2C",url:"https://help.salesforce.com/s/articleView?id=commerce.comm_create_store_on_site.htm&type=5"},
+        {text:"Self-Registration",url:"https://help.salesforce.com/s/articleView?id=xcloud.external_identity_self_registration_use_cases.htm&type=5"},
+        {text:"Set Up Social Sign-On",url:"https://trailhead.salesforce.com/content/learn/modules/identity_external/identity_external_social"},
+        {text:"Guide to Identity Access Management (IAM)",url:"https://www.salesforce.com/uk/platform/cloud-data-security/identity-access-management-iam/"},
+        {text:"Data 360",url:"https://www.salesforce.com/eu/data/"},
+        {text:"Protecting Your Data: Essential Actions to Secure Experience Cloud Guest User Access",url:"https://www.salesforce.com/blog/protecting-your-data-essential-actions-to-secure-experience-cloud-guest-user-access/"}
       ]},
       {tag:"data-cloud-b2c",focus:"Unify B2C data in Data Cloud: CDP, real-time profiles, and activation to marketing",topics:[
-        {text:"Data Cloud Overview",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_data_cloud_overview.htm"},
-        {text:"Data Streams and Ingestion",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_data_stream_overview.htm"},
-        {text:"Identity Resolution",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_identity_resolution_overview.htm"},
-        {text:"Calculated Insights",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_calculated_insight_overview.htm"},
-        {text:"Activation to Marketing Cloud",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_activation_overview.htm"},
-        {text:"Data Cloud for Commerce",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_data_cloud_overview.htm"}
+        {text:"Data 360",url:"https://www.salesforce.com/eu/data/"},
+        {text:"Create an Ingestion API Data Stream",url:"https://developer.salesforce.com/docs/data/data-cloud-int/guide/c360-a-create-ingestion-data-stream.html"},
+        {text:"About Identity Resolution",url:"https://help.salesforce.com/s/articleView?id=data.c360_a_identity_resolution.htm&type=5"},
+        {text:"Enhance Data with Insights",url:"https://help.salesforce.com/s/articleView?id=data.c360_a_insights.htm&type=5"},
+        {text:"Activation to Marketing Cloud",url:"https://help.salesforce.com/s/articleView?id=data.c360_a_create_data_cloud_activation.htm&type=5"},
+        {text:"Data 360",url:"https://www.salesforce.com/eu/data/"}
       ]},
       {tag:"service-cloud-b2c",focus:"Integrate Service Cloud for B2C: case deflection, digital engagement, and Einstein bots",topics:[
-        {text:"Service Cloud for Consumer Businesses",url:"https://help.salesforce.com/s/articleView?id=sf.service_cloud_overview.htm"},
-        {text:"Einstein Bots",url:"https://help.salesforce.com/s/articleView?id=sf.bots_intro.htm"},
-        {text:"Digital Engagement",url:"https://help.salesforce.com/s/articleView?id=sf.messaging_intro.htm"},
-        {text:"Knowledge for Self-Service",url:"https://help.salesforce.com/s/articleView?id=sf.knowledge_whatis.htm"},
-        {text:"Omni-Channel Routing",url:"https://help.salesforce.com/s/articleView?id=sf.omnichannel_intro.htm"},
-        {text:"Service Cloud Einstein Case Classification",url:"https://help.salesforce.com/s/articleView?id=sf.einstein_case_overview.htm"}
+        {text:"What is Service Cloud? A Complete Guide",url:"https://www.salesforce.com/service/cloud/guide/"},
+        {text:"Chat with Customers with Einstein Bots",url:"https://help.salesforce.com/s/articleView?id=service.bots_service_intro.htm&type=5"},
+        {text:"What’s Messaging?",url:"https://help.salesforce.com/s/articleView?id=service.messaging_introduction.htm&type=5"},
+        {text:"Knowledge for Self-Service",url:"https://www.salesforce.com/eu/service/what-is-knowledge-management/"},
+        {text:"Omnichannel Routing Guide: What It Is, How It Works, & Benefits",url:"https://www.salesforce.com/service/digital-customer-engagement-platform/omnichannel-routing/"},
+        {text:"Einstein Classification Key Concepts",url:"https://help.salesforce.com/s/articleView?id=service.cc_service_key_concepts.htm&type=5"}
       ]},
       {tag:"loyalty-b2c",focus:"Design Loyalty Management: program tiers, accrual rules, redemption, and promotions",topics:[
-        {text:"Loyalty Management Overview",url:"https://help.salesforce.com/s/articleView?id=sf.loyalty_overview.htm"},
-        {text:"Loyalty Program Tiers",url:"https://help.salesforce.com/s/articleView?id=sf.loyalty_tiers.htm"},
-        {text:"Accrual and Redemption Rules",url:"https://help.salesforce.com/s/articleView?id=sf.loyalty_accrual_overview.htm"},
-        {text:"Promotions in Loyalty",url:"https://help.salesforce.com/s/articleView?id=sf.loyalty_promotions_overview.htm"},
-        {text:"Loyalty and Marketing Cloud Integration",url:"https://help.salesforce.com/s/articleView?id=sf.loyalty_marketing_cloud.htm"},
+        {text:"Loyalty Management",url:"https://help.salesforce.com/s/articleView?id=xcloud.loyaltyoverview.htm&type=5"},
+        {text:"Loyalty Tiers",url:"https://help.salesforce.com/s/articleView?id=xcloud.loyalty_tiers.htm&type=5"},
+        {text:"Accrual Process",url:"https://help.salesforce.com/s/articleView?id=xcloud.accrual_process.htm&type=5"},
+        {text:"Manage and Work with Promotions",url:"https://help.salesforce.com/s/articleView?id=xcloud.loyalty_promotions.htm&type=5"},
+        {text:"Integrate Loyalty Management with Marketing Cloud Engagement",url:"https://help.salesforce.com/s/articleView?id=xcloud.loyalty_mc_integration.htm&type=5"},
         {text:"Loyalty API",url:"https://developer.salesforce.com/docs/atlas.en-us.loyalty.meta/loyalty/loyalty_api_intro.htm"}
       ]},
       {tag:"multi-cloud-b2c",focus:"Architect multi-cloud B2C flows: order placed in Commerce triggers journey in Marketing Cloud",topics:[
         {text:"B2C Multi-Cloud Reference Architecture",url:"https://architect.salesforce.com/design/decision-guides"},
-        {text:"Commerce and Marketing Cloud Integration",url:"https://help.salesforce.com/s/articleView?id=sf.mc_co_marketing_cloud_connect.htm"},
+        {text:"Configure the Marketing Cloud Connection",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-connect/finish-mc-connect-configuration"},
         {text:"Platform Events for Order Events",url:"https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_intro.htm"},
         {text:"Headless Commerce API",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/scapi.html"},
-        {text:"Data Cloud Activation to Channels",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_activation_overview.htm"},
-        {text:"Salesforce Flow for Cross-Cloud Automation",url:"https://help.salesforce.com/s/articleView?id=sf.flow_builder.htm"}
-      ]},
+        {text:"Data Cloud Activation to Channels",url:"https://help.salesforce.com/s/articleView?id=data.c360_a_create_data_cloud_activation.htm&type=5"},
+              ]},
       {tag:"exam-prep",focus:"B2C Solution Architect exam review: multi-cloud scenarios, data unification, and Commerce design",topics:[
         {text:"B2C Solution Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2C-Solution-Architect-Exam-Guide"},
-        {text:"Trailmix: B2C Solution Architect",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-b2c-solution"},
+        {text:"Trailmix: B2C Solution Architect",url:"https://trailhead.salesforce.com/users/teamtrailhead/trailmixes/prepare-for-the-salesforce-b-2-c-solution-architect-credential"},
         {text:"B2C Commerce Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/commerce-cloud-b2c"},
         {text:"Data Cloud Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/get-to-know-salesforce-cdp"},
         {text:"B2C Solution Architect Credential",url:"https://trailheadacademy.salesforce.com/certificate/exam-b2c-solution-architect---Arch-302"},
@@ -1233,7 +1106,7 @@ Object.assign(EXAM_DATA, {
       {tag:"cta-overview",focus:"Understand the CTA board review format: scenario, whiteboarding, and panel Q&A",topics:[
         {text:"Certified Technical Architect Overview",url:"https://trailheadacademy.salesforce.com/certificate/exam-review-board---Plat-Arch-401-Eval"},
         {text:"CTA Review Board Process",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Technical-Architect-Exam-Guide"},
-        {text:"CTA Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-technical-architect"},
+        {text:"CTA Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-trailmix-master"},
         {text:"Architect Website",url:"https://architect.salesforce.com"},
         {text:"Well-Formed Architecture Overview",url:"https://architect.salesforce.com/well-formed-architecture"},
         {text:"SalesforceBen CTA Guidance",url:"https://www.salesforceben.com/the-drip/cta-exam/"}
@@ -1252,19 +1125,19 @@ Object.assign(EXAM_DATA, {
         {text:"Well-Formed Architecture: Integration",url:"https://architect.salesforce.com/well-formed-architecture/integration"},
         {text:"Well-Formed Architecture: Security",url:"https://architect.salesforce.com/well-formed-architecture/security"},
         {text:"Well-Formed Architecture: Identity",url:"https://architect.salesforce.com/well-formed-architecture/identity"},
-        {text:"CTA Mock Review Resources",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-technical-architect"}
+        {text:"CTA Mock Review Resources",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-trailmix-master"}
       ]},
       {tag:"enterprise-design",focus:"Design enterprise-scale Salesforce solutions: org strategy, multi-cloud, and governance",topics:[
         {text:"Multi-Org vs Single Org Decision",url:"https://architect.salesforce.com/design/decision-guides/deploy"},
-        {text:"Enterprise Territory Management",url:"https://help.salesforce.com/s/articleView?id=sf.territory2_overview.htm"},
+        {text:"Territory Management Best Practices",url:"https://help.salesforce.com/s/articleView?id=000386766&type=1"},
         {text:"Salesforce Platform Limits",url:"https://help.salesforce.com/s/articleView?id=sf.salesforce_app_limits_cheatsheet.htm"},
         {text:"Governor Limits Reference",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_gov_limits.htm"},
         {text:"Salesforce Architects: All Patterns",url:"https://architect.salesforce.com/design/patterns"},
-        {text:"CTA Preparation Blog Resources",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-technical-architect"}
+        {text:"CTA Preparation Blog Resources",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-trailmix-master"}
       ]},
       {tag:"exam-prep",focus:"Final CTA prep: mock scenarios, review board expectations, and articulation skills",topics:[
         {text:"Technical Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Technical-Architect-Exam-Guide"},
-        {text:"CTA Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-technical-architect"},
+        {text:"CTA Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-trailmix-master"},
         {text:"Architect.Salesforce.com",url:"https://architect.salesforce.com"},
         {text:"All Well-Formed Architecture Pages",url:"https://architect.salesforce.com/well-formed-architecture"},
         {text:"All Decision Guides",url:"https://architect.salesforce.com/design/decision-guides"},
@@ -1305,120 +1178,6 @@ Object.assign(EXAM_DATA, {
     ]
   },
 
-  "B2C Commerce Architect": {
-    questions: 60,
-    time: 120,
-    pass: 63,
-    experience: "2+ years architecting B2C Commerce Cloud implementations with full project lifecycle experience",
-    trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-b2c-comm-architect---Arch-303",
-    prerequisites: [{name:"B2C Commerce Cloud Developer",required:true}],
-    overview: "The Salesforce B2C Commerce Architect certification validates expertise in architecting end-to-end B2C Commerce Cloud solutions. Candidates demonstrate the ability to design scalable, performant storefronts, integration strategies, content management, and omni-channel commerce architectures.",
-        domains:[
-      {name:"Design/Discovery",pct:29,color:"#00A1E0",desc:"Given a customer's business requirement, create a technical specification that accurately reflects the business requirement.",keyTopics:[{title:"Given a customer's business requirement, create a technic...",desc:"Given a customer's business requirement, create a technical specification that accurately reflects the business requirement."},{title:"Given business",desc:"Given business and technical requirement details, create standard technical artifacts that are complementary and accurate to the design and project needs."},{title:"Given business",desc:"Given business and technical requirement details, review implementation specifications for solutions, future growth, and gap analysis to stakeholders and provide analysis to defend if necessary."},{title:"Given systems integration requirements",desc:"Given systems integration requirements and technical details, evaluate applicable versions of AppExchange solutions, third-party technical specifications, and API documentation for integrations."},{title:"Given the systems that are interacting with the platform,...",desc:"Given the systems that are interacting with the platform, evaluate the integration points, data type and volume, and data migration approach, plus diagram the system architecture."}]},
-      {name:"Monitoring/Troubleshooting",pct:14,color:"#2ECC71",desc:"Given an implementation, evaluate the end-to-end needs for custom logging configuration and the ability to leverage Log Center, and investigate other tools required to identify potential and existing issues for governance, trust, and best practices.",keyTopics:[{title:"Given an implementation, evaluate the end-to-end needs fo...",desc:"Given an implementation, evaluate the end-to-end needs for custom logging configuration and the ability to leverage Log Center, and investigate other tools required to identify potential and existing issues for governance, trust, and best practices."},{title:"Given an implementation performance issue, demonstrate th...",desc:"Given an implementation performance issue, demonstrate the ability to identify and address existing and potential performance issues, including quota violations, cache utilization, service timeouts, and optimization opportunities."},{title:"Given an implementation issue, demonstrate the ability to...",desc:"Given an implementation issue, demonstrate the ability to identify root causes and recommend solutions."},{title:"Given an implementation, evaluate",desc:"Given an implementation, evaluate and adjust the system proactively to ensure a healthy, scalable system for current and future business operational needs."}]},
-      {name:"Integrations and Customizations",pct:22,color:"#F39C12",desc:"Given a business requirement of integrating with a third-party web service, identify which protocol (SOAP/REST) and which approach (real-time vs. batch processing) should be used and then apply all security strategies and best practices that SFCC can support.",keyTopics:[{title:"Given a business requirement of integrating with a third-...",desc:"Given a business requirement of integrating with a third-party web service, identify which protocol (SOAP/REST) and which approach (real-time vs. batch processing) should be used and then apply all security strategies and best practices that SFCC can support."},{title:"Given a set of batch process requirements, leverage the p...",desc:"Given a set of batch process requirements, leverage the productized Job Framework for batch process integration."},{title:"Given a list of third-party AppExchange solutions, identi...",desc:"Given a list of third-party AppExchange solutions, identify legacy code that still uses Pipelines and define an integration approach with Controllers."},{title:"Given a set of real-time integration requirements, levera...",desc:"Given a set of real-time integration requirements, leverage the productized Service Framework for real-time integration."}]},
-      {name:"Launch",pct:16,color:"#E74C3C",desc:"Given requirements for a site, set up aliases that follow SEO best practices and accurately land customers on the desired domain, locale, and currency.",keyTopics:[{title:"Given requirements for a site, set up aliases that follow...",desc:"Given requirements for a site, set up aliases that follow SEO best practices and accurately land customers on the desired domain, locale, and currency."},{title:"Given a site launch checklist, identify required rollback...",desc:"Given a site launch checklist, identify required rollback steps, plan post-production activities, and ensure all launch tasks are completed."},{title:"Given a site launch, monitor launch activities that cover...",desc:"Given a site launch, monitor launch activities that cover all system health indicators."},{title:"Given dependencies between sources of site data, define jobs",desc:"Given dependencies between sources of site data, define jobs and data replication schedules."},{title:"Given data migration scenarios, plan",desc:"Given data migration scenarios, plan and support the data migration process."}]},
-    ],
-    studyDays:[
-      {tag:"b2c-architecture",focus:"Understand B2C Commerce Cloud architecture: SFRA, pipelines, and storefront topology",topics:[
-        {text:"B2C Commerce Architecture Overview",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/"},
-        {text:"SFRA Architecture",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/sfra.html"},
-        {text:"B2C Commerce Cartridge Architecture",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/cartridges.html"},
-        {text:"Pipeline and Controller Architecture",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/controllers-routes.html"},
-        {text:"B2C Commerce Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2C-Commerce-Architect-Exam-Guide"},
-        {text:"Trailmix: B2C Commerce Architect",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-b2c-commerce"}
-      ]},
-      {tag:"storefront-design",focus:"Design storefront customization: page templates, content slots, and component architecture",topics:[
-        {text:"Page Designer",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/page-designer.html"},
-        {text:"Content Slots and Promotions",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/content-slots.html"},
-        {text:"Custom Templates and ISML",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/isml-overview.html"},
-        {text:"B2C Commerce CSS and Responsive Design",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/frontend-development.html"},
-        {text:"B2C Commerce Forms",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/forms.html"},
-        {text:"PWA Kit for Headless Commerce",url:"https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/getting-started.html"}
-      ]},
-      {tag:"catalog-pricing",focus:"Design product catalog, inventory model, pricing architecture, and promotions engine",topics:[
-        {text:"Product and Catalog Setup",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/product-catalog-setup.html"},
-        {text:"Pricing Architecture",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/pricing.html"},
-        {text:"Promotions and Campaigns",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/promotions.html"},
-        {text:"Inventory Management",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/inventory.html"},
-        {text:"Search and Sorting Rules",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/search.html"},
-        {text:"Multi-Locale and Multi-Currency",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/localization.html"}
-      ]},
-      {tag:"checkout-order",focus:"Design checkout flows, payment integration, and order management architecture",topics:[
-        {text:"Checkout Architecture",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/checkout.html"},
-        {text:"Payment Integration",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/payment-integration.html"},
-        {text:"Order Management",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/order-management.html"},
-        {text:"Salesforce Order Management Integration",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/oms-integration.html"},
-        {text:"Tax Calculation Integration",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/tax.html"},
-        {text:"Fraud Detection",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/fraud-detection.html"}
-      ]},
-      {tag:"integration-b2c-arch",focus:"Design B2C Commerce integrations: Marketing Cloud, Service Cloud, and ERP connections",topics:[
-        {text:"Commerce Cloud APIs (SCAPI)",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/scapi.html"},
-        {text:"Marketing Cloud Integration",url:"https://help.salesforce.com/s/articleView?id=sf.mc_co_marketing_cloud_connect.htm"},
-        {text:"Service Cloud Order Support Integration",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/service-cloud-connector.html"},
-        {text:"Headless Commerce with PWA Kit",url:"https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/getting-started.html"},
-        {text:"B2C Commerce Connector for SFMC",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/marketing-cloud-connector.html"},
-        {text:"Change Data Capture for Commerce Events",url:"https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_intro.htm"}
-      ]},
-      {tag:"performance-scalability",focus:"Design for B2C Commerce performance: CDN, caching, page rendering, and scalability",topics:[
-        {text:"Performance Best Practices",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/performance.html"},
-        {text:"CDN Configuration",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/cdn.html"},
-        {text:"Page Caching Strategy",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/caching.html"},
-        {text:"Image Optimization",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/image-optimization.html"},
-        {text:"Log Center and Monitoring",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/log-center.html"},
-        {text:"Peak Traffic Planning",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/scalability.html"}
-      ]},
-      {tag:"security-pci",focus:"Design B2C Commerce security: PCI compliance, HTTPS, tokenization, and data protection",topics:[
-        {text:"B2C Commerce Security Overview",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/security.html"},
-        {text:"PCI Compliance on Commerce Cloud",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/pci-compliance.html"},
-        {text:"Payment Tokenization",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/payment-integration.html"},
-        {text:"Shopper Authentication and JWT",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/slas.html"},
-        {text:"SLAS (Shopper Login and API Access Service)",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/slas.html"},
-        {text:"GDPR Data Privacy",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/gdpr.html"}
-      ]},
-      {tag:"exam-prep",focus:"B2C Commerce Architect exam review: storefront, integration, performance, and security scenarios",topics:[
-        {text:"B2C Commerce Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2C-Commerce-Architect-Exam-Guide"},
-        {text:"Trailmix: B2C Commerce Architect",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/architect-b2c-commerce"},
-        {text:"B2C Commerce Developer Guide",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/"},
-        {text:"PWA Kit Documentation",url:"https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/getting-started.html"},
-        {text:"B2C Commerce Architect Credential",url:"https://trailheadacademy.salesforce.com/certificate/exam-b2c-comm-architect---Arch-303"},
-        {text:"Focus on Force Practice Exams",url:"https://focusonforce.com"}
-      ]}
-    ],
-    quiz:[
-      {domain:"Architecture Overview and Fundamentals",q:"What is the primary advantage of the SFRA cartridge extension model?",opts:["It eliminates the need for custom JavaScript", "It allows customization by overriding specific components without modifying the base SFRA code, enabling clean upgrades", "It provides better performance than SiteGenesis", "It removes the need for Business Manager configuration"],correct:1,explanation:"SFRA's cartridge path allows custom cartridges to override specific controllers, models, or templates without touching the base SFRA code. When Salesforce releases SFRA updates, custom overrides remain intact, enabling clean upgrades without merge conflicts on core framework files."},
-      {domain:"Architecture Overview and Fundamentals",q:"In B2C Commerce headless architecture, what does SLAS (Shopper Login and API Access Service) provide?",opts:["A single sign-on service for Business Manager users", "OAuth 2.0 authentication tokens for shoppers to access Shopper APIs securely", "A load balancing service for high-traffic events", "A security layer that scans shopper inputs for vulnerabilities"],correct:1,explanation:"SLAS is B2C Commerce's OAuth 2.0 authorization service for shoppers — it issues access tokens for both registered (PKCE flow) and guest shoppers, enabling secure, standards-based authentication for headless storefronts consuming the Shopper APIs."},
-      {domain:"Performance and Scalability",q:"Which B2C Commerce feature uses AI to optimize product search results and recommendations?",opts:["B2C Search Engine", "Einstein Product Discovery", "AI Commerce Search", "Smart Catalog Search"],correct:1,explanation:"Einstein Product Discovery (formerly Predictive Sort) uses machine learning to personalize search result rankings and product recommendations for each individual shopper — improving conversion by surfacing the most relevant products based on behavioral signals."},
-      {domain:"Integrations",q:"What is the key benefit of using tokenization for payment processing in B2C Commerce?",opts:["It speeds up payment processing significantly", "It removes credit card data from the Commerce environment, reducing PCI DSS compliance scope", "It enables recurring billing for subscriptions", "It supports more payment methods than direct integration"],correct:1,explanation:"Tokenization replaces actual card numbers with a meaningless token — the Commerce environment never stores, processes, or transmits raw card data. This dramatically reduces PCI DSS compliance scope and risk since compromising the Commerce system yields no usable payment data."},
-      {domain:"Architecture Overview and Fundamentals",q:"In a multi-site B2C Commerce architecture, what is a shared catalog?",opts:["A catalog managed by multiple administrators", "A product catalog that is shared and referenced by multiple sites, reducing duplication", "A publicly visible catalog without authentication requirements", "A catalog synchronized from an external PIM system"],correct:1,explanation:"A shared catalog holds the master product content and base pricing once — multiple sites reference it, each applying their own site-specific promotions, price books, and merchandising on top. This eliminates duplicate product data entry and ensures content consistency across sites."},
-      {domain:"Performance and Scalability",q:"What approach is recommended for Black Friday/Cyber Monday peak traffic on B2C Commerce?",opts:["Temporarily increasing server resources manually", "Cache warming, extended CDN caching, performance testing beforehand, and capacity confirmation with Salesforce", "Enabling maintenance mode and queuing requests", "Deploying additional B2C Commerce instances before the event"],correct:1,explanation:"B2C Commerce is a shared multi-tenant SaaS — you don't scale your own servers. Peak readiness means cache warming (pre-populating CDN and server caches), extended CDN TTLs for hot pages, load testing to identify bottlenecks beforehand, and confirming capacity allocation with Salesforce ahead of the event."},
-      {domain:"Integrations",q:"Which B2C Commerce integration pattern is recommended for real-time inventory checks?",opts:["Synchronous callout in the checkout flow for accuracy", "Asynchronous background fetch with caching (not synchronous in the checkout critical path)", "Nightly inventory sync to a B2C Commerce custom object", "Einstein AI prediction for inventory availability"],correct:1,explanation:"Synchronous inventory callouts in checkout add latency to every page load and create a single point of failure — if inventory service is slow or down, checkout breaks. Asynchronous background refresh with cached results keeps checkout fast and resilient while providing sufficiently current stock levels."},
-      {domain:"Architecture Overview and Fundamentals",q:"What is Page Designer in B2C Commerce used for?",opts:["A design tool for creating ISML templates", "A drag-and-drop visual content editor for building and managing storefront pages without code", "A wireframing tool for UX designers", "A testing environment for previewing page changes"],correct:1,explanation:"Page Designer provides a WYSIWYG drag-and-drop editor in Business Manager where merchandisers build and manage storefront content pages using pre-built components — without needing to write ISML templates or involve developers for routine content updates."},
-      {domain:"Architecture Overview and Fundamentals",q:"In B2C Commerce, what is a Content Slot?",opts:["A server-side caching zone in the page", "A configurable page area that can display different content based on scheduling, campaigns, or customer segments", "A placeholder in an ISML template for static content", "A JavaScript component that loads content dynamically"],correct:1,explanation:"Content Slots are regions in a page template where Business Manager users can configure which content renders — and schedule it to change by date range, apply to specific campaigns, or vary by customer group — enabling dynamic merchandising without code changes."},
-      {domain:"Architecture Overview and Fundamentals",q:"What is the recommended DevOps approach for B2C Commerce code deployment?",opts:["Manual ZIP file upload via Business Manager for all deployments", "Source control with Git, automated code upload using SFCC CI tools or VS Code Commerce Tools, and activation after testing", "Deploying directly from developer machines to production", "Using Salesforce Change Sets for all code deployments"],correct:1,explanation:"Modern B2C Commerce DevOps stores code in Git, uses automated CI tools (or the VS Code Commerce Tools extension) to upload cartridge code to sandboxes and staging, runs tests, then promotes to production. Manual ZIP uploads bypass version control and are error-prone at scale."},
-      {domain:"Performance and Scalability",q:"Which caching layer in B2C Commerce handles the most traffic and provides the greatest performance benefit?",opts:["Application server memory cache", "Browser local storage cache", "CDN (Akamai) page caching for fully cached pages", "Business Manager content cache"],correct:2,explanation:"The CDN (Akamai) absorbs the vast majority of storefront requests for fully cached pages — product display pages, category pages, and homepage — before they reach any application server. This is orders of magnitude faster than server-side caching and dramatically reduces origin load during peak traffic."},
-      {domain:"Architecture Overview and Fundamentals",q:"What is BOPIS (Buy Online, Pick Up In Store) in omni-channel B2C commerce?",opts:["A payment model combining online and in-store purchase flows", "A fulfillment model where customers purchase online and collect orders at a physical store", "A loyalty program integration between e-commerce and POS", "A feature that allows store associates to place online orders on behalf of customers"],correct:1,explanation:"BOPIS is a fulfillment method where the customer completes the purchase on the website and picks up the order at a chosen store location — requiring real-time inventory visibility by store, order routing to the correct location, and store notification workflows."},
-      {domain:"Integrations",q:"How should a B2C Commerce architect reduce the risk of third-party integration failures in the checkout flow?",opts:["Eliminate all third-party integrations from the checkout flow", "Use asynchronous processing for non-critical integrations and graceful degradation for semi-critical ones", "Replace all integrations with Salesforce native features", "Add retry logic to all synchronous integration calls"],correct:1,explanation:"Each synchronous integration in checkout is a potential failure point. Non-critical integrations (loyalty points preview, product recommendations) should be asynchronous so checkout never waits for them. Semi-critical services (fraud detection) should degrade gracefully — failing open rather than blocking the purchase."},
-      {domain:"Solution Delivery",q:"What is the Commerce Tools VS Code extension used for in B2C Commerce development?",opts:["Generating ISML templates automatically", "Managing sandboxes, uploading and activating cartridges, and viewing logs from within VS Code", "Running unit tests for SFRA controllers", "Connecting to Business Manager for site configuration"],correct:1,explanation:"The VS Code Commerce Tools extension lets developers manage sandbox connections, upload cartridge code with one click, activate code versions, and stream log output — all without leaving VS Code. This replaces the old workflow of manually zipping and uploading files via Business Manager."},
-      {domain:"Architecture Overview and Fundamentals",q:"In B2C Commerce, what is a promotion exclusivity setting used for?",opts:["Preventing promotional pricing from being applied to VIP accounts", "Controlling whether multiple promotions can be applied simultaneously to the same order or product", "Limiting promotions to specific customer groups only", "Setting the maximum discount percentage for a promotion"],correct:1,explanation:"Promotion exclusivity defines how promotions interact: Class exclusivity prevents multiple promotions of the same class from combining; Global exclusivity prevents any other promotion from applying alongside it. Getting this right prevents unintended discount stacking that erodes margin."},
-      {domain:"Architecture Overview and Fundamentals",q:"What B2C Commerce feature supports showing different content to different customer segments?",opts:["A/B testing only", "Content slots with customer group-based slot configurations", "Dynamic ISML conditional rendering", "Customer account preferences"],correct:1,explanation:"Content Slot configurations can be assigned to specific customer groups — when a VIP member views the homepage, they see the VIP-targeted hero banner configured for their group; new visitors see a welcome offer. This enables segment-level personalisation managed entirely by merchandisers."},
-      {domain:"Architecture Overview and Fundamentals",q:"Which B2C Commerce architecture approach is best for companies that want to use a React frontend?",opts:["SiteGenesis with embedded React components", "SFRA with React replacing ISML templates", "Headless Commerce with SCAPI, decoupling the React frontend from the Commerce engine", "Lightning Web Components embedded in the B2C Commerce storefront"],correct:2,explanation:"Headless Commerce with SCAPI is the correct approach — the React app calls Shopper APIs for product, cart, checkout, and account data, while the B2C Commerce engine handles all business logic behind the API layer. Trying to embed React into SFRA or SiteGenesis creates a hybrid that's harder to maintain and upgrade."},
-      {domain:"Architecture Overview and Fundamentals",q:"What is the risk of having too many synchronous callouts in the B2C Commerce checkout flow?",opts:["Synchronous callouts violate PCI compliance", "Each callout adds latency; multiple slow callouts can cause checkout timeouts and cart abandonment", "B2C Commerce has a hard limit of 1 callout per checkout page", "Callouts in checkout bypass CDN caching"],correct:1,explanation:"Every synchronous callout in checkout adds its round-trip latency to page load time. If a tax service takes 400ms and a fraud service takes 600ms and an inventory check takes 300ms, checkout feels slow to users — and if any service is down, checkout fails entirely. This is why asynchronous patterns matter."},
-      {domain:"Performance and Scalability",q:"In B2C Commerce, what is the Log Center used for?",opts:["Configuring Business Manager access logs", "Viewing application logs, error logs, and custom log output for debugging deployed code", "Managing CDN request logs for performance analysis", "Storing order transaction logs for compliance"],correct:1,explanation:"Log Center in Business Manager provides access to application logs, error logs, fatal logs, and custom log files written by cartridge code — the primary debugging tool for diagnosing issues in deployed code on sandbox and staging environments."},
-      {domain:"Solution Delivery",q:"What security consideration is critical when integrating a third-party tax calculation service in B2C Commerce checkout?",opts:["Encrypting all tax calculation results", "Ensuring callouts are asynchronous or have appropriate timeouts to prevent checkout failure if the tax service is unavailable", "Using a dedicated B2C Commerce tax cartridge only", "Validating tax service SSL certificates on every request"],correct:1,explanation:"Tax calculation is needed to complete the order but should have a hard timeout — if the tax service is slow or unavailable, the checkout must not hang indefinitely. Configuring an appropriate timeout and graceful fallback (e.g. use cached tax rates) prevents the tax service being a single point of failure for all purchases."},
-    ],
-    tips:[
-      "Master SFRA's extension model: cartridge path, server.append/prepend/replace — this is fundamental to architecture decisions.",
-      "Understand headless commerce thoroughly: SCAPI, SLAS, and composable architecture patterns.",
-      "Know B2C Commerce caching layers: CDN, slot cache, and component cache — and when each applies.",
-      "Design for peak traffic: cache warming, CDN strategy, and performance testing are critical architect responsibilities.",
-      "Understand PCI compliance and tokenization in payment architecture — never store card data in Commerce.",
-      "Know Einstein Product Discovery for search architecture questions.",
-      "Be able to identify which integrations belong in checkout (synchronous) vs. background (asynchronous).",
-      "Understand multi-site architecture: shared catalogs, locale configurations, and multi-currency setups."
-    ]
-  },
-
   "Heroku Architect": {
     questions: 60,
     time: 120,
@@ -1436,7 +1195,7 @@ Object.assign(EXAM_DATA, {
     ],
     studyDays:[
       {tag:"heroku-platform",focus:"Understand Heroku platform architecture: dynos, buildpacks, add-ons, and routing mesh",topics:[
-        {text:"Heroku Architecture Overview",url:"https://devcenter.heroku.com/articles/heroku-architecture"},
+        {text:"Heroku Architecture Overview",url:"https://devcenter.heroku.com/articles/how-heroku-works"},
         {text:"Dynos Overview",url:"https://devcenter.heroku.com/articles/dynos"},
         {text:"Buildpacks",url:"https://devcenter.heroku.com/articles/buildpacks"},
         {text:"Heroku Add-ons Catalog",url:"https://elements.heroku.com/addons"},
@@ -1469,7 +1228,7 @@ Object.assign(EXAM_DATA, {
       ]},
       {tag:"heroku-security",focus:"Design security on Heroku: private spaces, Shield, mTLS, and compliance",topics:[
         {text:"Heroku Private Spaces",url:"https://devcenter.heroku.com/articles/private-spaces"},
-        {text:"Heroku Shield",url:"https://devcenter.heroku.com/articles/heroku-shield"},
+        {text:"Heroku Shield",url:"https://devcenter.heroku.com/articles/shield-private-space"},
         {text:"Network Isolation in Private Spaces",url:"https://devcenter.heroku.com/articles/private-space-vpn-connection"},
         {text:"SSL and TLS on Heroku",url:"https://devcenter.heroku.com/articles/ssl"},
         {text:"Heroku Compliance (HIPAA, PCI)",url:"https://devcenter.heroku.com/articles/heroku-compliance"},
@@ -1486,10 +1245,10 @@ Object.assign(EXAM_DATA, {
       {tag:"sf-heroku-integration",focus:"Design integration between Salesforce and Heroku: webhooks, Eventing, and canvas apps",topics:[
         {text:"Salesforce and Heroku Integration Patterns",url:"https://devcenter.heroku.com/articles/salesforce-heroku-integration"},
         {text:"Platform Events from Heroku",url:"https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_intro.htm"},
-        {text:"Canvas Apps on Salesforce",url:"https://help.salesforce.com/s/articleView?id=sf.connected_app_canvas_intro.htm"},
+        {text:"Canvas Developer Guide",url:"https://developer.salesforce.com/docs/atlas.en-us.platform_connect.meta/platform_connect/quick_start_simple_intro.htm"},
         {text:"Salesforce REST API from Heroku",url:"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm"},
         {text:"Heroku External Objects",url:"https://devcenter.heroku.com/articles/heroku-external-objects"},
-        {text:"OAuth for Salesforce-Heroku Apps",url:"https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_flows.htm"}
+        {text:"Integrating Heroku and the Salesforce Platform Overview",url:"https://devcenter.heroku.com/articles/integrating-heroku-and-salesforce"}
       ]},
       {tag:"exam-prep",focus:"Heroku Architect exam review: deployment, data, scaling, security, and Salesforce integration",topics:[
         {text:"Heroku Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Heroku-Architect-Exam-Guide"},
@@ -1553,7 +1312,6 @@ Object.assign(EXAM_DATA, {
         {text:"Tableau Cloud Overview",url:"https://help.tableau.com/current/online/en-us/to_about_tableau_online.htm"},
         {text:"Multi-Node Tableau Server",url:"https://help.tableau.com/current/server/en-us/distrib_install.htm"},
         {text:"Tableau Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Tableau-Architect-Exam-Guide"},
-        {text:"Trailmix: Tableau Architect",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/tableau-architect"},
         {text:"Tableau Dev Center",url:"https://developer.salesforce.com/tableau"}
       ]},
       {tag:"data-sources-governance",focus:"Design enterprise data source strategy: live vs extract, certified data sources, and governance",topics:[
@@ -1606,7 +1364,6 @@ Object.assign(EXAM_DATA, {
       ]},
       {tag:"exam-prep",focus:"Tableau Architect exam review: performance, governance, security, and API integration scenarios",topics:[
         {text:"Tableau Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Tableau-Architect-Exam-Guide"},
-        {text:"Trailmix: Tableau Architect",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/tableau-architect"},
         {text:"Tableau Help Center",url:"https://help.tableau.com"},
         {text:"Tableau Dev Center",url:"https://developer.salesforce.com/tableau"},
         {text:"Tableau Architect Credential",url:"https://trailhead.salesforce.com/credentials/tableauarchitect"},
@@ -1672,8 +1429,7 @@ Object.assign(EXAM_DATA, {
         {text:"Anypoint Platform Overview",url:"https://docs.mulesoft.com/general/"},
         {text:"MuleSoft Platform Architect Exam Guide",url:"https://trailhead.salesforce.com/help?article=MuleSoft-Certified-Platform-Architect-Level-1-Exam-Guide"},
         {text:"Design Center and API Designer",url:"https://docs.mulesoft.com/design-center/"},
-        {text:"Exchange for API Publishing",url:"https://docs.mulesoft.com/exchange/"},
-        {text:"Trailmix: MuleSoft Platform Architect",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-certified-platform-architect-level-1"}
+        {text:"Exchange for API Publishing",url:"https://docs.mulesoft.com/exchange/"}
       ]},
       {tag:"raml-oas",focus:"Design APIs with RAML and OAS: resource types, traits, libraries, and API fragments",topics:[
         {text:"RAML 1.0 Specification",url:"https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md"},
@@ -1733,7 +1489,6 @@ Object.assign(EXAM_DATA, {
       ]},
       {tag:"exam-prep",focus:"MuleSoft Platform Architect Level 1 exam review: API-led design, DataWeave, and governance",topics:[
         {text:"MuleSoft Platform Architect L1 Exam Guide",url:"https://trailhead.salesforce.com/help?article=MuleSoft-Certified-Platform-Architect-Level-1-Exam-Guide"},
-        {text:"Trailmix: MuleSoft Platform Architect L1",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-certified-platform-architect-level-1"},
         {text:"Anypoint Platform Documentation",url:"https://docs.mulesoft.com/"},
         {text:"DataWeave Playground",url:"https://dataweave.mulesoft.com/learn/playground"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-mule-plat-arch---Mule-Arch-201"},
@@ -1799,7 +1554,6 @@ Object.assign(EXAM_DATA, {
         {text:"MuleSoft Platform Architect L2 Exam Guide",url:"https://trailhead.salesforce.com/help?article=MuleSoft-Certified-Platform-Architect-Level-2-Exam-Guide"},
         {text:"Anypoint Platform Architecture",url:"https://docs.mulesoft.com/general/"},
         {text:"API-Led Connectivity at Scale",url:"https://www.mulesoft.com/resources/api/what-is-api-led-connectivity"},
-        {text:"Trailmix: MuleSoft Integration Architect",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-certified-platform-architect-level-2"},
         {text:"Event-Driven Architecture with MuleSoft",url:"https://docs.mulesoft.com/mule-runtime/latest/"},
         {text:"MuleSoft Reference Architecture",url:"https://docs.mulesoft.com/general/"}
       ]},
@@ -1853,7 +1607,6 @@ Object.assign(EXAM_DATA, {
       ]},
       {tag:"exam-prep",focus:"MuleSoft Integration Architect Level 2 exam review: reliability, governance, and multi-cloud design",topics:[
         {text:"MuleSoft Platform Architect L2 Exam Guide",url:"https://trailhead.salesforce.com/help?article=MuleSoft-Certified-Platform-Architect-Level-2-Exam-Guide"},
-        {text:"Trailmix: MuleSoft Integration Architect L2",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-certified-platform-architect-level-2"},
         {text:"Anypoint Platform Documentation",url:"https://docs.mulesoft.com/"},
         {text:"MuleSoft Reliability Patterns",url:"https://docs.mulesoft.com/mule-runtime/latest/reliability-patterns"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-mule-int-arch---Mule-Arch-202"},

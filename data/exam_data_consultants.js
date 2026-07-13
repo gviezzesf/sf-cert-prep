@@ -18,17 +18,16 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"discovery-requirements",focus:"Discovery and requirements: stakeholder interviews, as-is/to-be process maps, and user stories",topics:[
         {text:"Business Analyst Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Business-Analyst-Exam-Guide"},
-        {text:"User Stories in Salesforce",url:"https://help.salesforce.com/s/articleView?id=sf.bi_user_stories.htm"},
+        {text:"User Story Creation",url:"https://trailhead.salesforce.com/content/learn/modules/user-story-creation"},
         {text:"Process Mapping Trailhead",url:"https://trailhead.salesforce.com/content/learn/modules/salesforce-business-analyst-quick-look"},
-        {text:"Salesforce Maps and Diagramming",url:"https://help.salesforce.com/s/articleView?id=sf.bi_process_map.htm"},
+        {text:"Process Mapping for Business Analysts",url:"https://trailhead.salesforce.com/content/learn/modules/process-mapping-for-business-analysts"},
         {text:"Business Analyst Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-business-analyst-credential"},
         {text:"Stakeholder Engagement Module",url:"https://trailhead.salesforce.com/content/learn/modules/salesforce-business-analyst-quick-look"}
       ]},
       {tag:"collaboration-tools",focus:"Collaboration and tools: User Story Collaboration, Flow Builder for BAs, and Salesforce Anywhere",topics:[
-        {text:"User Story Collaboration Tool",url:"https://help.salesforce.com/s/articleView?id=sf.bi_user_story_collaboration.htm"},
-        {text:"Flow Builder for BAs",url:"https://help.salesforce.com/s/articleView?id=sf.flow_overview.htm"},
-        {text:"Approval Processes for BAs",url:"https://help.salesforce.com/s/articleView?id=sf.approvals_create_approval_process.htm"},
-        {text:"Reports for Business Analysis",url:"https://help.salesforce.com/s/articleView?id=sf.reports_overview.htm"},
+        {text:"Build Flows with Flow Builder",url:"https://trailhead.salesforce.com/content/learn/trails/build-flows-with-flow-builder"},
+        {text:"Automate Your Approvals with Flow Approval Processes",url:"https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals.htm&type=5"},
+        {text:"Custom Report Types",url:"https://help.salesforce.com/s/articleView?id=xcloud.reports_report_type_setup.htm&type=5"},
         {text:"Business Analysis Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_business_analyst"},
         {text:"Trailhead BA Trail",url:"https://trailhead.salesforce.com/content/learn/trails/salesforce-business-analyst"}
       ]},
@@ -93,19 +92,19 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"sales-solution-design",focus:"Solution design for Sales Cloud: lead process, opportunity management, and forecasting",topics:[
         {text:"Sales Cloud Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Sales-Cloud-Consultant-Exam-Guide"},
-        {text:"Lead Management",url:"https://help.salesforce.com/s/articleView?id=sf.leads_overview.htm"},
-        {text:"Opportunity Management",url:"https://help.salesforce.com/s/articleView?id=sf.opportunities_overview.htm"},
-        {text:"Collaborative Forecasting",url:"https://help.salesforce.com/s/articleView?id=sf.forecasts3_overview.htm"},
-        {text:"Territory Management",url:"https://help.salesforce.com/s/articleView?id=sf.territory2_overview.htm"},
+        {text:"What Is Lead Management?",url:"https://www.salesforce.com/eu/sales/what-is-lead-management/"},
+        {text:"Opportunities",url:"https://help.salesforce.com/s/articleView?id=sales.opportunities.htm&type=5"},
+        {text:"Collaborative Forecasting Best Practice Guide",url:"https://help.salesforce.com/s/articleView?id=000392673&type=1"},
+        {text:"Territory Management Best Practices",url:"https://help.salesforce.com/s/articleView?id=000386766&type=1"},
         {text:"Sales Cloud Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-sales-cloud-consultant-credential"}
       ]},
       {tag:"sales-automation",focus:"Sales automation: Einstein Activity Capture, cadences, CPQ basics, and revenue intelligence",topics:[
-        {text:"Einstein Activity Capture",url:"https://help.salesforce.com/s/articleView?id=sf.einstein_sales_activity_capture.htm"},
-        {text:"Sales Engagement Cadences",url:"https://help.salesforce.com/s/articleView?id=sf.sales_cadences_intro.htm"},
-        {text:"Products and Price Books",url:"https://help.salesforce.com/s/articleView?id=sf.products_def.htm"},
-        {text:"Quotes Object",url:"https://help.salesforce.com/s/articleView?id=sf.quotes_overview.htm"},
-        {text:"Einstein Deal Insights",url:"https://help.salesforce.com/s/articleView?id=sf.einstein_sales_deal_insights.htm"},
-        {text:"Pipeline Inspection",url:"https://help.salesforce.com/s/articleView?id=sf.pipeline_inspection_overview.htm"}
+        {text:"Einstein Activity Capture",url:"https://help.salesforce.com/s/articleView?id=sales.einstein_sales_aac.htm&type=5"},
+        {text:"Standard Cadences for Sales Engagement",url:"https://trailhead.salesforce.com/content/learn/modules/standard-cadences-for-sales-engagement"},
+        {text:"Products and Price Books",url:"https://help.salesforce.com/s/articleView?id=sales.products_pricebooks.htm&type=5"},
+        {text:"Quotes",url:"https://help.salesforce.com/s/articleView?id=sales.quotes_overview.htm&type=5"},
+        {text:"Configure Deal Insights in Pipeline Inspection",url:"https://help.salesforce.com/s/articleView?id=sales.pipeline_inspection_setup_deal_insights.htm&type=5"},
+        {text:"Pipeline Inspection",url:"https://help.salesforce.com/s/articleView?id=sales.pipeline_inspection.htm&type=5"}
       ]},
       {tag:"exam-prep-sales-con",focus:"Sales Cloud Consultant exam prep: industry scenarios, implementation design, and data migration",topics:[
         {text:"Sales Cloud Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Sales-Cloud-Consultant-Exam-Guide"},
@@ -171,19 +170,19 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"service-solution-design",focus:"Service Cloud solution design: case management, entitlements, and service processes",topics:[
         {text:"Service Cloud Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Service-Cloud-Consultant-Exam-Guide"},
-        {text:"Cases Overview",url:"https://help.salesforce.com/s/articleView?id=sf.cases_def_what_is_a_case.htm"},
-        {text:"Entitlements and SLAs",url:"https://help.salesforce.com/s/articleView?id=sf.entitlements_overview.htm"},
-        {text:"Omni-Channel Routing",url:"https://help.salesforce.com/s/articleView?id=sf.omnichannel_intro.htm"},
-        {text:"Knowledge Management",url:"https://help.salesforce.com/s/articleView?id=sf.knowledge_whatis.htm"},
+        {text:"Manage and Work with Cases",url:"https://help.salesforce.com/s/articleView?id=service.support_agents_intro.htm&type=5"},
+        {text:"What Are SLA Policies, Entitlements, and Milestones?",url:"https://help.salesforce.com/s/articleView?id=service.it_srvcs_sla_policies_explainer.htm&type=5"},
+        {text:"Omnichannel Routing Guide: What It Is, How It Works, & Benefits",url:"https://www.salesforce.com/service/digital-customer-engagement-platform/omnichannel-routing/"},
+        {text:"What is Knowledge Management? The Complete Guide",url:"https://www.salesforce.com/eu/service/what-is-knowledge-management/"},
         {text:"Service Cloud Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-service-cloud-consultant-credential"}
       ]},
       {tag:"digital-engagement",focus:"Digital channels: digital engagement, Einstein Bots, Voice, and Field Service",topics:[
-        {text:"Digital Engagement",url:"https://help.salesforce.com/s/articleView?id=sf.messaging_intro.htm"},
-        {text:"Einstein Bots",url:"https://help.salesforce.com/s/articleView?id=sf.bots_intro.htm"},
-        {text:"Service Cloud Voice",url:"https://help.salesforce.com/s/articleView?id=sf.voice_overview.htm"},
-        {text:"Field Service Lightning",url:"https://help.salesforce.com/s/articleView?id=sf.fs_overview.htm"},
-        {text:"Case Auto-Response Rules",url:"https://help.salesforce.com/s/articleView?id=sf.creating_auto-response_rules.htm"},
-        {text:"Service Analytics",url:"https://help.salesforce.com/s/articleView?id=sf.bi_integrate_connectors_sfdc.htm"}
+        {text:"What’s Messaging?",url:"https://help.salesforce.com/s/articleView?id=service.messaging_introduction.htm&type=5"},
+        {text:"Chat with Customers with Einstein Bots",url:"https://help.salesforce.com/s/articleView?id=service.bots_service_intro.htm&type=5"},
+        {text:"Learn About Agentforce Voice",url:"https://help.salesforce.com/s/articleView?id=005226934&type=1"},
+        {text:"Agentforce Field Service and Operations",url:"https://help.salesforce.com/s/articleView?id=service.fs_overview.htm&type=5"},
+        {text:"Automate Case Processing with Rules",url:"https://help.salesforce.com/s/articleView?id=service.automation_rules_queues_parent.htm&type=5"},
+        {text:"Unlock CRM Analytics Insights on Data 360",url:"https://help.salesforce.com/s/articleView?id=analytics.bi_direct_data_for_cdp.htm&type=5"}
       ]},
       {tag:"exam-prep-svc-con",focus:"Service Cloud Consultant exam prep: omni-channel, knowledge, and entitlement scenarios",topics:[
         {text:"Service Cloud Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Service-Cloud-Consultant-Exam-Guide"},
@@ -234,6 +233,7 @@ Object.assign(EXAM_DATA, {
     pass: 65,
     experience: "1+ year implementing Salesforce Experience Cloud solutions",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-exp-cld-consultant---EX-Con-101",
+    trailmixUrl: null,
     prerequisites: ["Platform Administrator"],
     overview: "The Salesforce Experience Cloud Consultant certification validates expertise in designing and implementing Experience Cloud communities. Candidates demonstrate mastery of community setup, templates, security, branding, and integration with Salesforce data.",
         domains:[
@@ -249,23 +249,23 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"experience-cloud-design",focus:"Design Experience Cloud sites: templates, themes, branding, and Lightning pages",topics:[
         {text:"Experience Cloud Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Experience-Cloud-Consultant-Exam-Guide"},
-        {text:"Experience Cloud Site Templates",url:"https://help.salesforce.com/s/articleView?id=sf.networks_lightning_templates.htm"},
-        {text:"Experience Builder",url:"https://help.salesforce.com/s/articleView?id=sf.networks_builder_overview.htm"},
-        {text:"CMS Content",url:"https://help.salesforce.com/s/articleView?id=sf.cms_overview.htm"},
-        {text:"Experience Cloud Sharing",url:"https://help.salesforce.com/s/articleView?id=sf.networks_sharing_overview.htm"},
-        {text:"Experience Cloud Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-experience-cloud-consultant-credential"}
+        {text:"Learn About Experience Cloud Frameworks and Templates",url:"https://help.salesforce.com/s/articleView?id=experience.exp_cloud_plan_frameworks.htm&type=5"},
+        {text:"Customize Sites with Experience Builder",url:"https://help.salesforce.com/s/articleView?id=experience.community_designer_overview.htm&type=5"},
+        {text:"Get Started Developing for CMS",url:"https://developer.salesforce.com/docs/platform/cms/guide/cms-developer-guide.html"},
+        {text:"File Visibility and Sharing in Experience Cloud Sites",url:"https://help.salesforce.com/s/articleView?id=experience.networks_files_visibility_and_sharing.htm&type=5"},
+        {text:"Experience Cloud Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-experience-cloud-consultant-credenti"}
       ]},
       {tag:"portal-users-security",focus:"Community users: licenses, self-registration, sharing sets, and guest user security",topics:[
-        {text:"Community User Licenses",url:"https://help.salesforce.com/s/articleView?id=sf.users_license_types_communities.htm"},
-        {text:"Self-Registration",url:"https://help.salesforce.com/s/articleView?id=sf.networks_self_registration.htm"},
-        {text:"Sharing Sets",url:"https://help.salesforce.com/s/articleView?id=sf.customer_portal_associate_sharing_sets.htm"},
-        {text:"Guest User Security",url:"https://help.salesforce.com/s/articleView?id=sf.networks_guest_user_security.htm"},
-        {text:"Authentication Providers",url:"https://help.salesforce.com/s/articleView?id=sf.sso_provider_google.htm"},
-        {text:"Moderation and Compliance",url:"https://help.salesforce.com/s/articleView?id=sf.networks_rules_overview.htm"}
+        {text:"Salesforce Communities Licenses",url:"https://developer.salesforce.com/blogs/2014/02/salesforce-communities-licenses"},
+        {text:"Self-Registration",url:"https://help.salesforce.com/s/articleView?id=xcloud.external_identity_self_registration_use_cases.htm&type=5"},
+        {text:"Create a Sharing Set for Experience Cloud Site Users",url:"https://help.salesforce.com/s/articleView?id=platform.networks_setting_light_users.htm&type=5"},
+        {text:"Protecting Your Data: Essential Actions to Secure Experience Cloud Guest User Access",url:"https://www.salesforce.com/blog/protecting-your-data-essential-actions-to-secure-experience-cloud-guest-user-access/"},
+        {text:"Set Up Social Sign-On",url:"https://trailhead.salesforce.com/content/learn/modules/identity_external/identity_external_social"},
+        {text:"Experience Cloud Site Moderation Strategies and Tools",url:"https://help.salesforce.com/s/articleView?id=experience.networks_moderation_overview.htm&type=5"}
       ]},
       {tag:"exam-prep-exp-con",focus:"Experience Cloud Consultant exam prep: site design, user management, and sharing",topics:[
         {text:"Experience Cloud Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Experience-Cloud-Consultant-Exam-Guide"},
-        {text:"Experience Cloud Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-experience-cloud-consultant-credential"},
+        {text:"Experience Cloud Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-experience-cloud-consultant-credenti"},
         {text:"Experience Cloud Basics Module",url:"https://trailhead.salesforce.com/content/learn/modules/community_cloud_basics"},
         {text:"Experience Cloud Specialist Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_community_specialist"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-experience-consultant---Exp-Con-201"},
@@ -312,6 +312,7 @@ Object.assign(EXAM_DATA, {
     pass: 63,
     experience: "1+ year implementing Salesforce Field Service Lightning solutions",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-fs-consultant---FS-Con-101",
+    trailmixUrl: "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-field-service-consultant-credential",
     prerequisites: ["Platform Administrator"],
     overview: "The Salesforce Field Service Consultant certification validates expertise in implementing Field Service Lightning (FSL). Candidates demonstrate mastery of work order management, scheduling optimization, resource management, and mobile app configuration for field service operations.",
         domains:[
@@ -327,19 +328,19 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"fsl-setup",focus:"Field Service Lightning setup: work orders, service appointments, scheduling policies",topics:[
         {text:"Field Service Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Field-Service-Consultant-Exam-Guide"},
-        {text:"Field Service Overview",url:"https://help.salesforce.com/s/articleView?id=sf.fs_overview.htm"},
-        {text:"Work Orders",url:"https://help.salesforce.com/s/articleView?id=sf.fs_work_orders.htm"},
-        {text:"Service Appointments",url:"https://help.salesforce.com/s/articleView?id=sf.fs_service_appointments.htm"},
-        {text:"Scheduling Policies",url:"https://help.salesforce.com/s/articleView?id=sf.fs_scheduling_policies.htm"},
+        {text:"Agentforce Field Service and Operations",url:"https://help.salesforce.com/s/articleView?id=service.fs_overview.htm&type=5"},
+        {text:"Create Field Service Work Orders",url:"https://help.salesforce.com/s/articleView?id=service.fs_create_wo.htm&type=5"},
+        {text:"Create Service Appointments for Field Service",url:"https://help.salesforce.com/s/articleView?id=service.fs_create_appointments.htm&type=5"},
+        {text:"Create and Manage Field Service Scheduling Policies",url:"https://help.salesforce.com/s/articleView?id=service.pfs_scheduling.htm&type=5"},
         {text:"FSL Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-field-service-consultant-credential"}
       ]},
       {tag:"fsl-workforce",focus:"Field Service workforce: service territories, resources, crews, and mobile app",topics:[
-        {text:"Service Territories",url:"https://help.salesforce.com/s/articleView?id=sf.fs_service_territories.htm"},
-        {text:"Service Resources",url:"https://help.salesforce.com/s/articleView?id=sf.fs_service_resources.htm"},
-        {text:"Dispatcher Console",url:"https://help.salesforce.com/s/articleView?id=sf.fs_dispatcher_console.htm"},
-        {text:"Mobile Worker App",url:"https://help.salesforce.com/s/articleView?id=sf.fs_mobile_app_overview.htm"},
-        {text:"Inventory and Parts",url:"https://help.salesforce.com/s/articleView?id=sf.fs_inventory.htm"},
-        {text:"Time Sheets",url:"https://help.salesforce.com/s/articleView?id=sf.fs_time_sheets.htm"}
+        {text:"Guidelines for Creating Service Territories for Field Service",url:"https://help.salesforce.com/s/articleView?id=service.fs_territory_guidelines.htm&type=5"},
+        {text:"Create Service Resources for Field Service",url:"https://help.salesforce.com/s/articleView?id=service.fs_create_resources.htm&type=5"},
+        {text:"Work in the Field Service Scheduling Console",url:"https://help.salesforce.com/s/articleView?id=service.fs_scheduling_console_parent.htm&type=5"},
+        {text:"Field Service Mobile App",url:"https://help.salesforce.com/s/articleView?id=service.mfs_overview.htm&type=5"},
+        {text:"Set Up Your Field Service Inventory",url:"https://help.salesforce.com/s/articleView?id=service.fs_set_up_parts.htm&type=5"},
+        {text:"Set Up Time Sheets",url:"https://help.salesforce.com/s/articleView?id=service.fs_set_up_timesheets.htm&type=5"}
       ]},
       {tag:"exam-prep-fsl",focus:"Field Service Consultant exam prep: scheduling, work orders, and mobile worker scenarios",topics:[
         {text:"Field Service Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Field-Service-Consultant-Exam-Guide"},
@@ -390,6 +391,7 @@ Object.assign(EXAM_DATA, {
     pass: 67,
     experience: "1+ year implementing Salesforce Data Cloud (formerly CDP) solutions",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-data-cloud---Data-Con-101",
+    trailmixUrl: "https://trailhead.salesforce.com/users/strailhead/trailmixes/unlock-your-data-with-data-cloud",
     prerequisites: ["Platform Administrator"],
     overview: "The Salesforce Data Cloud Consultant certification validates expertise in implementing Salesforce Data Cloud solutions. Candidates demonstrate mastery of data ingestion, identity resolution, segmentation, activation, and AI/analytics use cases for unified customer data.",
         domains:[
@@ -403,27 +405,27 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"data-cloud-setup",focus:"Data Cloud setup: data streams, ingestion, identity resolution, and data model",topics:[
         {text:"Data Cloud Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Data-Cloud-Consultant-Exam-Guide"},
-        {text:"Data Cloud Overview",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_data_cloud_overview.htm"},
-        {text:"Data Streams",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_data_stream_overview.htm"},
-        {text:"Identity Resolution",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_identity_resolution_overview.htm"},
-        {text:"Data Cloud Data Model",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_data_model_overview.htm"},
-        {text:"Data Cloud Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-data-cloud-consultant-credential"}
+        {text:"Data 360",url:"https://www.salesforce.com/eu/data/"},
+        {text:"Create an Ingestion API Data Stream",url:"https://developer.salesforce.com/docs/data/data-cloud-int/guide/c360-a-create-ingestion-data-stream.html"},
+        {text:"About Identity Resolution",url:"https://help.salesforce.com/s/articleView?id=data.c360_a_identity_resolution.htm&type=5"},
+        {text:"Data 360 Overview Data Model",url:"https://developer.salesforce.com/docs/platform/data-models/guide/data-cloud-overview.html"},
+        {text:"Data Cloud Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/unlock-your-data-with-data-cloud"}
       ]},
       {tag:"data-cloud-activation",focus:"Data Cloud segmentation, calculated insights, activation, and marketing integration",topics:[
-        {text:"Segmentation in Data Cloud",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_segment_overview.htm"},
-        {text:"Calculated Insights",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_calculated_insight_overview.htm"},
-        {text:"Activation Targets",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_activation_overview.htm"},
-        {text:"Data Cloud and Marketing Cloud",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_activation_marketing_cloud.htm"},
+        {text:"Create Segments in Data 360",url:"https://help.salesforce.com/s/articleView?id=data.c360_a_segments.htm&type=5"},
+        {text:"Enhance Data with Insights",url:"https://help.salesforce.com/s/articleView?id=data.c360_a_insights.htm&type=5"},
+        {text:"Activation Targets",url:"https://help.salesforce.com/s/articleView?id=data.c360_a_create_data_cloud_activation.htm&type=5"},
+        {text:"Data 360-Driven Interactions in Marketing Cloud Engagement",url:"https://trailhead.salesforce.com/content/learn/modules/data-clouddriven-interactions-in-marketing-cloud"},
         {text:"Data Cloud Ingestion API",url:"https://developer.salesforce.com/docs/atlas.en-us.c360a_api.meta/c360a_api/c360a_api_overview.htm"},
-        {text:"Data Cloud and Flow",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_flow_integration.htm"}
+        {text:"Data 360 in Flows",url:"https://trailhead.salesforce.com/content/learn/modules/data-cloud-in-flows"}
       ]},
       {tag:"exam-prep-dc-con",focus:"Data Cloud Consultant exam prep: ingestion, identity resolution, segmentation, and activation",topics:[
         {text:"Data Cloud Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Data-Cloud-Consultant-Exam-Guide"},
-        {text:"Data Cloud Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-data-cloud-consultant-credential"},
-        {text:"Data Cloud Basics Module",url:"https://trailhead.salesforce.com/content/learn/modules/salesforce-data-cloud-quick-look"},
+        {text:"Data Cloud Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/unlock-your-data-with-data-cloud"},
+        {text:"Data Cloud Basics Module",url:"https://trailhead.salesforce.com/content/learn/modules/salesforce-genie-quick-look"},
         {text:"Data Cloud Specialist Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_data_cloud"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-data-cloud-consultant---DC-Con-201"},
-        {text:"Data Cloud Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.c360_a_data_cloud_overview.htm"}
+        {text:"Data 360",url:"https://www.salesforce.com/eu/data/"}
       ]}
     ],
     quiz:[
@@ -457,74 +459,6 @@ Object.assign(EXAM_DATA, {
       "Know the consent management model: Contact Point Consent and data action privacy.",
       "Understand the Data Cloud implementation phases: sources → identity resolution → segmentation → activation.",
       "Know how Data Cloud integrates with Marketing Cloud for segment-based email personalization."
-    ]
-  },
-
-  "Education Cloud Consultant": {
-    questions: 60,
-    time: 105,
-    pass: 65,
-    experience: "2+ years implementing Education Cloud solutions",
-    trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-education-cld---ED-Con-101",
-    prerequisites: ["Platform Administrator"],
-    overview: "Validates expertise in implementing Salesforce Education Cloud solutions for higher education and K-12 institutions, including student lifecycle management, advancement, and constituent relationship management.",
-        domains:[
-      {name:"Domain Expertise",pct:18,color:"#00A1E0",desc:"Determine the solution set that satisfies customer requirements (marketing and engagement, recruitment and admissions, student experience, and advancement and alumni relations).",keyTopics:[{title:"Determine the solution set that satisfies customer requir...",desc:"Determine the solution set that satisfies customer requirements (marketing and engagement, recruitment and admissions, student experience, and advancement and alumni relations)."},{title:"Education Cloud solution for K-12 customers",desc:"Explain the Education Cloud solution for K-12 customers."}]},
-      {name:"Education Cloud Configuration",pct:22,color:"#2ECC71",desc:"Discuss the capabilities and considerations of Education Cloud, including compatibility with other Salesforce products and features.",keyTopics:[{title:"Discuss the capabilities",desc:"Discuss the capabilities and considerations of Education Cloud, including compatibility with other Salesforce products and features."},{title:"Install",desc:"Install and configure Salesforce for Education solutions."}]},
-      {name:"Implementation Strategies and Best Practices",pct:18,color:"#F39C12",desc:"Facilitate a successful implementation (plan, gather requirements, design, build, test, document, deploy, and optimize).",keyTopics:[{title:"Facilitate a successful implementation",desc:"Facilitate a successful implementation (plan, gather requirements, design, build, test, document, deploy, and optimize)."},{title:"Illustrate governance, change management, staffing, imple...",desc:"Illustrate governance, change management, staffing, implementation strategies, deployment considerations, and adoption best practices including community resources for long-term solution success."}]},
-      {name:"Solution Design",pct:19,color:"#E74C3C",desc:"Evaluate the similarities, differences, and relationships between Salesforce for Education solutions account model considerations and standard Salesforce Account-Contact data models.",keyTopics:[{title:"Evaluate the similarities, differences,",desc:"Evaluate the similarities, differences, and relationships between Salesforce for Education solutions account model considerations and standard Salesforce Account-Contact data models."},{title:"Design an appropriate",desc:"Design an appropriate and scalable solution for education customers."},{title:"Locate community",desc:"Locate community and open-source solutions and resources."},{title:"Decide when to use Education Cloud, other Salesforce solu...",desc:"Decide when to use Education Cloud, other Salesforce solutions, community open source solutions, and third-party applications."}]},
-      {name:"Integration and Data Management",pct:16,color:"#9B59B6",desc:"Evaluate integration considerations for connecting systems in an Education Cloud implementation.",keyTopics:[{title:"Evaluate integration considerations for connecting system...",desc:"Evaluate integration considerations for connecting systems in an Education Cloud implementation."},{title:"Explain data management considerations",desc:"Explain data management considerations (data usage, forecasting, large data volumes, migrations in Education Cloud)."}]},
-      {name:"Analytics",pct:7,color:"#1ABC9C",desc:"Distinguish between reporting solutions in Education Cloud.",keyTopics:[{title:"Distinguish between reporting solutions in Education Cloud",desc:"Distinguish between reporting solutions in Education Cloud."},{title:"Demonstrate when a data analytics solution is appropriate",desc:"Demonstrate when a data analytics solution is appropriate."}]},
-    ],
-    studyDays:[
-      {tag:"edu-cloud-setup",focus:"Education Cloud fundamentals: Education Data Architecture (EDA), relationships, and student lifecycle",topics:[
-        {text:"Education Cloud Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Education-Cloud-Consultant-Exam-Guide"},
-        {text:"Education Data Architecture Overview",url:"https://sfdo-community-sprints.github.io/EDA-Documentation/"},
-        {text:"Education Cloud Overview",url:"https://help.salesforce.com/s/articleView?id=sf.edu_cloud_overview.htm"},
-        {text:"Student Lifecycle Management",url:"https://help.salesforce.com/s/articleView?id=sf.edu_cloud_student_success.htm"},
-        {text:"Trailmix: Education Cloud Consultant",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-education-cloud-consultant-credential"},
-        {text:"EDA GitHub Documentation",url:"https://sfdo-community-sprints.github.io/EDA-Documentation/"}
-      ]},
-      {tag:"exam-prep-edu",focus:"Education Cloud Consultant exam prep: EDA, student success, and institution use cases",topics:[
-        {text:"Education Cloud Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Education-Cloud-Consultant-Exam-Guide"},
-        {text:"Education Cloud Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-education-cloud-consultant-credential"},
-        {text:"Education Cloud Module",url:"https://trailhead.salesforce.com/content/learn/modules/education-cloud-basics"},
-        {text:"EDA Documentation",url:"https://sfdo-community-sprints.github.io/EDA-Documentation/"},
-        {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-education-cloud-consultant---Edu-Con-201"},
-        {text:"Salesforce.org Education",url:"https://www.salesforce.org/edu/"}
-      ]}
-    ],
-    quiz:[
-      {domain:"Education Cloud Fundamentals",q:"What is the foundational data model used by Education Cloud?",opts:["NPSP", "Education Data Architecture (EDA)", "Standard Salesforce CRM model", "Health Cloud model"],correct:1,explanation:"Education Data Architecture (EDA) is the purpose-built data model for education — it extends standard Salesforce with objects for Program Plans, Program Enrollments, Course Connections, Academic Programs, and Affiliations. It provides a structured way to model the student lifecycle that standard Salesforce objects can't represent cleanly."},
-      {domain:"Student Success Hub",q:"In EDA, which object represents a student's enrollment in a program?",opts:["Course Connection", "Program Enrollment", "Academic Affiliation", "Student Plan"],correct:1,explanation:"Program Enrollment links a Contact (student) to a Plan (program) — it records the student's participation in an academic program, including start date, status, and graduation requirements. Course Connection is the object that links a student to a specific course section, which is a lower level than program enrollment."},
-      {domain:"Student Success Hub",q:"What does the Advisor Console in Student Success Hub provide?",opts:["Course scheduling tools", "A 360-degree view of students to support advising and intervention", "Financial aid management", "Alumni relationship tracking"],correct:1,explanation:"The Advisor Console aggregates the full student profile in one view — academic progress, early alerts, success plans, advising notes, course connections, and engagement data. This enables advisors to identify at-risk students and take proactive action without navigating between multiple systems or Salesforce pages."},
-      {domain:"Student Success Hub",q:"Which feature allows advisors to proactively flag at-risk students?",opts:["Success Plan", "Early Alert", "Case Escalation", "Retention Trigger"],correct:1,explanation:"Early Alerts are formal notifications that an advisor or instructor can create to flag a student exhibiting risk signals (missing assignments, dropping grades, attendance issues). The alert triggers a workflow for intervention — a Success Plan, advising appointment, or referral to support services — before the risk becomes a dropout."},
-      {domain:"Advancement Connect",q:"What is the primary use of Advancement Connect?",opts:["Student enrollment tracking", "Course management", "Fundraising and donor relationship management for higher education", "Advisor scheduling"],correct:2,explanation:"Advancement Connect extends Education Cloud specifically for alumni relations and development offices — it provides major gift management, annual fund campaigns, gift acknowledgments, and donor prospect research tools tailored to higher education fundraising. It operates alongside Student Success Hub in an integrated Education Cloud deployment."},
-      {domain:"Implementation & Configuration",q:"Which federal law governs student data privacy in the U.S.?",opts:["HIPAA", "FERPA", "GDPR", "COPPA"],correct:1,explanation:"FERPA (Family Educational Rights and Privacy Act) protects the privacy of student education records — it restricts who can access grades, enrollment records, and other education records without student consent. Salesforce Education Cloud implementations must configure field-level security and sharing rules to ensure FERPA compliance for data access."},
-      {domain:"Education Data Architecture",q:"In EDA, what object tracks a student's relationship to a course section?",opts:["Enrollment Record", "Course Connection", "Program Affiliation", "Academic Link"],correct:1,explanation:"Course Connection is the junction between a Contact (student) and a Course Offering (specific section of a course in a term). It records the student's enrollment status, grade, and role in that specific course section — distinct from Program Enrollment which tracks the student's broader degree program participation."},
-      {domain:"Student Success Hub",q:"Which Salesforce product provides AI-powered student retention risk scoring?",opts:["Tableau", "Einstein Prediction Builder", "Agentforce", "CRM Analytics"],correct:1,explanation:"Einstein Prediction Builder allows institutions to train a custom ML model on their own historical student data — identifying which signals (GPA trend, attendance, engagement, financial aid status) predict dropout risk. The resulting prediction score surfaces in the Advisor Console for proactive intervention."},
-      {domain:"Education Cloud Fundamentals",q:"What model does EDA use for household management?",opts:["Person Account model", "Household Account model", "Contact-only model", "Family Group model"],correct:1,explanation:"EDA uses the Household Account model — each family has one Account (the household) with Contacts for individual family members linked via the Account. This enables consolidated communication to the household, viewing combined family giving to the institution, and tracking parent/guardian relationships alongside the student."},
-      {domain:"Student Success Hub",q:"Which integration pattern is commonly used to sync EDA with a Student Information System?",opts:["Batch CSV import nightly", "Real-time API integration via MuleSoft or middleware", "Manual data entry by registrar", "Email-based data sync"],correct:1,explanation:"Student Information Systems (SIS) like Banner, Workday Student, or PeopleSoft are the authoritative systems for enrollment, grades, and course registrations. Real-time API integration via MuleSoft or similar middleware keeps EDA in sync with SIS data — ensuring advisors see current academic data without hours of batch lag."},
-      {domain:"Student Success Hub",q:"What is a Success Plan in Student Success Hub?",opts:["A financial aid package", "A structured roadmap of tasks and goals assigned to a student by an advisor", "A course registration form", "A graduation audit record"],correct:1,explanation:"Success Plans are structured intervention tools — an advisor creates a plan for an at-risk student with specific tasks, goals, and milestones (attend tutoring sessions, meet with financial aid, complete internship application). Progress is tracked over time, and plans provide a documented record of the advising intervention for compliance and assessment."},
-      {domain:"Student Success Hub",q:"In K-12 implementations, what object represents a student's school enrollment?",opts:["Enrollment__c", "Affiliation", "School Record", "Student Account"],correct:1,explanation:"In EDA for K-12, Affiliations model the relationship between a Contact (student or parent) and an Account (school) — a student's Affiliation with a school represents their enrollment there. Affiliations are versatile — they also model staff employment and parent involvement in the institution."},
-      {domain:"Student Success Hub",q:"Which report type is best for tracking advisor caseloads?",opts:["Opportunities with Contacts", "Cases with Accounts", "Activities with Contacts", "Leads with Campaigns"],correct:1,explanation:"Advisor caseload reports are typically built on Activities or Cases related to student Contacts — tracking how many advising interactions each advisor has had, with which students, and how recently. This helps supervisors identify advisors who are under- or over-utilized and students who haven't had recent contact."},
-      {domain:"Education Cloud Fundamentals",q:"What is the recommended way to model guardians and students in EDA K-12?",opts:["Use Person Accounts for each family member", "Use Relationships and Affiliations between Contact records", "Create custom parent-child Account records", "Use Household Account with custom fields"],correct:1,explanation:"EDA's Relationship object models the connection between two Contact records with a typed relationship (e.g., Parent-Child, Guardian-Dependent). Combined with a shared Household Account, this models the family unit while preserving distinct Contact records for each person — essential for communicating separately with students and guardians."},
-      {domain:"Education Data Architecture",q:"Which feature supports the management of course schedules, sections, and offerings?",opts:["Student Success Hub", "Academic Operations", "Advancement Connect", "EDA Relationships"],correct:1,explanation:"Academic Operations is the EDA component for course management — it provides the data model for Terms, Courses, Course Offerings (specific sections), and Facilities. These objects enable institutions to manage the course catalog, section capacities, and scheduling within Salesforce, connected to student Course Connections."},
-      {domain:"Implementation & Configuration",q:"How should sensitive student data fields be protected in Salesforce?",opts:["Password protect the org", "Field-Level Security and record-level sharing rules", "Hide them in page layouts only", "Use encryption for all fields"],correct:1,explanation:"Field-Level Security controls which user profiles can view or edit each sensitive field (GPA, financial aid details, disciplinary records). Sharing rules control which records a user can access. Page layout hiding is not security — it only removes UI visibility, not API access. FLS + sharing rules provides the defense-in-depth required for FERPA compliance."},
-      {domain:"Education Cloud Fundamentals",q:"What is the purpose of the Education Cloud Trailmix?",opts:["A product demo environment", "Guided learning path for Education Cloud certification preparation", "A marketplace for education apps", "An exam practice tool"],correct:1,explanation:"Trailhead Trailmixes are curated learning paths combining modules, projects, and superbadges. The Education Cloud Trailmix was created by Salesforce to guide candidates through the specific product knowledge required for Education Cloud certification — working through it provides structured coverage of EDA, Student Success Hub, and Advancement Connect."},
-      {domain:"Student Success Hub",q:"Which Salesforce feature can automate sending alerts to advisors when a student misses multiple classes?",opts:["Report subscriptions only", "Flow with scheduled triggers and Early Alert creation", "Manual case creation", "Email-to-case"],correct:1,explanation:"Flow with a scheduled trigger can evaluate attendance records daily — if a student has exceeded the absence threshold, the Flow creates an Early Alert record and notifies the assigned advisor. This automates proactive outreach at scale, which would be impossible to monitor manually across hundreds or thousands of students."},
-      {domain:"Education Cloud Fundamentals",q:"What is the main challenge when migrating data from a legacy SIS to EDA?",opts:["Choosing a data loader", "Mapping legacy relationship and enrollment data to EDA's object model", "Converting record types", "Migrating user profiles"],correct:1,explanation:"Legacy SIS data is structured very differently from EDA — course registrations, enrollment statuses, relationship types, and academic history all map to EDA objects (Program Enrollment, Course Connection, Affiliation) that have no direct equivalent in the source system. The mapping design is the most complex and time-consuming part of a migration."},
-      {domain:"Education Cloud Fundamentals",q:"Which community is the best resource for Education Cloud implementers?",opts:["Salesforce AppExchange", "Salesforce.org Trailblazer Community", "Salesforce Developer Forums", "Partner Community only"],correct:1,explanation:"The Salesforce.org Trailblazer Community is the hub for education and nonprofit implementers — it's where certified Education Cloud practitioners share knowledge, best practices, product updates, and release guidance. The broader Trailblazer Community is for all Salesforce products; Salesforce.org hosts the education-specific segment."},
-    ],
-    tips:[
-      "Know the EDA data model deeply — Program Plan, Program Enrollment, Course Connection, and Affiliation are exam staples.",
-      "Understand FERPA's impact on data visibility and sharing configurations.",
-      "Distinguish between Student Success Hub, Advancement Connect, and Academic Operations feature sets.",
-      "Be prepared for scenario questions about integrating a legacy SIS with Salesforce.",
-      "Know how Early Alert and Success Plans work together to support student retention.",
-      "Understand the household vs. person account model in EDA and when each applies.",
-      "Review Salesforce.org-specific features since the exam targets the education-specific product layer.",
-      "Practice identifying when to use automation (Flow) vs. manual processes in education workflows."
     ]
   },
 
@@ -594,80 +528,13 @@ Object.assign(EXAM_DATA, {
     ]
   },
 
-  "Nonprofit Success Pack Consultant": {
-    questions: 60,
-    time: 105,
-    pass: 65,
-    experience: "2+ years implementing NPSP solutions",
-    trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-nonprofit-cld-consultant-npc---NP-Con-102",
-    prerequisites: ["Platform Administrator"],
-    overview: "Validates expertise in implementing the Nonprofit Success Pack (NPSP), the legacy open-source Salesforce platform for nonprofits covering constituent management, fundraising, and program delivery on top of standard Salesforce CRM objects.",
-        domains:[
-      {name:"Domain Expertise",pct:20,color:"#00A1E0",desc:"Identify the appropriate Salesforce solutions for fundraising and donor management.",keyTopics:[{title:"appropriate Salesforce solutions for fundraising",desc:"Identify the appropriate Salesforce solutions for fundraising and donor management."},{title:"appropriate Salesforce solutions for marketing",desc:"Identify the appropriate Salesforce solutions for marketing and engagement."},{title:"appropriate Salesforce solutions for program and/or volun...",desc:"Identify the appropriate Salesforce solutions for program and/or volunteer management."},{title:"Distinguish",desc:"Distinguish and rationalize the purpose for resource sites like the Trailblazer Community, Trailhead, and AppExchange, etc."}]},
-      {name:"Nonprofit Cloud Product Configuration",pct:22,color:"#2ECC71",desc:"Given a set of requirements, modify NPSP Settings for people management (Leads, Contacts, Accounts, Affiliations, Relationships, Addresses) defaults.",keyTopics:[{title:"Given a set of requirements, modify NPSP Settings for peo...",desc:"Given a set of requirements, modify NPSP Settings for people management (Leads, Contacts, Accounts, Affiliations, Relationships, Addresses) defaults."},{title:"Given a set of requirements, configure fundraising features",desc:"Given a set of requirements, configure fundraising features (Opportunities, Payments, Allocations, Gift Entry and Recurring Donations) and batch process handling."},{title:"Given an error message through a Nonprofit Cloud applicat...",desc:"Given an error message through a Nonprofit Cloud application, determine whether it is a Nonprofit Cloud application issue and appropriate next steps."},{title:"implications of the Salesforce release window on implemen...",desc:"Explain the implications of the Salesforce release window on implementations."},{title:"Install Nonprofit Cloud applications and/or solutions",desc:"Install Nonprofit Cloud applications and/or solutions."},{title:"Configure the Nonprofit Cloud application security model ...",desc:"Configure the Nonprofit Cloud application security model to meet customer requirements."}]},
-      {name:"Implementation Strategies and Best Practices",pct:18,color:"#F39C12",desc:"Apply knowledge to facilitate a successful Nonprofit Cloud consulting engagement.",keyTopics:[{title:"facilitate a successful Nonprofit Cloud consulting engage...",desc:"Given a scenario, facilitate a successful Nonprofit Cloud consulting engagement."},{title:"Gather requirements, create user stories,",desc:"Gather requirements, create user stories, and turn business processes into solution design."},{title:"Create a change management process based on Salesforce be...",desc:"Create a change management process based on Salesforce best practices for governance."},{title:"Determine",desc:"Determine and implement the appropriate testing and deployment strategy (sandbox, production, tools, etc.)."}]},
-      {name:"Solution Design",pct:20,color:"#E74C3C",desc:"Identify the appropriate Salesforce solution(s) to meet customer requirements.",keyTopics:[{title:"appropriate Salesforce solution(s) to meet customer requi...",desc:"Identify the appropriate Salesforce solution(s) to meet customer requirements."},{title:"Distinguish when it is appropriate to use declarative dev...",desc:"Distinguish when it is appropriate to use declarative development (low code), custom code development, or a third-party solution."},{title:"Analyze customer requirements to determine appropriate so...",desc:"Analyze customer requirements to determine appropriate solution design considering capabilities, limitations, and design trade-offs."},{title:"Determine the appropriate security features to use follow...",desc:"Determine the appropriate security features to use following Salesforce best practices."}]},
-      {name:"Integration and Data Management",pct:15,color:"#9B59B6",desc:"Given a specific data requirement, explain the use cases and considerations for using Salesforce native, third-party, or Nonprofit Cloud application data tools.",keyTopics:[{title:"Given a specific data requirement, explain the use cases",desc:"Given a specific data requirement, explain the use cases and considerations for using Salesforce native, third-party, or Nonprofit Cloud application data tools."},{title:"Given customer requirements, articulate",desc:"Given customer requirements, articulate and implement data migration and/or integration strategies for a Nonprofit Cloud implementation."},{title:"Identify which duplicate management tools to use for a Sa...",desc:"Identify which duplicate management tools to use for a Salesforce implementation."}]},
-      {name:"Analytics",pct:5,color:"#1ABC9C",desc:"Apply knowledge to determine the appropriate analytics solution (Reports, Dashboards, Tableau and Tableau CRM, third-party solutions, etc.) in Nonprofit Cloud.",keyTopics:[{title:"determine the appropriate analytics solution",desc:"Given a scenario, determine the appropriate analytics solution (Reports, Dashboards, Tableau and Tableau CRM, third-party solutions, etc.) in Nonprofit Cloud."}]},
-    ],
-    studyDays:[
-      {tag:"npsp-setup",focus:"NPSP fundamentals: Households, Affiliations, Relationships, and Donation Management",topics:[
-        {text:"NPSP Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Nonprofit-Success-Pack-Consultant-Exam-Guide"},
-        {text:"NPSP Overview",url:"https://powerofus.force.com/s/article/NPSP-Introduction"},
-        {text:"NPSP Households",url:"https://powerofus.force.com/s/article/NPSP-Household-Accounts"},
-        {text:"NPSP Donations and Payments",url:"https://powerofus.force.com/s/article/NPSP-Managing-Donations"},
-        {text:"NPSP Affiliations",url:"https://powerofus.force.com/s/article/NPSP-Affiliations"},
-        {text:"NPSP Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-nonprofit-success-pack-consultant-credential"}
-      ]},
-      {tag:"exam-prep-npsp",focus:"NPSP Consultant exam prep: donations, households, affiliations, and configuration scenarios",topics:[
-        {text:"NPSP Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Nonprofit-Success-Pack-Consultant-Exam-Guide"},
-        {text:"NPSP Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-nonprofit-success-pack-consultant-credential"},
-        {text:"NPSP Basics Module",url:"https://trailhead.salesforce.com/content/learn/modules/nonprofit_success_pack_basics"},
-        {text:"NPSP Documentation",url:"https://powerofus.force.com/s/article/NPSP-Introduction"},
-        {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-npsp-consultant---NPSP-Con-201"},
-        {text:"Salesforce.org Community",url:"https://powerofus.force.com/s/"}
-      ]}
-    ],
-    quiz:[
-      {domain:"NPSP Data Architecture",q:"Which NPSP account model creates a separate Account record for every Contact?",opts:["Household Account model", "1:1 model", "Individual model", "Organization model"],correct:1,explanation:"The 1:1 model creates one Account record per Contact — the Account is a system record that mirrors the Contact's name. This is the simplest model but creates a massive number of Account records and makes reporting on household giving difficult. It was the legacy default before the Household Account model was recommended for most nonprofits."},
-      {domain:"NPSP Data Architecture",q:"What is the primary benefit of the Household Account model in NPSP?",opts:["Simplifies data entry for volunteers", "Groups family members under one Account for consolidated giving and communication", "Removes the need for Opportunity records", "Enables email automation"],correct:1,explanation:"The Household Account model is the recommended NPSP model because it groups a family (or household) under a single Account — you can report on total household giving, send one mailing per household (no duplicate solicitations), and see all family members in one place. Opportunities are linked to the Household Account, enabling consolidated fundraising reporting."},
-      {domain:"NPSP Data Architecture",q:"In NPSP, which object manages non-employment relationships between Contacts?",opts:["Affiliation", "Relationship (npe4__Relationship__c)", "Connection", "AccountContactRelation"],correct:1,explanation:"The NPSP Relationship object (npe4__Relationship__c) tracks personal relationships between two Contact records — Spouse, Parent, Child, Friend, Colleague. It creates bidirectional relationship records automatically (if A is Parent of B, B is Child of A). This is separate from Affiliations, which model the employment/organizational relationship between a Contact and an Account."},
-      {domain:"Fundraising & Gift Management",q:"What is a Partial Soft Credit in NPSP?",opts:["A gift partially paid by check", "Crediting a portion of a gift's amount to an influencing Contact", "A matching gift tracked separately", "A discount applied to a recurring gift"],correct:1,explanation:"Partial Soft Credits allow a specific dollar amount (not the full gift amount) to be attributed to an influencing Contact. For example, a $100,000 gift might have $50,000 soft credited to the board member who introduced the donor — reflecting their level of influence without crediting them for the full gift. This enables nuanced attribution for donor relations."},
-      {domain:"Fundraising & Gift Management",q:"Which NPSP feature allows bulk entry of multiple gifts at once?",opts:["Data Importer", "Batch Gift Entry", "Mass Update Wizard", "Flow-based entry"],correct:1,explanation:"Batch Gift Entry (BGE) is NPSP's form-based tool for entering multiple gifts from a single event (gala, direct mail campaign) at once — the processor works through a list of gifts entering donor, amount, payment method, and date for each in a tabular interface, then posts the entire batch to create Opportunities and Payments in one action."},
-      {domain:"Customization & Reporting",q:"What does LYBUNT stand for?",opts:["Long Year Benefit United Network Tool", "Last Year But Unfortunately Not This year", "Lapsed Year Benefit Unified Notation Tool", "Latest Year Budget Unit New Track"],correct:1,explanation:"LYBUNT (Last Year But Unfortunately Not This Year) is a donor retention concept — donors who gave in the preceding fiscal year but have not yet given in the current fiscal year. This cohort is a priority for re-engagement because their recent giving demonstrates a relationship that hasn't yet converted to a current-year gift. Tracking this metric is foundational to donor retention strategy."},
-      {domain:"NPSP Data Architecture",q:"In NPSP, what is an Engagement Plan?",opts:["A fundraising forecast", "A series of tasks automatically assigned to guide relationship stewardship", "A volunteer scheduling tool", "A grant reporting checklist"],correct:1,explanation:"NPSP Engagement Plans are templates of scheduled tasks — for example, a major donor stewardship plan might include: Week 1 Send thank-you letter, Week 4 Schedule call with gift officer, Week 12 Invite to site visit. When the plan is applied to a Contact, all tasks are created with the appropriate due dates, ensuring no stewardship step is missed."},
-      {domain:"Customization & Reporting",q:"Which NPSP feature lets you set different giving levels and thresholds for donors?",opts:["Giving Tiers", "Levels", "Segment Groups", "Donor Grades"],correct:1,explanation:"NPSP Levels allow organizations to automatically categorize donors into named tiers (Bronze, Silver, Gold, Platinum) based on their total giving. When a donor's rollup giving amount crosses a threshold, Levels updates a field on the Contact or Account automatically — enabling personalized communication, stewardship, and event invitation strategies based on giving tier."},
-      {domain:"NPSP Data Architecture",q:"What happens when a duplicate household member is created in NPSP?",opts:["NPSP blocks the record creation", "NPSP can auto-merge duplicates using Household Merge functionality", "The record is flagged for admin review only", "Duplicates are silently ignored"],correct:1,explanation:"NPSP provides Household Merge functionality — when duplicate Contact records are identified (same person under two different records), the merge tool combines the records and consolidates their Opportunities, Activities, and Affiliations under the surviving record. This is critical for data integrity since duplicate constituents inflate donor counts and fragment giving history."},
-      {domain:"Relationships & Affiliations",q:"What is Salesforce Elevate's role in NPSP?",opts:["An Einstein analytics layer", "A native payment processing add-on for NPSP donations", "A volunteer management module", "An email marketing add-on"],correct:1,explanation:"Salesforce Elevate is Salesforce's native payment processing product for NPSP — it provides credit card processing, online giving pages, recurring donation management, and payment data integration directly into NPSP Opportunities and Payments, eliminating the need for a third-party payment processor AppExchange app."},
-      {domain:"Fundraising & Gift Management",q:"Which NPSP setting auto-creates an Opportunity when a Contact is first created?",opts:["Contact trigger rules", "Opportunity Auto-Create settings in NPSP Donations configuration", "Workflow field update", "Flow on Contact insert"],correct:1,explanation:"NPSP Donations settings include an Opportunity Auto-Create option that automatically generates a first Opportunity (typically a 'First Donation Ask') when a new Contact or Account is created. This ensures new constituents enter a standard cultivation workflow immediately. This setting is configurable per Account record type, giving flexibility for different constituent types."},
-      {domain:"NPSP Data Architecture",q:"Which NPSP report type is used to track retention of recurring donors?",opts:["LYBUNT", "SYBUNT (Some Year But Unfortunately Not This year)", "Retention Trend Report", "Annual Giving Summary"],correct:1,explanation:"SYBUNT (Some Year But Unfortunately Not This Year) identifies donors who gave in any prior year but not the current year — the broadest lapsed donor segment. Comparing SYBUNT cohorts year over year reveals whether the organization is improving at re-engaging lapsed donors or losing more of its historical donor base each year."},
-      {domain:"Household Management",q:"What is a Seasonal Address in NPSP?",opts:["A temporary address during a move", "An alternate mailing address active for a specified date range each year", "An address imported from a data vendor", "A billing address for gift processing"],correct:1,explanation:"Seasonal Addresses handle snowbirds and part-time residents — if a donor lives in Maine in summer and Florida in winter, NPSP automatically switches which address is used for mailings based on the configured date range each year. This prevents returned mail and ensures donors receive communications at the correct seasonal address without manual address changes."},
-      {domain:"NPSP Data Architecture",q:"Which NPSP tool helps identify and merge duplicate Contact records?",opts:["Data Loader", "NPSP Duplicate Management with Matching Rules", "NPSP Data Importer only", "Third-party dedup app only"],correct:1,explanation:"NPSP enhances Salesforce's native Duplicate Management with nonprofit-specific matching rules (matching on name + email, or name + phone, or address combinations common in constituent data). When duplicates are detected, NPSP's Merge Contacts functionality consolidates all historical giving, relationships, and activities under the surviving record."},
-      {domain:"NPSP Data Architecture",q:"What is the correct way to handle a write-off of an outstanding payment in NPSP?",opts:["Delete the Opportunity", "Mark the payment as Written Off in the Payment record", "Create a credit memo Opportunity", "Update the close date to past"],correct:1,explanation:"NPSP Payment records have a Written Off status — marking a payment as Written Off removes it from outstanding balance calculations without deleting the record. This preserves the historical record of the pledged amount and the write-off for audit purposes, while accurately reflecting that the payment will not be collected."},
-      {domain:"NPSP Data Architecture",q:"Which NPSP configuration drives the naming convention for Household Account names?",opts:["Account Formula Field", "Household Naming Settings", "Household Trigger Config", "Contact Layout template"],correct:1,explanation:"Household Naming Settings in NPSP configuration control how Household Account names are automatically generated — the default is '[Last Name] Household' but can be customized to handle married couples with different last names, formal naming conventions for major donors, or multilingual formats. Names can be auto-updated when Contact names change."},
-      {domain:"Fundraising & Gift Management",q:"How does NPSP handle a gift from a couple where both spouses should get credit?",opts:["Create two separate Opportunities", "Assign the primary donor as the Opportunity Contact Role and add soft credit to the spouse", "Use a Household Campaign", "Create a joint Contact record"],correct:1,explanation:"NPSP's standard approach is one Opportunity on the Household Account with an Opportunity Contact Role designating which spouse is the primary donor (hard credit), and a Soft Credit record giving the spouse recognition credit. This preserves accurate financial reporting (one donation, one dollar amount) while acknowledging both partners' contribution to the relationship."},
-      {domain:"Fundraising & Gift Management",q:"Which rollup type in NPSP aggregates donation totals onto a Contact record?",opts:["Standard Roll-Up Summary Field", "Customizable Rollup (CRLP)", "Flow-based aggregation", "Apex batch class"],correct:1,explanation:"CRLP (Customizable Rollup) replaced NPSP's legacy Apex-based hard-coded rollups — it provides a UI-configurable framework for defining what gets summed, what date range, which record types, and onto which object. This enables organizations to create custom giving summaries (e.g. last 5 years, by campaign type) without custom code."},
-      {domain:"Relationships & Affiliations",q:"In NPSP, what is the purpose of the Primary Affiliation field on a Contact?",opts:["Marks the default email address", "Links the Contact to their primary employer or organization account", "Sets the Contact's household role", "Records the major gift program affiliation"],correct:1,explanation:"Primary Affiliation links a Contact to their primary employer or organizational relationship Account — it's distinct from their Household Account relationship. When a donor's employer is also a corporate sponsor or matching gift partner, this Affiliation enables reporting on organizational connections and the cultivation of employer-based giving programs."},
-      {domain:"NPSP Data Architecture",q:"Which tool should be used for large-scale initial data loads into NPSP?",opts:["Batch Gift Entry", "NPSP Data Importer or Data Loader with NPSP mapping", "Manual entry via UI", "Apex anonymous execution"],correct:1,explanation:"NPSP Data Importer is optimized for nonprofit data — it understands NPSP relationships (Household Accounts, Affiliations, Opportunity Payments) and handles the complex object relationships automatically. For very large loads or complex transformations, Data Loader with a pre-processed data file using NPSP's object API names is the alternative, but Data Importer is the recommended starting point."},
-    ],
-    tips:[
-      "Know all three NPSP account models (1:1, Household, Individual) and when each is appropriate.",
-      "Master LYBUNT and SYBUNT reporting — these are exam favorites.",
-      "Understand Customizable Rollups (CRLP) and how they differ from standard roll-up summary fields.",
-      "Know the Engagement Plans feature for stewardship automation.",
-      "Be clear on soft credits, partial soft credits, and matching gifts.",
-      "Understand Household Naming settings and how to customize household name formats.",
-      "Review Batch Gift Entry workflows end-to-end.",
-      "Know when to use NPSP Data Importer vs Data Loader for imports."
-    ]
-  },
-
   "OmniStudio Consultant": {
     questions: 60,
     time: 105,
     pass: 65,
     experience: "2+ years implementing OmniStudio solutions",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-omnistudio-consultant---Plat-Con-201",
+    trailmixUrl: "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-omnistudio-consultant-certification",
     prerequisites: ["Platform Administrator"],
     overview: "Validates expertise in consulting on OmniStudio implementations, including OmniScripts, FlexCards, DataRaptors, and Integration Procedures to create guided user experiences in Salesforce Industries solutions.",
         domains:[
@@ -681,16 +548,16 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"omnistudio-consultant",focus:"OmniStudio Consultant: architecture, FlexCards, OmniScripts, and DataRaptors for solution design",topics:[
         {text:"OmniStudio Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-OmniStudio-Consultant-Exam-Guide"},
-        {text:"OmniStudio Architecture",url:"https://help.salesforce.com/s/articleView?id=sf.os_omnistudio_overview.htm"},
-        {text:"FlexCards for Consultants",url:"https://help.salesforce.com/s/articleView?id=sf.os_flexcards.htm"},
-        {text:"OmniScript Design Patterns",url:"https://help.salesforce.com/s/articleView?id=sf.os_omniscript.htm"},
-        {text:"DataRaptor Best Practices",url:"https://help.salesforce.com/s/articleView?id=sf.os_dataraptor.htm"},
+        {text:"Build guided digital experiences with Salesforce Omnistudio.",url:"https://www.salesforce.com/industries/omnistudio/"},
+        {text:"Flexcards in OmniStudio for Managed Packages",url:"https://trailhead.salesforce.com/content/learn/modules/omnistudio-flexcards"},
+        {text:"Designing and Styling Omniscript (Managed Package)",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_designing_and_styling_omniscript.htm&type=5"},
+        {text:"Omnistudio Data Mapper Best Practices",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_dataraptor_best_practices_47412.htm&type=5"},
         {text:"OmniStudio Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-omnistudio-consultant-credential"}
       ]},
       {tag:"exam-prep-omni-con",focus:"OmniStudio Consultant exam prep: solution design with FlexCards, OmniScripts, and Integration Procedures",topics:[
         {text:"OmniStudio Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-OmniStudio-Consultant-Exam-Guide"},
         {text:"OmniStudio Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-omnistudio-consultant-credential"},
-        {text:"OmniStudio Help Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.os_omnistudio_overview.htm"},
+        {text:"Build guided digital experiences with Salesforce Omnistudio.",url:"https://www.salesforce.com/industries/omnistudio/"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-omnistudio-con---OmniS-Con-201"},
         {text:"OmniStudio Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_omnistudio"},
         {text:"Industries Cloud Trailhead",url:"https://trailhead.salesforce.com/content/learn/modules/omnistudio-architecture"}
@@ -736,6 +603,7 @@ Object.assign(EXAM_DATA, {
     pass: 65,
     experience: "2+ years implementing Slack for business",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-slack-consultant---Slack-Con-201",
+    trailmixUrl: null,
     prerequisites: ["Slack Administrator"],
     overview: "Validates expertise in consulting on Slack implementations, including workspace design, Salesforce-Slack integrations, workflow automation, and governance strategies for enterprise Slack deployments.",
         domains:[
@@ -750,16 +618,16 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"slack-consultant",focus:"Slack Consultant: workspace design, Enterprise Grid strategy, app governance, and ROI",topics:[
         {text:"Slack Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Slack-Consultant-Exam-Guide"},
-        {text:"Slack Enterprise Grid",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_enterprise_grid.htm"},
-        {text:"Slack Governance Best Practices",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_overview.htm"},
-        {text:"Slack App Directory Management",url:"https://help.salesforce.com/s/articleView?id=sf.slack_apps_apps_directory.htm"},
-        {text:"Salesforce for Slack",url:"https://help.salesforce.com/s/articleView?id=sf.slack_salesforce_app.htm"},
-        {text:"Slack Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-slack-consultant-credential"}
+        {text:"An introduction to Slack Enterprise Grid",url:"https://slack.com/intl/en-gb/resources/why-use-slack/slack-enterprise-grid"},
+        {text:"Workspace administration",url:"https://slack.com/intl/en-gb/help/categories/200122103-Workspace-administration"},
+        {text:"Guide to apps in Slack",url:"https://slack.com/intl/en-gb/help/articles/360001537467-Guide-to-apps-in-Slack"},
+        {text:"Salesforce for Slack Integrations",url:"https://help.salesforce.com/s/articleView?id=slack.slack_apps.htm&type=5"},
+        {text:"Slack Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-certified-slack-consultant-cred"}
       ]},
       {tag:"exam-prep-slack-con",focus:"Slack Consultant exam prep: workspace design, change management, and Salesforce integration",topics:[
         {text:"Slack Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Slack-Consultant-Exam-Guide"},
-        {text:"Slack Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-slack-consultant-credential"},
-        {text:"Slack Admin Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.slack_admin_overview.htm"},
+        {text:"Slack Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-certified-slack-consultant-cred"},
+        {text:"Workspace administration",url:"https://slack.com/intl/en-gb/help/categories/200122103-Workspace-administration"},
         {text:"Slack Admin Trailhead Module",url:"https://trailhead.salesforce.com/content/learn/modules/slack-admin"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-slack-consultant---Slack-Con-201"},
         {text:"Slack Consultant Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_slack_consultant"}
@@ -805,6 +673,7 @@ Object.assign(EXAM_DATA, {
     pass: 65,
     experience: "2+ years implementing CRM Analytics solutions",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-crm-analytics---Analytics-Con-201",
+    trailmixUrl: null,
     prerequisites: ["Platform Administrator"],
     overview: "Validates expertise in designing and implementing CRM Analytics (formerly Tableau CRM / Einstein Analytics) and Einstein Discovery solutions, including datasets, dashboards, lenses, recipes, and predictive analytics.",
         domains:[
@@ -818,25 +687,25 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"crm-analytics-setup",focus:"CRM Analytics setup: datasets, lenses, dashboards, and SAQL queries",topics:[
         {text:"CRM Analytics Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-CRM-Analytics-and-Einstein-Discovery-Consultant-Exam-Guide"},
-        {text:"CRM Analytics Overview",url:"https://help.salesforce.com/s/articleView?id=sf.bi_overview.htm"},
-        {text:"Datasets and Data Recipes",url:"https://help.salesforce.com/s/articleView?id=sf.bi_recipe_overview.htm"},
-        {text:"SAQL Reference",url:"https://help.salesforce.com/s/articleView?id=sf.bi_saql.htm"},
-        {text:"Dashboard Design",url:"https://help.salesforce.com/s/articleView?id=sf.bi_dashboard_overview.htm"},
-        {text:"CRM Analytics Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-crm-analytics-and-einstein-discovery-consultant-credential"}
+        {text:"CRM Analytics",url:"https://help.salesforce.com/s/articleView?id=analytics.bi.htm&type=5"},
+        {text:"CRM Analytics Recipes",url:"https://developer.salesforce.com/docs/atlas.en-us.pkg2_dev.meta/pkg2_dev/app_analytics_cookbook_tcrm_intro.htm"},
+        {text:"Analytics SAQL Developer Guide",url:"https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/bi_dev_guide_saql.pdf"},
+        {text:"Build CRM Analytics Dashboards",url:"https://help.salesforce.com/s/articleView?id=analytics.bi_dashboard_build_flex.htm&type=5"},
+        {text:"CRM Analytics Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-crm-analytics-and-einstein-disc-con"}
       ]},
       {tag:"einstein-discovery",focus:"Einstein Discovery: stories, predictive models, prescriptions, and writeback",topics:[
-        {text:"Einstein Discovery Overview",url:"https://help.salesforce.com/s/articleView?id=sf.bi_edd_overview.htm"},
-        {text:"Creating Einstein Discovery Stories",url:"https://help.salesforce.com/s/articleView?id=sf.bi_edd_story_overview.htm"},
-        {text:"Einstein Discovery Prescriptions",url:"https://help.salesforce.com/s/articleView?id=sf.bi_edd_prescriptions.htm"},
-        {text:"Model Writeback to CRM",url:"https://help.salesforce.com/s/articleView?id=sf.bi_edd_writeback.htm"},
-        {text:"Einstein Prediction Builder",url:"https://help.salesforce.com/s/articleView?id=sf.bi_edd_overview.htm"},
-        {text:"CRM Analytics Data Integration",url:"https://help.salesforce.com/s/articleView?id=sf.bi_integrate_connectors_sfdc.htm"}
+        {text:"Introduction to Einstein Discovery",url:"https://help.salesforce.com/s/articleView?id=analytics.bi_edd_about.htm&type=5"},
+        {text:"About Einstein Discovery",url:"https://help.salesforce.com/s/articleView?id=analytics.bi_edd_intro.htm&type=5"},
+        {text:"Explain, Predict, and Take Action with Einstein Discovery",url:"https://help.salesforce.com/s/articleView?id=analytics.bi_edd.htm&type=5"},
+        {text:"Configure a Writeback Object Node in CRM Analytics (CRMA) Runtime",url:"https://help.salesforce.com/s/articleView?id=ind.dpe_configure_writeback_crma.htm&type=5"},
+        {text:"Introduction to Einstein Discovery",url:"https://help.salesforce.com/s/articleView?id=analytics.bi_edd_about.htm&type=5"},
+        {text:"Unlock CRM Analytics Insights on Data 360",url:"https://help.salesforce.com/s/articleView?id=analytics.bi_direct_data_for_cdp.htm&type=5"}
       ]},
       {tag:"exam-prep-crm-analytics",focus:"CRM Analytics Consultant exam prep: dashboards, SAQL, Einstein Discovery, and data integration",topics:[
         {text:"CRM Analytics Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-CRM-Analytics-and-Einstein-Discovery-Consultant-Exam-Guide"},
-        {text:"CRM Analytics Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-crm-analytics-and-einstein-discovery-consultant-credential"},
+        {text:"CRM Analytics Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-crm-analytics-and-einstein-disc-con"},
         {text:"CRM Analytics Specialist Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_analytics_cloud_specialist"},
-        {text:"SAQL Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.bi_saql.htm"},
+        {text:"Analytics SAQL Developer Guide",url:"https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/bi_dev_guide_saql.pdf"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-crm-analytics-consultant---CRM-Ana-Con-201"},
         {text:"CRM Analytics Module",url:"https://trailhead.salesforce.com/content/learn/modules/wave_analytics_basics"}
       ]}
@@ -875,75 +744,6 @@ Object.assign(EXAM_DATA, {
     ]
   },
 
-  "MuleSoft Catalyst Consultant": {
-    questions: 60,
-    time: 105,
-    pass: 65,
-    experience: "2+ years in integration architecture and MuleSoft delivery",
-    trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mulesoft-catalyst-consultant---Mule-Con-201",
-    prerequisites: ["MuleSoft Developer"],
-    overview: "Validates expertise in applying the MuleSoft Catalyst methodology to deliver successful integration and API-led connectivity projects, including discovery, design, delivery, and run phases.",
-        domains:[
-      {name:"Apply Catalyst principles",pct:9,color:"#00A1E0",desc:"Classify given activities, concepts, or assets as belonging to Catalyst Methodology, Catalyst Knowledge Hub (KH), Catalyst service offering.",keyTopics:[{title:"Classify given activities, concepts, or assets as belongi...",desc:"Classify given activities, concepts, or assets as belonging to Catalyst Methodology, Catalyst Knowledge Hub (KH), Catalyst service offering."},{title:"terms of use",desc:"Describe the terms of use and lifecycle of Catalyst itself."},{title:"defining characteristics",desc:"Explain the defining characteristics and principles of Catalyst."},{title:"Identify Catalyst roles given engagement responsibilities",desc:"Identify Catalyst roles given engagement responsibilities."}]},
-      {name:"Leverage Catalyst Knowledge Hub",pct:7,color:"#2ECC71",desc:"Explain the structure and types of Catalyst-related content in Knowledge Hub: assets/articles, playbooks and their steps, delivery approaches and their steps.",keyTopics:[{title:"structure",desc:"Explain the structure and types of Catalyst-related content in Knowledge Hub: assets/articles, playbooks and their steps, delivery approaches and their steps."},{title:"types of assets in Knowledge Hub: standards, best practic...",desc:"Explain the types of assets in Knowledge Hub: standards, best practices, examples, tools, and templates."},{title:"difference between playbooks",desc:"Explain the difference between playbooks and delivery approaches and select the right one for a given purpose."}]},
-      {name:"Architect to Catalyst Principles",pct:27,color:"#F39C12",desc:"Articulate the role architecture plays in aligning business and technology.",keyTopics:[{title:"Articulate the role architecture plays in aligning business",desc:"Articulate the role architecture plays in aligning business and technology."},{title:"Organize business environment drivers, organizational vis...",desc:"Organize business environment drivers, organizational vision, and strategic goals, objectives, KPIs, and initiatives into a logical network of influences."},{title:"Analyze the value of each principle of architecting with ...",desc:"Analyze the value of each principle of architecting with Catalyst for projects and engagements."},{title:"Articulate the role of integration architecture in realiz...",desc:"Articulate the role of integration architecture in realizing end-to-end business processes."},{title:"Create a backlog of architectural significance to capture...",desc:"Create a backlog of architectural significance to capture engagement scope in a way that is conducive to architecting in a Catalyst context."},{title:"Critique too narrow engagement scope definitions",desc:"Critique too narrow engagement scope definitions and objections to their widening."},{title:"Architect to maximize reuse",desc:"Architect to maximize reuse and reuse potential without neglecting short-term objectives."},{title:"Analyze the advantages that architecting on top of a digi...",desc:"Analyze the advantages that architecting on top of a digital platform brings to projects."},{title:"an API-led approach to connectivity on the conceptual",desc:"Apply an API-led approach to connectivity on the conceptual and logical level, making idiomatic use of interaction types and patterns."},{title:"Architect in the context of projects to support the produ...",desc:"Architect in the context of projects to support the productization of APIs."},{title:"Architect to achieve both short-term outcomes",desc:"Architect to achieve both short-term outcomes and long-term goals, in a balanced way."}]},
-      {name:"Realize business outcomes with a Catalyst approach",pct:11,color:"#E74C3C",desc:"Articulate key terminology, business and platform capability benefits, common mistakes when defining business outcomes, the Catalyst Business Outcome Playbook.",keyTopics:[{title:"Articulate key terminology, business",desc:"Articulate key terminology, business and platform capability benefits, common mistakes when defining business outcomes, the Catalyst Business Outcome Playbook."},{title:"Discover",desc:"Discover and define business outcomes."},{title:"Align business outcomes with stakeholders",desc:"Align business outcomes with stakeholders."},{title:"Align engagement scope with stakeholders",desc:"Align engagement scope with stakeholders."},{title:"Measure",desc:"Measure and track business outcomes."}]},
-      {name:"Implement a Center for Enablement (C4E)",pct:15,color:"#9B59B6",desc:"Describe what C4E is and explain its value proposition.",keyTopics:[{title:"Describe what C4E is",desc:"Describe what C4E is and explain its value proposition."},{title:"difference between C4E",desc:"Explain the difference between C4E and Center of Excellence (CoE)."},{title:"C4E organizational models",desc:"Describe the C4E organizational models."},{title:"components of building a C4E",desc:"Describe the components of building a C4E."},{title:"concepts of C4E foundational assets",desc:"Explain the concepts of C4E foundational assets."},{title:"importance",desc:"Explain the importance and process of promoting a C4E."},{title:"Explain activities to maintain an operational",desc:"Explain activities to maintain an operational and relevant C4E."}]},
-      {name:"Position and reframe with Catalyst methodology",pct:11,color:"#1ABC9C",desc:"Position the benefits of a Catalyst approach to stakeholders.",keyTopics:[{title:"Position the benefits of a Catalyst approach to stakeholders",desc:"Position the benefits of a Catalyst approach to stakeholders."},{title:"Reframe the value of a Catalyst approach when the team is...",desc:"Reframe the value of a Catalyst approach when the team is diverging from a Catalyst approach."},{title:"Resolve common objections to a Catalyst approach",desc:"Resolve common objections to a Catalyst approach."}]},
-      {name:"Design composable solutions",pct:20,color:"#E67E22",desc:"Understand the principles and properties of composability.",keyTopics:[{title:"principles",desc:"Describe the principles and properties of composability."},{title:"generic patterns, interaction types,",desc:"Identify the generic patterns, interaction types, and interaction patterns on the conceptual and logical levels."},{title:"these generic patterns in a catalyst context to the most ...",desc:"Apply these generic patterns in a catalyst context to the most common integration architectural styles and designs such as API-led. EDA, Asynchronous, Batch, ETL, Multi-way synchronization, etc."},{title:"Address the cross-cutting concerns such as idempotency, t...",desc:"Address the cross-cutting concerns such as idempotency, transactionality, reliability, etc., in the solution design adhering to Catalyst principles."},{title:"Identify between composability",desc:"Identify between composability and low coupling, high cohesion as well as the benefits and implications of DDD and Bounded Contexts."},{title:"principles of API-led approach to connectivity to common ...",desc:"Apply principles of API-led approach to connectivity to common integration patterns beyond simple RESTful APIs, incl. application integration scenarios, EDAs, batch, etc."},{title:"Articulate the benefits of Automation",desc:"Articulate the benefits of Automation and Intelligently identify the use cases that benefit from it."}]},
-    ],
-    studyDays:[
-      {tag:"catalyst-methodology",focus:"MuleSoft Catalyst methodology: Discover, Design, Deliver, and Run phases",topics:[
-        {text:"MuleSoft Catalyst Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=MuleSoft-Certified-Catalyst-Consultant-Exam-Guide"},
-        {text:"Catalyst Methodology Overview",url:"https://docs.mulesoft.com/general/"},
-        {text:"Center for Enablement (C4E)",url:"https://www.mulesoft.com/resources/api/what-is-api-led-connectivity"},
-        {text:"API-Led Connectivity Strategy",url:"https://www.mulesoft.com/resources/api/what-is-api-led-connectivity"},
-        {text:"MuleSoft Catalyst Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-certified-catalyst-consultant"},
-        {text:"Anypoint Platform for Consultants",url:"https://docs.mulesoft.com/general/"}
-      ]},
-      {tag:"exam-prep-catalyst",focus:"Catalyst Consultant exam prep: methodology, C4E, and integration governance scenarios",topics:[
-        {text:"MuleSoft Catalyst Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=MuleSoft-Certified-Catalyst-Consultant-Exam-Guide"},
-        {text:"Catalyst Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-certified-catalyst-consultant"},
-        {text:"Anypoint Platform Documentation",url:"https://docs.mulesoft.com/"},
-        {text:"C4E and API Strategy",url:"https://www.mulesoft.com/resources/api/what-is-api-led-connectivity"},
-        {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-mule-catalyst---Mule-Cat-201"},
-        {text:"MuleSoft Training",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-integration-and-apis"}
-      ]}
-    ],
-    quiz:[
-      {domain:"Catalyst Methodology",q:"What are the four phases of the MuleSoft Catalyst methodology?",opts:["Plan, Build, Test, Deploy", "Discover, Design, Deliver, Run", "Analyze, Architect, Implement, Monitor", "Assess, Strategy, Develop, Operate"],correct:1,explanation:"MuleSoft Catalyst is a delivery framework for API-led integration projects: Discover (understand current state and define the API strategy), Design (architect the API layers and create specifications), Deliver (build and iterate in agile sprints), Run (monitor, operate, and continuously improve in production). Each phase has defined activities, artifacts, and exit criteria."},
-      {domain:"Catalyst Methodology",q:"What is the purpose of the Center for Enablement (C4E) in Catalyst?",opts:["To manage infrastructure for MuleSoft deployments", "To enable API reuse and drive inner-sourcing across teams", "To provide training for developers only", "To govern data quality in Anypoint Platform"],correct:1,explanation:"The C4E is Catalyst's organizational model for scaling integration — a core team creates and governs reusable API assets, publishes them to Anypoint Exchange, and enables all business teams to self-serve integrations without rebuilding the same APIs repeatedly. Inner-sourcing treats APIs like internal open-source packages."},
-      {domain:"Discovery and Design",q:"In API-led connectivity, which layer connects the Experience layer to backend systems?",opts:["System layer", "Process layer", "Integration layer", "Business layer"],correct:1,explanation:"The Process layer sits between Experience APIs (consumer-facing) and System APIs (backend-facing) — it orchestrates multiple System API calls, applies business logic, aggregates results, and transforms data for the Experience layer. This separation ensures that business logic is not duplicated in each consumer channel."},
-      {domain:"Catalyst Methodology",q:"What does the Discovery phase of Catalyst primarily produce?",opts:["A production deployment of the first API", "A current state assessment and gap analysis with a proposed API strategy", "An Anypoint Platform configuration", "A completed project plan"],correct:1,explanation:"Discovery produces the foundational understanding: how the organization currently integrates systems (as-is), where the pain points are, what the target architecture should be (to-be), and which APIs should be built in what order to deliver the most value. This output directly informs the Design phase's architecture decisions."},
-      {domain:"Catalyst Methodology",q:"What is the main metric for measuring C4E success?",opts:["Number of APIs deployed", "API reuse rate across teams", "Time to first API delivery", "Number of integrations per sprint"],correct:1,explanation:"API reuse rate — the percentage of new integration projects that leverage existing API assets from Exchange rather than building from scratch — directly measures whether the C4E is delivering its core value proposition. High reuse means shorter project timelines and lower costs; low reuse means the C4E's published assets aren't being adopted."},
-      {domain:"Catalyst Methodology",q:"Which Catalyst phase focuses on building and iterating on APIs in sprints?",opts:["Discover", "Design", "Deliver", "Run"],correct:2,explanation:"The Deliver phase is the build phase — APIs designed in the previous phase are implemented iteratively in agile sprints, each delivering working, tested API functionality. Sprint reviews with stakeholders ensure alignment, and early deployments to UAT environments enable business validation before full production release."},
-      {domain:"Catalyst Methodology",q:"What is the anti-pattern known as point-to-point spaghetti?",opts:["Overloading the Experience layer with business logic", "Direct integrations between every system without reusable APIs, creating an unmaintainable web", "Building too many Process layer APIs", "Using only SOAP instead of REST"],correct:1,explanation:"Point-to-point spaghetti creates N×(N-1) direct connections between systems — as the number of systems grows, the number of integrations explodes exponentially. Each integration is custom, undocumented, and brittle. API-led connectivity solves this by introducing reusable System APIs that each system exposes once, and all consumers call through the standardized API layer."},
-      {domain:"API Strategy and Architecture",q:"Which tool in Anypoint Platform supports API reuse and discovery across teams?",opts:["Anypoint Studio", "Anypoint Exchange", "Anypoint Monitoring", "API Manager"],correct:1,explanation:"Anypoint Exchange is the internal marketplace for MuleSoft assets — developers publish RAML specifications, connectors, templates, and example projects; all other teams discover and subscribe to them. Exchange is the technical mechanism that makes the C4E's inner-sourcing model possible at scale."},
-      {domain:"Catalyst Methodology",q:"What is the recommended API specification format for MuleSoft API design?",opts:["OpenAPI only", "RAML (RESTful API Modeling Language)", "WSDL for all APIs", "JSON Schema only"],correct:1,explanation:"RAML (RESTful API Modeling Language) is MuleSoft's preferred API specification format — it supports reusable Traits and Resource Types that eliminate repetition, is tightly integrated with Anypoint Design Center and API Manager, and produces API documentation, mock services, and test suites automatically. OpenAPI (Swagger) is also supported but RAML is the recommended default in Catalyst."},
-      {domain:"Catalyst Methodology",q:"Which Catalyst principle emphasizes delivering value incrementally to stakeholders?",opts:["Big bang deployment", "Agile-based iterative delivery with MVPs", "Waterfall delivery with full documentation", "Parallel team delivery"],correct:1,explanation:"Catalyst is explicitly agile — value is delivered in short iterations (sprints) rather than at the end of a long project. MVPs (minimum viable products) validate business assumptions early, stakeholders see working APIs quickly, and feedback is incorporated continuously. This reduces the risk of spending months building the wrong solution."},
-      {domain:"Catalyst Methodology",q:"What is the purpose of the Run phase in Catalyst?",opts:["To finalize API design before deployment", "To monitor, maintain, and continuously improve APIs in production", "To train new integration developers", "To present the final project to stakeholders"],correct:1,explanation:"Run is the production lifecycle management phase — APIs are monitored via Anypoint Monitoring, incidents are managed, performance is analyzed, APIs are versioned and enhanced based on usage patterns, and the C4E continues growing the Exchange asset library. Without a defined Run phase, organizations deploy APIs and then neglect operational excellence."},
-      {domain:"API Strategy and Architecture",q:"In the API-led model, where should orchestration and aggregation logic live?",opts:["Experience layer", "Process layer", "System layer", "All layers equally"],correct:1,explanation:"Process APIs are the orchestration layer — they call multiple System APIs, apply business rules, aggregate responses into a unified model, and handle errors across the coordination. Putting orchestration in the Experience layer couples business logic to a specific consumer; putting it in the System layer makes backend APIs too complex."},
-      {domain:"Discovery and Design",q:"Which integration pattern is best when you need to synchronize data from one system to many?",opts:["Migration pattern", "Broadcast pattern", "Aggregation pattern", "Correlation pattern"],correct:1,explanation:"The Broadcast pattern sends the same data from one source to multiple destinations simultaneously — for example, a new Customer record created in CRM is broadcast to ERP, logistics, and billing systems in parallel. This is distinct from Aggregation (combining multiple sources into one) and Migration (one-time bulk data transfer)."},
-      {domain:"Catalyst Methodology",q:"What does inner-sourcing mean in the context of Catalyst?",opts:["Restricting API use to the development team that built them", "Treating internal APIs like open-source packages for reuse across business teams", "Open-sourcing all MuleSoft APIs externally", "Allowing external vendors to contribute to internal APIs"],correct:1,explanation:"Inner-sourcing borrows open-source collaboration practices for internal development — APIs are published to Exchange with documentation, examples, and clear versioning; any team in the organization can discover, use, and even contribute improvements back. This contrasts with siloed development where each team rebuilds the same integrations independently."},
-      {domain:"Catalyst Methodology",q:"Which KPI is most relevant for tracking integration project value realization?",opts:["Total API calls per day", "Reduction in integration delivery time due to API reuse", "Number of RAML specifications written", "CloudHub vCPU utilization"],correct:1,explanation:"Reduction in delivery time — measured by comparing the average time to build new integrations before and after implementing API-led connectivity — directly quantifies the ROI of the investment. If the first integration takes 3 months but the fifth takes 3 weeks because it reuses 3 existing APIs, the time savings is the business value of the platform."},
-      {domain:"Catalyst Methodology",q:"What is an MVP in Catalyst delivery?",opts:["A major version project", "A minimum viable product — the smallest valuable deliverable to validate a business outcome", "A MuleSoft validation process", "A metrics visibility platform"],correct:1,explanation:"An MVP in Catalyst is the smallest coherent deliverable that proves value — for example, deploying the Order System API connecting the CRM to the ERP for the most common order type, proving the integration works end-to-end, before building out all order types. This validates the architecture and demonstrates value to stakeholders quickly."},
-      {domain:"Catalyst Methodology",q:"Which role is responsible for championing API reuse and C4E adoption within a business unit?",opts:["MuleSoft Developer", "API Champion (or Integration Champion)", "Anypoint Platform Admin", "Salesforce Architect"],correct:1,explanation:"API Champions are embedded advocates within business units — they understand both the business needs of their team and the API assets available in Exchange. They bridge the gap between the C4E and the business by promoting reuse, onboarding new developers to the platform, and surfacing new integration requirements back to the C4E."},
-      {domain:"API Strategy and Architecture",q:"What is the recommended approach for versioning APIs in Catalyst?",opts:["Date-based versioning only", "Semantic versioning with backwards-compatible minor versions and breaking changes in major versions", "Never version APIs — always update in place", "Increment version on every deployment"],correct:1,explanation:"Semantic versioning (v1.2.3) makes change impact clear: major version (v2.x) signals breaking changes requiring consumer updates; minor version (v1.2) adds features without breaking existing consumers; patch (v1.2.3) fixes bugs. Consumers can safely upgrade to minor/patch versions but must explicitly update their integration to adopt a new major version."},
-      {domain:"Catalyst Methodology",q:"What does organizational readiness in Catalyst change management assess?",opts:["Whether the infrastructure is ready for CloudHub", "Whether the teams and culture are prepared to adopt API-led integration practices", "Whether RAML specifications are complete", "Whether all existing integrations are documented"],correct:1,explanation:"Organizational readiness addresses the human side of transformation — do teams understand API-led principles? Does leadership champion the C4E? Are developers trained on MuleSoft? Is there a governance process? Technical readiness alone is insufficient; cultural and organizational adoption determines whether API-led integration delivers lasting value."},
-      {domain:"API Strategy and Architecture",q:"Which Catalyst activity helps identify which APIs should be built first?",opts:["Sprint retrospective", "Domain decomposition and API prioritization during Design phase", "Run phase monitoring review", "Discovery phase stakeholder interviews only"],correct:1,explanation:"Domain decomposition breaks the organization's systems into logical business domains (Order Management, Customer, Inventory) and identifies the System APIs each domain needs. Prioritization then ranks these APIs by business value and dependency — APIs needed by multiple consuming teams are built first, maximizing reuse from the earliest deliverables."},
-    ],
-    tips:[
-      "Know the four Catalyst phases deeply — Discover, Design, Deliver, Run — and what each produces.",
-      "Understand C4E purpose and how it drives API reuse across the organization.",
-      "Be clear on API-led connectivity layers: System, Process, Experience — and what belongs in each.",
-      "Know the key anti-patterns like point-to-point spaghetti and overloaded Experience layers.",
-      "Understand the value metrics and KPIs used to measure Catalyst success.",
-      "Know the key integration patterns (Broadcast, Aggregation, Migration, Correlation) and when to use them.",
-      "Be prepared for change management and organizational readiness questions.",
-      "Understand Anypoint Exchange's role in enabling API reuse and inner-sourcing."
-    ]
-  },
-
   "Marketing Cloud Engagement Consultant": {
     questions: 60,
     time: 105,
@@ -963,16 +763,16 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"mc-engagement-solution",focus:"MC Engagement solution design: data model, channel strategy, and multi-cloud integration",topics:[
         {text:"MC Engagement Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Marketing-Cloud-Consultant-Exam-Guide"},
-        {text:"Marketing Cloud Connect",url:"https://help.salesforce.com/s/articleView?id=sf.mc_co_marketing_cloud_connect.htm"},
-        {text:"Data Extensions and Segmentation",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_create_data_extension.htm"},
-        {text:"Journey Builder Advanced",url:"https://help.salesforce.com/s/articleView?id=sf.mc_jb_overview.htm"},
-        {text:"Contact Builder Advanced",url:"https://help.salesforce.com/s/articleView?id=sf.mc_cab_contact_builder.htm"},
+        {text:"Configure the Marketing Cloud Connection",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-connect/finish-mc-connect-configuration"},
+        {text:"Learn About Data Extensions",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-contact-management/learn-about-data-extensions"},
+        {text:"Journey Builder Advanced",url:"https://www.salesforce.com/in/blog/what-is-salesforce-journey-builder/"},
+        {text:"Data Designer in Contact Builder",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_cab_data_designer.htm&type=5"},
         {text:"MC Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-consultant-credential"}
       ]},
       {tag:"exam-prep-mc-con",focus:"MC Engagement Consultant exam prep: channel strategy, data model, and multi-cloud scenarios",topics:[
         {text:"MC Engagement Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Marketing-Cloud-Consultant-Exam-Guide"},
         {text:"MC Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-consultant-credential"},
-        {text:"Marketing Cloud Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.mc_overview.htm"},
+        {text:"What is a Marketing Cloud?",url:"https://www.salesforce.com/eu/marketing/cloud/"},
         {text:"Journey Builder Specialist Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_journey_builder_specialist"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-mc-consultant---MC-Con-201"},
         {text:"Marketing Cloud Basics Module",url:"https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-basics"}
@@ -1012,82 +812,13 @@ Object.assign(EXAM_DATA, {
     ]
   },
 
-  "Marketing Cloud Account Engagement Consultant": {
-    questions: 60,
-    time: 105,
-    pass: 65,
-    experience: "2+ years implementing Pardot/MCAE solutions",
-    trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-engagement-consultant---MCAE-Con-201",
-    prerequisites: ["Marketing Cloud Account Engagement Specialist"],
-    overview: "Validates advanced expertise in implementing Marketing Cloud Account Engagement (Pardot) for B2B marketing automation, including Salesforce integration, lead management, advanced automation, and multi-org scenarios.",
-        domains:[
-      {name:"Evaluation",pct:17,color:"#00A1E0",desc:"Apply knowledge to that includes an assessment of a customer's current Salesforce and Account Engagement landscape as well as business objectives, analyze and make recommendations on a path forward.",keyTopics:[{title:"that includes an assessment of a customer's current Sales...",desc:"Given a scenario that includes an assessment of a customer's current Salesforce and Account Engagement landscape as well as business objectives, analyze and make recommendations on a path forward."},{title:"Design a strategy to identify customer business needs bas...",desc:"Design a strategy to identify customer business needs based on marketing trends using currently available tools and methods."}]},
-      {name:"Account Configuration",pct:20,color:"#2ECC71",desc:"Articulate the implications and importance of technical setup.",keyTopics:[{title:"Articulate the implications",desc:"Articulate the implications and importance of technical setup."},{title:"Develop a plan to maintain data integrity during data mig...",desc:"Develop a plan to maintain data integrity during data migration."},{title:"Given a usage governance plan, develop",desc:"Given a usage governance plan, develop and recommend a strategy that addresses organization and authorization (or access)."}]},
-      {name:"Automating Business Processes",pct:17,color:"#F39C12",desc:"Apply knowledge to recommend the best automation tool(s) (automation rule, segmentation rule, dynamic list, completion action).",keyTopics:[{title:"recommend the best automation tool(s)",desc:"Given a scenario, recommend the best automation tool(s) (automation rule, segmentation rule, dynamic list, completion action)."},{title:"design a sequence of events in Account Engagement to comp...",desc:"Given a scenario, design a sequence of events in Account Engagement to complete a marketing initiative (assets, automation, notifications, etc.)."},{title:"develop",desc:"Given a scenario, develop and implement a lead nurturing strategy."}]},
-      {name:"Email Marketing",pct:10,color:"#E74C3C",desc:"Apply email marketing standards and best practices to customer business needs.",keyTopics:[{title:"email marketing standards",desc:"Apply email marketing standards and best practices to customer business needs."}]},
-      {name:"Lead Management",pct:14,color:"#9B59B6",desc:"Given a customer scenario, develop and recommend a lead generation strategy including Account Engagement assets.",keyTopics:[{title:"Given a customer scenario, develop",desc:"Given a customer scenario, develop and recommend a lead generation strategy including Account Engagement assets."},{title:"Given a lead qualification threshold, classify prospects ...",desc:"Given a lead qualification threshold, classify prospects appropriately."},{title:"recommend a model to route qualified",desc:"Given a scenario, recommend a model to route qualified and unqualified leads across the business."}]},
-      {name:"Personalizing the Prospect Experience",pct:8,color:"#1ABC9C",desc:"Recommend ways to personalize the prospect experience.",keyTopics:[{title:"Recommend ways to personalize the prospect experience",desc:"Recommend ways to personalize the prospect experience."},{title:"Design a strategy to meet a company's consent management ...",desc:"Design a strategy to meet a company's consent management requirements."}]},
-      {name:"Reporting, Metrics and Analytics",pct:11,color:"#E67E22",desc:"Recommend the technical setup requirements for reporting and analytics.",keyTopics:[{title:"Recommend the technical setup requirements for reporting",desc:"Recommend the technical setup requirements for reporting and analytics."},{title:"Identify reporting methods to solve a given scenario",desc:"Identify reporting methods to solve a given scenario."}]},
-      {name:"Sales Emails and Alerts",pct:3,color:"#3498DB",desc:"Configure Sales Emails and Alerts for sales use.",keyTopics:[{title:"Configure Sales Emails",desc:"Configure Sales Emails and Alerts for sales use."},{title:"Summarize the benefits of Sales Emails",desc:"Summarize the benefits of Sales Emails and Alerts."}]},
-    ],
-    studyDays:[
-      {tag:"pardot-consultant",focus:"Account Engagement (Pardot) Consultant: solution design, scoring, nurture programs, and Salesforce alignment",topics:[
-        {text:"Account Engagement Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Pardot-Consultant-Exam-Guide"},
-        {text:"Engagement Studio Advanced",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_engagement_studio.htm"},
-        {text:"Advanced Scoring and Grading",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_scoring_grading.htm"},
-        {text:"Pardot Business Units",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_business_units.htm"},
-        {text:"B2B Marketing Analytics",url:"https://help.salesforce.com/s/articleView?id=sf.b2bma_intro.htm"},
-        {text:"Pardot Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-account-engagement-consultant-credential"}
-      ]},
-      {tag:"exam-prep-pardot-con",focus:"Account Engagement Consultant exam prep: lead nurturing, scoring, and Salesforce integration",topics:[
-        {text:"Account Engagement Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Pardot-Consultant-Exam-Guide"},
-        {text:"Pardot Consultant Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-account-engagement-consultant-credential"},
-        {text:"Account Engagement Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_overview.htm"},
-        {text:"Pardot Specialist Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_pardot_specialist"},
-        {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-pardot-con---Pardot-Con-201"},
-        {text:"B2B Marketing Trailhead",url:"https://trailhead.salesforce.com/content/learn/trails/b2bmarketing"}
-      ]}
-    ],
-    quiz:[
-      {domain:"Lead Management",q:"What is the key difference between Pardot Score and Grade?",opts:["Score measures fit; Grade measures engagement", "Score measures engagement level; Grade measures how well a prospect fits your ideal customer profile", "Both measure the same thing on different scales", "Grade is set manually; Score is automatic only"],correct:1,explanation:"Score (0-250+) measures behavioral engagement — every tracked action adds points (email open +1, form fill +10, pricing page visit +20). Grade (A-F) measures demographic fit — it goes up or down based on how closely the prospect's profile matches your ideal customer criteria (company size, industry, job title). A high score with a low grade means an engaged but poorly-fit prospect."},
-      {domain:"Evaluation",q:"Which MCAE feature creates personalized nurture paths with conditions and wait times?",opts:["Automation Rules", "Engagement Studio", "Drip Programs", "Dynamic Lists"],correct:1,explanation:"Engagement Studio is MCAE's visual journey builder — it provides a drag-and-drop canvas for building multi-step nurture programs with action steps (send email, add to list, assign to user), wait steps (days/weeks), and condition steps (did they open the email? did they visit the pricing page?). It replaced legacy Drip Programs with a more visual, flexible interface."},
-      {domain:"Lead Management",q:"What happens when a Prospect is synced to Salesforce in MCAE?",opts:["The Prospect record is deleted from Pardot", "A Lead or Contact record is created or matched in Salesforce and kept in sync via the connector", "A Campaign member is created only", "The sync creates an Opportunity automatically"],correct:1,explanation:"When an MCAE Prospect syncs to Salesforce, MCAE attempts to match to an existing Lead or Contact by email address — if found, it syncs to that record; if not, it creates a new Lead. After the initial sync, field changes in either system are synchronized according to the configured sync behavior for each field."},
-      {domain:"Lead Management",q:"Which list type automatically adds or removes prospects based on criteria?",opts:["Static List", "Dynamic List", "Suppression List", "CRM List"],correct:1,explanation:"Dynamic Lists evaluate their criteria continuously — prospects are added when they meet the criteria and removed when they no longer meet them. For example, a 'Active Trial Users' dynamic list automatically includes prospects whose trial status field is 'Active' and removes them when the trial ends. Static Lists require manual management."},
-      {domain:"Evaluation",q:"What is progressive profiling in MCAE?",opts:["A lead scoring method that increases with each form fill", "Forms that show new questions to returning visitors instead of asking fields already collected", "An AI feature that predicts prospect behavior", "A segmentation method based on firmographic data"],correct:1,explanation:"Progressive profiling improves form completion rates and data richness simultaneously — instead of showing a long form that may deter submission, returning visitors see only the fields that haven't been collected yet. Each visit adds a few more data points until the complete profile is built, without ever asking the same question twice."},
-      {domain:"Evaluation",q:"What is Connected Campaigns in MCAE?",opts:["A way to connect multiple Pardot accounts", "A feature that aligns Pardot Campaigns with Salesforce Campaigns for unified reporting", "A cross-BU marketing program", "An API connector for campaign automation"],correct:1,explanation:"Connected Campaigns creates a one-to-one relationship between an MCAE Campaign and a Salesforce Campaign — engagement data from Pardot (opens, clicks, form fills) flows into the Salesforce Campaign as Influenced Contacts and Members, enabling unified marketing ROI reporting in Salesforce rather than requiring analysts to stitch data from two systems."},
-      {domain:"Account Configuration",q:"Which MCAE feature can automatically reassign a prospect from marketing to sales when they reach a threshold?",opts:["Engagement Studio assignment step", "Automation Rule with an Assign action triggered by score/grade threshold", "Drip program final action", "Salesforce assignment rules only"],correct:1,explanation:"Automation Rules are condition-action rules that fire when a prospect meets defined criteria — when Score >= 75 AND Grade >= B, an Automation Rule can assign the prospect to the matched sales rep, notify them via email, and add the prospect to a 'Sales Ready' list. This automates the MQL-to-SAL handoff without manual list review."},
-      {domain:"Evaluation",q:"What is the purpose of a Form Handler in MCAE?",opts:["To validate Pardot form submissions", "To capture submission data from a third-party form and create or update a Pardot Prospect", "To import CSV lists into Pardot", "To route form leads to different sales reps"],correct:1,explanation:"Form Handlers integrate third-party forms (website CMS forms, event registration forms) with MCAE — a simple iframe or redirect sends form submission data to a Form Handler endpoint, which creates or updates a Prospect record in MCAE. This avoids replacing existing forms with native Pardot forms while still capturing marketing engagement data."},
-      {domain:"Lead Management",q:"How does Einstein Behavior Scoring differ from traditional Pardot Score?",opts:["Einstein scores are manually calibrated by admins", "Einstein uses AI to predict a prospect's likelihood to convert based on behavioral patterns, not just activity count", "Einstein Score replaces Grade entirely", "Einstein Behavior Scoring only applies to Account-Based leads"],correct:1,explanation:"Traditional Pardot Score is additive (sum of points per activity) — it doesn't account for which behaviors are actually predictive of conversion for your specific audience. Einstein Behavior Scoring trains an ML model on historical conversion data to predict conversion likelihood, weighting behaviors by their actual predictive value rather than arbitrary assigned points."},
-      {domain:"Account Configuration",q:"What is the MCAE sync behavior when the same field has different values in Pardot and Salesforce?",opts:["Pardot always wins", "Salesforce typically wins, but sync behavior can be configured per field", "The most recently updated value wins", "Both values are merged into a combined field"],correct:1,explanation:"MCAE's default sync direction is Salesforce wins — when there's a conflict, the Salesforce value overwrites the Pardot value. However, sync behavior is configurable per field: Pardot can win, Salesforce can win, or the most recently updated value can win. This per-field configuration is critical for fields that marketing owns vs. fields that sales owns."},
-      {domain:"Account Configuration",q:"What is Campaign Influence in Salesforce as it relates to MCAE?",opts:["An MCAE report on email campaign ROI only", "Tracks which MCAE campaigns contributed to an Opportunity's creation or progression", "A Salesforce Campaign record type for Pardot", "A multi-touch scoring model"],correct:1,explanation:"Campaign Influence tracks the marketing touches (email opens, form fills, web visits from MCAE campaigns) that occurred before or during an Opportunity's sales cycle. Each MCAE engagement creates a Campaign Member with an influence status on the related Salesforce Campaign, enabling revenue attribution modeling that answers 'which campaigns influenced our closed deals?'"},
-      {domain:"Lead Management",q:"In MCAE Business Units, what determines which BU a prospect belongs to?",opts:["The Salesforce org the prospect syncs to", "The Business Unit assigned at the time of the prospect's creation or by segmentation rules", "The form the prospect filled out", "The email template used for first contact"],correct:1,explanation:"In MCAE with multiple Business Units, a prospect is assigned to a specific BU either automatically (by which BU's tracking code or form captured them) or by an Automation Rule that segments prospects based on criteria like industry or product interest. Prospects can only belong to one BU at a time and all their data is scoped to that BU."},
-      {domain:"Lead Management",q:"What is Activity Decay in Pardot Scoring?",opts:["Removes prospects who have not clicked an email in 90 days", "Automatically reduces a prospect's engagement score over time if they are inactive", "Permanently deletes inactive prospects", "Deactivates automation rules after a period"],correct:1,explanation:"Score Decay prevents old engagement from making prospects appear more qualified than they currently are — a prospect who was highly active 18 months ago but hasn't engaged recently might have a misleadingly high score. Decay reduces the score by a configured percentage over time for inactive prospects, keeping scores reflective of current engagement, not historical peaks."},
-      {domain:"Reporting",q:"Which MCAE product tier includes Einstein features and B2B Marketing Analytics?",opts:["Growth", "Plus", "Advanced or Premium", "All tiers include Einstein"],correct:2,explanation:"Einstein features (Behavior Scoring, Campaign Insights, Attribution) and B2B Marketing Analytics (the advanced Tableau CRM-powered analytics app) are only available on Advanced and Premium tiers. The Growth and Plus tiers provide core functionality but lack the AI-powered analytics that justify the premium price for sophisticated marketing operations teams."},
-      {domain:"Evaluation",q:"How should a consultant handle duplicate prospects in MCAE?",opts:["Delete duplicates manually in Pardot", "Use the CRM connector to match and merge duplicates aligned to Salesforce duplicate rules", "Allow duplicates as each has a different email address", "Use a static list to suppress duplicates from sends"],correct:1,explanation:"Duplicate Prospects in MCAE cause data quality issues — split engagement history, conflicting scores, and multiple Salesforce sync records. The recommended approach is leveraging the Salesforce connector's merge functionality: deduplicating in Salesforce (which is the master system) causes MCAE to consolidate the corresponding Prospect records according to the configured merge behavior."},
-      {domain:"Evaluation",q:"Which MCAE feature tracks web activity for known and unknown visitors?",opts:["Marketing Cloud Web Analytics", "Pardot Tracking Pixel and Prospect Activity tracking via JavaScript tracking code", "Einstein Web Scoring", "Salesforce Activity History sync"],correct:1,explanation:"The MCAE tracking code (JavaScript snippet) is placed on all pages of the company website — for known prospects (those who have filled a form or clicked a tracked email link), it records every page visit as a Prospect Activity. For unknown visitors, it records sessions that become associated with a Prospect when they later identify themselves by filling a form."},
-      {domain:"Email Marketing",q:"In Engagement Studio, what does a Condition step do?",opts:["Waits for a specified time before continuing", "Evaluates whether a prospect meets a criteria and routes them to different branches", "Sends an automated email", "Adds the prospect to a Salesforce Campaign"],correct:1,explanation:"Condition steps create branching logic in Engagement Studio — they evaluate whether a prospect meets a defined condition (did they open the last email? is their grade A or B? have they visited the pricing page?) and route them to different subsequent steps based on the Yes/No result. This enables personalized journey paths within a single Engagement Studio program."},
-      {domain:"Evaluation",q:"What is the recommended approach for aligning marketing and sales on lead handoff in MCAE?",opts:["Sales manually reviews all Pardot lists daily", "Define agreed scoring thresholds and use automation rules to assign and notify sales reps", "Use Marketing Cloud for lead handoff only", "Assign all prospects to sales after first email open"],correct:1,explanation:"Agreed scoring thresholds formalize the MQL definition — marketing and sales jointly agree that Score >= X AND Grade >= Y means a prospect is sales-ready. An Automation Rule then automatically executes the handoff (assign to the correct rep, create a Salesforce task, add to a CRM dashboard view) without manual list review, ensuring consistent, timely handoffs at scale."},
-      {domain:"Evaluation",q:"How is multi-touch attribution different from single-touch attribution in MCAE?",opts:["Multi-touch only tracks email; single-touch tracks all channels", "Multi-touch distributes revenue credit across all influencing campaigns; single-touch credits only one", "Single-touch uses Einstein AI; multi-touch is manual", "They are identical in MCAE"],correct:1,explanation:"Single-touch attribution assigns 100% of the Opportunity value to one campaign (first touch or last touch). Multi-touch attribution distributes credit across all campaigns that influenced the Opportunity — for example, even spread gives equal credit to each touchpoint; time-decay weights recent touches more heavily. Multi-touch provides a more accurate picture of the full customer journey's contribution."},
-      {domain:"Email Marketing",q:"Which MCAE report shows the ROI and pipeline influenced by marketing programs?",opts:["Email Performance Report", "B2B Marketing Analytics Pipeline Report", "Engagement Studio Summary", "Prospect Activity Export"],correct:1,explanation:"B2B Marketing Analytics (powered by Tableau CRM / CRM Analytics) provides the advanced pipeline and revenue attribution reports for MCAE — showing which campaigns influenced pipeline and closed revenue, multi-touch attribution models, and funnel conversion metrics. This is the report that helps marketing prove ROI to leadership and justify budget allocation."},
-    ],
-    tips:[
-      "Know Score vs Grade — this is the most tested MCAE concept.",
-      "Understand Engagement Studio conditions, actions, and wait steps end to end.",
-      "Know the connector sync behavior: field-level sync direction and conflict resolution.",
-      "Be clear on Connected Campaigns and how they enable unified reporting between Pardot and Salesforce.",
-      "Understand Progressive Profiling and Form Handlers for B2B data capture.",
-      "Know Einstein Behavior Scoring and how it improves on traditional activity-based scoring.",
-      "B2B Marketing Analytics and Campaign Influence are frequently tested for the Consultant exam.",
-      "Understand multi-BU architecture and when to use Business Units vs separate Pardot accounts."
-    ]
-  },
-
   "Revenue Cloud Consultant": {
     questions: 60,
     time: 105,
     pass: 65,
     experience: "2+ years implementing Salesforce Revenue Cloud (CPQ & Billing)",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-revenue-cloud-consultant---Rev-Con-201",
+    trailmixUrl: "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-revenue-cloud-consultant-exam",
     prerequisites: ["Platform Administrator"],
     overview: "Validates expertise in implementing Salesforce Revenue Cloud, including CPQ (Configure Price Quote), Billing, subscription management, revenue recognition, and the full quote-to-cash process.",
         domains:[
@@ -1102,17 +833,17 @@ Object.assign(EXAM_DATA, {
     studyDays:[
       {tag:"revenue-cloud-setup",focus:"Revenue Cloud solution design: CPQ, Billing, CLM, and Revenue Intelligence",topics:[
         {text:"Revenue Cloud Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Revenue-Cloud-Consultant-Exam-Guide"},
-        {text:"Revenue Cloud Overview",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_rev_cloud.htm"},
-        {text:"CPQ Overview",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_overview.htm"},
-        {text:"Salesforce Billing",url:"https://help.salesforce.com/s/articleView?id=sf.blng_overview.htm"},
-        {text:"Contract Lifecycle Management",url:"https://help.salesforce.com/s/articleView?id=sf.cpq_contracts_overview.htm"},
-        {text:"Revenue Cloud Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-revenue-cloud-consultant-credential"}
+        {text:"Revenue Cloud: A Complete Guide",url:"https://www.salesforce.com/sales/revenue-lifecycle-management/revenue-cloud/"},
+        {text:"What is Salesforce CPQ?",url:"https://www.salesforce.com/eu/sales/cpq/what-is-salesforce-cpq/"},
+        {text:"Salesforce Billing Overview",url:"https://help.salesforce.com/s/articleView?id=sales.blng_overview.htm&type=5"},
+        {text:"Renew a Salesforce CPQ Contract",url:"https://help.salesforce.com/s/articleView?id=000381709&type=1"},
+        {text:"Revenue Cloud Trailmix",url:"https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-revenue-cloud-consultant-exam"}
       ]},
       {tag:"exam-prep-rev-cloud",focus:"Revenue Cloud Consultant exam prep: CPQ, Billing, and end-to-end revenue management",topics:[
         {text:"Revenue Cloud Consultant Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Revenue-Cloud-Consultant-Exam-Guide"},
-        {text:"Revenue Cloud Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-revenue-cloud-consultant-credential"},
+        {text:"Revenue Cloud Trailmix",url:"https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-revenue-cloud-consultant-exam"},
         {text:"CPQ Specialist Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_cpq_specialist"},
-        {text:"Salesforce Billing Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.blng_overview.htm"},
+        {text:"Salesforce Billing Overview",url:"https://help.salesforce.com/s/articleView?id=sales.blng_overview.htm&type=5"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-revenue-cloud-consultant---Rev-Con-201"},
         {text:"Revenue Cloud Module",url:"https://trailhead.salesforce.com/content/learn/modules/salesforce-cpq-basics"}
       ]}

@@ -16,35 +16,35 @@ Object.assign(EXAM_DATA, {
     ],
     studyDays:[
       {tag:"email-studio",focus:"Email Studio: content builder, email templates, A/B testing, and send management",topics:[
-        {text:"Email Studio Overview",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_overview.htm"},
-        {text:"Content Builder",url:"https://help.salesforce.com/s/articleView?id=sf.mc_ceb_overview.htm"},
-        {text:"Email Templates",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_email_templates.htm"},
-        {text:"A/B Testing",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_ab_testing.htm"},
-        {text:"Email Send Definitions",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_send_email.htm"},
+        {text:"Email Studio Overview",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_es_email_studio.htm&type=5"},
+        {text:"Content Builder",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_ceb_content_builder.htm&type=5"},
+        {text:"Create an Email Template in Account Engagement",url:"https://help.salesforce.com/s/articleView?id=mktg.pardot_create_email_template.htm&type=5"},
+        {text:"A/B Testing in Email Studio",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_es_ab_testing.htm&type=5"},
+        {text:"Define the Send Definitions Configured in Marketing Cloud Engagement",url:"https://help.salesforce.com/s/articleView?id=service.vaccine_packages_hv_define_send_defintions_mc.htm&type=5"},
         {text:"MC Email Specialist Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Marketing-Cloud-Email-Specialist-Exam-Guide"}
       ]},
       {tag:"ampscript",focus:"AMPscript for dynamic email content: personalization strings, lookups, and conditionals",topics:[
         {text:"AMPscript Overview",url:"https://ampscript.guide/"},
         {text:"AMPscript Functions Reference",url:"https://ampscript.guide/functions/"},
-        {text:"Personalization Strings",url:"https://help.salesforce.com/s/articleView?id=sf.mc_es_personalization_strings.htm"},
+        {text:"Personalization Strings in Marketing Cloud Engagement",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_es_personalization_strings.htm&type=5"},
         {text:"AMPscript Lookup Functions",url:"https://ampscript.guide/functions/data-functions/"},
-        {text:"Content Syndication with AMPscript",url:"https://help.salesforce.com/s/articleView?id=sf.mc_ceb_code_snippet_overview.htm"},
-        {text:"Dynamic Content Blocks",url:"https://help.salesforce.com/s/articleView?id=sf.mc_ceb_dynamic_content.htm"}
+        {text:"Create Content Syndication",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_es_create_content_syndication.htm&type=5"},
+        {text:"Create Dynamic Content",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_ceb_create_dynamic_content.htm&type=5"}
       ]},
       {tag:"automation-studio-email",focus:"Automation Studio: scheduled automations, activities, and SQL query activities",topics:[
-        {text:"Automation Studio Overview",url:"https://help.salesforce.com/s/articleView?id=sf.mc_as_automation_studio_overview.htm"},
-        {text:"Automation Activities",url:"https://help.salesforce.com/s/articleView?id=sf.mc_as_activities.htm"},
-        {text:"SQL Query Activity",url:"https://help.salesforce.com/s/articleView?id=sf.mc_as_sql_query_activity.htm"},
-        {text:"Scheduled Automation",url:"https://help.salesforce.com/s/articleView?id=sf.mc_as_triggered_automation.htm"},
-        {text:"Data Extract Activity",url:"https://help.salesforce.com/s/articleView?id=sf.mc_as_data_extract_activity.htm"},
-        {text:"Import File Activity",url:"https://help.salesforce.com/s/articleView?id=sf.mc_as_import_file_activity.htm"}
+        {text:"Automation Studio",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_as_automation_studio.htm&type=5"},
+        {text:"Automation Studio Activities",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_as_using_automation_studio_activities.htm&type=5"},
+        {text:"Build a SQL Query Activity",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_as_use_the_sql_query_activity.htm&type=5"},
+        {text:"Schedule an Automation",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_as_schedule_an_automation.htm&type=5"},
+        {text:"Data Extract Activity",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_as_use_a_data_extract_activity.htm&type=5"},
+        {text:"Import Activity in Email Studio",url:"https://help.salesforce.com/s/articleView?id=mktg.mc_es_import_activity.htm&type=5"}
       ]},
       {tag:"exam-prep-email-spec",focus:"Email Specialist exam prep: Email Studio, AMPscript, Automation Studio, and deliverability",topics:[
         {text:"MC Email Specialist Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Marketing-Cloud-Email-Specialist-Exam-Guide"},
         {text:"MC Email Specialist Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-email-specialist-credential"},
         {text:"Email Studio Specialist Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_email_studio_specialist"},
         {text:"AMPscript Guide",url:"https://ampscript.guide/"},
-        {text:"Marketing Cloud Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.mc_overview.htm"},
+        {text:"What is a Marketing Cloud?",url:"https://www.salesforce.com/eu/marketing/cloud/"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-mc-email-spec---MC-Spec-201"}
       ]}
     ],
@@ -88,6 +88,7 @@ Object.assign(EXAM_DATA, {
     pass: 63,
     experience: "1+ year developing in Marketing Cloud with hands-on scripting and API experience",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mce-dev---MCE-Dev-201",
+    trailmixUrl: null,
     prerequisites: [],
     overview: "The Marketing Cloud Engagement Developer certification validates technical expertise in developing solutions on the Marketing Cloud platform. Candidates demonstrate proficiency in AMPscript, SSJS, REST/SOAP APIs, Journey Builder customization, and data architecture.",
         domains:[
@@ -111,11 +112,11 @@ Object.assign(EXAM_DATA, {
         {text:"SSJS Data Extension Functions",url:"https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/ssjs_dataExtensionFunctions.html"},
         {text:"SSJS in Cloud Pages",url:"https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/cloudpages_code.html"},
         {text:"AMPscript and SSJS Combined",url:"https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/ampscript_ssjs_interop.html"},
-        {text:"MC Dev Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-developer-credential"}
+        {text:"MC Dev Trailmix",url:"https://trailhead.salesforce.com/content/learn/trails/marketing-cloud-developer-languages"}
       ]},
       {tag:"exam-prep-mc-dev",focus:"MC Engagement Developer exam prep: APIs, SSJS, AMPscript, and integration patterns",topics:[
         {text:"MC Engagement Developer Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Marketing-Cloud-Developer-Exam-Guide"},
-        {text:"MC Developer Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-developer-credential"},
+        {text:"MC Developer Trailmix",url:"https://trailhead.salesforce.com/content/learn/trails/marketing-cloud-developer-languages"},
         {text:"Marketing Cloud REST API Docs",url:"https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/rest-api.html"},
         {text:"AMPscript Guide",url:"https://ampscript.guide/"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-mc-developer---MC-Dev-201"},
@@ -162,6 +163,7 @@ Object.assign(EXAM_DATA, {
     pass: 67,
     experience: "6+ months using Pardot/Marketing Cloud Account Engagement for B2B marketing",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-engagement-specialist---MC-201",
+    trailmixUrl: "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-account-engagement-specialist-credential",
     prerequisites: [],
     overview: "The Marketing Cloud Account Engagement Specialist (formerly Pardot Specialist) certification validates expertise in B2B marketing automation using Marketing Cloud Account Engagement. Candidates demonstrate proficiency in lead nurturing, scoring, automation, and Salesforce integration.",
         domains:[
@@ -174,25 +176,25 @@ Object.assign(EXAM_DATA, {
     ],
     studyDays:[
       {tag:"pardot-setup",focus:"Account Engagement (Pardot) fundamentals: prospects, scoring, grading, and campaigns",topics:[
-        {text:"Account Engagement Overview",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_overview.htm"},
-        {text:"Prospect Management",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_prospect_management.htm"},
-        {text:"Scoring and Grading",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_scoring_grading.htm"},
-        {text:"Connected Campaigns",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_campaigns_connected.htm"},
+        {text:"Account Engagement Setup Implementation Guide",url:"https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/pardot_implementation_guide.pdf"},
+        {text:"Account Engagement Prospect Activity Glossary",url:"https://help.salesforce.com/s/articleView?id=000383604&type=1"},
+        {text:"Qualifying Leads with Account Engagement",url:"https://help.salesforce.com/s/articleView?id=mktg.pardot_leadqual_parent.htm&type=5"},
+        {text:"Configuring Account Engagement Connected Campaigns: Recommended Order of Operations",url:"https://help.salesforce.com/s/articleView?id=000380898&type=1"},
         {text:"Account Engagement Specialist Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Pardot-Specialist-Exam-Guide"},
         {text:"Trailmix: Account Engagement Specialist",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-account-engagement-specialist-credential"}
       ]},
       {tag:"pardot-forms-automation",focus:"Account Engagement forms, landing pages, automation rules, and engagement programs",topics:[
-        {text:"Forms and Form Handlers",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_forms_overview.htm"},
-        {text:"Landing Pages",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_landing_pages_overview.htm"},
-        {text:"Automation Rules",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_automation_rules.htm"},
-        {text:"Engagement Studio",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_engagement_studio.htm"},
-        {text:"Dynamic Lists",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_dynamic_lists.htm"},
-        {text:"Salesforce Connector for Pardot",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_sf_connector_overview.htm"}
+        {text:"Form Handlers",url:"https://help.salesforce.com/s/articleView?id=mktg.pardot_form_handlers.htm&type=5"},
+        {text:"Account Engagement Landing Page Best Practices",url:"https://help.salesforce.com/s/articleView?id=000380120&type=1"},
+        {text:"Automation Rules",url:"https://help.salesforce.com/s/articleView?id=mktg.pardot_automation_rules_overview.htm&type=5"},
+        {text:"Engagement Studio Overview",url:"https://help.salesforce.com/s/articleView?id=mktg.pardot_engagement_studio_overview.htm&type=5"},
+        {text:"Create a Dynamic List",url:"https://help.salesforce.com/s/articleView?id=mktg.pardot_segmentation_create_dynamic_list.htm&type=5"},
+        {text:"Salesforce Pardot API Connector",url:"https://help.salesforce.com/s/articleView?id=mktg.mcidp_data_streams_api_connect_sfpardot.htm&type=5"}
       ]},
       {tag:"exam-prep-pardot",focus:"Account Engagement Specialist exam prep: scoring, automation, and Salesforce integration",topics:[
         {text:"Account Engagement Specialist Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Pardot-Specialist-Exam-Guide"},
         {text:"Trailmix: Account Engagement Specialist",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-marketing-cloud-account-engagement-specialist-credential"},
-        {text:"Account Engagement Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.pardot_overview.htm"},
+        {text:"Account Engagement Setup Implementation Guide",url:"https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/pardot_implementation_guide.pdf"},
         {text:"Engagement Studio Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_pardot_specialist"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-pardot-spec---Pardot-Spec-201"},
         {text:"Pardot Trailhead Trail",url:"https://trailhead.salesforce.com/content/learn/trails/b2bmarketing"}

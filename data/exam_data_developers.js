@@ -86,11 +86,11 @@ Object.assign(EXAM_DATA, {
         {text:"StaticResourceCalloutMock",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_restful_http_testing_httpmock.htm"}
       ]},
       {tag:"deployment",focus:"Deploy Apex metadata: change sets, Metadata API, and Salesforce CLI",topics:[
-        {text:"Change Sets Overview",url:"https://help.salesforce.com/s/articleView?id=sf.changesets.htm"},
+        {text:"Change Sets",url:"https://help.salesforce.com/s/articleView?id=platform.changesets.htm&type=5"},
         {text:"Salesforce CLI Deploy",url:"https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm"},
         {text:"Metadata API Deploy",url:"https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_deploy.htm"},
         {text:"Running Apex Tests on Deploy",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_testing_running_command_line.htm"},
-        {text:"Sandbox Management",url:"https://help.salesforce.com/s/articleView?id=sf.create_test_instance.htm"},
+        {text:"Salesforce Sandboxes",url:"https://www.salesforce.com/eu/platform/sandboxes-environments/"},
         {text:"Platform Developer Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Platform-Developer-I-Exam-Guide"}
       ]}
     ],
@@ -156,7 +156,7 @@ Object.assign(EXAM_DATA, {
         {text:"Bulk Design Patterns",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dml_bulk.htm"},
         {text:"SOQL For Loops to Avoid Heap",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_SOQL_for_loops.htm"},
         {text:"Platform Cache Apex API",url:"https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_cache_namespace_overview.htm"},
-        {text:"Custom Metadata for Configuration",url:"https://help.salesforce.com/s/articleView?id=sf.custommetadatatypes_overview.htm"}
+        {text:"Custom Metadata Types",url:"https://help.salesforce.com/s/articleView?id=platform.custommetadatatypes_overview.htm&type=5"}
       ]},
       {tag:"integration-advanced",focus:"Advanced integration: Platform Events, Change Data Capture, and Streaming API patterns",topics:[
         {text:"Platform Events Developer Guide",url:"https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_intro.htm"},
@@ -340,6 +340,7 @@ Object.assign(EXAM_DATA, {
     pass: 63,
     experience: "6+ months developing with OmniStudio components (OmniScript, FlexCards, DataRaptors, Integration Procedures)",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-omnistudio-developer---Plat-Dev-210",
+    trailmixUrl: "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-omnistudio-developer-certification",
     prerequisites: ["Platform Developer"],
     overview: "The OmniStudio Developer certification validates expertise in developing digital engagement solutions using OmniStudio tools. Candidates demonstrate proficiency in OmniScript, FlexCards, DataRaptors, Integration Procedures, and the overall OmniStudio architecture.",
         domains:[
@@ -352,49 +353,48 @@ Object.assign(EXAM_DATA, {
     ],
     studyDays:[
       {tag:"omnistudio-overview",focus:"OmniStudio architecture: FlexCards, OmniScripts, DataRaptors, and Integration Procedures",topics:[
-        {text:"OmniStudio Overview",url:"https://help.salesforce.com/s/articleView?id=sf.os_omnistudio_overview.htm"},
+        {text:"Build guided digital experiences with Salesforce Omnistudio.",url:"https://www.salesforce.com/industries/omnistudio/"},
         {text:"OmniStudio Developer Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-OmniStudio-Developer-Exam-Guide"},
-        {text:"OmniStudio Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-omnistudio-developer-credential"},
+        {text:"OmniStudio Trailmix",url:"https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-omnistudio-developer-certification"},
         {text:"OmniStudio Architecture Trailhead",url:"https://trailhead.salesforce.com/content/learn/modules/omnistudio-architecture"},
-        {text:"FlexCards Overview",url:"https://help.salesforce.com/s/articleView?id=sf.os_flexcards.htm"},
-        {text:"OmniScript Overview",url:"https://help.salesforce.com/s/articleView?id=sf.os_omniscript.htm"}
+        {text:"Flexcards in OmniStudio for Managed Packages",url:"https://trailhead.salesforce.com/content/learn/modules/omnistudio-flexcards"},
+        {text:"Designing and Styling Omniscript (Managed Package)",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_designing_and_styling_omniscript.htm&type=5"}
       ]},
       {tag:"flexcards",focus:"Build FlexCards: data sources, actions, states, flyouts, and embedded components",topics:[
-        {text:"FlexCards Developer Guide",url:"https://help.salesforce.com/s/articleView?id=sf.os_flexcards.htm"},
-        {text:"FlexCard Data Sources",url:"https://help.salesforce.com/s/articleView?id=sf.os_flexcard_datasources.htm"},
-        {text:"FlexCard Actions",url:"https://help.salesforce.com/s/articleView?id=sf.os_flexcard_actions.htm"},
-        {text:"FlexCard States and Conditions",url:"https://help.salesforce.com/s/articleView?id=sf.os_flexcard_states.htm"},
-        {text:"Flyout FlexCards",url:"https://help.salesforce.com/s/articleView?id=sf.os_flexcard_flyout.htm"},
-        {text:"Nested FlexCards",url:"https://help.salesforce.com/s/articleView?id=sf.os_flexcard_parent_child.htm"}
+        {text:"Flexcards in OmniStudio for Managed Packages",url:"https://trailhead.salesforce.com/content/learn/modules/omnistudio-flexcards"},
+        {text:"Set Up a Data Source on a Flexcard",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_configure_a_data_source_on_a_flexcard_35864.htm&type=5"},
+        {text:"Set Up Actions on a Flexcard",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_add_an_action_to_a_flexcard_25672.htm&type=5"},
+        {text:"Set Up Conditions Based on Flexcard States",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_add_conditions_to_a_flexcard_state_35695.htm&type=5"},
+        {text:"Launch a Flyout from an Action on a Flexcard (Managed Package)",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_launch_a_flyout_from_an_action_on_a_flexcard.htm&type=5"},
+        {text:"Embed Flexcard Inside Another Flexcard (Managed Package)",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_embed_flexcard_inside_another_flexcard.htm&type=5"}
       ]},
       {tag:"omniscript",focus:"Build OmniScripts: elements, branching logic, data actions, and script embeds",topics:[
-        {text:"OmniScript Elements Reference",url:"https://help.salesforce.com/s/articleView?id=sf.os_omniscript_elements.htm"},
-        {text:"OmniScript Branching and Conditions",url:"https://help.salesforce.com/s/articleView?id=sf.os_omniscript_conditions.htm"},
-        {text:"OmniScript Data Actions",url:"https://help.salesforce.com/s/articleView?id=sf.os_omniscript_data_actions.htm"},
-        {text:"OmniScript LWC Custom Elements",url:"https://help.salesforce.com/s/articleView?id=sf.os_custom_lwc_omniscript.htm"},
-        {text:"OmniScript Debugging",url:"https://help.salesforce.com/s/articleView?id=sf.os_omniscript_debug.htm"},
-        {text:"OmniScript Pubsub",url:"https://help.salesforce.com/s/articleView?id=sf.os_omniscript_pubsub.htm"}
+        {text:"Omniscript Element Reference",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_omniscript_element_reference_10533.htm&type=5"},
+        {text:"Design and Build a Branching Omniscript",url:"https://trailhead.salesforce.com/content/learn/modules/omniscripts-with-branching/design-and-build-a-branching-omniscript"},
+        {text:"Omniscript Action Elements",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_omniscript_action_elements_10951.htm&type=5"},
+        {text:"Create a Custom Lightning Web Component for Omniscript",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_create_a_custom_lightning_web_component_for_omniscript_17512.htm&type=5"},
+        {text:"View and Debug Action Requests and Response Data (Managed Package)",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_view_and_debug_action_requests_and_response_data.htm&type=5"},
+        {text:"Omnistudio Pubsub",url:"https://developer.salesforce.com/docs/platform/lightning-component-reference/guide/lightning-omnistudio-pubsub.html?type=Develop"}
       ]},
       {tag:"dataraptors",focus:"Design DataRaptors: Extract, Transform, Load, and Turbo Extract types",topics:[
-        {text:"DataRaptor Overview",url:"https://help.salesforce.com/s/articleView?id=sf.os_dataraptor.htm"},
-        {text:"DataRaptor Extract",url:"https://help.salesforce.com/s/articleView?id=sf.os_dataraptor_extract.htm"},
-        {text:"DataRaptor Transform",url:"https://help.salesforce.com/s/articleView?id=sf.os_dataraptor_transform.htm"},
-        {text:"DataRaptor Load",url:"https://help.salesforce.com/s/articleView?id=sf.os_dataraptor_load.htm"},
-        {text:"DataRaptor Turbo Extract",url:"https://help.salesforce.com/s/articleView?id=sf.os_dataraptor_turbo_extract.htm"},
-        {text:"DataRaptor Formula Functions",url:"https://help.salesforce.com/s/articleView?id=sf.os_dataraptor_formula.htm"}
+        {text:"Omnistudio Data Mapper Best Practices",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_dataraptor_best_practices_47412.htm&type=5"},
+        {text:"Extract Data from Salesforce Objects",url:"https://trailhead.salesforce.com/content/learn/modules/omnistudio-data-tools-and-internal-data/extract-data-from-salesforce-objects"},
+        {text:"Transform External Data",url:"https://trailhead.salesforce.com/content/learn/modules/omnistudio-data-tools-and-external-data/transform-external-data"},
+        {text:"Build a Data Mapper Turbo Extract and Data Mapper Load",url:"https://trailhead.salesforce.com/content/learn/modules/omnistudio-dataraptors/build-a-dataraptor-turbo-extract-and-dataraptor-load"},
+        {text:"Use Formulas in Omnistudio Data Mappers",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_use_formulas_in_dataraptors_47540.htm&type=5"}
       ]},
       {tag:"integration-procedures",focus:"Build Integration Procedures: HTTP actions, DataRaptor actions, and error handling",topics:[
-        {text:"Integration Procedures Overview",url:"https://help.salesforce.com/s/articleView?id=sf.os_integration_procedure.htm"},
-        {text:"HTTP Action in Integration Procedure",url:"https://help.salesforce.com/s/articleView?id=sf.os_integration_procedure_http.htm"},
-        {text:"DataRaptor Action in IP",url:"https://help.salesforce.com/s/articleView?id=sf.os_integration_procedure_dataraptor.htm"},
-        {text:"Integration Procedure Error Handling",url:"https://help.salesforce.com/s/articleView?id=sf.os_integration_procedure_error.htm"},
-        {text:"Apex Remote Action in IP",url:"https://help.salesforce.com/s/articleView?id=sf.os_integration_procedure_apex.htm"},
-        {text:"Response Action and Chaining",url:"https://help.salesforce.com/s/articleView?id=sf.os_integration_procedure_response.htm"}
+        {text:"Get Started with OmniStudio Integration Procedures",url:"https://trailhead.salesforce.com/content/learn/modules/omnistudio-integration-procedures/get-started-omnistudio-integration-procedures"},
+        {text:"HTTP Action for Integration Procedures",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_http_action_for_integration_procedures_53002.htm&type=5"},
+        {text:"Build an Integration Procedure with Conditional Data Mapper Loads",url:"https://trailhead.salesforce.com/content/learn/modules/omnistudio-data-tools-and-internal-data/build-an-integration-procedure-with-conditional-dataraptor-loads"},
+        {text:"Handle Errors in Integration Procedures",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_error_handling_in_integration_procedures_55179.htm&type=5"},
+        {text:"Remote Action for Integration Procedures",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_remote_action_for_integration_procedures_54037.htm&type=5"},
+        {text:"Omnistudio Integration Procedures",url:"https://help.salesforce.com/s/articleView?id=xcloud.os_omnistudio_integration_procedures_48334.htm&type=5"}
       ]},
       {tag:"exam-prep-omni",focus:"OmniStudio Developer exam prep: FlexCards, OmniScript, DataRaptor, and Integration Procedure scenarios",topics:[
         {text:"OmniStudio Developer Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-OmniStudio-Developer-Exam-Guide"},
-        {text:"OmniStudio Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-omnistudio-developer-credential"},
-        {text:"OmniStudio Help Documentation",url:"https://help.salesforce.com/s/articleView?id=sf.os_omnistudio_overview.htm"},
+        {text:"OmniStudio Trailmix",url:"https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-omnistudio-developer-certification"},
+        {text:"Build guided digital experiences with Salesforce Omnistudio.",url:"https://www.salesforce.com/industries/omnistudio/"},
         {text:"OmniStudio Developer Trailhead Module",url:"https://trailhead.salesforce.com/content/learn/modules/omnistudio-developer"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-omnistudio-dev---OmniS-Dev-201"},
         {text:"OmniStudio Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_omnistudio"}
@@ -434,81 +434,6 @@ Object.assign(EXAM_DATA, {
     ]
   },
 
-  "Industries CPQ Developer": {
-    questions: 60,
-    time: 105,
-    pass: 65,
-    experience: "1+ year developing with Salesforce Industries CPQ (Vlocity CPQ) for telecommunications or other industries",
-    trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-industries-cpq---Ind-Dev-201",
-    prerequisites: ["Platform Developer"],
-    overview: "The Industries CPQ Developer certification validates expertise in developing and configuring the Salesforce Industries CPQ solution (formerly Vlocity CPQ). Candidates demonstrate proficiency in catalog management, pricing, OmniStudio integration, and CPQ customization for complex industry use cases.",
-        domains:[
-      {name:"Products",pct:20,color:"#00A1E0",desc:"Identify concepts required to configure product and product bundles.",keyTopics:[{title:"Identify concepts required to configure product",desc:"Identify concepts required to configure product and product bundles."},{title:"Identify concepts required to configure object type hiera...",desc:"Identify concepts required to configure object type hierarchies."},{title:"Identify concepts required to configure attributes",desc:"Identify concepts required to configure attributes."},{title:"Determine the implications of the configurations of a pro...",desc:"Determine the implications of the configurations of a product."}]},
-      {name:"Promotions and Discounts",pct:7,color:"#2ECC71",desc:"Identify concepts required to configure promotions.",keyTopics:[{title:"Identify concepts required to configure promotions",desc:"Identify concepts required to configure promotions."},{title:"Identify concepts required to configure discounts",desc:"Identify concepts required to configure discounts."},{title:"Determine when to use promotions and/or discounts",desc:"Determine when to use promotions and/or discounts."},{title:"capabilities",desc:"Describe the capabilities and use cases for formula fields and roll-up summary fields."}]},
-      {name:"Pricing",pct:17,color:"#F39C12",desc:"Identify concepts required to build pricing.",keyTopics:[{title:"Identify concepts required to build pricing",desc:"Identify concepts required to build pricing."},{title:"Identify concepts required to configure attribute based p...",desc:"Identify concepts required to configure attribute based pricing."},{title:"Define how to adjust pricing",desc:"Define how to adjust pricing."},{title:"Determine which types of pricing to use",desc:"Determine which types of pricing to use and when."},{title:"Identify concepts required to create cost",desc:"Identify concepts required to create cost and margin."}]},
-      {name:"Ordering and Quoting",pct:12,color:"#E74C3C",desc:"Understand the user experience of the cart.",keyTopics:[{title:"user experience of the cart",desc:"Describe the user experience of the cart."},{title:"Identify concepts required to configure multi-site quoting",desc:"Identify concepts required to configure multi-site quoting."},{title:"Identify concepts required to create basic configurations...",desc:"Identify concepts required to create basic configurations to ordering and quoting."},{title:"Describe asset based ordering",desc:"Describe asset based ordering (ABO)."}]},
-      {name:"Troubleshooting",pct:20,color:"#9B59B6",desc:"Troubleshoot product, pricing, promotions and discounts, and rules.",keyTopics:[{title:"Troubleshoot product, pricing, promotions",desc:"Troubleshoot product, pricing, promotions and discounts, and rules."},{title:"Troubleshoot API parameters, responses,",desc:"Troubleshoot API parameters, responses, and requests."}]},
-    ],
-    studyDays:[
-      {tag:"industries-cpq-overview",focus:"Industries CPQ architecture: product catalog, pricing, orders, and the Quote object",topics:[
-        {text:"Industries CPQ Developer Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Industries-CPQ-Developer-Exam-Guide"},
-        {text:"Industries CPQ Overview",url:"https://help.salesforce.com/s/articleView?id=ind.comms_cpq_overview.htm"},
-        {text:"Industries CPQ Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-industries-cpq-developer"},
-        {text:"Product Catalog Setup",url:"https://help.salesforce.com/s/articleView?id=ind.comms_cpq_product_catalog.htm"},
-        {text:"Price List and Pricing Rules",url:"https://help.salesforce.com/s/articleView?id=ind.comms_cpq_pricing.htm"},
-        {text:"Offer Setup",url:"https://help.salesforce.com/s/articleView?id=ind.comms_cpq_offer.htm"}
-      ]},
-      {tag:"cpq-customization",focus:"Customize Industries CPQ with Apex, OmniStudio, and custom pricing logic",topics:[
-        {text:"Apex Customization for Industries CPQ",url:"https://help.salesforce.com/s/articleView?id=ind.comms_cpq_apex.htm"},
-        {text:"OmniStudio in Industries CPQ",url:"https://help.salesforce.com/s/articleView?id=ind.comms_cpq_omnistudio.htm"},
-        {text:"Custom Pricing Logic",url:"https://help.salesforce.com/s/articleView?id=ind.comms_cpq_custom_pricing.htm"},
-        {text:"Validation Rules for CPQ Objects",url:"https://help.salesforce.com/s/articleView?id=ind.comms_cpq_validation.htm"},
-        {text:"Industries CPQ APIs",url:"https://developer.salesforce.com/docs/atlas.en-us.industries_reference.meta/industries_reference/"},
-        {text:"CPQ Order Orchestration",url:"https://help.salesforce.com/s/articleView?id=ind.comms_cpq_order.htm"}
-      ]},
-      {tag:"exam-prep-icpq",focus:"Industries CPQ Developer exam prep: product catalog, pricing, and customization scenarios",topics:[
-        {text:"Industries CPQ Developer Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Industries-CPQ-Developer-Exam-Guide"},
-        {text:"Industries CPQ Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-industries-cpq-developer"},
-        {text:"Industries CPQ Documentation",url:"https://help.salesforce.com/s/articleView?id=ind.comms_cpq_overview.htm"},
-        {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-ind-cpq-dev---Ind-CPQ-Dev-201"},
-        {text:"Industries CPQ Developer Module",url:"https://trailhead.salesforce.com/content/learn/modules/industries-cpq-developer"},
-        {text:"Industries CPQ Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_industries_cpq"}
-      ]}
-    ],
-    quiz:[
-      {domain:"Industries CPQ Fundamentals",q:"What is the top-level product structure in Industries CPQ's catalog?",opts:["Product", "Bundle", "Offer", "Product Family"],correct:2,explanation:"In Industries CPQ (formerly Vlocity CPQ), Offer is the top-level catalog entity — it represents a sellable product or service. Offers contain Pricing Plans and can have attribute-based configuration rules attached."},
-      {domain:"OmniStudio and CPQ Integration",q:"Which Industries CPQ feature automatically applies rules based on contextual data like customer segment?",opts:["Compatibility Rules", "Attribute Rules", "Context Framework", "Pricing Rules"],correct:2,explanation:"The Context Framework evaluates contextual data (account segment, location, contract type) and uses it to filter catalog visibility, apply pricing, and enforce compatibility rules without manual rep selection."},
-      {domain:"Pricing",q:"What type of charge in Industries CPQ represents an ongoing monthly fee?",opts:["One-Time Charge", "Recurring Charge", "Usage Charge", "Subscription Fee"],correct:1,explanation:"Recurring Charges represent fees billed on a repeating cycle (monthly, annually). One-Time Charges bill a single time at order. Usage Charges bill based on consumption measured after the fact."},
-      {domain:"Industries CPQ Fundamentals",q:"Which OmniStudio component is primarily used to build guided selling flows in Industries CPQ?",opts:["FlexCard", "OmniScript", "Integration Procedure", "DataRaptor"],correct:1,explanation:"OmniScript drives the guided selling experience — it presents interactive steps for product selection, configuration, and cart management. FlexCards display product data; Integration Procedures handle the server-side catalog and pricing logic."},
-      {domain:"Industries CPQ Fundamentals",q:"What is a Compatibility Rule used for in Industries CPQ?",opts:["To calculate dynamic prices based on attributes", "To enforce inclusion/exclusion constraints between products in a cart", "To define attribute dependencies", "To set discount approval thresholds"],correct:1,explanation:"Compatibility Rules define which products can or cannot coexist in a cart — for example, enforcing that selecting Product A requires Product B, or preventing two mutually exclusive services from being ordered together."},
-      {domain:"Cart and Order Management",q:"Which Industries CPQ object stores the current state of a customer's product selection before ordering?",opts:["Opportunity", "Cart", "Quote", "Product Order"],correct:1,explanation:"The Cart object holds all selected products, their configurations, and calculated prices during the sales interaction. Once confirmed, the cart is submitted and converted to an Order with corresponding Order Products."},
-      {domain:"Industries CPQ Fundamentals",q:"What is the purpose of Attribute-Based Configuration in Industries CPQ?",opts:["To define fixed product variants", "To allow product customization through configurable options that influence pricing and compatibility", "To configure OmniScript element properties", "To set up product catalog hierarchy"],correct:1,explanation:"Attribute-Based Configuration lets customers and reps configure products by setting attribute values (speed, data limit, colour) — the chosen attributes then drive compatibility checks, pricing adjustments, and downstream order data."},
-      {domain:"Catalog Management",q:"Which DataRaptor type would you use to retrieve product catalog data for display in a FlexCard?",opts:["Load", "Transform", "Extract or Turbo Extract", "Composite Extract"],correct:2,explanation:"DataRaptor Extract (or Turbo Extract for single-object queries) reads data from Salesforce — the right choice for retrieving catalog records to populate a FlexCard. Load is for writing data; Transform reshapes JSON only."},
-      {domain:"Industries CPQ Fundamentals",q:"In Industries CPQ, what does 'Effective Dating' allow?",opts:["Tracking when a cart was last modified", "Scheduling price or catalog changes to take effect at a future date", "Setting expiration dates on promotional offers", "Logging when a product was last purchased"],correct:1,explanation:"Effective Dating lets admins schedule when catalog or pricing changes become active — a new price plan can be published with a future start date, automatically replacing the current one without manual cutover."},
-      {domain:"Cart and Order Management",q:"Which cart lifecycle state means the cart has been reviewed and is ready for order submission?",opts:["Validated", "Reviewed", "Approved", "Finalized"],correct:2,explanation:"Approved is the cart state that signals the quote has passed any required approval workflow and is cleared for order generation. Validated means pricing and compatibility checks passed; Approved adds business-level sign-off."},
-      {domain:"Pricing",q:"What Industries CPQ feature enables tiered pricing based on the quantity ordered?",opts:["Tier Discount", "Volume Pricing", "Quantity Pricing Rule", "Bulk Pricing Plan"],correct:1,explanation:"Volume Pricing defines pricing tiers where the unit price decreases (or changes) as quantity increases — the correct tier is automatically selected based on the quantity in the cart line item."},
-      {domain:"Pricing",q:"How does Industries CPQ integrate with Salesforce Order Management for fulfillment?",opts:["Cart data is exported to an external fulfillment system via API", "Submitted cart data is converted to an Order object with corresponding Order Products", "A Platform Event triggers the fulfillment workflow", "The cart is cloned as an Order automatically"],correct:1,explanation:"When a cart is submitted, Industries CPQ creates a standard Salesforce Order with Order Products representing each cart line — Order Management then picks up those records to drive fulfillment, provisioning, and billing downstream."},
-      {domain:"Pricing",q:"Which Integration Procedure action type is used to call an external pricing engine?",opts:["DataRaptor Action", "HTTP Action", "Remote Apex Action", "External Service Action"],correct:1,explanation:"HTTP Action in an Integration Procedure makes a REST callout to an external endpoint — the right choice for calling an external pricing engine. The response is mapped back into the IP data model for use in subsequent pricing steps."},
-      {domain:"Pricing",q:"What is a Pricing Plan in Industries CPQ?",opts:["A list of discounts available for an account", "A container for pricing elements that defines how charges are calculated for a product", "A schedule of when prices change over a subscription term", "A set of promotional codes for a campaign"],correct:1,explanation:"A Pricing Plan groups all the charge definitions for an Offer — one-time fees, recurring charges, and usage charges — along with their calculation rules. An Offer can have multiple Pricing Plans for different billing scenarios."},
-      {domain:"Customization and Extensibility",q:"In Industries CPQ, what triggers a catalog publish event?",opts:["When a new product is added to the catalog", "When a catalog version transitions from draft to active/published state", "When a cart references catalog items for the first time", "When a product's price changes"],correct:1,explanation:"Publishing a catalog version in Industries CPQ transitions it from draft to active, triggering the publish event that makes the new catalog visible to quoting and ordering processes. Draft versions are invisible to end users."},
-      {domain:"Industries CPQ Fundamentals",q:"Which Industries CPQ component governs what products are visible to a specific customer based on their profile?",opts:["Entitlement Rules", "Context Rules", "Product Visibility Rules", "Customer Profile Filters"],correct:1,explanation:"Context Rules use the Context Framework to filter catalog visibility — based on context attributes like account segment or geography, certain offers are shown or hidden from the catalog presented to that customer."},
-      {domain:"Catalog Management",q:"What type of object represents a specific configuration of a product (e.g., a specific data plan with specific attributes)?",opts:["Product Instance", "Product Specification", "Product Configuration", "Configured Offer"],correct:1,explanation:"A Product Specification defines the technical and commercial characteristics of a product configuration — it stores the attribute values chosen for an Offer and acts as the blueprint used when provisioning or amending a service."},
-      {domain:"Industries CPQ Fundamentals",q:"Which OmniStudio Integration Procedure element allows you to run multiple actions in parallel?",opts:["Parallel Block", "Async Step", "There is no native parallel execution — steps run sequentially", "Concurrent Action"],correct:2,explanation:"Integration Procedures execute elements sequentially — there is no native parallel execution block. For parallel server-side calls, you would need to orchestrate separate Mule flows or use custom Apex outside the IP."},
-      {domain:"Industries CPQ Fundamentals",q:"What Industries CPQ API operation is called to initiate price recalculation after changing cart items?",opts:["Refresh Cart API", "Calculate Prices API", "Update Line Items API", "Recompute Charges API"],correct:1,explanation:"The Calculate Prices API triggers the pricing engine to re-evaluate all cart line items after a change — applying volume pricing, context-based discounts, and recurring charge calculations before the updated prices are shown to the user."},
-      {domain:"Customization and Extensibility",q:"Which Apex extension point in Industries CPQ allows custom pricing logic to override calculated prices?",opts:["Custom Pricing Rule Class", "CPQ Pricing Apex Plugin", "Override Pricing Trigger", "Cart Price Apex Handler"],correct:1,explanation:"The CPQ Pricing Apex Plugin is a standard extension point — you implement the designated interface and register the class in CPQ settings. It is invoked during price calculation, allowing you to inject custom pricing logic without modifying the managed package."},
-    ],
-    tips:[
-      "Understand the catalog hierarchy: Product Family → Product → Offer → Bundle — and each object's role.",
-      "Know the Context Framework thoroughly — it's a unique feature of Industries CPQ not found in standard CPQ.",
-      "Understand all charge types (one-time, recurring, usage) and how they appear in the cart.",
-      "Be able to explain the cart lifecycle states and when transitions occur.",
-      "Know how OmniScript and Integration Procedures interact with CPQ APIs for guided selling.",
-      "Understand compatibility rules vs. attribute rules — different purposes, different configurations.",
-      "Know effective dating — managing catalog and price version validity is heavily tested.",
-      "Be familiar with Apex extension points for custom pricing logic."
-    ]
-  },
-
   "B2C Commerce Cloud Developer": {
     questions: 60,
     time: 105,
@@ -527,9 +452,9 @@ Object.assign(EXAM_DATA, {
       {tag:"b2c-dev-setup",focus:"Set up B2C Commerce developer environment: Business Manager, sandbox, and code upload",topics:[
         {text:"B2C Commerce Developer Guide",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/"},
         {text:"B2C Commerce Developer Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2C-Commerce-Developer-Exam-Guide"},
-        {text:"Business Manager Overview",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/business-manager.html"},
-        {text:"B2C Commerce Dev Setup Trailhead",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/b2c-commerce-developer"},
-        {text:"B2C Commerce VS Code Extension",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/vscode-extension.html"},
+        {text:"Business Manager Overview",url:"https://trailhead.salesforce.com/content/learn/modules/cc-digital-for-developers/cc-business-manager"},
+        {text:"B2C Commerce Dev Setup Trailhead",url:"https://trailhead.salesforce.com/content/learn/trails/develop-for-commerce-cloud"},
+        {text:"B2C Commerce VS Code Extension",url:"https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/b2c-developer-tooling.html"},
         {text:"Uploading Cartridges to Sandbox",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/cartridges.html"}
       ]},
       {tag:"sfra-development",focus:"Develop with SFRA: controllers, routes, templates, and client-side rendering",topics:[
@@ -538,31 +463,29 @@ Object.assign(EXAM_DATA, {
         {text:"ISML Templates",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/isml-overview.html"},
         {text:"SFRA Client-Side JavaScript",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/frontend-development.html"},
         {text:"SFRA Forms",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/forms.html"},
-        {text:"Extending SFRA Cartridges",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/extend-sfra.html"}
+        {text:"Extending SFRA Cartridges",url:"https://trailhead.salesforce.com/content/learn/modules/b2c-cartridges/b2c-cartridges-customize"}
       ]},
       {tag:"b2c-apis",focus:"Use B2C Commerce APIs: Shop API, Data API, and SCAPI (Shopper APIs)",topics:[
         {text:"Salesforce Commerce API (SCAPI)",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/scapi.html"},
         {text:"Shop API Reference",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/references/"},
         {text:"Data API Reference",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/references/"},
         {text:"SLAS Authentication",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/slas.html"},
-        {text:"Open Commerce API (OCAPI)",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/ocapi-usage.html"},
+        {text:"Open Commerce API (OCAPI)",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/ocapisettings.html"},
         {text:"API Explorer",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/"}
       ]},
       {tag:"b2c-hooks-scripts",focus:"B2C Commerce hooks, scripts, job framework, and Business Manager extensions",topics:[
-        {text:"B2C Commerce Hooks",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/hooks.html"},
+        {text:"B2C Commerce Hooks",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-sfra-hooks.html"},
         {text:"Script API Reference",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/references/"},
-        {text:"Job Framework",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/jobs-framework.html"},
         {text:"Business Manager Modules",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/business-manager.html"},
         {text:"Pipeline Debugging in B2C",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/debugging.html"},
         {text:"Log Center",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/log-center.html"}
       ]},
       {tag:"exam-prep-b2c-dev",focus:"B2C Commerce Developer exam prep: SFRA, APIs, hooks, and Business Manager",topics:[
         {text:"B2C Commerce Developer Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2C-Commerce-Developer-Exam-Guide"},
-        {text:"B2C Commerce Developer Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/b2c-commerce-developer"},
+        {text:"B2C Commerce Developer Trailmix",url:"https://trailhead.salesforce.com/content/learn/trails/develop-for-commerce-cloud"},
         {text:"B2C Commerce Developer Guide",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/"},
         {text:"SFRA Reference",url:"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/sfra.html"},
-        {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-b2c-comm-dev---B2C-Dev-201"},
-        {text:"B2C Commerce Superbadge",url:"https://trailhead.salesforce.com/content/learn/superbadges/superbadge_b2c_cc_developer"}
+        {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-b2c-comm-dev---B2C-Dev-201"}
       ]}
     ],
     quiz:[
@@ -627,7 +550,6 @@ Object.assign(EXAM_DATA, {
         {text:"Mule Event Model",url:"https://docs.mulesoft.com/mule-runtime/latest/about-mule-event"},
         {text:"Anypoint Studio Setup",url:"https://docs.mulesoft.com/studio/latest/"},
         {text:"Core Components Overview",url:"https://docs.mulesoft.com/mule-runtime/latest/about-components"},
-        {text:"Developer Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-certified-developer-1"}
       ]},
       {tag:"dataweave-dev",focus:"DataWeave 2.0 fundamentals: syntax, selectors, built-in functions, and transformations",topics:[
         {text:"DataWeave Language Guide",url:"https://docs.mulesoft.com/dataweave/latest/"},
@@ -726,7 +648,6 @@ Object.assign(EXAM_DATA, {
         {text:"Parallel ForEach Scope",url:"https://docs.mulesoft.com/mule-runtime/latest/parallel-foreach-scope"},
         {text:"Batch Processing",url:"https://docs.mulesoft.com/mule-runtime/latest/batch-processing-concept"},
         {text:"Streaming in Mule 4",url:"https://docs.mulesoft.com/mule-runtime/latest/streaming-about"},
-        {text:"Developer II Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-certified-developer-level-2"}
       ]},
       {tag:"advanced-dataweave",focus:"Advanced DataWeave: recursion, custom functions, flat files, and performance",topics:[
         {text:"DataWeave Custom Functions",url:"https://docs.mulesoft.com/dataweave/latest/dataweave-create-module"},
@@ -754,7 +675,6 @@ Object.assign(EXAM_DATA, {
       ]},
       {tag:"exam-prep-mule2",focus:"MuleSoft Developer II exam prep: advanced Mule 4, DataWeave, API governance",topics:[
         {text:"MuleSoft Developer II Exam Guide",url:"https://trailhead.salesforce.com/help?article=MuleSoft-Certified-Developer-Level-2-Exam-Guide"},
-        {text:"Developer II Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-certified-developer-level-2"},
         {text:"Anypoint Platform Documentation",url:"https://docs.mulesoft.com/"},
         {text:"DataWeave Playground",url:"https://dataweave.mulesoft.com/learn/playground"},
         {text:"MUnit Testing Guide",url:"https://docs.mulesoft.com/munit/latest/"},
@@ -795,98 +715,13 @@ Object.assign(EXAM_DATA, {
     ]
   },
 
-  "MuleSoft Hyperautomation Developer": {
-    questions: 60,
-    time: 120,
-    pass: 68,
-    experience: "1+ year building automation solutions combining MuleSoft, RPA, and AI/ML capabilities",
-    trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-hyperautomation-developer---Mule-Dev-202",
-    prerequisites: [{name:"MuleSoft Developer",required:true}],
-    overview: "The MuleSoft Hyperautomation Developer certification validates expertise in building end-to-end automation solutions using MuleSoft's Anypoint Platform combined with RPA (Robotic Process Automation) and intelligent automation capabilities.",
-        domains:[
-      {name:"Employ best practices when using hyperautomation",pct:20,color:"#00A1E0",desc:"Apply knowledge to identify the correct tools to use for a hyperautomation solution.",keyTopics:[{title:"identify the correct tools to use for a hyperautomation s...",desc:"Given a scenario, identify the correct tools to use for a hyperautomation solution."},{title:"Model suitable tests",desc:"Model suitable tests and create data to test an end-to-end hyperautomation solution."},{title:"Implement key common design patterns for communicating be...",desc:"Implement key common design patterns for communicating between Salesforce, Anypoint, Composer, and RPA."},{title:"Employ typical fault handling approaches for each tool in...",desc:"Employ typical fault handling approaches for each tool involved in the hyperautomation process."},{title:"Identify scenarios",desc:"Identify scenarios and techniques for reuse."},{title:"Identify velocity of development based on hyperautomation...",desc:"Identify velocity of development based on hyperautomation tools and use case complexity."}]},
-      {name:"Use Composer to automate data integrations in a hyperautomation project",pct:12,color:"#2ECC71",desc:"Apply knowledge to connect systems using a Composer flow and connectors, and map and retrieve data in action steps.",keyTopics:[{title:"connect systems using a Composer flow",desc:"Given a scenario, connect systems using a Composer flow and connectors, and map and retrieve data in action steps."},{title:"Given a hyperautomation scenario, implement the appropria...",desc:"Given a hyperautomation scenario, implement the appropriate flow controls including If/Else blocks and For Each loops."},{title:"Given a hyperautomation scenario, transform data using nu...",desc:"Given a hyperautomation scenario, transform data using number, string, and date functions and formulas."},{title:"Test Composer flows to ensure they work as expected",desc:"Test Composer flows to ensure they work as expected."}]},
-      {name:"Design, build, and manage MuleSoft RPA processes used in hyperautomation",pct:17,color:"#F39C12",desc:"Evaluate an RPA process in MuleSoft RPA Manager.",keyTopics:[{title:"Evaluate an RPA process in MuleSoft RPA Manager",desc:"Evaluate an RPA process in MuleSoft RPA Manager."},{title:"Perform general RPA process development tasks including d...",desc:"Perform general RPA process development tasks including designing, building, and testing RPA processes."},{title:"Deploy RPA processes",desc:"Deploy RPA processes."},{title:"Monitor",desc:"Monitor and troubleshoot RPA processes."}]},
-      {name:"Use Salesforce Flow to build hyperautomation workflows",pct:13,color:"#E74C3C",desc:"Given a hyperautomation scenario, build the appropriate flow using Salesforce Flow.",keyTopics:[{title:"Given a hyperautomation scenario, build the appropriate f...",desc:"Given a hyperautomation scenario, build the appropriate flow using Salesforce Flow."},{title:"Work with Einstein Bots to automate customer service",desc:"Work with Einstein Bots to automate customer service."},{title:"Create tests for record-triggered flows with Flow Testing",desc:"Create tests for record-triggered flows with Flow Testing."},{title:"connect Salesforce flows with other APIs",desc:"Given a scenario, connect Salesforce flows with other APIs."},{title:"basics of Salesforce flows that are applicable to hyperau...",desc:"Identify the basics of Salesforce flows that are applicable to hyperautomation implementation."}]},
-      {name:"Use Anypoint platform to deliver, and manage APIs in a hyperautomation project",pct:15,color:"#9B59B6",desc:"Describe composable building blocks (that is, APIs/Specs) and how to consume them in a hyperautomation implementation.",keyTopics:[{title:"Describe composable building blocks",desc:"Describe composable building blocks (that is, APIs/Specs) and how to consume them in a hyperautomation implementation."},{title:"Summarize Anypoint Platform hyperautomation capabilities",desc:"Summarize Anypoint Platform hyperautomation capabilities and high-level components."},{title:"Describe Mule application deployment options",desc:"Describe Mule application deployment options."}]},
-      {name:"Use Anypoint Platform to monitor hyperautomation API endpoints",pct:7,color:"#1ABC9C",desc:"Using hyperautomation best practices to determine how to manage APIs using basic endpoint configurations, proxy endpoint configurations, and policies.",keyTopics:[{title:"Using hyperautomation best practices to determine how to ...",desc:"Using hyperautomation best practices to determine how to manage APIs using basic endpoint configurations, proxy endpoint configurations, and policies."},{title:"Describe Anypoint Monitoring for applications",desc:"Describe Anypoint Monitoring for applications and APIs."}]},
-      {name:"Use Anypoint Exchange to catalog (publish), share, discover, and reuse assets",pct:8,color:"#E67E22",desc:"Publish assets to private and public Anypoint Exchanges.",keyTopics:[{title:"Publish assets to private",desc:"Publish assets to private and public Anypoint Exchanges."},{title:"Test APIs using the Anypoint Exchange mocking service",desc:"Test APIs using the Anypoint Exchange mocking service."},{title:"Given a hyperautomation scenario, employ Anypoint Exchang...",desc:"Given a hyperautomation scenario, employ Anypoint Exchange best practices."}]},
-      {name:"Use Salesforce Flow Orchestrator to build parallel, multi-user, multi-step workstreams",pct:8,color:"#3498DB",desc:"Combine multiple automated workflows into a coordinated process.",keyTopics:[{title:"Combine multiple automated workflows into a coordinated p...",desc:"Combine multiple automated workflows into a coordinated process."},{title:"Customize entry",desc:"Customize entry and exit conditions for evaluation flows."},{title:"Assign interactive steps to groups or queues",desc:"Assign interactive steps to groups or queues."},{title:"Debug, deploy,",desc:"Debug, deploy, and manage Flow Orchestration."}]},
-    ],
-    studyDays:[
-      {tag:"hyperauto-overview",focus:"MuleSoft Hyperautomation: RPA, Composer, and intelligent automation capabilities",topics:[
-        {text:"MuleSoft Hyperautomation Developer Exam Guide",url:"https://trailhead.salesforce.com/help?article=MuleSoft-Certified-Hyperautomation-Specialist-Exam-Guide"},
-        {text:"MuleSoft RPA Overview",url:"https://docs.mulesoft.com/rpa-home/"},
-        {text:"MuleSoft Composer Overview",url:"https://docs.mulesoft.com/composer/latest/"},
-        {text:"Hyperautomation Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-hyperautomation-specialist"},
-        {text:"Anypoint Platform and Automation",url:"https://docs.mulesoft.com/general/"},
-        {text:"Salesforce Flow and MuleSoft Integration",url:"https://help.salesforce.com/s/articleView?id=sf.flow_builder.htm"}
-      ]},
-      {tag:"mulesoft-rpa",focus:"Build RPA bots: process recording, bot deployment, and attended vs unattended automation",topics:[
-        {text:"MuleSoft RPA Developer Guide",url:"https://docs.mulesoft.com/rpa-builder/latest/"},
-        {text:"RPA Process Recording",url:"https://docs.mulesoft.com/rpa-recorder/latest/"},
-        {text:"RPA Bot Deployment",url:"https://docs.mulesoft.com/rpa-manager/latest/"},
-        {text:"Attended vs Unattended Bots",url:"https://docs.mulesoft.com/rpa-home/"},
-        {text:"RPA and Anypoint Integration",url:"https://docs.mulesoft.com/rpa-home/"},
-        {text:"AI Features in RPA",url:"https://docs.mulesoft.com/rpa-builder/latest/"}
-      ]},
-      {tag:"composer",focus:"Build no-code integrations with MuleSoft Composer: triggers, actions, and data mapping",topics:[
-        {text:"MuleSoft Composer Overview",url:"https://docs.mulesoft.com/composer/latest/"},
-        {text:"Composer Connectors",url:"https://docs.mulesoft.com/composer/latest/ms_composer_reference"},
-        {text:"Composer Data Mapping",url:"https://docs.mulesoft.com/composer/latest/ms_composer_using_a_flow_and_functions"},
-        {text:"Composer for Salesforce",url:"https://help.salesforce.com/s/articleView?id=sf.flow_builder_mulesoft_composer.htm"},
-        {text:"Composer Triggers and Scheduling",url:"https://docs.mulesoft.com/composer/latest/"},
-        {text:"Composer vs Anypoint Studio",url:"https://docs.mulesoft.com/composer/latest/"}
-      ]},
-      {tag:"exam-prep-hyperauto",focus:"MuleSoft Hyperautomation Specialist exam prep: RPA, Composer, and automation scenarios",topics:[
-        {text:"Hyperautomation Exam Guide",url:"https://trailhead.salesforce.com/help?article=MuleSoft-Certified-Hyperautomation-Specialist-Exam-Guide"},
-        {text:"Hyperautomation Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/mulesoft-hyperautomation-specialist"},
-        {text:"MuleSoft RPA Documentation",url:"https://docs.mulesoft.com/rpa-home/"},
-        {text:"MuleSoft Composer Documentation",url:"https://docs.mulesoft.com/composer/latest/"},
-        {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-mule-hyperauto---Mule-HA-201"},
-        {text:"Anypoint Platform Overview",url:"https://docs.mulesoft.com/general/"}
-      ]}
-    ],
-    quiz:[
-      {domain:"Hyperautomation Fundamentals",q:"What distinguishes RPA from standard API integration in hyperautomation?",opts:["RPA is faster than API calls", "RPA automates UI interactions with applications that lack APIs", "RPA handles real-time events; APIs handle batch", "RPA requires less maintenance than API integrations"],correct:1,explanation:"RPA (Robotic Process Automation) interacts with application UIs — clicking buttons, reading screens, filling forms — enabling automation of legacy systems that expose no API. API integration is preferred when available due to better reliability and maintainability."},
-      {domain:"Composer Integration",q:"Which MuleSoft component is the no-code/low-code integration builder for business users?",opts:["Anypoint Studio", "Anypoint Composer", "Flow Designer", "Integration Builder"],correct:1,explanation:"Anypoint Composer provides a point-and-click integration builder in the browser — business users and citizen integrators can connect SaaS apps and automate workflows without writing DataWeave or deploying Mule apps via Studio."},
-      {domain:"MuleSoft RPA",q:"What is the role of RPA Manager in MuleSoft RPA?",opts:["To develop and record bot scripts", "To orchestrate, schedule, and monitor bot executions", "To connect bots to Salesforce", "To define RPA API endpoints"],correct:1,explanation:"RPA Manager is the operations hub — it schedules bot runs, allocates processes to bot pools, monitors execution status, handles credentials, and provides audit logs. Bot development happens in RPA Builder, not RPA Manager."},
-      {domain:"AI/ML in Automation",q:"In MuleSoft Intelligent Document Processing, what does a 'confidence threshold' control?",opts:["The maximum document size for processing", "The minimum confidence score for accepting an extracted field value without human review", "The number of documents processed per hour", "The acceptable error rate for document classification"],correct:1,explanation:"IDP's ML models return a confidence score for each extracted field. The confidence threshold determines the cutoff — values above it are accepted automatically; values below route to a human-in-the-loop review queue for validation."},
-      {domain:"Hyperautomation Fundamentals",q:"What is an attended bot in RPA?",opts:["A bot monitored by a human supervisor", "A bot that runs on a user's machine and requires human initiation or interaction", "A bot with manual override capabilities", "A bot that requires approval before each execution"],correct:1,explanation:"Attended bots run on a user's desktop and are triggered manually — they assist the user in real time (e.g. auto-filling a form while the user is on a call). Unattended bots run autonomously on servers without human initiation."},
-      {domain:"Hyperautomation Fundamentals",q:"Which RPA tool is used to create and edit bot automation scripts?",opts:["RPA Studio", "RPA Builder", "Bot Designer", "Automation Recorder"],correct:1,explanation:"RPA Builder is the desktop IDE for recording, scripting, and testing bot automation workflows. RPA Manager handles deployment and orchestration — the two tools are complementary: build in Builder, run via Manager."},
-      {domain:"Composer Integration",q:"When should you choose Anypoint Composer over Anypoint Studio for integration?",opts:["When performance is critical for high-volume integrations", "When the integration is straightforward and the builder is a business user without coding skills", "When advanced error handling and DataWeave are required", "When integrating with legacy systems using complex protocols"],correct:1,explanation:"Composer is designed for simple, trigger-action integrations built by business users — it trades flexibility for speed and accessibility. Studio is needed for complex transformations, custom error handling, or protocols Composer doesn't support."},
-      {domain:"Hyperautomation Fundamentals",q:"Which component manages bot credentials securely in MuleSoft RPA?",opts:["Secure Properties in Anypoint", "Credential Manager in RPA Manager", "Anypoint Secrets Manager", "Bot Vault"],correct:1,explanation:"Credential Manager in RPA Manager stores usernames, passwords, and other secrets that bots need at runtime — bots retrieve credentials from it during execution without ever having credentials hardcoded in the bot script."},
-      {domain:"Hyperautomation Fundamentals",q:"What is the primary use case for combining RPA and MuleSoft API integration?",opts:["Replacing API integrations entirely with bot-based automation", "Orchestrating legacy UI-based system access alongside modern API-connected systems in one workflow", "Reducing MuleSoft license costs by substituting Mule flows with bots", "Running bots in parallel with Mule apps for redundancy"],correct:1,explanation:"The power of combining RPA and Mule is covering the full application landscape — APIs handle modern SaaS systems efficiently while RPA handles legacy systems with no API, all orchestrated by a single Mule integration flow."},
-      {domain:"Hyperautomation Fundamentals",q:"In MuleSoft hyperautomation, what is process mining used for?",opts:["Mining blockchain transactions for audit trails", "Analyzing system log data to discover actual process flows and identify automation opportunities", "Extracting data from documents using ML models", "Mining API usage patterns for performance optimization"],correct:1,explanation:"Process mining analyses event logs from enterprise systems to reconstruct actual process execution paths — revealing bottlenecks, deviations, and repetitive manual steps that are strong candidates for automation."},
-      {domain:"AI/ML in Automation",q:"What type of automation does Intelligent Document Processing enable?",opts:["Real-time translation of documents between languages", "Automated extraction of structured data from unstructured documents like invoices and forms", "Automated generation of PDF reports from structured data", "Optical character recognition for image-to-text conversion only"],correct:1,explanation:"IDP uses ML models (OCR + NLP) to extract structured field values from unstructured documents — invoices, purchase orders, contracts — automating data entry tasks that previously required human reading and transcription."},
-      {domain:"MuleSoft RPA",q:"How does a MuleSoft Mule flow trigger an RPA bot process?",opts:["By publishing a Platform Event that RPA subscribes to", "By calling the RPA API from a Mule flow to start a bot process execution", "Through a dedicated MuleSoft RPA Connector", "By dropping a file in an FTP location that RPA monitors"],correct:1,explanation:"Mule flows call the RPA Manager REST API to start a bot process — passing input data as parameters. The Mule flow can then poll or receive a callback when the bot completes, enabling end-to-end orchestration across API and RPA layers."},
-      {domain:"Hyperautomation Fundamentals",q:"Which metric best demonstrates the ROI of an RPA automation?",opts:["Bot uptime percentage", "Time saved per transaction multiplied by transaction volume", "Number of screens automated", "Bot deployment cost"],correct:1,explanation:"ROI is best expressed as (time saved per transaction x transaction volume x cost per hour) — this quantifies the labour cost reduction in business terms that stakeholders and finance teams can directly compare to implementation costs."},
-      {domain:"MuleSoft RPA",q:"In RPA Builder, what is an element selector used for?",opts:["Selecting which bot should execute a process", "Identifying a specific UI element (button, field) on a screen for the bot to interact with", "Choosing the application to automate from a catalog", "Filtering input data before the bot processes it"],correct:1,explanation:"Element selectors (XPath, CSS, or image-based) precisely identify a UI control on the target application's screen — the bot uses the selector to locate the element at runtime before clicking, typing, or reading its value."},
-      {domain:"Hyperautomation Fundamentals",q:"What is a Bot Pool in MuleSoft RPA?",opts:["A storage location for bot scripts", "A group of bots that can be allocated to execute processes, enabling parallel or failover execution", "A pool of test environments for bot validation", "A shared credential store for multiple bots"],correct:1,explanation:"A Bot Pool groups multiple bot instances that can run the same process — RPA Manager allocates executions across available bots in the pool, enabling parallel processing of high-volume tasks and automatic failover if one bot is busy."},
-      {domain:"Hyperautomation Fundamentals",q:"In hyperautomation design, which system type is best suited for API integration vs. RPA?",opts:["All systems should use API integration for reliability", "Modern SaaS systems with APIs → API integration; Legacy systems with only a UI → RPA", "RPA is always preferred for consistency", "The choice depends only on transaction volume"],correct:1,explanation:"The decision framework is straightforward: if a system exposes an API, use it — APIs are faster, more reliable, and easier to maintain. Only use RPA when no API exists, treating it as a last resort for legacy UI-only systems."},
-      {domain:"Composer Integration",q:"What Anypoint Composer feature allows a flow to run on a scheduled basis?",opts:["Cron Job trigger", "Timer trigger", "Scheduler trigger", "Polling Trigger"],correct:2,explanation:"The Scheduler trigger in Anypoint Composer starts a flow on a defined schedule (e.g. every hour, daily at 6am) — equivalent to a Scheduler source in Anypoint Studio, enabling time-based automation without a triggering event."},
-      {domain:"MuleSoft RPA",q:"What does 'unattended bot execution' mean in RPA?",opts:["The bot runs without any monitoring or supervision", "The bot runs automatically without human initiation, typically on a server or virtual machine", "The bot executes without logging its actions", "The bot skips UI interaction steps automatically"],correct:1,explanation:"Unattended bots run on virtual machines or servers, triggered automatically by RPA Manager on a schedule or via API — no human is present. This enables high-volume, 24/7 automation of back-office processes."},
-      {domain:"AI/ML in Automation",q:"Which MuleSoft capability integrates AI models for document and data processing in automation workflows?",opts:["MuleSoft AI Gateway", "Intelligent Document Processing (IDP)", "Einstein Analytics Connector", "AI Data Processor"],correct:1,explanation:"Intelligent Document Processing (IDP) is MuleSoft's ML-powered document extraction capability — it classifies documents, extracts field values with confidence scores, and integrates into Mule flows for end-to-end automated document processing."},
-      {domain:"Monitoring and Governance",q:"In a hyperautomation governance framework, what is the purpose of a Center of Excellence (CoE)?",opts:["To develop all automation scripts centrally", "To standardize automation practices, manage the bot portfolio, and ensure quality across all automations", "To provide technical support for bot failures", "To manage licensing costs for RPA software"],correct:1,explanation:"A CoE sets the standards, patterns, and guardrails for automation — it owns the methodology, reviews automation candidates, manages the bot portfolio lifecycle, enforces security practices, and tracks business value realised from automations."},
-    ],
-    tips:[
-      "Understand when to use RPA vs. API integration — choosing the right tool for each scenario is central to the exam.",
-      "Know the three RPA components: RPA Builder (design), RPA Manager (orchestrate), RPA Bot (execute).",
-      "Understand attended vs. unattended bots and their different use cases.",
-      "Know how Mule flows trigger and interact with RPA bots via the RPA API.",
-      "Understand Anypoint Composer's audience (business users) and its limitations vs. Anypoint Studio.",
-      "Know Intelligent Document Processing: document models, confidence thresholds, and human-in-the-loop.",
-      "Be able to design end-to-end hyperautomation workflows that combine RPA, Mule, and AI tools.",
-      "Understand bot credential management and security best practices in RPA deployments."
-    ]
-  },
-
   "Slack Developer": {
     questions: 60,
     time: 90,
     pass: 65,
     experience: "6+ months developing Slack apps with the Slack API and Bolt framework",
     trailheadUrl: "https://trailheadacademy.salesforce.com/certificate/exam-slack-developer---Slack-Dev-201",
+    trailmixUrl: null,
     prerequisites: ["Platform Developer"],
     overview: "The Slack Developer certification validates expertise in building Slack apps and integrations. Candidates demonstrate proficiency in the Slack API platform, Bolt framework, app distribution, Block Kit UI, and integration with Salesforce.",
         domains:[
@@ -906,7 +741,7 @@ Object.assign(EXAM_DATA, {
         {text:"Slack App Types Overview",url:"https://api.slack.com/start/overview"},
         {text:"Bolt for JavaScript",url:"https://slack.dev/bolt-js/"},
         {text:"Bolt for Python",url:"https://slack.dev/bolt-python/"},
-        {text:"Slack Developer Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-slack-developer-credential"}
+        {text:"Slack Developer Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-certified-slack-developer-cred"}
       ]},
       {tag:"block-kit",focus:"Build Slack UIs with Block Kit: blocks, elements, modals, and home tabs",topics:[
         {text:"Block Kit Overview",url:"https://api.slack.com/block-kit"},
@@ -926,15 +761,15 @@ Object.assign(EXAM_DATA, {
       ]},
       {tag:"slack-salesforce",focus:"Integrate Slack apps with Salesforce: Slack SDK for Salesforce and Flow actions",topics:[
         {text:"Slack SDK for Salesforce",url:"https://developer.salesforce.com/docs/platform/salesforce-slack-sdk/guide/"},
-        {text:"Salesforce for Slack App",url:"https://help.salesforce.com/s/articleView?id=sf.slack_salesforce_app.htm"},
-        {text:"Flow Actions for Slack",url:"https://help.salesforce.com/s/articleView?id=sf.flow_ref_elements_actions_slack.htm"},
+        {text:"Salesforce for Slack Integrations",url:"https://help.salesforce.com/s/articleView?id=slack.slack_apps.htm&type=5"},
+        {text:"Slack Flow Core Actions",url:"https://help.salesforce.com/s/articleView?id=platform.flow_ref_elements_actions_slack.htm&type=5"},
         {text:"Salesforce-Slack Integration Patterns",url:"https://developer.salesforce.com/docs/platform/salesforce-slack-sdk/guide/"},
         {text:"Apex and Slack Notifications",url:"https://developer.salesforce.com/docs/platform/salesforce-slack-sdk/guide/"},
         {text:"Slack Connect for B2B Automation",url:"https://api.slack.com/apis/slack-connect"}
       ]},
       {tag:"exam-prep-slack-dev",focus:"Slack Developer exam prep: Bolt, Block Kit, Events API, and Salesforce integration",topics:[
         {text:"Slack Developer Exam Guide",url:"https://trailhead.salesforce.com/help?article=Salesforce-Certified-Slack-Developer-Exam-Guide"},
-        {text:"Slack Developer Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-slack-developer-credential"},
+        {text:"Slack Developer Trailmix",url:"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-certified-slack-developer-cred"},
         {text:"Slack API Documentation",url:"https://api.slack.com/docs"},
         {text:"Bolt Framework Docs",url:"https://slack.dev/bolt-js/"},
         {text:"Exam Registration",url:"https://trailheadacademy.salesforce.com/certificate/exam-slack-developer---Slack-Dev-201"},
