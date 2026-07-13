@@ -700,7 +700,33 @@ function answerQ(qIdx,optIdx){
   if(answers[q.q]!==undefined)return;
   answers[q.q]=optIdx;
   saveQuizAnswers(answers);
-  renderQuiz();
+
+  // Targeted DOM update — avoid full re-render so previously-answered
+  // explanations don't replay the animation
+  const container=document.getElementById('questions-container');
+  const cards=container.querySelectorAll('.q-card');
+  const card=cards[qIdx];
+  if(!card){renderQuiz();return;}
+
+  // Update option buttons
+  const btns=card.querySelectorAll('.q-opt');
+  btns.forEach((btn,idx)=>{
+    btn.disabled=true;
+    btn.classList.remove('correct','wrong');
+    if(idx===q.correct)btn.classList.add('correct');
+    else if(idx===optIdx)btn.classList.add('wrong');
+  });
+
+  // Reveal explanation with animation
+  const expl=card.querySelector('.q-explanation');
+  if(expl){expl.classList.add('show','newly-revealed');}
+
+  // Update score bar
+  const allAnswers=getQuizAnswers();
+  const answered=currentQuizFiltered.filter(qq=>allAnswers[qq.q]!==undefined).length;
+  const correct=currentQuizFiltered.filter(qq=>allAnswers[qq.q]!==undefined&&allAnswers[qq.q]===qq.correct).length;
+  const scoreVal=document.querySelector('.score-value');
+  if(scoreVal)scoreVal.textContent=`${correct}/${answered}`;
 }
 
 function shuffleQuiz(){
